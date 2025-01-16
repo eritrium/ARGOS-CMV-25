@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Controlla il tuo turno di lavoro</title>
+</head>
+<body>
+    <h2>Controlla il tuo turno di lavoro</h2>
+    <form id="turnoForm">
+        <label for="matricola">Numero di Matricola:</label>
+        <input type="text" id="matricola" name="matricola" required><br>
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data" required><br>
+        <input type="button" value="Controlla" onclick="controllaTurno()">
+    </form>
+    <div id="risultato"></div>
+    <script src="script.js"></script>
+</body>
+</html>
