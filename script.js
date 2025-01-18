@@ -1,27 +1,32 @@
-function controllaTurno() {
-    var matricola = document.getElementById('matricola').value;
-    var data = document.getElementById('data').value;
-    var turno = ottieniTurno(matricola, data);
-    
-    var risultatoDiv = document.getElementById('risultato');
-    if (turno) {
-        risultatoDiv.innerHTML = 'Il tuo turno per il ' + data + ' è: ' + turno;
-    } else {
-        risultatoDiv.innerHTML = 'Nessun turno trovato per la data ' + data;
-    }
-}
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('turniForm');
+    const motoscafoSelect = document.getElementById('motoscafo');
+    const dataInput = document.getElementById('data');
+    const outputDiv = document.getElementById('output');
 
-function ottieniTurno(matricola, data) {
-    var turni = {
-        "146": {"2025-01-16": "San Marco 8/18", "2023-01-17": "Pomeriggio"},
-        "67890": {"2023-01-16": "Notte", "2023-01-17": "Mattina"},
-        "54321": {"2023-01-16": "Pomeriggio", "2023-01-17": "Notte"},
-        // Puoi continuare ad aggiungere matricole e turni qui
-    };
-    
-    if (turni[matricola] && turni[matricola][data]) {
-        return turni[matricola][data];
-    } else {
-        return null;
-    }
-}
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();  // Evita il submit del form per gestire l'evento tramite JavaScript
+        const motoscafo = motoscafoSelect.value;
+        const data = dataInput.value;
+
+        if (!motoscafo || !data) {
+            outputDiv.textContent = 'Per favore seleziona un motoscafo e una data.';
+            return;
+        }
+
+        fetch('turni.json')
+            .then(response => response.json())
+            .then(turni => {
+                const turno = turni.find(t => t.Motoscafo == motoscafo && t.Data == data);
+                if (turno) {
+                    outputDiv.textContent = `Motoscafo ${turno.Motoscafo}: ${turno.Data} - ${turno.Turno}`;
+                } else {
+                    outputDiv.textContent = 'Nessun turno trovato per i criteri selezionati.';
+                }
+            })
+            .catch(error => {
+                console.error('Errore nel caricamento dei dati:', error);
+                outputDiv.textContent = 'Errore nel caricamento dei dati.';
+            });
+    });
+});
