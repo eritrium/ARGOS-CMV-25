@@ -1766,14 +1766,14 @@
     {
         "servizio": "SALUTE",
         "data": "2026-02-09",
-        "num": "123",
+        "num": "N16",
         "inizio": "08",
         "fine": "20"
     },
     {
         "servizio": "SALUTE",
         "data": "2026-02-09",
-        "num": "N16",
+        "num": "",
         "inizio": "08",
         "fine": "20"
     },
@@ -3369,21 +3369,7 @@
     {
         "servizio": "APT",
         "data": "2026-02-12",
-        "num": "350",
-        "inizio": "07",
-        "fine": "24"
-    },
-    {
-        "servizio": "APT",
-        "data": "2026-02-12",
         "num": "142",
-        "inizio": "07",
-        "fine": "24"
-    },
-    {
-        "servizio": "APT",
-        "data": "2026-02-12",
-        "num": "N26",
         "inizio": "07",
         "fine": "24"
     },
@@ -3398,6 +3384,20 @@
         "servizio": "APT",
         "data": "2026-02-12",
         "num": "223",
+        "inizio": "07",
+        "fine": "24"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-02-12",
+        "num": "350",
+        "inizio": "07",
+        "fine": "24"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-02-12",
+        "num": "",
         "inizio": "07",
         "fine": "24"
     },
@@ -12049,6 +12049,20 @@
     {
         "servizio": "APT",
         "data": "2026-03-04",
+        "num": "142",
+        "inizio": "07",
+        "fine": "24"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-03-04",
+        "num": "356",
+        "inizio": "07",
+        "fine": "24"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-03-04",
         "num": "223",
         "inizio": "07",
         "fine": "24"
@@ -12063,21 +12077,7 @@
     {
         "servizio": "APT",
         "data": "2026-03-04",
-        "num": "142",
-        "inizio": "07",
-        "fine": "24"
-    },
-    {
-        "servizio": "APT",
-        "data": "2026-03-04",
-        "num": "N26",
-        "inizio": "07",
-        "fine": "24"
-    },
-    {
-        "servizio": "APT",
-        "data": "2026-03-04",
-        "num": "356",
+        "num": "",
         "inizio": "07",
         "fine": "24"
     },
@@ -12378,6 +12378,20 @@
     {
         "servizio": "APT",
         "data": "2026-03-05",
+        "num": "356",
+        "inizio": "07",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-03-05",
+        "num": "223",
+        "inizio": "07",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-03-05",
         "num": "350",
         "inizio": "07",
         "fine": "18"
@@ -12392,21 +12406,7 @@
     {
         "servizio": "APT",
         "data": "2026-03-05",
-        "num": "N26",
-        "inizio": "07",
-        "fine": "18"
-    },
-    {
-        "servizio": "APT",
-        "data": "2026-03-05",
-        "num": "356",
-        "inizio": "07",
-        "fine": "18"
-    },
-    {
-        "servizio": "APT",
-        "data": "2026-03-05",
-        "num": "223",
+        "num": "",
         "inizio": "07",
         "fine": "18"
     },
@@ -14219,6 +14219,20 @@
     {
         "servizio": "APT",
         "data": "2026-03-09",
+        "num": "356",
+        "inizio": "07",
+        "fine": "24"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-03-09",
+        "num": "223",
+        "inizio": "07",
+        "fine": "24"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-03-09",
         "num": "350",
         "inizio": "07",
         "fine": "24"
@@ -14233,21 +14247,7 @@
     {
         "servizio": "APT",
         "data": "2026-03-09",
-        "num": "N26",
-        "inizio": "07",
-        "fine": "24"
-    },
-    {
-        "servizio": "APT",
-        "data": "2026-03-09",
-        "num": "356",
-        "inizio": "07",
-        "fine": "24"
-    },
-    {
-        "servizio": "APT",
-        "data": "2026-03-09",
-        "num": "223",
+        "num": "",
         "inizio": "07",
         "fine": "24"
     },
