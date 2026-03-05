@@ -1,5 +1,26 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+    // ---------------------------------------------------
+    // 🔥 GESTIONE AVVISO (MOSTRA SE IL DIV NON È VUOTO)
+    // ---------------------------------------------------
+    function gestisciAvviso() {
+        const box = document.getElementById("messaggioAvviso");
+
+        // Se dentro il div c'è testo → mostra
+        if (box.textContent.trim() !== "") {
+            box.style.display = "block";
+        } 
+        // Se è vuoto → nascondi
+        else {
+            box.style.display = "none";
+        }
+    }
+
+    // Attiva subito il controllo all'avvio
+    gestisciAvviso();
+
+
+
     // ELEMENTI PER MOTOSCAFO
     const motoscafoSelect = document.getElementById('motoscafo');
     const dataInput = document.getElementById('dataMotoscafo');
@@ -119,8 +140,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         const notaExtra =
                             (orarioInizio === "08" &&
                              orarioFine === "20" &&
-                             i > 0 &&          // NON è il primo blocco 08-20
-                             rowspan >= 1)     // almeno una riga compilata
+                             i > 0 &&
+                             rowspan >= 1)
                             ? "<div class='nota-extra'>GUARDIA LONDRA</div>"
                             : "";
 

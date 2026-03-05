@@ -169,3 +169,25 @@ td {
         font-size: 1.3rem;
     }
 }
+
+/* --------------------------------------------------
+   AVVISO ROSSO LAMPEGGIANTE
+-------------------------------------------------- */
+#messaggioAvviso {
+    display: none;
+    background-color: #ff0000;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 15px;
+    text-align: center;
+    border: 3px solid #990000;
+    margin-bottom: 20px;
+    animation: lampeggia 1s infinite;
+}
+
+@keyframes lampeggia {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
