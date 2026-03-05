@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const response = await fetch('salute_apt.json');
             const turni = await response.json();
 
-            // FILTRA SOLO LE RIGHE VALIDE
+            // FILTRA SOLO LE RIGHE VALIDE (num non vuoto)
             const finali = turni.filter(r =>
                 r.servizio === servizio &&
                 r.data === data &&
@@ -73,61 +73,63 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             // -------------------------------
-            // 🔥 RAGGRUPPA PER ORARIO
-            // -------------------------------
-            const gruppi = {};
-
-            finali.forEach(r => {
-                const key = `${r.inizio}-${r.fine}`;
-                if (!gruppi[key]) gruppi[key] = [];
-                gruppi[key].push(r);
-            });
-
-            // -------------------------------
-            // 🔥 COSTRUZIONE BLOCCHI INTERNi
+            // 🔥 COSTRUZIONE BLOCCHI IN SEQUENZA (ORDINE DEL JSON)
             // -------------------------------
             let righeTotali = "";
+            let i = 0;
 
-            for (const key in gruppi) {
+            while (i < finali.length) {
 
-                const gruppo = gruppi[key];
-                const orarioInizio = gruppo[0].inizio;
-                const orarioFine = gruppo[0].fine;
+                const r = finali[i];
+                const orarioInizio = r.inizio;
+                const orarioFine = r.fine;
                 const orarioCompleto = `${orarioInizio} → ${orarioFine}`;
-                const rowspan = gruppo.length;
 
                 // LOGICA COLORI
                 let colore = "";
-
                 if (servizio === "SALUTE") {
                     if (orarioInizio === "08" && orarioFine === "20") colore = "verde";
                     if (orarioInizio === "08" && orarioFine === "18") colore = "arancio";
                     if (orarioInizio === "08" && orarioFine === "24") colore = "giallo";
                 }
-
                 if (servizio === "APT") {
                     if (orarioInizio === "07" && orarioFine === "18") colore = "verde";
                     if (orarioInizio === "07" && orarioFine === "24") colore = "arancio";
                 }
 
-                // COSTRUZIONE RIGHE DEL BLOCCO
-                gruppo.forEach((r, index) => {
+                // TROVA QUANTE RIGHE CONSECUTIVE HANNO LO STESSO ORARIO
+                let j = i;
+                while (
+                    j < finali.length &&
+                    finali[j].inizio === orarioInizio &&
+                    finali[j].fine === orarioFine
+                ) {
+                    j++;
+                }
 
-                    if (index === 0) {
+                const rowspan = j - i;
+
+                // COSTRUZIONE DEL BLOCCO PER QUESTO SEGMENTO
+                for (let k = i; k < j; k++) {
+                    const riga = finali[k];
+
+                    if (k === i) {
                         righeTotali += `
                             <tr class="${colore}">
-                                <td>${r.num}</td>
+                                <td>${riga.num}</td>
                                 <td rowspan="${rowspan}" class="orario-unico">${orarioCompleto}</td>
                             </tr>
                         `;
                     } else {
                         righeTotali += `
                             <tr class="${colore}">
-                                <td>${r.num}</td>
+                                <td>${riga.num}</td>
                             </tr>
                         `;
                     }
-                });
+                }
+
+                i = j;
             }
 
             // -------------------------------
