@@ -114,10 +114,23 @@ document.addEventListener('DOMContentLoaded', function () {
                     const riga = finali[k];
 
                     if (k === i) {
+
+                        // SCRITTA "GUARDIA LONDRA" SOLO PER IL GRUPPO EXTRA
+                        const notaExtra =
+                            (orarioInizio === "08" &&
+                             orarioFine === "20" &&
+                             i > 0 &&          // NON è il primo blocco 08-20
+                             rowspan >= 1)     // almeno una riga compilata
+                            ? "<div class='nota-extra'>GUARDIA LONDRA</div>"
+                            : "";
+
                         righeTotali += `
                             <tr class="${colore}">
                                 <td>${riga.num}</td>
-                                <td rowspan="${rowspan}" class="orario-unico">${orarioCompleto}</td>
+                                <td rowspan="${rowspan}" class="orario-unico">
+                                    ${orarioCompleto}
+                                    ${notaExtra}
+                                </td>
                             </tr>
                         `;
                     } else {
