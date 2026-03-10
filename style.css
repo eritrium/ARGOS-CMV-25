@@ -183,7 +183,7 @@ td {
     text-align: center;
     border: 3px solid #990000;
     margin-bottom: 20px;
-    animation: lampeggia 1s infinite;
+    animation: none;
 }
 
 @keyframes lampeggia {
@@ -191,3 +191,4 @@ td {
     50% { opacity: 0.3; }
     100% { opacity: 1; }
 }
+
