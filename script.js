@@ -6,20 +6,14 @@ document.addEventListener('DOMContentLoaded', function () {
     function gestisciAvviso() {
         const box = document.getElementById("messaggioAvviso");
 
-        // Se dentro il div c'è testo → mostra
         if (box.textContent.trim() !== "") {
             box.style.display = "block";
-        } 
-        // Se è vuoto → nascondi
-        else {
+        } else {
             box.style.display = "none";
         }
     }
 
-    // Attiva subito il controllo all'avvio
     gestisciAvviso();
-
-
 
     // ELEMENTI PER MOTOSCAFO
     const motoscafoSelect = document.getElementById('motoscafo');
@@ -80,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const response = await fetch('salute_apt.json');
             const turni = await response.json();
 
-            // FILTRA SOLO LE RIGHE VALIDE (num non vuoto)
+            // FILTRA SOLO LE RIGHE VALIDE
             const finali = turni.filter(r =>
                 r.servizio === servizio &&
                 r.data === data &&
@@ -94,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             // -------------------------------
-            // 🔥 COSTRUZIONE BLOCCHI IN SEQUENZA (ORDINE DEL JSON)
+            // 🔥 RAGGRUPPAMENTO PER ORARIO + GRUPPO
             // -------------------------------
             let righeTotali = "";
             let i = 0;
@@ -104,6 +98,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 const r = finali[i];
                 const orarioInizio = r.inizio;
                 const orarioFine = r.fine;
+
+                // Se il gruppo non esiste → è normale
+                const gruppo = r.gruppo && r.gruppo.trim() !== "" ? r.gruppo : "normale";
+
                 const orarioCompleto = `${orarioInizio} → ${orarioFine}`;
 
                 // LOGICA COLORI
@@ -118,30 +116,30 @@ document.addEventListener('DOMContentLoaded', function () {
                     if (orarioInizio === "07" && orarioFine === "24") colore = "arancio";
                 }
 
-                // TROVA QUANTE RIGHE CONSECUTIVE HANNO LO STESSO ORARIO
+                // TROVA QUANTE RIGHE HANNO STESSO ORARIO + STESSO GRUPPO
                 let j = i;
                 while (
                     j < finali.length &&
                     finali[j].inizio === orarioInizio &&
-                    finali[j].fine === orarioFine
+                    finali[j].fine === orarioFine &&
+                    ((finali[j].gruppo && finali[j].gruppo.trim() !== "") ? finali[j].gruppo : "normale") === gruppo
                 ) {
                     j++;
                 }
 
                 const rowspan = j - i;
 
-                // COSTRUZIONE DEL BLOCCO PER QUESTO SEGMENTO
+                // COSTRUZIONE RIGHE
                 for (let k = i; k < j; k++) {
                     const riga = finali[k];
 
                     if (k === i) {
 
-                        // SCRITTA "GUARDIA LONDRA" SOLO PER IL GRUPPO EXTRA
+                        // SCRITTA GUARDIA LONDRA SOLO PER EXTRA 08–20
                         const notaExtra =
-                            (orarioInizio === "08" &&
-                             orarioFine === "20" &&
-                             i > 0 &&
-                             rowspan >= 1)
+                            (gruppo === "extra" &&
+                             orarioInizio === "08" &&
+                             orarioFine === "20")
                             ? "<div class='nota-extra'>GUARDIA LONDRA</div>"
                             : "";
 
@@ -167,7 +165,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             // -------------------------------
-            // 🔥 TABELLA UNICA FINALE
+            // 🔥 TABELLA FINALE
             // -------------------------------
             outputServizio.innerHTML = `
                 <div class="table-wrapper table-anim">
