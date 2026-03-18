@@ -99,21 +99,26 @@ document.addEventListener('DOMContentLoaded', function () {
                 const orarioInizio = r.inizio;
                 const orarioFine = r.fine;
 
-                // Se il gruppo non esiste → è normale
+                // Gruppo: normale / extra / exc
                 const gruppo = r.gruppo && r.gruppo.trim() !== "" ? r.gruppo : "normale";
 
                 const orarioCompleto = `${orarioInizio} → ${orarioFine}`;
 
                 // LOGICA COLORI
                 let colore = "";
+
                 if (servizio === "SALUTE") {
                     if (orarioInizio === "08" && orarioFine === "20") colore = "verde";
                     if (orarioInizio === "08" && orarioFine === "18") colore = "arancio";
                     if (orarioInizio === "08" && orarioFine === "24") colore = "giallo";
                 }
+
                 if (servizio === "APT") {
                     if (orarioInizio === "07" && orarioFine === "18") colore = "verde";
                     if (orarioInizio === "07" && orarioFine === "24") colore = "arancio";
+
+                    // ⭐ NUOVO: gruppo EXCELSIOR → giallo
+                    if (gruppo === "exc") colore = "giallo";
                 }
 
                 // TROVA QUANTE RIGHE HANNO STESSO ORARIO + STESSO GRUPPO
@@ -129,26 +134,32 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 const rowspan = j - i;
 
+                // NOTE SPECIALI
+                const notaExtra =
+                    (gruppo === "extra" &&
+                     orarioInizio === "08" &&
+                     orarioFine === "20")
+                    ? "<div class='nota-extra'>GUARDIA LONDRA</div>"
+                    : "";
+
+                // ⭐ NUOVO: nota EXCELSIOR
+                const notaExcelsior =
+                    (gruppo === "exc")
+                    ? "<div class='nota-extra'>EXCELSIOR</div>"
+                    : "";
+
                 // COSTRUZIONE RIGHE
                 for (let k = i; k < j; k++) {
                     const riga = finali[k];
 
                     if (k === i) {
-
-                        // SCRITTA GUARDIA LONDRA SOLO PER EXTRA 08–20
-                        const notaExtra =
-                            (gruppo === "extra" &&
-                             orarioInizio === "08" &&
-                             orarioFine === "20")
-                            ? "<div class='nota-extra'>GUARDIA LONDRA</div>"
-                            : "";
-
                         righeTotali += `
                             <tr class="${colore}">
                                 <td>${riga.num}</td>
                                 <td rowspan="${rowspan}" class="orario-unico">
-                                    ${orarioCompleto}
+                                    ${gruppo === "exc" ? "" : orarioCompleto}
                                     ${notaExtra}
+                                    ${notaExcelsior}
                                 </td>
                             </tr>
                         `;
