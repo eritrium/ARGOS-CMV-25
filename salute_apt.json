@@ -37962,7 +37962,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-05-29",
-        "num": "",
+        "num": "44",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -37970,7 +37970,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-05-29",
-        "num": "",
+        "num": "140",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -37978,7 +37978,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-05-29",
-        "num": "",
+        "num": "252",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -37986,7 +37986,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-05-29",
-        "num": "",
+        "num": "171",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -37994,7 +37994,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-05-29",
-        "num": "",
+        "num": "259",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -38002,7 +38002,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-05-29",
-        "num": "",
+        "num": "N18",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -38146,7 +38146,39 @@
     {
         "servizio": "SALUTE",
         "data": "2026-05-29",
-        "num": "",
+        "num": "317",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-05-29",
+        "num": "217",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-05-29",
+        "num": "322",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-05-29",
+        "num": "370",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-05-29",
+        "num": "355",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -38194,39 +38226,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-05-29",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-05-29",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-05-29",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-05-29",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-05-29",
-        "num": "",
+        "num": "N16",
         "inizio": "08",
         "fine": "24",
         "gruppo": ""
@@ -38482,7 +38482,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-05-30",
-        "num": "",
+        "num": "236",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -38490,7 +38490,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-05-30",
-        "num": "",
+        "num": "254",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -38498,7 +38498,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-05-30",
-        "num": "",
+        "num": "265",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -38506,7 +38506,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-05-30",
-        "num": "",
+        "num": "123",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -38514,7 +38514,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-05-30",
-        "num": "",
+        "num": "49",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -38522,7 +38522,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-05-30",
-        "num": "",
+        "num": "223",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -38530,7 +38530,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-05-30",
-        "num": "",
+        "num": "N36",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -38666,7 +38666,47 @@
     {
         "servizio": "SALUTE",
         "data": "2026-05-30",
-        "num": "",
+        "num": "366",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-05-30",
+        "num": "13",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-05-30",
+        "num": "157",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-05-30",
+        "num": "222",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-05-30",
+        "num": "226",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-05-30",
+        "num": "351",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -38706,47 +38746,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-05-30",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-05-30",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-05-30",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-05-30",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-05-30",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-05-30",
-        "num": "",
+        "num": "N13",
         "inizio": "08",
         "fine": "24",
         "gruppo": ""
@@ -39002,7 +39002,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-05-31",
-        "num": "",
+        "num": "238",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -39010,7 +39010,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-05-31",
-        "num": "",
+        "num": "307",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -39018,7 +39018,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-05-31",
-        "num": "",
+        "num": "364",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -39026,7 +39026,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-05-31",
-        "num": "",
+        "num": "48",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -39034,7 +39034,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-05-31",
-        "num": "",
+        "num": "311",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -39042,7 +39042,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-05-31",
-        "num": "",
+        "num": "142",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -39186,7 +39186,39 @@
     {
         "servizio": "SALUTE",
         "data": "2026-05-31",
-        "num": "",
+        "num": "25",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-05-31",
+        "num": "159",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-05-31",
+        "num": "245",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-05-31",
+        "num": "192",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-05-31",
+        "num": "171",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -39234,39 +39266,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-05-31",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-05-31",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-05-31",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-05-31",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-05-31",
-        "num": "",
+        "num": "N18",
         "inizio": "08",
         "fine": "24",
         "gruppo": ""
@@ -39522,7 +39522,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-01",
-        "num": "",
+        "num": "322",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -39530,7 +39530,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-01",
-        "num": "",
+        "num": "317",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -39538,7 +39538,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-01",
-        "num": "",
+        "num": "163",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -39546,7 +39546,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-01",
-        "num": "",
+        "num": "35",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -39554,7 +39554,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-01",
-        "num": "",
+        "num": "370",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -39562,7 +39562,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-01",
-        "num": "",
+        "num": "383",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -39706,7 +39706,39 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-01",
-        "num": "",
+        "num": "38",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-01",
+        "num": "194",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-01",
+        "num": "259",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-01",
+        "num": "252",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-01",
+        "num": "49",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -39754,39 +39786,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-01",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-01",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-01",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-01",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-01",
-        "num": "",
+        "num": "N36",
         "inizio": "08",
         "fine": "24",
         "gruppo": ""
@@ -40042,7 +40042,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-02",
-        "num": "",
+        "num": "222",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -40050,7 +40050,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-02",
-        "num": "",
+        "num": "13",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -40058,7 +40058,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-02",
-        "num": "",
+        "num": "121",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -40066,7 +40066,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-02",
-        "num": "",
+        "num": "217",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -40074,7 +40074,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-02",
-        "num": "",
+        "num": "226",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -40082,7 +40082,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-02",
-        "num": "",
+        "num": "N16",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -40226,7 +40226,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-02",
-        "num": "",
+        "num": "142",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -40234,7 +40234,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-02",
-        "num": "",
+        "num": "356",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -40242,7 +40242,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-02",
-        "num": "",
+        "num": "303",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -40250,7 +40250,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-02",
-        "num": "",
+        "num": "265",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -40258,7 +40258,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-02",
-        "num": "",
+        "num": "223",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -40266,7 +40266,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-02",
-        "num": "",
+        "num": "123",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -40274,7 +40274,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-02",
-        "num": "",
+        "num": "48",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -40562,7 +40562,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-03",
-        "num": "",
+        "num": "159",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -40570,7 +40570,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-03",
-        "num": "",
+        "num": "245",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -40578,7 +40578,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-03",
-        "num": "",
+        "num": "263",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -40586,7 +40586,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-03",
-        "num": "",
+        "num": "366",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -40594,7 +40594,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-03",
-        "num": "",
+        "num": "192",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -40602,7 +40602,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-03",
-        "num": "",
+        "num": "157",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -40610,7 +40610,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-03",
-        "num": "",
+        "num": "N13",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -40746,7 +40746,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-03",
-        "num": "",
+        "num": "383",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -40754,7 +40754,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-03",
-        "num": "",
+        "num": "40",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -40762,7 +40762,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-03",
-        "num": "",
+        "num": "146",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -40770,7 +40770,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-03",
-        "num": "",
+        "num": "364",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -40778,7 +40778,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-03",
-        "num": "",
+        "num": "311",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -40786,7 +40786,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-03",
-        "num": "",
+        "num": "35",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -41082,7 +41082,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-04",
-        "num": "",
+        "num": "194",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -41090,7 +41090,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-04",
-        "num": "",
+        "num": "259",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -41098,7 +41098,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-04",
-        "num": "",
+        "num": "140",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -41106,7 +41106,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-04",
-        "num": "",
+        "num": "25",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -41114,7 +41114,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-04",
-        "num": "",
+        "num": "252",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -41122,7 +41122,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-04",
-        "num": "",
+        "num": "N18",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -41266,7 +41266,39 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-04",
-        "num": "",
+        "num": "229",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-04",
+        "num": "355",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-04",
+        "num": "163",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-04",
+        "num": "370",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-04",
+        "num": "217",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -41314,39 +41346,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-04",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-04",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-04",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-04",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-04",
-        "num": "",
+        "num": "N16",
         "inizio": "08",
         "fine": "24",
         "gruppo": ""
@@ -41602,7 +41602,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-05",
-        "num": "",
+        "num": "223",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -41610,7 +41610,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-05",
-        "num": "",
+        "num": "303",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -41618,7 +41618,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-05",
-        "num": "",
+        "num": "236",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -41626,7 +41626,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-05",
-        "num": "",
+        "num": "38",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -41634,7 +41634,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-05",
-        "num": "",
+        "num": "123",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -41642,7 +41642,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-05",
-        "num": "",
+        "num": "N36",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -41786,7 +41786,47 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-05",
-        "num": "",
+        "num": "157",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-05",
+        "num": "156",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-05",
+        "num": "351",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-05",
+        "num": "226",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-05",
+        "num": "121",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-05",
+        "num": "366",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -41826,47 +41866,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-05",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-05",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-05",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-05",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-05",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-05",
-        "num": "",
+        "num": "N13",
         "inizio": "08",
         "fine": "24",
         "gruppo": ""
@@ -42122,7 +42122,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-06",
-        "num": "",
+        "num": "142",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -42130,7 +42130,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-06",
-        "num": "",
+        "num": "146",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -42138,7 +42138,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-06",
-        "num": "",
+        "num": "311",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -42146,7 +42146,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-06",
-        "num": "",
+        "num": "307",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -42154,7 +42154,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-06",
-        "num": "",
+        "num": "356",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -42162,7 +42162,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-06",
-        "num": "",
+        "num": "265",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -42306,7 +42306,39 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-06",
-        "num": "",
+        "num": "119",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-06",
+        "num": "171",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-06",
+        "num": "263",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-06",
+        "num": "192",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-06",
+        "num": "25",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -42354,39 +42386,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-06",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-06",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-06",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-06",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-06",
-        "num": "",
+        "num": "N18",
         "inizio": "08",
         "fine": "24",
         "gruppo": ""
@@ -42642,7 +42642,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-07",
-        "num": "",
+        "num": "383",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -42650,7 +42650,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-07",
-        "num": "",
+        "num": "370",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -42658,7 +42658,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-07",
-        "num": "",
+        "num": "355",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -42666,7 +42666,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-07",
-        "num": "",
+        "num": "317",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -42674,7 +42674,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-07",
-        "num": "",
+        "num": "40",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -42682,7 +42682,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-07",
-        "num": "",
+        "num": "364",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -42826,7 +42826,39 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-07",
-        "num": "",
+        "num": "44",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-07",
+        "num": "49",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-07",
+        "num": "140",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-07",
+        "num": "252",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-07",
+        "num": "38",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -42874,39 +42906,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-07",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-07",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-07",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-07",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-07",
-        "num": "",
+        "num": "N36",
         "inizio": "08",
         "fine": "24",
         "gruppo": ""
@@ -43162,7 +43162,47 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-08",
-        "num": "",
+        "num": "226",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-08",
+        "num": "351",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-08",
+        "num": "13",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-08",
+        "num": "229",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-08",
+        "num": "163",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-08",
+        "num": "N16",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -43242,47 +43282,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-08",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-08",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-08",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-08",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-08",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-08",
-        "num": "",
+        "num": "265",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -43322,7 +43322,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-08",
-        "num": "",
+        "num": "142",
         "inizio": "08",
         "fine": "20",
         "gruppo": "extra"
@@ -43346,7 +43346,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-08",
-        "num": "",
+        "num": "254",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -43354,7 +43354,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-08",
-        "num": "",
+        "num": "48",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -43362,7 +43362,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-08",
-        "num": "",
+        "num": "123",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -43370,7 +43370,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-08",
-        "num": "",
+        "num": "236",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -43378,7 +43378,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-08",
-        "num": "",
+        "num": "356",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -43682,7 +43682,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-09",
-        "num": "",
+        "num": "157",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -43690,7 +43690,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-09",
-        "num": "",
+        "num": "171",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -43698,7 +43698,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-09",
-        "num": "",
+        "num": "192",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -43706,7 +43706,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-09",
-        "num": "",
+        "num": "159",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -43714,7 +43714,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-09",
-        "num": "",
+        "num": "156",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -43722,7 +43722,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-09",
-        "num": "",
+        "num": "121",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -43730,7 +43730,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-09",
-        "num": "",
+        "num": "N13",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -43866,7 +43866,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-09",
-        "num": "",
+        "num": "364",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -43874,7 +43874,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-09",
-        "num": "",
+        "num": "383",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -43882,7 +43882,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-09",
-        "num": "",
+        "num": "238",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -43890,7 +43890,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-09",
-        "num": "",
+        "num": "35",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -43898,7 +43898,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-09",
-        "num": "",
+        "num": "307",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -43906,7 +43906,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-09",
-        "num": "",
+        "num": "40",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -44202,7 +44202,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-10",
-        "num": "",
+        "num": "49",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -44210,7 +44210,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-10",
-        "num": "",
+        "num": "252",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -44218,7 +44218,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-10",
-        "num": "",
+        "num": "194",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -44226,7 +44226,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-10",
-        "num": "",
+        "num": "119",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -44234,7 +44234,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-10",
-        "num": "",
+        "num": "263",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -44242,7 +44242,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-10",
-        "num": "",
+        "num": "N18",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -44386,7 +44386,39 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-10",
-        "num": "",
+        "num": "163",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-10",
+        "num": "217",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-10",
+        "num": "322",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-10",
+        "num": "317",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-10",
+        "num": "229",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -44434,39 +44466,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-10",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-10",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-10",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-10",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-10",
-        "num": "",
+        "num": "N16",
         "inizio": "08",
         "fine": "24",
         "gruppo": ""
@@ -44722,7 +44722,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-11",
-        "num": "",
+        "num": "48",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -44730,7 +44730,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-11",
-        "num": "",
+        "num": "142",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -44738,7 +44738,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-11",
-        "num": "",
+        "num": "123",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -44746,7 +44746,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-11",
-        "num": "",
+        "num": "303",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -44754,7 +44754,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-11",
-        "num": "",
+        "num": "44",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -44762,7 +44762,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-11",
-        "num": "",
+        "num": "140",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -44770,7 +44770,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-11",
-        "num": "",
+        "num": "N36",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -44906,7 +44906,47 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-11",
-        "num": "",
+        "num": "121",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-11",
+        "num": "157",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-11",
+        "num": "222",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-11",
+        "num": "366",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-11",
+        "num": "13",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-11",
+        "num": "156",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -44946,47 +44986,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-11",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-11",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-11",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-11",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-11",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-11",
-        "num": "",
+        "num": "N13",
         "inizio": "08",
         "fine": "24",
         "gruppo": ""
@@ -45242,7 +45242,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-12",
-        "num": "",
+        "num": "265",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -45250,7 +45250,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-12",
-        "num": "",
+        "num": "383",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -45258,7 +45258,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-12",
-        "num": "",
+        "num": "35",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -45266,7 +45266,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-12",
-        "num": "",
+        "num": "146",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -45274,7 +45274,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-12",
-        "num": "",
+        "num": "254",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -45282,7 +45282,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-12",
-        "num": "",
+        "num": "236",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -45426,7 +45426,39 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-12",
-        "num": "",
+        "num": "263",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-12",
+        "num": "245",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-12",
+        "num": "25",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-12",
+        "num": "159",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-12",
+        "num": "119",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -45474,39 +45506,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-12",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-12",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-12",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-12",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-12",
-        "num": "",
+        "num": "N18",
         "inizio": "08",
         "fine": "24",
         "gruppo": ""
@@ -45762,7 +45762,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-13",
-        "num": "",
+        "num": "364",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -45770,7 +45770,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-13",
-        "num": "",
+        "num": "217",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -45778,7 +45778,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-13",
-        "num": "",
+        "num": "355",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -45786,7 +45786,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-13",
-        "num": "",
+        "num": "238",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -45794,7 +45794,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-13",
-        "num": "",
+        "num": "307",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -45946,7 +45946,39 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-13",
-        "num": "",
+        "num": "140",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-13",
+        "num": "38",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-13",
+        "num": "259",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-13",
+        "num": "194",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-13",
+        "num": "44",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -45994,39 +46026,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-13",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-13",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-13",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-13",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-13",
-        "num": "",
+        "num": "N36",
         "inizio": "08",
         "fine": "24",
         "gruppo": ""
@@ -46282,7 +46282,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-14",
-        "num": "",
+        "num": "163",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -46290,7 +46290,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-14",
-        "num": "",
+        "num": "366",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -46298,7 +46298,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-14",
-        "num": "",
+        "num": "157",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -46306,7 +46306,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-14",
-        "num": "",
+        "num": "351",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -46314,7 +46314,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-14",
-        "num": "",
+        "num": "322",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -46322,7 +46322,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-14",
-        "num": "",
+        "num": "317",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -46330,7 +46330,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-14",
-        "num": "",
+        "num": "N16",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -46466,7 +46466,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-14",
-        "num": "",
+        "num": "236",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -46474,7 +46474,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-14",
-        "num": "",
+        "num": "265",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -46482,7 +46482,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-14",
-        "num": "",
+        "num": "223",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -46490,7 +46490,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-14",
-        "num": "",
+        "num": "356",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -46498,7 +46498,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-14",
-        "num": "",
+        "num": "303",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -46506,7 +46506,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-14",
-        "num": "",
+        "num": "254",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -46802,7 +46802,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-15",
-        "num": "",
+        "num": "121",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -46810,7 +46810,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-15",
-        "num": "",
+        "num": "25",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -46818,7 +46818,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-15",
-        "num": "",
+        "num": "171",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -46826,7 +46826,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-15",
-        "num": "",
+        "num": "222",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -46834,7 +46834,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-15",
-        "num": "",
+        "num": "13",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -46842,7 +46842,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-15",
-        "num": "",
+        "num": "N13",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -46986,7 +46986,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-15",
-        "num": "",
+        "num": "307",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -46994,7 +46994,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-15",
-        "num": "",
+        "num": "364",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -47002,7 +47002,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-15",
-        "num": "",
+        "num": "311",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -47010,7 +47010,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-15",
-        "num": "",
+        "num": "40",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -47018,7 +47018,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-15",
-        "num": "",
+        "num": "146",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -47026,7 +47026,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-15",
-        "num": "",
+        "num": "238",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -47322,7 +47322,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-16",
-        "num": "",
+        "num": "263",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -47330,7 +47330,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-16",
-        "num": "",
+        "num": "38",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -47338,7 +47338,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-16",
-        "num": "",
+        "num": "49",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -47346,7 +47346,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-16",
-        "num": "",
+        "num": "245",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -47354,7 +47354,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-16",
-        "num": "",
+        "num": "159",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -47362,7 +47362,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-16",
-        "num": "",
+        "num": "N18",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -47506,7 +47506,47 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-16",
-        "num": "",
+        "num": "317",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-16",
+        "num": "163",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-16",
+        "num": "370",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-16",
+        "num": "229",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-16",
+        "num": "355",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-16",
+        "num": "322",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -47546,47 +47586,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-16",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-16",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-16",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-16",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-16",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-16",
-        "num": "",
+        "num": "N16",
         "inizio": "08",
         "fine": "24",
         "gruppo": ""
@@ -47842,7 +47842,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-17",
-        "num": "",
+        "num": "140",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -47850,7 +47850,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-17",
-        "num": "",
+        "num": "356",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -47858,7 +47858,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-17",
-        "num": "",
+        "num": "265",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -47866,7 +47866,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-17",
-        "num": "",
+        "num": "48",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -47874,7 +47874,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-17",
-        "num": "",
+        "num": "259",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -47882,7 +47882,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-17",
-        "num": "",
+        "num": "194",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -47890,7 +47890,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-17",
-        "num": "",
+        "num": "N36",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -48026,7 +48026,47 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-17",
-        "num": "",
+        "num": "13",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-17",
+        "num": "121",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-17",
+        "num": "226",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-17",
+        "num": "156",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-17",
+        "num": "351",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-17",
+        "num": "222",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -48066,47 +48106,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-17",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-17",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-17",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-17",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-17",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-17",
-        "num": "",
+        "num": "N13",
         "inizio": "08",
         "fine": "24",
         "gruppo": ""
@@ -48362,7 +48362,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-18",
-        "num": "",
+        "num": "236",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -48370,7 +48370,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-18",
-        "num": "",
+        "num": "364",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -48378,7 +48378,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-18",
-        "num": "",
+        "num": "40",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -48386,7 +48386,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-18",
-        "num": "",
+        "num": "35",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -48394,7 +48394,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-18",
-        "num": "",
+        "num": "223",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -48402,7 +48402,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-18",
-        "num": "",
+        "num": "303",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -48546,7 +48546,47 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-18",
-        "num": "",
+        "num": "159",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-18",
+        "num": "263",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-18",
+        "num": "192",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-18",
+        "num": "119",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-18",
+        "num": "171",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-18",
+        "num": "245",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -48586,47 +48626,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-18",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-18",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-18",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-18",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-18",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-18",
-        "num": "",
+        "num": "N18",
         "inizio": "08",
         "fine": "24",
         "gruppo": ""
@@ -48882,7 +48882,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-19",
-        "num": "",
+        "num": "307",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -48890,7 +48890,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-19",
-        "num": "",
+        "num": "229",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -48898,7 +48898,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-19",
-        "num": "",
+        "num": "163",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -48906,7 +48906,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-19",
-        "num": "",
+        "num": "217",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -48914,7 +48914,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-19",
-        "num": "",
+        "num": "311",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -48922,7 +48922,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-19",
-        "num": "",
+        "num": "146",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -48930,7 +48930,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-19",
-        "num": "",
+        "num": "142",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -49066,7 +49066,47 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-19",
-        "num": "",
+        "num": "194",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-19",
+        "num": "140",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-19",
+        "num": "252",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-19",
+        "num": "44",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-19",
+        "num": "49",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-19",
+        "num": "259",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -49106,47 +49146,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-19",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-19",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-19",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-19",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-19",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-19",
-        "num": "",
+        "num": "N36",
         "inizio": "08",
         "fine": "24",
         "gruppo": ""
@@ -49402,7 +49402,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-20",
-        "num": "",
+        "num": "317",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -49410,7 +49410,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-20",
-        "num": "",
+        "num": "121",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -49418,7 +49418,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-20",
-        "num": "",
+        "num": "156",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -49426,7 +49426,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-20",
-        "num": "",
+        "num": "366",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -49434,7 +49434,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-20",
-        "num": "",
+        "num": "370",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -49442,7 +49442,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-20",
-        "num": "",
+        "num": "355",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -49450,7 +49450,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-20",
-        "num": "",
+        "num": "383",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -49458,7 +49458,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-20",
-        "num": "",
+        "num": "N16",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -49586,7 +49586,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-20",
-        "num": "",
+        "num": "303",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -49594,7 +49594,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-20",
-        "num": "",
+        "num": "236",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -49602,7 +49602,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-20",
-        "num": "",
+        "num": "142",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -49610,7 +49610,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-20",
-        "num": "",
+        "num": "123",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -49618,7 +49618,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-20",
-        "num": "",
+        "num": "254",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -49626,7 +49626,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-20",
-        "num": "",
+        "num": "48",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -49634,7 +49634,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-20",
-        "num": "",
+        "num": "223",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -49922,7 +49922,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-21",
-        "num": "",
+        "num": "13",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -49930,7 +49930,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-21",
-        "num": "",
+        "num": "119",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -49938,7 +49938,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-21",
-        "num": "",
+        "num": "263",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -49946,7 +49946,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-21",
-        "num": "",
+        "num": "25",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -49954,7 +49954,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-21",
-        "num": "",
+        "num": "226",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -49962,7 +49962,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-21",
-        "num": "",
+        "num": "351",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -49970,7 +49970,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-21",
-        "num": "",
+        "num": "N13",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -50106,7 +50106,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-21",
-        "num": "",
+        "num": "146",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -50114,7 +50114,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-21",
-        "num": "",
+        "num": "307",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -50122,7 +50122,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-21",
-        "num": "",
+        "num": "238",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -50130,7 +50130,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-21",
-        "num": "",
+        "num": "383",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -50138,7 +50138,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-21",
-        "num": "",
+        "num": "35",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -50146,7 +50146,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-21",
-        "num": "",
+        "num": "311",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -50442,7 +50442,63 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-22",
-        "num": "",
+        "num": "159",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-22",
+        "num": "44",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-22",
+        "num": "140",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-22",
+        "num": "38",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-22",
+        "num": "192",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-22",
+        "num": "171",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-22",
+        "num": "157",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-22",
+        "num": "N18",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -50506,63 +50562,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-22",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-22",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-22",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-22",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-22",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-22",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-22",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-22",
-        "num": "",
+        "num": "355",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -50602,7 +50602,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-22",
-        "num": "",
+        "num": "317",
         "inizio": "08",
         "fine": "20",
         "gruppo": "extra"
@@ -50626,7 +50626,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-22",
-        "num": "",
+        "num": "322",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -50634,7 +50634,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-22",
-        "num": "",
+        "num": "217",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -50642,7 +50642,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-22",
-        "num": "",
+        "num": "370",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -50650,7 +50650,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-22",
-        "num": "",
+        "num": "N16",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -50962,7 +50962,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-23",
-        "num": "",
+        "num": "194",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -50970,7 +50970,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-23",
-        "num": "",
+        "num": "236",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -50978,7 +50978,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-23",
-        "num": "",
+        "num": "254",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -50986,7 +50986,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-23",
-        "num": "",
+        "num": "356",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -50994,7 +50994,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-23",
-        "num": "",
+        "num": "252",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -51002,7 +51002,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-23",
-        "num": "",
+        "num": "49",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -51010,7 +51010,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-23",
-        "num": "",
+        "num": "N36",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -51146,7 +51146,47 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-23",
-        "num": "",
+        "num": "351",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-23",
+        "num": "13",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-23",
+        "num": "157",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-23",
+        "num": "222",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-23",
+        "num": "366",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-23",
+        "num": "226",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -51186,47 +51226,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-23",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-23",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-23",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-23",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-23",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-23",
-        "num": "",
+        "num": "N13",
         "inizio": "08",
         "fine": "24",
         "gruppo": ""
@@ -51482,7 +51482,55 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-24",
-        "num": "",
+        "num": "303",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-24",
+        "num": "238",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-24",
+        "num": "307",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-24",
+        "num": "40",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-24",
+        "num": "142",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-24",
+        "num": "123",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-24",
+        "num": "48",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -51554,55 +51602,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-24",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-24",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-24",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-24",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-24",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-24",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-24",
-        "num": "",
+        "num": "171",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -51642,7 +51642,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-24",
-        "num": "",
+        "num": "159",
         "inizio": "08",
         "fine": "20",
         "gruppo": "extra"
@@ -51666,7 +51666,23 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-24",
-        "num": "",
+        "num": "245",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-24",
+        "num": "25",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-24",
+        "num": "192",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -51730,23 +51746,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-24",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-24",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-24",
-        "num": "",
+        "num": "N18",
         "inizio": "08",
         "fine": "24",
         "gruppo": ""
@@ -52002,7 +52002,55 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-25",
-        "num": "",
+        "num": "146",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-25",
+        "num": "322",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-25",
+        "num": "317",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-25",
+        "num": "229",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-25",
+        "num": "383",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-25",
+        "num": "35",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-25",
+        "num": "265",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -52074,55 +52122,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-25",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-25",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-25",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-25",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-25",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-25",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-25",
-        "num": "",
+        "num": "49",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -52162,7 +52162,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-25",
-        "num": "",
+        "num": "194",
         "inizio": "08",
         "fine": "20",
         "gruppo": "extra"
@@ -52186,7 +52186,23 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-25",
-        "num": "",
+        "num": "259",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-25",
+        "num": "38",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-25",
+        "num": "252",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -52250,23 +52266,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-25",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-25",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-25",
-        "num": "",
+        "num": "N36",
         "inizio": "08",
         "fine": "24",
         "gruppo": ""
@@ -52522,7 +52522,55 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-26",
-        "num": "",
+        "num": "355",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-26",
+        "num": "13",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-26",
+        "num": "222",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-26",
+        "num": "156",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-26",
+        "num": "217",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-26",
+        "num": "364",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-26",
+        "num": "N16",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -52594,55 +52642,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-26",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-26",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-26",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-26",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-26",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-26",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-26",
-        "num": "",
+        "num": "48",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -52682,7 +52682,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-26",
-        "num": "",
+        "num": "303",
         "inizio": "08",
         "fine": "20",
         "gruppo": "extra"
@@ -52706,7 +52706,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-26",
-        "num": "",
+        "num": "265",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -52714,7 +52714,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-26",
-        "num": "",
+        "num": "223",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -52722,7 +52722,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-26",
-        "num": "",
+        "num": "356",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -52730,7 +52730,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-26",
-        "num": "",
+        "num": "142",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -52738,7 +52738,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-26",
-        "num": "",
+        "num": "123",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -53042,7 +53042,63 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-27",
-        "num": "",
+        "num": "351",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-27",
+        "num": "159",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-27",
+        "num": "245",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-27",
+        "num": "119",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-27",
+        "num": "157",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-27",
+        "num": "366",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-27",
+        "num": "163",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-27",
+        "num": "N13",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -53106,63 +53162,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-27",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-27",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-27",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-27",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-27",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-27",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-27",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-27",
-        "num": "",
+        "num": "35",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -53202,7 +53202,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-27",
-        "num": "",
+        "num": "146",
         "inizio": "08",
         "fine": "20",
         "gruppo": "extra"
@@ -53226,7 +53226,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-27",
-        "num": "",
+        "num": "364",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -53234,7 +53234,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-27",
-        "num": "",
+        "num": "311",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -53242,7 +53242,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-27",
-        "num": "",
+        "num": "40",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -53250,7 +53250,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-27",
-        "num": "",
+        "num": "383",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -53562,7 +53562,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-28",
-        "num": "",
+        "num": "171",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -53570,7 +53570,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-28",
-        "num": "",
+        "num": "194",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -53578,7 +53578,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-28",
-        "num": "",
+        "num": "259",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -53586,7 +53586,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-28",
-        "num": "",
+        "num": "44",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -53594,7 +53594,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-28",
-        "num": "",
+        "num": "25",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -53602,7 +53602,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-28",
-        "num": "",
+        "num": "121",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -53610,7 +53610,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-28",
-        "num": "",
+        "num": "N18",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -53722,7 +53722,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-28",
-        "num": "",
+        "num": "217",
         "inizio": "08",
         "fine": "20",
         "gruppo": "extra"
@@ -53746,7 +53746,31 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-28",
-        "num": "",
+        "num": "355",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-28",
+        "num": "163",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-28",
+        "num": "370",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-28",
+        "num": "229",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -53802,31 +53826,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-28",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-28",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-28",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-28",
-        "num": "",
+        "num": "N16",
         "inizio": "08",
         "fine": "24",
         "gruppo": ""
@@ -54082,7 +54082,55 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-29",
-        "num": "",
+        "num": "49",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-29",
+        "num": "223",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-29",
+        "num": "303",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-29",
+        "num": "254",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-29",
+        "num": "38",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-29",
+        "num": "263",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-29",
+        "num": "N36",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -54154,55 +54202,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-29",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-29",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-29",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-29",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-29",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-29",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-29",
-        "num": "",
+        "num": "366",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -54242,7 +54242,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-29",
-        "num": "",
+        "num": "351",
         "inizio": "08",
         "fine": "20",
         "gruppo": "extra"
@@ -54266,7 +54266,31 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-29",
-        "num": "",
+        "num": "121",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-29",
+        "num": "226",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-29",
+        "num": "156",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-29",
+        "num": "157",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -54322,31 +54346,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-29",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-29",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-29",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-29",
-        "num": "",
+        "num": "N13",
         "inizio": "08",
         "fine": "24",
         "gruppo": ""
@@ -54602,7 +54602,55 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-30",
-        "num": "",
+        "num": "48",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-30",
+        "num": "146",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-30",
+        "num": "311",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-30",
+        "num": "238",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-30",
+        "num": "265",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-30",
+        "num": "356",
+        "inizio": "08",
+        "fine": "20",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-30",
+        "num": "140",
         "inizio": "08",
         "fine": "20",
         "gruppo": ""
@@ -54674,55 +54722,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-30",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-30",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-30",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-30",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-30",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-30",
-        "num": "",
-        "inizio": "08",
-        "fine": "20",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-30",
-        "num": "",
+        "num": "25",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -54762,7 +54762,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-30",
-        "num": "",
+        "num": "171",
         "inizio": "08",
         "fine": "20",
         "gruppo": "extra"
@@ -54786,7 +54786,23 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-30",
-        "num": "",
+        "num": "263",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-30",
+        "num": "192",
+        "inizio": "08",
+        "fine": "18",
+        "gruppo": ""
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-30",
+        "num": "119",
         "inizio": "08",
         "fine": "18",
         "gruppo": ""
@@ -54850,23 +54866,7 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-30",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-30",
-        "num": "",
-        "inizio": "08",
-        "fine": "18",
-        "gruppo": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-30",
-        "num": "",
+        "num": "N18",
         "inizio": "08",
         "fine": "24",
         "gruppo": ""
