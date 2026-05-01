@@ -74,12 +74,19 @@ document.addEventListener('DOMContentLoaded', function () {
             const response = await fetch('salute_apt.json');
             const turni = await response.json();
 
-            // FILTRA SOLO LE RIGHE VALIDE
+            // ---------------------------------------------------
+            // 🔥 FILTRO DEFINITIVO
+            // - Mostra SOLO righe con num compilato
+            // - EXTRA APT appare SOLO quando selezioni APT
+            // ---------------------------------------------------
             const finali = turni.filter(r =>
-                r.servizio === servizio &&
                 r.data === data &&
                 r.num &&
-                r.num.trim() !== ""
+                r.num.trim() !== "" &&
+                (
+                    r.servizio === servizio ||
+                    (servizio === "APT" && r.servizio === "EXTRA APT")
+                )
             );
 
             if (finali.length === 0) {
@@ -99,9 +106,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const orarioInizio = r.inizio;
                 const orarioFine = r.fine;
 
-                // Gruppo: normale / extra / exc
                 const gruppo = r.gruppo && r.gruppo.trim() !== "" ? r.gruppo : "normale";
-
                 const orarioCompleto = `${orarioInizio} → ${orarioFine}`;
 
                 // LOGICA COLORI
@@ -117,24 +122,27 @@ document.addEventListener('DOMContentLoaded', function () {
                     if (orarioInizio === "07" && orarioFine === "18") colore = "verde";
                     if (orarioInizio === "07" && orarioFine === "24") colore = "arancio";
 
-                    // ⭐ NUOVO: gruppo EXCELSIOR → giallo
+                    // ⭐ EXTRA APT → giallo
+                    if (r.servizio === "EXTRA APT") colore = "giallo";
+
+                    // ⭐ EXCELSIOR → giallo
                     if (gruppo === "exc") colore = "giallo";
                 }
 
-                // TROVA QUANTE RIGHE HANNO STESSO ORARIO + STESSO GRUPPO
+                // RAGGRUPPAMENTO
                 let j = i;
                 while (
                     j < finali.length &&
                     finali[j].inizio === orarioInizio &&
                     finali[j].fine === orarioFine &&
-                    ((finali[j].gruppo && finali[j].gruppo.trim() !== "") ? finali[j].gruppo : "normale") === gruppo
+                    ((finali[j].gruppo && finali[j].gruppo.trim() !== "") ? finali[j].gruppo : "normale") === gruppo &&
+                    finali[j].servizio === r.servizio
                 ) {
                     j++;
                 }
 
                 const rowspan = j - i;
 
-                // NOTE SPECIALI
                 const notaExtra =
                     (gruppo === "extra" &&
                      orarioInizio === "08" &&
@@ -142,7 +150,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     ? "<div class='nota-extra'>GUARDIA LONDRA</div>"
                     : "";
 
-                // ⭐ NUOVO: nota EXCELSIOR
                 const notaExcelsior =
                     (gruppo === "exc")
                     ? "<div class='nota-extra'>EXCELSIOR</div>"
@@ -157,7 +164,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             <tr class="${colore}">
                                 <td>${riga.num}</td>
                                 <td rowspan="${rowspan}" class="orario-unico">
-                                    ${gruppo === "exc" ? "" : orarioCompleto}
+                                    ${orarioCompleto}
                                     ${notaExtra}
                                     ${notaExcelsior}
                                 </td>
