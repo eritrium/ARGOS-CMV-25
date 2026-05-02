@@ -1,35 +1,29 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     // ---------------------------------------------------
-    // 🔥 GESTIONE AVVISO (MOSTRA SE IL DIV NON È VUOTO)
+    // AVVISO
     // ---------------------------------------------------
     function gestisciAvviso() {
         const box = document.getElementById("messaggioAvviso");
-
-        if (box.textContent.trim() !== "") {
-            box.style.display = "block";
-        } else {
-            box.style.display = "none";
-        }
+        box.style.display = box.textContent.trim() !== "" ? "block" : "none";
     }
-
     gestisciAvviso();
 
-    // ELEMENTI PER MOTOSCAFO
+    // ELEMENTI MOTOSCAFO
     const motoscafoSelect = document.getElementById('motoscafo');
     const dataInput = document.getElementById('dataMotoscafo');
     const btnMotoscafo = document.getElementById('verificaMotoscafo');
     const outputMotoscafo = document.getElementById('outputMotoscafo');
 
-    // ELEMENTI PER SALUTE/APT
+    // ELEMENTI SALUTE/APT
     const servizioSelect = document.getElementById('extraSelect');
     const dataServizio = document.getElementById('dataServizio');
     const btnServizio = document.getElementById('verificaServizio');
     const outputServizio = document.getElementById('outputServizio');
 
-    // -------------------------------
-    // 🔵 BOTTONE MOTOSCAFO
-    // -------------------------------
+    // ---------------------------------------------------
+    // MOTOSCAFO
+    // ---------------------------------------------------
     btnMotoscafo.addEventListener('click', function () {
 
         const motoscafo = motoscafoSelect.value;
@@ -46,10 +40,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 const turno = turni.find(t => t.motoscafo == motoscafo && t.data == data);
 
                 if (turno) {
-                    const formattedDate = formatDate(turno.data);
-                    outputMotoscafo.textContent = `Motoscafo ${turno.motoscafo}: ${formattedDate} - ${turno.turno}`;
+                    outputMotoscafo.textContent =
+                        `Motoscafo ${turno.motoscafo}: ${formatDate(turno.data)} - ${turno.turno}`;
                 } else {
-                    outputMotoscafo.textContent = 'Nessun turno trovato per i criteri selezionati.';
+                    outputMotoscafo.textContent = 'Nessun turno trovato.';
                 }
             })
             .catch(() => {
@@ -57,16 +51,16 @@ document.addEventListener('DOMContentLoaded', function () {
             });
     });
 
-    // -------------------------------
-    // 🟢 BOTTONE SALUTE/APT
-    // -------------------------------
+    // ---------------------------------------------------
+    // SALUTE + APT
+    // ---------------------------------------------------
     btnServizio.addEventListener('click', async function () {
 
         const servizio = servizioSelect.value;
         const data = dataServizio.value;
 
         if (!servizio || !data) {
-            outputServizio.textContent = 'Per favore seleziona SALUTE/APT e una data.';
+            outputServizio.textContent = 'Per favore seleziona un servizio e una data.';
             return;
         }
 
@@ -75,9 +69,77 @@ document.addEventListener('DOMContentLoaded', function () {
             const turni = await response.json();
 
             // ---------------------------------------------------
-            // 🔥 FILTRO DEFINITIVO
-            // - Mostra SOLO righe con num compilato
-            // - EXTRA APT appare SOLO quando selezioni APT
+            // SALUTE — ORDINE LIBERO (come nel JSON)
+            // ---------------------------------------------------
+            if (servizio === "SALUTE") {
+
+                // Filtra SOLO SALUTE e SOLO la data
+                const filtrati = turni.filter(r =>
+                    r.data === data &&
+                    r.servizio === "SALUTE" &&
+                    r.num.trim() !== "" &&
+                    r.inizio.trim() !== "" &&
+                    r.fine.trim() !== ""
+                );
+
+                if (filtrati.length === 0) {
+                    outputServizio.innerHTML = "<p style='color:red;'>Nessun dato SALUTE per questa data.</p>";
+                    return;
+                }
+
+                // Funzione colori SALUTE
+                function coloreFascia(inizio, fine) {
+                    const fascia = `${inizio}-${fine}`;
+                    switch (fascia) {
+                        case "08-20": return "verde";
+                        case "08-18": return "arancio";
+                        case "18-20": return "blu";
+                        case "18-24": return "viola";
+                        case "08-24": return "giallo";
+                        default: return "";
+                    }
+                }
+
+                // Costruzione tabella NELL’ORDINE DEL JSON
+                let righe = "";
+
+                filtrati.forEach(r => {
+
+                    // Normalizza orari (8 → 08)
+                    const inizio = r.inizio.padStart(2, "0");
+                    const fine = r.fine.padStart(2, "0");
+
+                    const fascia = `${inizio}-${fine}`;
+                    const colore = coloreFascia(inizio, fine);
+
+                    righe += `
+                        <tr class="${colore}">
+                            <td>${r.num}</td>
+                            <td>${fascia}</td>
+                        </tr>
+                    `;
+                });
+
+                outputServizio.innerHTML = `
+                    <div class="table-wrapper">
+                        <div class="data-title">${formatDate(data)}</div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Num</th>
+                                    <th>Orario</th>
+                                </tr>
+                            </thead>
+                            <tbody>${righe}</tbody>
+                        </table>
+                    </div>
+                `;
+
+                return;
+            }
+
+            // ---------------------------------------------------
+            // APT — LOGICA ORIGINALE (INVARIATA)
             // ---------------------------------------------------
             const finali = turni.filter(r =>
                 r.data === data &&
@@ -94,9 +156,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 return;
             }
 
-            // -------------------------------
-            // 🔥 RAGGRUPPAMENTO PER ORARIO + GRUPPO
-            // -------------------------------
             let righeTotali = "";
             let i = 0;
 
@@ -109,27 +168,15 @@ document.addEventListener('DOMContentLoaded', function () {
                 const gruppo = r.gruppo && r.gruppo.trim() !== "" ? r.gruppo : "normale";
                 const orarioCompleto = `${orarioInizio} → ${orarioFine}`;
 
-                // LOGICA COLORI
                 let colore = "";
-
-                if (servizio === "SALUTE") {
-                    if (orarioInizio === "08" && orarioFine === "20") colore = "verde";
-                    if (orarioInizio === "08" && orarioFine === "18") colore = "arancio";
-                    if (orarioInizio === "08" && orarioFine === "24") colore = "giallo";
-                }
 
                 if (servizio === "APT") {
                     if (orarioInizio === "07" && orarioFine === "18") colore = "verde";
                     if (orarioInizio === "07" && orarioFine === "24") colore = "arancio";
-
-                    // ⭐ EXTRA APT → giallo
                     if (r.servizio === "EXTRA APT") colore = "giallo";
-
-                    // ⭐ EXCELSIOR → giallo
                     if (gruppo === "exc") colore = "giallo";
                 }
 
-                // RAGGRUPPAMENTO
                 let j = i;
                 while (
                     j < finali.length &&
@@ -155,7 +202,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     ? "<div class='nota-extra'>EXCELSIOR</div>"
                     : "";
 
-                // COSTRUZIONE RIGHE
                 for (let k = i; k < j; k++) {
                     const riga = finali[k];
 
@@ -182,13 +228,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 i = j;
             }
 
-            // -------------------------------
-            // 🔥 TABELLA FINALE
-            // -------------------------------
             outputServizio.innerHTML = `
-                <div class="table-wrapper table-anim">
+                <div class="table-wrapper">
                     <div class="data-title">${formatDate(data)}</div>
-
                     <table>
                         <thead>
                             <tr>
@@ -196,9 +238,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 <th>Orario</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            ${righeTotali}
-                        </tbody>
+                        <tbody>${righeTotali}</tbody>
                     </table>
                 </div>
             `;
@@ -208,12 +248,11 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // -------------------------------
-    // FUNZIONE FORMATTARE DATA
-    // -------------------------------
+    // ---------------------------------------------------
+    // FORMATTARE DATA
+    // ---------------------------------------------------
     function formatDate(dateString) {
         const options = { day: '2-digit', month: '2-digit', year: 'numeric' };
-        const date = new Date(dateString);
-        return date.toLocaleDateString('it-IT', options);
+        return new Date(dateString).toLocaleDateString('it-IT', options);
     }
 });

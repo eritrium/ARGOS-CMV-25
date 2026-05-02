@@ -18,7 +18,7 @@ body {
    HEADER
 -------------------------------------------------- */
 header {
-    background: #FFD400; /* giallo app */
+    background: #FFD400;
     color: #000;
     text-align: center;
     padding: 18px 0;
@@ -153,6 +153,15 @@ td {
     background: #FFF3B0;
 }
 
+/* NUOVI COLORI SALUTE */
+.blu {
+    background: #A9D0F5;
+}
+
+.viola {
+    background: #D7BDE2;
+}
+
 /* --------------------------------------------------
    RESPONSIVE (TABLET)
 -------------------------------------------------- */
@@ -183,7 +192,7 @@ td {
     text-align: center;
     border: 3px solid #990000;
     margin-bottom: 20px;
-    animation: none;
+    animation: lampeggia 1s infinite;
 }
 
 @keyframes lampeggia {
@@ -191,4 +200,3 @@ td {
     50% { opacity: 0.3; }
     100% { opacity: 1; }
 }
-
