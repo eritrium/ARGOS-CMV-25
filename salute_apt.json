@@ -2858,6 +2858,13 @@
     {
         "servizio": "APT",
         "data": "2026-05-11",
+        "num": "223",
+        "inizio": "7",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-05-11",
         "num": "254",
         "inizio": "7",
         "fine": "18"
@@ -2901,13 +2908,6 @@
         "servizio": "APT",
         "data": "2026-05-11",
         "num": "142",
-        "inizio": "7",
-        "fine": "18"
-    },
-    {
-        "servizio": "APT",
-        "data": "2026-05-11",
-        "num": "",
         "inizio": "7",
         "fine": "18"
     },
@@ -3299,6 +3299,13 @@
     {
         "servizio": "APT",
         "data": "2026-05-12",
+        "num": "35",
+        "inizio": "7",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-05-12",
         "num": "146",
         "inizio": "7",
         "fine": "18"
@@ -3335,13 +3342,6 @@
         "servizio": "APT",
         "data": "2026-05-12",
         "num": "311",
-        "inizio": "7",
-        "fine": "18"
-    },
-    {
-        "servizio": "APT",
-        "data": "2026-05-12",
-        "num": "",
         "inizio": "7",
         "fine": "18"
     },
@@ -3740,6 +3740,13 @@
     {
         "servizio": "APT",
         "data": "2026-05-13",
+        "num": "322",
+        "inizio": "7",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-05-13",
         "num": "317",
         "inizio": "7",
         "fine": "18"
@@ -3776,13 +3783,6 @@
         "servizio": "APT",
         "data": "2026-05-13",
         "num": "N16",
-        "inizio": "7",
-        "fine": "18"
-    },
-    {
-        "servizio": "APT",
-        "data": "2026-05-13",
-        "num": "",
         "inizio": "7",
         "fine": "18"
     },
@@ -4181,7 +4181,14 @@
     {
         "servizio": "APT",
         "data": "2026-05-14",
-        "num": "226",
+        "num": "222",
+        "inizio": "7",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-05-14",
+        "num": "156",
         "inizio": "7",
         "fine": "18"
     },
@@ -4224,13 +4231,6 @@
         "servizio": "APT",
         "data": "2026-05-14",
         "num": "157",
-        "inizio": "7",
-        "fine": "18"
-    },
-    {
-        "servizio": "APT",
-        "data": "2026-05-14",
-        "num": "",
         "inizio": "7",
         "fine": "18"
     },
@@ -4622,6 +4622,13 @@
     {
         "servizio": "APT",
         "data": "2026-05-15",
+        "num": "25",
+        "inizio": "7",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-05-15",
         "num": "171",
         "inizio": "7",
         "fine": "18"
@@ -4658,13 +4665,6 @@
         "servizio": "APT",
         "data": "2026-05-15",
         "num": "192",
-        "inizio": "7",
-        "fine": "18"
-    },
-    {
-        "servizio": "APT",
-        "data": "2026-05-15",
-        "num": "",
         "inizio": "7",
         "fine": "18"
     },
@@ -5063,6 +5063,13 @@
     {
         "servizio": "APT",
         "data": "2026-05-16",
+        "num": "49",
+        "inizio": "7",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-05-16",
         "num": "194",
         "inizio": "7",
         "fine": "18"
@@ -5099,13 +5106,6 @@
         "servizio": "APT",
         "data": "2026-05-16",
         "num": "44",
-        "inizio": "7",
-        "fine": "18"
-    },
-    {
-        "servizio": "APT",
-        "data": "2026-05-16",
-        "num": "",
         "inizio": "7",
         "fine": "18"
     },
@@ -5504,6 +5504,13 @@
     {
         "servizio": "APT",
         "data": "2026-05-17",
+        "num": "356",
+        "inizio": "7",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-05-17",
         "num": "48",
         "inizio": "7",
         "fine": "18"
@@ -5547,13 +5554,6 @@
         "servizio": "APT",
         "data": "2026-05-17",
         "num": "223",
-        "inizio": "7",
-        "fine": "18"
-    },
-    {
-        "servizio": "APT",
-        "data": "2026-05-17",
-        "num": "",
         "inizio": "7",
         "fine": "18"
     },
@@ -5945,6 +5945,13 @@
     {
         "servizio": "APT",
         "data": "2026-05-18",
+        "num": "307",
+        "inizio": "7",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-05-18",
         "num": "364",
         "inizio": "7",
         "fine": "18"
@@ -5981,13 +5988,6 @@
         "servizio": "APT",
         "data": "2026-05-18",
         "num": "40",
-        "inizio": "7",
-        "fine": "18"
-    },
-    {
-        "servizio": "APT",
-        "data": "2026-05-18",
-        "num": "",
         "inizio": "7",
         "fine": "18"
     },
@@ -6386,6 +6386,13 @@
     {
         "servizio": "APT",
         "data": "2026-05-19",
+        "num": "163",
+        "inizio": "7",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-05-19",
         "num": "370",
         "inizio": "7",
         "fine": "18"
@@ -6422,13 +6429,6 @@
         "servizio": "APT",
         "data": "2026-05-19",
         "num": "229",
-        "inizio": "7",
-        "fine": "18"
-    },
-    {
-        "servizio": "APT",
-        "data": "2026-05-19",
-        "num": "",
         "inizio": "7",
         "fine": "18"
     },
@@ -6827,6 +6827,13 @@
     {
         "servizio": "APT",
         "data": "2026-05-20",
+        "num": "366",
+        "inizio": "7",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-05-20",
         "num": "351",
         "inizio": "7",
         "fine": "18"
@@ -6870,13 +6877,6 @@
         "servizio": "APT",
         "data": "2026-05-20",
         "num": "222",
-        "inizio": "7",
-        "fine": "18"
-    },
-    {
-        "servizio": "APT",
-        "data": "2026-05-20",
-        "num": "",
         "inizio": "7",
         "fine": "18"
     },
@@ -7268,6 +7268,13 @@
     {
         "servizio": "APT",
         "data": "2026-05-21",
+        "num": "N18",
+        "inizio": "7",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-05-21",
         "num": "159",
         "inizio": "7",
         "fine": "18"
@@ -7304,13 +7311,6 @@
         "servizio": "APT",
         "data": "2026-05-21",
         "num": "119",
-        "inizio": "7",
-        "fine": "18"
-    },
-    {
-        "servizio": "APT",
-        "data": "2026-05-21",
-        "num": "",
         "inizio": "7",
         "fine": "18"
     },
@@ -7709,6 +7709,13 @@
     {
         "servizio": "APT",
         "data": "2026-05-22",
+        "num": "140",
+        "inizio": "7",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-05-22",
         "num": "259",
         "inizio": "7",
         "fine": "18"
@@ -7745,13 +7752,6 @@
         "servizio": "APT",
         "data": "2026-05-22",
         "num": "38",
-        "inizio": "7",
-        "fine": "18"
-    },
-    {
-        "servizio": "APT",
-        "data": "2026-05-22",
-        "num": "",
         "inizio": "7",
         "fine": "18"
     },
@@ -8150,6 +8150,13 @@
     {
         "servizio": "APT",
         "data": "2026-05-23",
+        "num": "303",
+        "inizio": "7",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-05-23",
         "num": "236",
         "inizio": "7",
         "fine": "18"
@@ -8193,13 +8200,6 @@
         "servizio": "APT",
         "data": "2026-05-23",
         "num": "356",
-        "inizio": "7",
-        "fine": "18"
-    },
-    {
-        "servizio": "APT",
-        "data": "2026-05-23",
-        "num": "",
         "inizio": "7",
         "fine": "18"
     },
@@ -8591,6 +8591,13 @@
     {
         "servizio": "APT",
         "data": "2026-05-24",
+        "num": "383",
+        "inizio": "7",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-05-24",
         "num": "238",
         "inizio": "7",
         "fine": "18"
@@ -8627,13 +8634,6 @@
         "servizio": "APT",
         "data": "2026-05-24",
         "num": "146",
-        "inizio": "7",
-        "fine": "18"
-    },
-    {
-        "servizio": "APT",
-        "data": "2026-05-24",
-        "num": "",
         "inizio": "7",
         "fine": "18"
     },
@@ -9032,6 +9032,13 @@
     {
         "servizio": "APT",
         "data": "2026-05-25",
+        "num": "217",
+        "inizio": "7",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-05-25",
         "num": "355",
         "inizio": "7",
         "fine": "18"
@@ -9068,13 +9075,6 @@
         "servizio": "APT",
         "data": "2026-05-25",
         "num": "317",
-        "inizio": "7",
-        "fine": "18"
-    },
-    {
-        "servizio": "APT",
-        "data": "2026-05-25",
-        "num": "",
         "inizio": "7",
         "fine": "18"
     },
@@ -9473,6 +9473,13 @@
     {
         "servizio": "APT",
         "data": "2026-05-26",
+        "num": "13",
+        "inizio": "7",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-05-26",
         "num": "N13",
         "inizio": "7",
         "fine": "18"
@@ -9516,13 +9523,6 @@
         "servizio": "APT",
         "data": "2026-05-26",
         "num": "366",
-        "inizio": "7",
-        "fine": "18"
-    },
-    {
-        "servizio": "APT",
-        "data": "2026-05-26",
-        "num": "",
         "inizio": "7",
         "fine": "18"
     },
@@ -9914,6 +9914,13 @@
     {
         "servizio": "APT",
         "data": "2026-05-27",
+        "num": "263",
+        "inizio": "7",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-05-27",
         "num": "245",
         "inizio": "7",
         "fine": "18"
@@ -9950,13 +9957,6 @@
         "servizio": "APT",
         "data": "2026-05-27",
         "num": "171",
-        "inizio": "7",
-        "fine": "18"
-    },
-    {
-        "servizio": "APT",
-        "data": "2026-05-27",
-        "num": "",
         "inizio": "7",
         "fine": "18"
     },
@@ -10355,6 +10355,13 @@
     {
         "servizio": "APT",
         "data": "2026-05-28",
+        "num": "252",
+        "inizio": "7",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-05-28",
         "num": "N36",
         "inizio": "7",
         "fine": "18"
@@ -10391,13 +10398,6 @@
         "servizio": "APT",
         "data": "2026-05-28",
         "num": "194",
-        "inizio": "7",
-        "fine": "18"
-    },
-    {
-        "servizio": "APT",
-        "data": "2026-05-28",
-        "num": "",
         "inizio": "7",
         "fine": "18"
     },
@@ -10796,6 +10796,13 @@
     {
         "servizio": "APT",
         "data": "2026-05-29",
+        "num": "265",
+        "inizio": "7",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-05-29",
         "num": "142",
         "inizio": "7",
         "fine": "18"
@@ -10839,13 +10846,6 @@
         "servizio": "APT",
         "data": "2026-05-29",
         "num": "303",
-        "inizio": "7",
-        "fine": "18"
-    },
-    {
-        "servizio": "APT",
-        "data": "2026-05-29",
-        "num": "",
         "inizio": "7",
         "fine": "18"
     },
@@ -11237,6 +11237,13 @@
     {
         "servizio": "APT",
         "data": "2026-05-30",
+        "num": "311",
+        "inizio": "7",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-05-30",
         "num": "35",
         "inizio": "7",
         "fine": "18"
@@ -11273,13 +11280,6 @@
         "servizio": "APT",
         "data": "2026-05-30",
         "num": "364",
-        "inizio": "7",
-        "fine": "18"
-    },
-    {
-        "servizio": "APT",
-        "data": "2026-05-30",
-        "num": "",
         "inizio": "7",
         "fine": "18"
     },
@@ -11678,6 +11678,13 @@
     {
         "servizio": "APT",
         "data": "2026-05-31",
+        "num": "N16",
+        "inizio": "7",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-05-31",
         "num": "322",
         "inizio": "7",
         "fine": "18"
@@ -11714,13 +11721,6 @@
         "servizio": "APT",
         "data": "2026-05-31",
         "num": "370",
-        "inizio": "7",
-        "fine": "18"
-    },
-    {
-        "servizio": "APT",
-        "data": "2026-05-31",
-        "num": "",
         "inizio": "7",
         "fine": "18"
     },
