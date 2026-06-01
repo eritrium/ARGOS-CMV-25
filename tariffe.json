@@ -1,0 +1,4325 @@
+{
+    "tariffe": [
+        {
+            "hotel": "ATENEO",
+            "destinazione": "PIAZZALE ROMA",
+            "importo": "80"
+        },
+        {
+            "hotel": "ATENEO",
+            "destinazione": "FERROVIA",
+            "importo": ""
+        },
+        {
+            "hotel": "ATENEO",
+            "destinazione": "TRONCHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "ATENEO",
+            "destinazione": "LIDO SME",
+            "importo": ""
+        },
+        {
+            "hotel": "ATENEO",
+            "destinazione": "LIDO SAN NICOLO'",
+            "importo": ""
+        },
+        {
+            "hotel": "ATENEO",
+            "destinazione": "LIDO CASINO'",
+            "importo": ""
+        },
+        {
+            "hotel": "ATENEO",
+            "destinazione": "EXCELSIOR",
+            "importo": ""
+        },
+        {
+            "hotel": "ATENEO",
+            "destinazione": "AEROPORTO",
+            "importo": ""
+        },
+        {
+            "hotel": "ATENEO",
+            "destinazione": "BURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "ATENEO",
+            "destinazione": "PUNTA SABBIONI",
+            "importo": ""
+        },
+        {
+            "hotel": "ATENEO",
+            "destinazione": "TORCELLO",
+            "importo": ""
+        },
+        {
+            "hotel": "ATENEO",
+            "destinazione": "MURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "ATENEO",
+            "destinazione": "MALAMOCCO",
+            "importo": ""
+        },
+        {
+            "hotel": "ATENEO",
+            "destinazione": "ALBERONI",
+            "importo": ""
+        },
+        {
+            "hotel": "ATENEO",
+            "destinazione": "TREPORTI",
+            "importo": ""
+        },
+        {
+            "hotel": "ATENEO",
+            "destinazione": "SAN PIERO IN VOLTA",
+            "importo": ""
+        },
+        {
+            "hotel": "ATENEO",
+            "destinazione": "PELLESTRINA CHIOGGIA",
+            "importo": ""
+        },
+        {
+            "hotel": "ATENEO",
+            "destinazione": "SAN GIORGIO",
+            "importo": ""
+        },
+        {
+            "hotel": "ATENEO",
+            "destinazione": "SAN MARCO",
+            "importo": ""
+        },
+        {
+            "hotel": "ATENEO",
+            "destinazione": "HARRY'S DOLCI",
+            "importo": ""
+        },
+        {
+            "hotel": "ATENEO",
+            "destinazione": "GIARDINI",
+            "importo": ""
+        },
+        {
+            "hotel": "ATENEO",
+            "destinazione": "BIENNALE",
+            "importo": ""
+        },
+        {
+            "hotel": "ATENEO",
+            "destinazione": "GUGGENHEIM",
+            "importo": ""
+        },
+        {
+            "hotel": "ATENEO",
+            "destinazione": "ACCADEMIA",
+            "importo": ""
+        },
+        {
+            "hotel": "ATENEO",
+            "destinazione": "CIPRIANI",
+            "importo": ""
+        },
+        {
+            "hotel": "ATENEO",
+            "destinazione": "DANIELI",
+            "importo": ""
+        },
+        {
+            "hotel": "ATENEO",
+            "destinazione": "SAN TOMA'",
+            "importo": ""
+        },
+        {
+            "hotel": "ATENEO",
+            "destinazione": "RIALTO",
+            "importo": ""
+        },
+        {
+            "hotel": "ATENEO",
+            "destinazione": "GHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "ATENEO",
+            "destinazione": "MOLO",
+            "importo": ""
+        },
+        {
+            "hotel": "ATENEO",
+            "destinazione": "SAN BASILIO",
+            "importo": ""
+        },
+        {
+            "hotel": "ATENEO",
+            "destinazione": "FUSINA",
+            "importo": ""
+        },
+        {
+            "hotel": "ATENEO",
+            "destinazione": "SAN GIULIANO",
+            "importo": ""
+        },
+        {
+            "hotel": "AVANI RIO NOVO",
+            "destinazione": "PIAZZALE ROMA",
+            "importo": ""
+        },
+        {
+            "hotel": "AVANI RIO NOVO",
+            "destinazione": "FERROVIA",
+            "importo": ""
+        },
+        {
+            "hotel": "AVANI RIO NOVO",
+            "destinazione": "TRONCHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "AVANI RIO NOVO",
+            "destinazione": "LIDO SME",
+            "importo": ""
+        },
+        {
+            "hotel": "AVANI RIO NOVO",
+            "destinazione": "LIDO SAN NICOLO'",
+            "importo": ""
+        },
+        {
+            "hotel": "AVANI RIO NOVO",
+            "destinazione": "LIDO CASINO'",
+            "importo": ""
+        },
+        {
+            "hotel": "AVANI RIO NOVO",
+            "destinazione": "EXCELSIOR",
+            "importo": ""
+        },
+        {
+            "hotel": "AVANI RIO NOVO",
+            "destinazione": "AEROPORTO",
+            "importo": ""
+        },
+        {
+            "hotel": "AVANI RIO NOVO",
+            "destinazione": "BURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "AVANI RIO NOVO",
+            "destinazione": "PUNTA SABBIONI",
+            "importo": ""
+        },
+        {
+            "hotel": "AVANI RIO NOVO",
+            "destinazione": "TORCELLO",
+            "importo": ""
+        },
+        {
+            "hotel": "AVANI RIO NOVO",
+            "destinazione": "MURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "AVANI RIO NOVO",
+            "destinazione": "MALAMOCCO",
+            "importo": ""
+        },
+        {
+            "hotel": "AVANI RIO NOVO",
+            "destinazione": "ALBERONI",
+            "importo": ""
+        },
+        {
+            "hotel": "AVANI RIO NOVO",
+            "destinazione": "TREPORTI",
+            "importo": ""
+        },
+        {
+            "hotel": "AVANI RIO NOVO",
+            "destinazione": "SAN PIERO IN VOLTA",
+            "importo": ""
+        },
+        {
+            "hotel": "AVANI RIO NOVO",
+            "destinazione": "PELLESTRINA CHIOGGIA",
+            "importo": ""
+        },
+        {
+            "hotel": "AVANI RIO NOVO",
+            "destinazione": "SAN GIORGIO",
+            "importo": ""
+        },
+        {
+            "hotel": "AVANI RIO NOVO",
+            "destinazione": "SAN MARCO",
+            "importo": ""
+        },
+        {
+            "hotel": "AVANI RIO NOVO",
+            "destinazione": "HARRY'S DOLCI",
+            "importo": ""
+        },
+        {
+            "hotel": "AVANI RIO NOVO",
+            "destinazione": "GIARDINI",
+            "importo": ""
+        },
+        {
+            "hotel": "AVANI RIO NOVO",
+            "destinazione": "BIENNALE",
+            "importo": ""
+        },
+        {
+            "hotel": "AVANI RIO NOVO",
+            "destinazione": "GUGGENHEIM",
+            "importo": ""
+        },
+        {
+            "hotel": "AVANI RIO NOVO",
+            "destinazione": "ACCADEMIA",
+            "importo": ""
+        },
+        {
+            "hotel": "AVANI RIO NOVO",
+            "destinazione": "CIPRIANI",
+            "importo": ""
+        },
+        {
+            "hotel": "AVANI RIO NOVO",
+            "destinazione": "DANIELI",
+            "importo": ""
+        },
+        {
+            "hotel": "AVANI RIO NOVO",
+            "destinazione": "SAN TOMA'",
+            "importo": ""
+        },
+        {
+            "hotel": "AVANI RIO NOVO",
+            "destinazione": "RIALTO",
+            "importo": ""
+        },
+        {
+            "hotel": "AVANI RIO NOVO",
+            "destinazione": "GHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "AVANI RIO NOVO",
+            "destinazione": "MOLO",
+            "importo": ""
+        },
+        {
+            "hotel": "AVANI RIO NOVO",
+            "destinazione": "SAN BASILIO",
+            "importo": ""
+        },
+        {
+            "hotel": "AVANI RIO NOVO",
+            "destinazione": "FUSINA",
+            "importo": ""
+        },
+        {
+            "hotel": "AVANI RIO NOVO",
+            "destinazione": "SAN GIULIANO",
+            "importo": ""
+        },
+        {
+            "hotel": "AVOGARIA",
+            "destinazione": "PIAZZALE ROMA",
+            "importo": ""
+        },
+        {
+            "hotel": "AVOGARIA",
+            "destinazione": "FERROVIA",
+            "importo": ""
+        },
+        {
+            "hotel": "AVOGARIA",
+            "destinazione": "TRONCHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "AVOGARIA",
+            "destinazione": "LIDO SME",
+            "importo": ""
+        },
+        {
+            "hotel": "AVOGARIA",
+            "destinazione": "LIDO SAN NICOLO'",
+            "importo": ""
+        },
+        {
+            "hotel": "AVOGARIA",
+            "destinazione": "LIDO CASINO'",
+            "importo": ""
+        },
+        {
+            "hotel": "AVOGARIA",
+            "destinazione": "EXCELSIOR",
+            "importo": ""
+        },
+        {
+            "hotel": "AVOGARIA",
+            "destinazione": "AEROPORTO",
+            "importo": ""
+        },
+        {
+            "hotel": "AVOGARIA",
+            "destinazione": "BURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "AVOGARIA",
+            "destinazione": "PUNTA SABBIONI",
+            "importo": ""
+        },
+        {
+            "hotel": "AVOGARIA",
+            "destinazione": "TORCELLO",
+            "importo": ""
+        },
+        {
+            "hotel": "AVOGARIA",
+            "destinazione": "MURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "AVOGARIA",
+            "destinazione": "MALAMOCCO",
+            "importo": ""
+        },
+        {
+            "hotel": "AVOGARIA",
+            "destinazione": "ALBERONI",
+            "importo": ""
+        },
+        {
+            "hotel": "AVOGARIA",
+            "destinazione": "TREPORTI",
+            "importo": ""
+        },
+        {
+            "hotel": "AVOGARIA",
+            "destinazione": "SAN PIERO IN VOLTA",
+            "importo": ""
+        },
+        {
+            "hotel": "AVOGARIA",
+            "destinazione": "PELLESTRINA CHIOGGIA",
+            "importo": ""
+        },
+        {
+            "hotel": "AVOGARIA",
+            "destinazione": "SAN GIORGIO",
+            "importo": ""
+        },
+        {
+            "hotel": "AVOGARIA",
+            "destinazione": "SAN MARCO",
+            "importo": ""
+        },
+        {
+            "hotel": "AVOGARIA",
+            "destinazione": "HARRY'S DOLCI",
+            "importo": ""
+        },
+        {
+            "hotel": "AVOGARIA",
+            "destinazione": "GIARDINI",
+            "importo": ""
+        },
+        {
+            "hotel": "AVOGARIA",
+            "destinazione": "BIENNALE",
+            "importo": ""
+        },
+        {
+            "hotel": "AVOGARIA",
+            "destinazione": "GUGGENHEIM",
+            "importo": ""
+        },
+        {
+            "hotel": "AVOGARIA",
+            "destinazione": "ACCADEMIA",
+            "importo": ""
+        },
+        {
+            "hotel": "AVOGARIA",
+            "destinazione": "CIPRIANI",
+            "importo": ""
+        },
+        {
+            "hotel": "AVOGARIA",
+            "destinazione": "DANIELI",
+            "importo": ""
+        },
+        {
+            "hotel": "AVOGARIA",
+            "destinazione": "SAN TOMA'",
+            "importo": ""
+        },
+        {
+            "hotel": "AVOGARIA",
+            "destinazione": "RIALTO",
+            "importo": ""
+        },
+        {
+            "hotel": "AVOGARIA",
+            "destinazione": "GHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "AVOGARIA",
+            "destinazione": "MOLO",
+            "importo": ""
+        },
+        {
+            "hotel": "AVOGARIA",
+            "destinazione": "SAN BASILIO",
+            "importo": ""
+        },
+        {
+            "hotel": "AVOGARIA",
+            "destinazione": "FUSINA",
+            "importo": ""
+        },
+        {
+            "hotel": "AVOGARIA",
+            "destinazione": "SAN GIULIANO",
+            "importo": ""
+        },
+        {
+            "hotel": "BELVEDERE",
+            "destinazione": "PIAZZALE ROMA",
+            "importo": ""
+        },
+        {
+            "hotel": "BELVEDERE",
+            "destinazione": "FERROVIA",
+            "importo": ""
+        },
+        {
+            "hotel": "BELVEDERE",
+            "destinazione": "TRONCHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "BELVEDERE",
+            "destinazione": "LIDO SME",
+            "importo": ""
+        },
+        {
+            "hotel": "BELVEDERE",
+            "destinazione": "LIDO SAN NICOLO'",
+            "importo": ""
+        },
+        {
+            "hotel": "BELVEDERE",
+            "destinazione": "LIDO CASINO'",
+            "importo": ""
+        },
+        {
+            "hotel": "BELVEDERE",
+            "destinazione": "EXCELSIOR",
+            "importo": ""
+        },
+        {
+            "hotel": "BELVEDERE",
+            "destinazione": "AEROPORTO",
+            "importo": ""
+        },
+        {
+            "hotel": "BELVEDERE",
+            "destinazione": "BURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "BELVEDERE",
+            "destinazione": "PUNTA SABBIONI",
+            "importo": ""
+        },
+        {
+            "hotel": "BELVEDERE",
+            "destinazione": "TORCELLO",
+            "importo": ""
+        },
+        {
+            "hotel": "BELVEDERE",
+            "destinazione": "MURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "BELVEDERE",
+            "destinazione": "MALAMOCCO",
+            "importo": ""
+        },
+        {
+            "hotel": "BELVEDERE",
+            "destinazione": "ALBERONI",
+            "importo": ""
+        },
+        {
+            "hotel": "BELVEDERE",
+            "destinazione": "TREPORTI",
+            "importo": ""
+        },
+        {
+            "hotel": "BELVEDERE",
+            "destinazione": "SAN PIERO IN VOLTA",
+            "importo": ""
+        },
+        {
+            "hotel": "BELVEDERE",
+            "destinazione": "PELLESTRINA CHIOGGIA",
+            "importo": ""
+        },
+        {
+            "hotel": "BELVEDERE",
+            "destinazione": "SAN GIORGIO",
+            "importo": ""
+        },
+        {
+            "hotel": "BELVEDERE",
+            "destinazione": "SAN MARCO",
+            "importo": ""
+        },
+        {
+            "hotel": "BELVEDERE",
+            "destinazione": "HARRY'S DOLCI",
+            "importo": ""
+        },
+        {
+            "hotel": "BELVEDERE",
+            "destinazione": "GIARDINI",
+            "importo": ""
+        },
+        {
+            "hotel": "BELVEDERE",
+            "destinazione": "BIENNALE",
+            "importo": ""
+        },
+        {
+            "hotel": "BELVEDERE",
+            "destinazione": "GUGGENHEIM",
+            "importo": ""
+        },
+        {
+            "hotel": "BELVEDERE",
+            "destinazione": "ACCADEMIA",
+            "importo": ""
+        },
+        {
+            "hotel": "BELVEDERE",
+            "destinazione": "CIPRIANI",
+            "importo": ""
+        },
+        {
+            "hotel": "BELVEDERE",
+            "destinazione": "DANIELI",
+            "importo": ""
+        },
+        {
+            "hotel": "BELVEDERE",
+            "destinazione": "SAN TOMA'",
+            "importo": ""
+        },
+        {
+            "hotel": "BELVEDERE",
+            "destinazione": "RIALTO",
+            "importo": ""
+        },
+        {
+            "hotel": "BELVEDERE",
+            "destinazione": "GHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "BELVEDERE",
+            "destinazione": "MOLO",
+            "importo": ""
+        },
+        {
+            "hotel": "BELVEDERE",
+            "destinazione": "SAN BASILIO",
+            "importo": ""
+        },
+        {
+            "hotel": "BELVEDERE",
+            "destinazione": "FUSINA",
+            "importo": ""
+        },
+        {
+            "hotel": "BELVEDERE",
+            "destinazione": "SAN GIULIANO",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' PISANI",
+            "destinazione": "PIAZZALE ROMA",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' PISANI",
+            "destinazione": "FERROVIA",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' PISANI",
+            "destinazione": "TRONCHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' PISANI",
+            "destinazione": "LIDO SME",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' PISANI",
+            "destinazione": "LIDO SAN NICOLO'",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' PISANI",
+            "destinazione": "LIDO CASINO'",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' PISANI",
+            "destinazione": "EXCELSIOR",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' PISANI",
+            "destinazione": "AEROPORTO",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' PISANI",
+            "destinazione": "BURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' PISANI",
+            "destinazione": "PUNTA SABBIONI",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' PISANI",
+            "destinazione": "TORCELLO",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' PISANI",
+            "destinazione": "MURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' PISANI",
+            "destinazione": "MALAMOCCO",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' PISANI",
+            "destinazione": "ALBERONI",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' PISANI",
+            "destinazione": "TREPORTI",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' PISANI",
+            "destinazione": "SAN PIERO IN VOLTA",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' PISANI",
+            "destinazione": "PELLESTRINA CHIOGGIA",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' PISANI",
+            "destinazione": "SAN GIORGIO",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' PISANI",
+            "destinazione": "SAN MARCO",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' PISANI",
+            "destinazione": "HARRY'S DOLCI",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' PISANI",
+            "destinazione": "GIARDINI",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' PISANI",
+            "destinazione": "BIENNALE",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' PISANI",
+            "destinazione": "GUGGENHEIM",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' PISANI",
+            "destinazione": "ACCADEMIA",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' PISANI",
+            "destinazione": "CIPRIANI",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' PISANI",
+            "destinazione": "DANIELI",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' PISANI",
+            "destinazione": "SAN TOMA'",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' PISANI",
+            "destinazione": "RIALTO",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' PISANI",
+            "destinazione": "GHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' PISANI",
+            "destinazione": "MOLO",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' PISANI",
+            "destinazione": "SAN BASILIO",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' PISANI",
+            "destinazione": "FUSINA",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' PISANI",
+            "destinazione": "SAN GIULIANO",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' SAGREDO",
+            "destinazione": "PIAZZALE ROMA",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' SAGREDO",
+            "destinazione": "FERROVIA",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' SAGREDO",
+            "destinazione": "TRONCHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' SAGREDO",
+            "destinazione": "LIDO SME",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' SAGREDO",
+            "destinazione": "LIDO SAN NICOLO'",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' SAGREDO",
+            "destinazione": "LIDO CASINO'",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' SAGREDO",
+            "destinazione": "EXCELSIOR",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' SAGREDO",
+            "destinazione": "AEROPORTO",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' SAGREDO",
+            "destinazione": "BURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' SAGREDO",
+            "destinazione": "PUNTA SABBIONI",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' SAGREDO",
+            "destinazione": "TORCELLO",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' SAGREDO",
+            "destinazione": "MURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' SAGREDO",
+            "destinazione": "MALAMOCCO",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' SAGREDO",
+            "destinazione": "ALBERONI",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' SAGREDO",
+            "destinazione": "TREPORTI",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' SAGREDO",
+            "destinazione": "SAN PIERO IN VOLTA",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' SAGREDO",
+            "destinazione": "PELLESTRINA CHIOGGIA",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' SAGREDO",
+            "destinazione": "SAN GIORGIO",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' SAGREDO",
+            "destinazione": "SAN MARCO",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' SAGREDO",
+            "destinazione": "HARRY'S DOLCI",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' SAGREDO",
+            "destinazione": "GIARDINI",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' SAGREDO",
+            "destinazione": "BIENNALE",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' SAGREDO",
+            "destinazione": "GUGGENHEIM",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' SAGREDO",
+            "destinazione": "ACCADEMIA",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' SAGREDO",
+            "destinazione": "CIPRIANI",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' SAGREDO",
+            "destinazione": "DANIELI",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' SAGREDO",
+            "destinazione": "SAN TOMA'",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' SAGREDO",
+            "destinazione": "RIALTO",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' SAGREDO",
+            "destinazione": "GHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' SAGREDO",
+            "destinazione": "MOLO",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' SAGREDO",
+            "destinazione": "SAN BASILIO",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' SAGREDO",
+            "destinazione": "FUSINA",
+            "importo": ""
+        },
+        {
+            "hotel": "CA' SAGREDO",
+            "destinazione": "SAN GIULIANO",
+            "importo": ""
+        },
+        {
+            "hotel": "CENTURION",
+            "destinazione": "PIAZZALE ROMA",
+            "importo": ""
+        },
+        {
+            "hotel": "CENTURION",
+            "destinazione": "FERROVIA",
+            "importo": ""
+        },
+        {
+            "hotel": "CENTURION",
+            "destinazione": "TRONCHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "CENTURION",
+            "destinazione": "LIDO SME",
+            "importo": ""
+        },
+        {
+            "hotel": "CENTURION",
+            "destinazione": "LIDO SAN NICOLO'",
+            "importo": ""
+        },
+        {
+            "hotel": "CENTURION",
+            "destinazione": "LIDO CASINO'",
+            "importo": ""
+        },
+        {
+            "hotel": "CENTURION",
+            "destinazione": "EXCELSIOR",
+            "importo": ""
+        },
+        {
+            "hotel": "CENTURION",
+            "destinazione": "AEROPORTO",
+            "importo": ""
+        },
+        {
+            "hotel": "CENTURION",
+            "destinazione": "BURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "CENTURION",
+            "destinazione": "PUNTA SABBIONI",
+            "importo": ""
+        },
+        {
+            "hotel": "CENTURION",
+            "destinazione": "TORCELLO",
+            "importo": ""
+        },
+        {
+            "hotel": "CENTURION",
+            "destinazione": "MURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "CENTURION",
+            "destinazione": "MALAMOCCO",
+            "importo": ""
+        },
+        {
+            "hotel": "CENTURION",
+            "destinazione": "ALBERONI",
+            "importo": ""
+        },
+        {
+            "hotel": "CENTURION",
+            "destinazione": "TREPORTI",
+            "importo": ""
+        },
+        {
+            "hotel": "CENTURION",
+            "destinazione": "SAN PIERO IN VOLTA",
+            "importo": ""
+        },
+        {
+            "hotel": "CENTURION",
+            "destinazione": "PELLESTRINA CHIOGGIA",
+            "importo": ""
+        },
+        {
+            "hotel": "CENTURION",
+            "destinazione": "SAN GIORGIO",
+            "importo": ""
+        },
+        {
+            "hotel": "CENTURION",
+            "destinazione": "SAN MARCO",
+            "importo": ""
+        },
+        {
+            "hotel": "CENTURION",
+            "destinazione": "HARRY'S DOLCI",
+            "importo": ""
+        },
+        {
+            "hotel": "CENTURION",
+            "destinazione": "GIARDINI",
+            "importo": ""
+        },
+        {
+            "hotel": "CENTURION",
+            "destinazione": "BIENNALE",
+            "importo": ""
+        },
+        {
+            "hotel": "CENTURION",
+            "destinazione": "GUGGENHEIM",
+            "importo": ""
+        },
+        {
+            "hotel": "CENTURION",
+            "destinazione": "ACCADEMIA",
+            "importo": ""
+        },
+        {
+            "hotel": "CENTURION",
+            "destinazione": "CIPRIANI",
+            "importo": ""
+        },
+        {
+            "hotel": "CENTURION",
+            "destinazione": "DANIELI",
+            "importo": ""
+        },
+        {
+            "hotel": "CENTURION",
+            "destinazione": "SAN TOMA'",
+            "importo": ""
+        },
+        {
+            "hotel": "CENTURION",
+            "destinazione": "RIALTO",
+            "importo": ""
+        },
+        {
+            "hotel": "CENTURION",
+            "destinazione": "GHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "CENTURION",
+            "destinazione": "MOLO",
+            "importo": ""
+        },
+        {
+            "hotel": "CENTURION",
+            "destinazione": "SAN BASILIO",
+            "importo": ""
+        },
+        {
+            "hotel": "CENTURION",
+            "destinazione": "FUSINA",
+            "importo": ""
+        },
+        {
+            "hotel": "CENTURION",
+            "destinazione": "SAN GIULIANO",
+            "importo": ""
+        },
+        {
+            "hotel": "CIPRIANI",
+            "destinazione": "PIAZZALE ROMA",
+            "importo": ""
+        },
+        {
+            "hotel": "CIPRIANI",
+            "destinazione": "FERROVIA",
+            "importo": ""
+        },
+        {
+            "hotel": "CIPRIANI",
+            "destinazione": "TRONCHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "CIPRIANI",
+            "destinazione": "LIDO SME",
+            "importo": ""
+        },
+        {
+            "hotel": "CIPRIANI",
+            "destinazione": "LIDO SAN NICOLO'",
+            "importo": ""
+        },
+        {
+            "hotel": "CIPRIANI",
+            "destinazione": "LIDO CASINO'",
+            "importo": ""
+        },
+        {
+            "hotel": "CIPRIANI",
+            "destinazione": "EXCELSIOR",
+            "importo": ""
+        },
+        {
+            "hotel": "CIPRIANI",
+            "destinazione": "AEROPORTO",
+            "importo": ""
+        },
+        {
+            "hotel": "CIPRIANI",
+            "destinazione": "BURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "CIPRIANI",
+            "destinazione": "PUNTA SABBIONI",
+            "importo": ""
+        },
+        {
+            "hotel": "CIPRIANI",
+            "destinazione": "TORCELLO",
+            "importo": ""
+        },
+        {
+            "hotel": "CIPRIANI",
+            "destinazione": "MURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "CIPRIANI",
+            "destinazione": "MALAMOCCO",
+            "importo": ""
+        },
+        {
+            "hotel": "CIPRIANI",
+            "destinazione": "ALBERONI",
+            "importo": ""
+        },
+        {
+            "hotel": "CIPRIANI",
+            "destinazione": "TREPORTI",
+            "importo": ""
+        },
+        {
+            "hotel": "CIPRIANI",
+            "destinazione": "SAN PIERO IN VOLTA",
+            "importo": ""
+        },
+        {
+            "hotel": "CIPRIANI",
+            "destinazione": "PELLESTRINA CHIOGGIA",
+            "importo": ""
+        },
+        {
+            "hotel": "CIPRIANI",
+            "destinazione": "SAN GIORGIO",
+            "importo": ""
+        },
+        {
+            "hotel": "CIPRIANI",
+            "destinazione": "SAN MARCO",
+            "importo": ""
+        },
+        {
+            "hotel": "CIPRIANI",
+            "destinazione": "HARRY'S DOLCI",
+            "importo": ""
+        },
+        {
+            "hotel": "CIPRIANI",
+            "destinazione": "GIARDINI",
+            "importo": ""
+        },
+        {
+            "hotel": "CIPRIANI",
+            "destinazione": "BIENNALE",
+            "importo": ""
+        },
+        {
+            "hotel": "CIPRIANI",
+            "destinazione": "GUGGENHEIM",
+            "importo": ""
+        },
+        {
+            "hotel": "CIPRIANI",
+            "destinazione": "ACCADEMIA",
+            "importo": ""
+        },
+        {
+            "hotel": "CIPRIANI",
+            "destinazione": "CIPRIANI",
+            "importo": ""
+        },
+        {
+            "hotel": "CIPRIANI",
+            "destinazione": "DANIELI",
+            "importo": ""
+        },
+        {
+            "hotel": "CIPRIANI",
+            "destinazione": "SAN TOMA'",
+            "importo": ""
+        },
+        {
+            "hotel": "CIPRIANI",
+            "destinazione": "RIALTO",
+            "importo": ""
+        },
+        {
+            "hotel": "CIPRIANI",
+            "destinazione": "GHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "CIPRIANI",
+            "destinazione": "MOLO",
+            "importo": ""
+        },
+        {
+            "hotel": "CIPRIANI",
+            "destinazione": "SAN BASILIO",
+            "importo": ""
+        },
+        {
+            "hotel": "CIPRIANI",
+            "destinazione": "FUSINA",
+            "importo": ""
+        },
+        {
+            "hotel": "CIPRIANI",
+            "destinazione": "SAN GIULIANO",
+            "importo": ""
+        },
+        {
+            "hotel": "DANIELI",
+            "destinazione": "PIAZZALE ROMA",
+            "importo": ""
+        },
+        {
+            "hotel": "DANIELI",
+            "destinazione": "FERROVIA",
+            "importo": ""
+        },
+        {
+            "hotel": "DANIELI",
+            "destinazione": "TRONCHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "DANIELI",
+            "destinazione": "LIDO SME",
+            "importo": ""
+        },
+        {
+            "hotel": "DANIELI",
+            "destinazione": "LIDO SAN NICOLO'",
+            "importo": ""
+        },
+        {
+            "hotel": "DANIELI",
+            "destinazione": "LIDO CASINO'",
+            "importo": ""
+        },
+        {
+            "hotel": "DANIELI",
+            "destinazione": "EXCELSIOR",
+            "importo": ""
+        },
+        {
+            "hotel": "DANIELI",
+            "destinazione": "AEROPORTO",
+            "importo": ""
+        },
+        {
+            "hotel": "DANIELI",
+            "destinazione": "BURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "DANIELI",
+            "destinazione": "PUNTA SABBIONI",
+            "importo": ""
+        },
+        {
+            "hotel": "DANIELI",
+            "destinazione": "TORCELLO",
+            "importo": ""
+        },
+        {
+            "hotel": "DANIELI",
+            "destinazione": "MURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "DANIELI",
+            "destinazione": "MALAMOCCO",
+            "importo": ""
+        },
+        {
+            "hotel": "DANIELI",
+            "destinazione": "ALBERONI",
+            "importo": ""
+        },
+        {
+            "hotel": "DANIELI",
+            "destinazione": "TREPORTI",
+            "importo": ""
+        },
+        {
+            "hotel": "DANIELI",
+            "destinazione": "SAN PIERO IN VOLTA",
+            "importo": ""
+        },
+        {
+            "hotel": "DANIELI",
+            "destinazione": "PELLESTRINA CHIOGGIA",
+            "importo": ""
+        },
+        {
+            "hotel": "DANIELI",
+            "destinazione": "SAN GIORGIO",
+            "importo": ""
+        },
+        {
+            "hotel": "DANIELI",
+            "destinazione": "SAN MARCO",
+            "importo": ""
+        },
+        {
+            "hotel": "DANIELI",
+            "destinazione": "HARRY'S DOLCI",
+            "importo": ""
+        },
+        {
+            "hotel": "DANIELI",
+            "destinazione": "GIARDINI",
+            "importo": ""
+        },
+        {
+            "hotel": "DANIELI",
+            "destinazione": "BIENNALE",
+            "importo": ""
+        },
+        {
+            "hotel": "DANIELI",
+            "destinazione": "GUGGENHEIM",
+            "importo": ""
+        },
+        {
+            "hotel": "DANIELI",
+            "destinazione": "ACCADEMIA",
+            "importo": ""
+        },
+        {
+            "hotel": "DANIELI",
+            "destinazione": "CIPRIANI",
+            "importo": ""
+        },
+        {
+            "hotel": "DANIELI",
+            "destinazione": "DANIELI",
+            "importo": ""
+        },
+        {
+            "hotel": "DANIELI",
+            "destinazione": "SAN TOMA'",
+            "importo": ""
+        },
+        {
+            "hotel": "DANIELI",
+            "destinazione": "RIALTO",
+            "importo": ""
+        },
+        {
+            "hotel": "DANIELI",
+            "destinazione": "GHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "DANIELI",
+            "destinazione": "MOLO",
+            "importo": ""
+        },
+        {
+            "hotel": "DANIELI",
+            "destinazione": "SAN BASILIO",
+            "importo": ""
+        },
+        {
+            "hotel": "DANIELI",
+            "destinazione": "FUSINA",
+            "importo": ""
+        },
+        {
+            "hotel": "DANIELI",
+            "destinazione": "SAN GIULIANO",
+            "importo": ""
+        },
+        {
+            "hotel": "DONÀ PALACE",
+            "destinazione": "PIAZZALE ROMA",
+            "importo": ""
+        },
+        {
+            "hotel": "DONÀ PALACE",
+            "destinazione": "FERROVIA",
+            "importo": ""
+        },
+        {
+            "hotel": "DONÀ PALACE",
+            "destinazione": "TRONCHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "DONÀ PALACE",
+            "destinazione": "LIDO SME",
+            "importo": ""
+        },
+        {
+            "hotel": "DONÀ PALACE",
+            "destinazione": "LIDO SAN NICOLO'",
+            "importo": ""
+        },
+        {
+            "hotel": "DONÀ PALACE",
+            "destinazione": "LIDO CASINO'",
+            "importo": ""
+        },
+        {
+            "hotel": "DONÀ PALACE",
+            "destinazione": "EXCELSIOR",
+            "importo": ""
+        },
+        {
+            "hotel": "DONÀ PALACE",
+            "destinazione": "AEROPORTO",
+            "importo": ""
+        },
+        {
+            "hotel": "DONÀ PALACE",
+            "destinazione": "BURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "DONÀ PALACE",
+            "destinazione": "PUNTA SABBIONI",
+            "importo": ""
+        },
+        {
+            "hotel": "DONÀ PALACE",
+            "destinazione": "TORCELLO",
+            "importo": ""
+        },
+        {
+            "hotel": "DONÀ PALACE",
+            "destinazione": "MURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "DONÀ PALACE",
+            "destinazione": "MALAMOCCO",
+            "importo": ""
+        },
+        {
+            "hotel": "DONÀ PALACE",
+            "destinazione": "ALBERONI",
+            "importo": ""
+        },
+        {
+            "hotel": "DONÀ PALACE",
+            "destinazione": "TREPORTI",
+            "importo": ""
+        },
+        {
+            "hotel": "DONÀ PALACE",
+            "destinazione": "SAN PIERO IN VOLTA",
+            "importo": ""
+        },
+        {
+            "hotel": "DONÀ PALACE",
+            "destinazione": "PELLESTRINA CHIOGGIA",
+            "importo": ""
+        },
+        {
+            "hotel": "DONÀ PALACE",
+            "destinazione": "SAN GIORGIO",
+            "importo": ""
+        },
+        {
+            "hotel": "DONÀ PALACE",
+            "destinazione": "SAN MARCO",
+            "importo": ""
+        },
+        {
+            "hotel": "DONÀ PALACE",
+            "destinazione": "HARRY'S DOLCI",
+            "importo": ""
+        },
+        {
+            "hotel": "DONÀ PALACE",
+            "destinazione": "GIARDINI",
+            "importo": ""
+        },
+        {
+            "hotel": "DONÀ PALACE",
+            "destinazione": "BIENNALE",
+            "importo": ""
+        },
+        {
+            "hotel": "DONÀ PALACE",
+            "destinazione": "GUGGENHEIM",
+            "importo": ""
+        },
+        {
+            "hotel": "DONÀ PALACE",
+            "destinazione": "ACCADEMIA",
+            "importo": ""
+        },
+        {
+            "hotel": "DONÀ PALACE",
+            "destinazione": "CIPRIANI",
+            "importo": ""
+        },
+        {
+            "hotel": "DONÀ PALACE",
+            "destinazione": "DANIELI",
+            "importo": ""
+        },
+        {
+            "hotel": "DONÀ PALACE",
+            "destinazione": "SAN TOMA'",
+            "importo": ""
+        },
+        {
+            "hotel": "DONÀ PALACE",
+            "destinazione": "RIALTO",
+            "importo": ""
+        },
+        {
+            "hotel": "DONÀ PALACE",
+            "destinazione": "GHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "DONÀ PALACE",
+            "destinazione": "MOLO",
+            "importo": ""
+        },
+        {
+            "hotel": "DONÀ PALACE",
+            "destinazione": "SAN BASILIO",
+            "importo": ""
+        },
+        {
+            "hotel": "DONÀ PALACE",
+            "destinazione": "FUSINA",
+            "importo": ""
+        },
+        {
+            "hotel": "DONÀ PALACE",
+            "destinazione": "SAN GIULIANO",
+            "importo": ""
+        },
+        {
+            "hotel": "DOGI",
+            "destinazione": "PIAZZALE ROMA",
+            "importo": ""
+        },
+        {
+            "hotel": "DOGI",
+            "destinazione": "FERROVIA",
+            "importo": ""
+        },
+        {
+            "hotel": "DOGI",
+            "destinazione": "TRONCHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "DOGI",
+            "destinazione": "LIDO SME",
+            "importo": ""
+        },
+        {
+            "hotel": "DOGI",
+            "destinazione": "LIDO SAN NICOLO'",
+            "importo": ""
+        },
+        {
+            "hotel": "DOGI",
+            "destinazione": "LIDO CASINO'",
+            "importo": ""
+        },
+        {
+            "hotel": "DOGI",
+            "destinazione": "EXCELSIOR",
+            "importo": ""
+        },
+        {
+            "hotel": "DOGI",
+            "destinazione": "AEROPORTO",
+            "importo": ""
+        },
+        {
+            "hotel": "DOGI",
+            "destinazione": "BURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "DOGI",
+            "destinazione": "PUNTA SABBIONI",
+            "importo": ""
+        },
+        {
+            "hotel": "DOGI",
+            "destinazione": "TORCELLO",
+            "importo": ""
+        },
+        {
+            "hotel": "DOGI",
+            "destinazione": "MURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "DOGI",
+            "destinazione": "MALAMOCCO",
+            "importo": ""
+        },
+        {
+            "hotel": "DOGI",
+            "destinazione": "ALBERONI",
+            "importo": ""
+        },
+        {
+            "hotel": "DOGI",
+            "destinazione": "TREPORTI",
+            "importo": ""
+        },
+        {
+            "hotel": "DOGI",
+            "destinazione": "SAN PIERO IN VOLTA",
+            "importo": ""
+        },
+        {
+            "hotel": "DOGI",
+            "destinazione": "PELLESTRINA CHIOGGIA",
+            "importo": ""
+        },
+        {
+            "hotel": "DOGI",
+            "destinazione": "SAN GIORGIO",
+            "importo": ""
+        },
+        {
+            "hotel": "DOGI",
+            "destinazione": "SAN MARCO",
+            "importo": ""
+        },
+        {
+            "hotel": "DOGI",
+            "destinazione": "HARRY'S DOLCI",
+            "importo": ""
+        },
+        {
+            "hotel": "DOGI",
+            "destinazione": "GIARDINI",
+            "importo": ""
+        },
+        {
+            "hotel": "DOGI",
+            "destinazione": "BIENNALE",
+            "importo": ""
+        },
+        {
+            "hotel": "DOGI",
+            "destinazione": "GUGGENHEIM",
+            "importo": ""
+        },
+        {
+            "hotel": "DOGI",
+            "destinazione": "ACCADEMIA",
+            "importo": ""
+        },
+        {
+            "hotel": "DOGI",
+            "destinazione": "CIPRIANI",
+            "importo": ""
+        },
+        {
+            "hotel": "DOGI",
+            "destinazione": "DANIELI",
+            "importo": ""
+        },
+        {
+            "hotel": "DOGI",
+            "destinazione": "SAN TOMA'",
+            "importo": ""
+        },
+        {
+            "hotel": "DOGI",
+            "destinazione": "RIALTO",
+            "importo": ""
+        },
+        {
+            "hotel": "DOGI",
+            "destinazione": "GHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "DOGI",
+            "destinazione": "MOLO",
+            "importo": ""
+        },
+        {
+            "hotel": "DOGI",
+            "destinazione": "SAN BASILIO",
+            "importo": ""
+        },
+        {
+            "hotel": "DOGI",
+            "destinazione": "FUSINA",
+            "importo": ""
+        },
+        {
+            "hotel": "DOGI",
+            "destinazione": "SAN GIULIANO",
+            "importo": ""
+        },
+        {
+            "hotel": "EXCELSIOR",
+            "destinazione": "PIAZZALE ROMA",
+            "importo": ""
+        },
+        {
+            "hotel": "EXCELSIOR",
+            "destinazione": "FERROVIA",
+            "importo": ""
+        },
+        {
+            "hotel": "EXCELSIOR",
+            "destinazione": "TRONCHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "EXCELSIOR",
+            "destinazione": "LIDO SME",
+            "importo": ""
+        },
+        {
+            "hotel": "EXCELSIOR",
+            "destinazione": "LIDO SAN NICOLO'",
+            "importo": ""
+        },
+        {
+            "hotel": "EXCELSIOR",
+            "destinazione": "LIDO CASINO'",
+            "importo": ""
+        },
+        {
+            "hotel": "EXCELSIOR",
+            "destinazione": "EXCELSIOR",
+            "importo": ""
+        },
+        {
+            "hotel": "EXCELSIOR",
+            "destinazione": "AEROPORTO",
+            "importo": ""
+        },
+        {
+            "hotel": "EXCELSIOR",
+            "destinazione": "BURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "EXCELSIOR",
+            "destinazione": "PUNTA SABBIONI",
+            "importo": ""
+        },
+        {
+            "hotel": "EXCELSIOR",
+            "destinazione": "TORCELLO",
+            "importo": ""
+        },
+        {
+            "hotel": "EXCELSIOR",
+            "destinazione": "MURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "EXCELSIOR",
+            "destinazione": "MALAMOCCO",
+            "importo": ""
+        },
+        {
+            "hotel": "EXCELSIOR",
+            "destinazione": "ALBERONI",
+            "importo": ""
+        },
+        {
+            "hotel": "EXCELSIOR",
+            "destinazione": "TREPORTI",
+            "importo": ""
+        },
+        {
+            "hotel": "EXCELSIOR",
+            "destinazione": "SAN PIERO IN VOLTA",
+            "importo": ""
+        },
+        {
+            "hotel": "EXCELSIOR",
+            "destinazione": "PELLESTRINA CHIOGGIA",
+            "importo": ""
+        },
+        {
+            "hotel": "EXCELSIOR",
+            "destinazione": "SAN GIORGIO",
+            "importo": ""
+        },
+        {
+            "hotel": "EXCELSIOR",
+            "destinazione": "SAN MARCO",
+            "importo": ""
+        },
+        {
+            "hotel": "EXCELSIOR",
+            "destinazione": "HARRY'S DOLCI",
+            "importo": ""
+        },
+        {
+            "hotel": "EXCELSIOR",
+            "destinazione": "GIARDINI",
+            "importo": ""
+        },
+        {
+            "hotel": "EXCELSIOR",
+            "destinazione": "BIENNALE",
+            "importo": ""
+        },
+        {
+            "hotel": "EXCELSIOR",
+            "destinazione": "GUGGENHEIM",
+            "importo": ""
+        },
+        {
+            "hotel": "EXCELSIOR",
+            "destinazione": "ACCADEMIA",
+            "importo": ""
+        },
+        {
+            "hotel": "EXCELSIOR",
+            "destinazione": "CIPRIANI",
+            "importo": ""
+        },
+        {
+            "hotel": "EXCELSIOR",
+            "destinazione": "DANIELI",
+            "importo": ""
+        },
+        {
+            "hotel": "EXCELSIOR",
+            "destinazione": "SAN TOMA'",
+            "importo": ""
+        },
+        {
+            "hotel": "EXCELSIOR",
+            "destinazione": "RIALTO",
+            "importo": ""
+        },
+        {
+            "hotel": "EXCELSIOR",
+            "destinazione": "GHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "EXCELSIOR",
+            "destinazione": "MOLO",
+            "importo": ""
+        },
+        {
+            "hotel": "EXCELSIOR",
+            "destinazione": "SAN BASILIO",
+            "importo": ""
+        },
+        {
+            "hotel": "EXCELSIOR",
+            "destinazione": "FUSINA",
+            "importo": ""
+        },
+        {
+            "hotel": "EXCELSIOR",
+            "destinazione": "SAN GIULIANO",
+            "importo": ""
+        },
+        {
+            "hotel": "FIRENZE",
+            "destinazione": "PIAZZALE ROMA",
+            "importo": ""
+        },
+        {
+            "hotel": "FIRENZE",
+            "destinazione": "FERROVIA",
+            "importo": ""
+        },
+        {
+            "hotel": "FIRENZE",
+            "destinazione": "TRONCHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "FIRENZE",
+            "destinazione": "LIDO SME",
+            "importo": ""
+        },
+        {
+            "hotel": "FIRENZE",
+            "destinazione": "LIDO SAN NICOLO'",
+            "importo": ""
+        },
+        {
+            "hotel": "FIRENZE",
+            "destinazione": "LIDO CASINO'",
+            "importo": ""
+        },
+        {
+            "hotel": "FIRENZE",
+            "destinazione": "EXCELSIOR",
+            "importo": ""
+        },
+        {
+            "hotel": "FIRENZE",
+            "destinazione": "AEROPORTO",
+            "importo": ""
+        },
+        {
+            "hotel": "FIRENZE",
+            "destinazione": "BURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "FIRENZE",
+            "destinazione": "PUNTA SABBIONI",
+            "importo": ""
+        },
+        {
+            "hotel": "FIRENZE",
+            "destinazione": "TORCELLO",
+            "importo": ""
+        },
+        {
+            "hotel": "FIRENZE",
+            "destinazione": "MURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "FIRENZE",
+            "destinazione": "MALAMOCCO",
+            "importo": ""
+        },
+        {
+            "hotel": "FIRENZE",
+            "destinazione": "ALBERONI",
+            "importo": ""
+        },
+        {
+            "hotel": "FIRENZE",
+            "destinazione": "TREPORTI",
+            "importo": ""
+        },
+        {
+            "hotel": "FIRENZE",
+            "destinazione": "SAN PIERO IN VOLTA",
+            "importo": ""
+        },
+        {
+            "hotel": "FIRENZE",
+            "destinazione": "PELLESTRINA CHIOGGIA",
+            "importo": ""
+        },
+        {
+            "hotel": "FIRENZE",
+            "destinazione": "SAN GIORGIO",
+            "importo": ""
+        },
+        {
+            "hotel": "FIRENZE",
+            "destinazione": "SAN MARCO",
+            "importo": ""
+        },
+        {
+            "hotel": "FIRENZE",
+            "destinazione": "HARRY'S DOLCI",
+            "importo": ""
+        },
+        {
+            "hotel": "FIRENZE",
+            "destinazione": "GIARDINI",
+            "importo": ""
+        },
+        {
+            "hotel": "FIRENZE",
+            "destinazione": "BIENNALE",
+            "importo": ""
+        },
+        {
+            "hotel": "FIRENZE",
+            "destinazione": "GUGGENHEIM",
+            "importo": ""
+        },
+        {
+            "hotel": "FIRENZE",
+            "destinazione": "ACCADEMIA",
+            "importo": ""
+        },
+        {
+            "hotel": "FIRENZE",
+            "destinazione": "CIPRIANI",
+            "importo": ""
+        },
+        {
+            "hotel": "FIRENZE",
+            "destinazione": "DANIELI",
+            "importo": ""
+        },
+        {
+            "hotel": "FIRENZE",
+            "destinazione": "SAN TOMA'",
+            "importo": ""
+        },
+        {
+            "hotel": "FIRENZE",
+            "destinazione": "RIALTO",
+            "importo": ""
+        },
+        {
+            "hotel": "FIRENZE",
+            "destinazione": "GHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "FIRENZE",
+            "destinazione": "MOLO",
+            "importo": ""
+        },
+        {
+            "hotel": "FIRENZE",
+            "destinazione": "SAN BASILIO",
+            "importo": ""
+        },
+        {
+            "hotel": "FIRENZE",
+            "destinazione": "FUSINA",
+            "importo": ""
+        },
+        {
+            "hotel": "FIRENZE",
+            "destinazione": "SAN GIULIANO",
+            "importo": ""
+        },
+        {
+            "hotel": "GRITTI",
+            "destinazione": "PIAZZALE ROMA",
+            "importo": ""
+        },
+        {
+            "hotel": "GRITTI",
+            "destinazione": "FERROVIA",
+            "importo": ""
+        },
+        {
+            "hotel": "GRITTI",
+            "destinazione": "TRONCHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "GRITTI",
+            "destinazione": "LIDO SME",
+            "importo": ""
+        },
+        {
+            "hotel": "GRITTI",
+            "destinazione": "LIDO SAN NICOLO'",
+            "importo": ""
+        },
+        {
+            "hotel": "GRITTI",
+            "destinazione": "LIDO CASINO'",
+            "importo": ""
+        },
+        {
+            "hotel": "GRITTI",
+            "destinazione": "EXCELSIOR",
+            "importo": ""
+        },
+        {
+            "hotel": "GRITTI",
+            "destinazione": "AEROPORTO",
+            "importo": ""
+        },
+        {
+            "hotel": "GRITTI",
+            "destinazione": "BURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "GRITTI",
+            "destinazione": "PUNTA SABBIONI",
+            "importo": ""
+        },
+        {
+            "hotel": "GRITTI",
+            "destinazione": "TORCELLO",
+            "importo": ""
+        },
+        {
+            "hotel": "GRITTI",
+            "destinazione": "MURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "GRITTI",
+            "destinazione": "MALAMOCCO",
+            "importo": ""
+        },
+        {
+            "hotel": "GRITTI",
+            "destinazione": "ALBERONI",
+            "importo": ""
+        },
+        {
+            "hotel": "GRITTI",
+            "destinazione": "TREPORTI",
+            "importo": ""
+        },
+        {
+            "hotel": "GRITTI",
+            "destinazione": "SAN PIERO IN VOLTA",
+            "importo": ""
+        },
+        {
+            "hotel": "GRITTI",
+            "destinazione": "PELLESTRINA CHIOGGIA",
+            "importo": ""
+        },
+        {
+            "hotel": "GRITTI",
+            "destinazione": "SAN GIORGIO",
+            "importo": ""
+        },
+        {
+            "hotel": "GRITTI",
+            "destinazione": "SAN MARCO",
+            "importo": ""
+        },
+        {
+            "hotel": "GRITTI",
+            "destinazione": "HARRY'S DOLCI",
+            "importo": ""
+        },
+        {
+            "hotel": "GRITTI",
+            "destinazione": "GIARDINI",
+            "importo": ""
+        },
+        {
+            "hotel": "GRITTI",
+            "destinazione": "BIENNALE",
+            "importo": ""
+        },
+        {
+            "hotel": "GRITTI",
+            "destinazione": "GUGGENHEIM",
+            "importo": ""
+        },
+        {
+            "hotel": "GRITTI",
+            "destinazione": "ACCADEMIA",
+            "importo": ""
+        },
+        {
+            "hotel": "GRITTI",
+            "destinazione": "CIPRIANI",
+            "importo": ""
+        },
+        {
+            "hotel": "GRITTI",
+            "destinazione": "DANIELI",
+            "importo": ""
+        },
+        {
+            "hotel": "GRITTI",
+            "destinazione": "SAN TOMA'",
+            "importo": ""
+        },
+        {
+            "hotel": "GRITTI",
+            "destinazione": "RIALTO",
+            "importo": ""
+        },
+        {
+            "hotel": "GRITTI",
+            "destinazione": "GHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "GRITTI",
+            "destinazione": "MOLO",
+            "importo": ""
+        },
+        {
+            "hotel": "GRITTI",
+            "destinazione": "SAN BASILIO",
+            "importo": ""
+        },
+        {
+            "hotel": "GRITTI",
+            "destinazione": "FUSINA",
+            "importo": ""
+        },
+        {
+            "hotel": "GRITTI",
+            "destinazione": "SAN GIULIANO",
+            "importo": ""
+        },
+        {
+            "hotel": "HUNGARIA",
+            "destinazione": "PIAZZALE ROMA",
+            "importo": ""
+        },
+        {
+            "hotel": "HUNGARIA",
+            "destinazione": "FERROVIA",
+            "importo": ""
+        },
+        {
+            "hotel": "HUNGARIA",
+            "destinazione": "TRONCHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "HUNGARIA",
+            "destinazione": "LIDO SME",
+            "importo": ""
+        },
+        {
+            "hotel": "HUNGARIA",
+            "destinazione": "LIDO SAN NICOLO'",
+            "importo": ""
+        },
+        {
+            "hotel": "HUNGARIA",
+            "destinazione": "LIDO CASINO'",
+            "importo": ""
+        },
+        {
+            "hotel": "HUNGARIA",
+            "destinazione": "EXCELSIOR",
+            "importo": ""
+        },
+        {
+            "hotel": "HUNGARIA",
+            "destinazione": "AEROPORTO",
+            "importo": ""
+        },
+        {
+            "hotel": "HUNGARIA",
+            "destinazione": "BURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "HUNGARIA",
+            "destinazione": "PUNTA SABBIONI",
+            "importo": ""
+        },
+        {
+            "hotel": "HUNGARIA",
+            "destinazione": "TORCELLO",
+            "importo": ""
+        },
+        {
+            "hotel": "HUNGARIA",
+            "destinazione": "MURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "HUNGARIA",
+            "destinazione": "MALAMOCCO",
+            "importo": ""
+        },
+        {
+            "hotel": "HUNGARIA",
+            "destinazione": "ALBERONI",
+            "importo": ""
+        },
+        {
+            "hotel": "HUNGARIA",
+            "destinazione": "TREPORTI",
+            "importo": ""
+        },
+        {
+            "hotel": "HUNGARIA",
+            "destinazione": "SAN PIERO IN VOLTA",
+            "importo": ""
+        },
+        {
+            "hotel": "HUNGARIA",
+            "destinazione": "PELLESTRINA CHIOGGIA",
+            "importo": ""
+        },
+        {
+            "hotel": "HUNGARIA",
+            "destinazione": "SAN GIORGIO",
+            "importo": ""
+        },
+        {
+            "hotel": "HUNGARIA",
+            "destinazione": "SAN MARCO",
+            "importo": ""
+        },
+        {
+            "hotel": "HUNGARIA",
+            "destinazione": "HARRY'S DOLCI",
+            "importo": ""
+        },
+        {
+            "hotel": "HUNGARIA",
+            "destinazione": "GIARDINI",
+            "importo": ""
+        },
+        {
+            "hotel": "HUNGARIA",
+            "destinazione": "BIENNALE",
+            "importo": ""
+        },
+        {
+            "hotel": "HUNGARIA",
+            "destinazione": "GUGGENHEIM",
+            "importo": ""
+        },
+        {
+            "hotel": "HUNGARIA",
+            "destinazione": "ACCADEMIA",
+            "importo": ""
+        },
+        {
+            "hotel": "HUNGARIA",
+            "destinazione": "CIPRIANI",
+            "importo": ""
+        },
+        {
+            "hotel": "HUNGARIA",
+            "destinazione": "DANIELI",
+            "importo": ""
+        },
+        {
+            "hotel": "HUNGARIA",
+            "destinazione": "SAN TOMA'",
+            "importo": ""
+        },
+        {
+            "hotel": "HUNGARIA",
+            "destinazione": "RIALTO",
+            "importo": ""
+        },
+        {
+            "hotel": "HUNGARIA",
+            "destinazione": "GHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "HUNGARIA",
+            "destinazione": "MOLO",
+            "importo": ""
+        },
+        {
+            "hotel": "HUNGARIA",
+            "destinazione": "SAN BASILIO",
+            "importo": ""
+        },
+        {
+            "hotel": "HUNGARIA",
+            "destinazione": "FUSINA",
+            "importo": ""
+        },
+        {
+            "hotel": "HUNGARIA",
+            "destinazione": "SAN GIULIANO",
+            "importo": ""
+        },
+        {
+            "hotel": "KETTE",
+            "destinazione": "PIAZZALE ROMA",
+            "importo": ""
+        },
+        {
+            "hotel": "KETTE",
+            "destinazione": "FERROVIA",
+            "importo": ""
+        },
+        {
+            "hotel": "KETTE",
+            "destinazione": "TRONCHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "KETTE",
+            "destinazione": "LIDO SME",
+            "importo": ""
+        },
+        {
+            "hotel": "KETTE",
+            "destinazione": "LIDO SAN NICOLO'",
+            "importo": ""
+        },
+        {
+            "hotel": "KETTE",
+            "destinazione": "LIDO CASINO'",
+            "importo": ""
+        },
+        {
+            "hotel": "KETTE",
+            "destinazione": "EXCELSIOR",
+            "importo": ""
+        },
+        {
+            "hotel": "KETTE",
+            "destinazione": "AEROPORTO",
+            "importo": ""
+        },
+        {
+            "hotel": "KETTE",
+            "destinazione": "BURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "KETTE",
+            "destinazione": "PUNTA SABBIONI",
+            "importo": ""
+        },
+        {
+            "hotel": "KETTE",
+            "destinazione": "TORCELLO",
+            "importo": ""
+        },
+        {
+            "hotel": "KETTE",
+            "destinazione": "MURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "KETTE",
+            "destinazione": "MALAMOCCO",
+            "importo": ""
+        },
+        {
+            "hotel": "KETTE",
+            "destinazione": "ALBERONI",
+            "importo": ""
+        },
+        {
+            "hotel": "KETTE",
+            "destinazione": "TREPORTI",
+            "importo": ""
+        },
+        {
+            "hotel": "KETTE",
+            "destinazione": "SAN PIERO IN VOLTA",
+            "importo": ""
+        },
+        {
+            "hotel": "KETTE",
+            "destinazione": "PELLESTRINA CHIOGGIA",
+            "importo": ""
+        },
+        {
+            "hotel": "KETTE",
+            "destinazione": "SAN GIORGIO",
+            "importo": ""
+        },
+        {
+            "hotel": "KETTE",
+            "destinazione": "SAN MARCO",
+            "importo": ""
+        },
+        {
+            "hotel": "KETTE",
+            "destinazione": "HARRY'S DOLCI",
+            "importo": ""
+        },
+        {
+            "hotel": "KETTE",
+            "destinazione": "GIARDINI",
+            "importo": ""
+        },
+        {
+            "hotel": "KETTE",
+            "destinazione": "BIENNALE",
+            "importo": ""
+        },
+        {
+            "hotel": "KETTE",
+            "destinazione": "GUGGENHEIM",
+            "importo": ""
+        },
+        {
+            "hotel": "KETTE",
+            "destinazione": "ACCADEMIA",
+            "importo": ""
+        },
+        {
+            "hotel": "KETTE",
+            "destinazione": "CIPRIANI",
+            "importo": ""
+        },
+        {
+            "hotel": "KETTE",
+            "destinazione": "DANIELI",
+            "importo": ""
+        },
+        {
+            "hotel": "KETTE",
+            "destinazione": "SAN TOMA'",
+            "importo": ""
+        },
+        {
+            "hotel": "KETTE",
+            "destinazione": "RIALTO",
+            "importo": ""
+        },
+        {
+            "hotel": "KETTE",
+            "destinazione": "GHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "KETTE",
+            "destinazione": "MOLO",
+            "importo": ""
+        },
+        {
+            "hotel": "KETTE",
+            "destinazione": "SAN BASILIO",
+            "importo": ""
+        },
+        {
+            "hotel": "KETTE",
+            "destinazione": "FUSINA",
+            "importo": ""
+        },
+        {
+            "hotel": "KETTE",
+            "destinazione": "SAN GIULIANO",
+            "importo": ""
+        },
+        {
+            "hotel": "LIASSIDI",
+            "destinazione": "PIAZZALE ROMA",
+            "importo": ""
+        },
+        {
+            "hotel": "LIASSIDI",
+            "destinazione": "FERROVIA",
+            "importo": ""
+        },
+        {
+            "hotel": "LIASSIDI",
+            "destinazione": "TRONCHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "LIASSIDI",
+            "destinazione": "LIDO SME",
+            "importo": ""
+        },
+        {
+            "hotel": "LIASSIDI",
+            "destinazione": "LIDO SAN NICOLO'",
+            "importo": ""
+        },
+        {
+            "hotel": "LIASSIDI",
+            "destinazione": "LIDO CASINO'",
+            "importo": ""
+        },
+        {
+            "hotel": "LIASSIDI",
+            "destinazione": "EXCELSIOR",
+            "importo": ""
+        },
+        {
+            "hotel": "LIASSIDI",
+            "destinazione": "AEROPORTO",
+            "importo": ""
+        },
+        {
+            "hotel": "LIASSIDI",
+            "destinazione": "BURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "LIASSIDI",
+            "destinazione": "PUNTA SABBIONI",
+            "importo": ""
+        },
+        {
+            "hotel": "LIASSIDI",
+            "destinazione": "TORCELLO",
+            "importo": ""
+        },
+        {
+            "hotel": "LIASSIDI",
+            "destinazione": "MURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "LIASSIDI",
+            "destinazione": "MALAMOCCO",
+            "importo": ""
+        },
+        {
+            "hotel": "LIASSIDI",
+            "destinazione": "ALBERONI",
+            "importo": ""
+        },
+        {
+            "hotel": "LIASSIDI",
+            "destinazione": "TREPORTI",
+            "importo": ""
+        },
+        {
+            "hotel": "LIASSIDI",
+            "destinazione": "SAN PIERO IN VOLTA",
+            "importo": ""
+        },
+        {
+            "hotel": "LIASSIDI",
+            "destinazione": "PELLESTRINA CHIOGGIA",
+            "importo": ""
+        },
+        {
+            "hotel": "LIASSIDI",
+            "destinazione": "SAN GIORGIO",
+            "importo": ""
+        },
+        {
+            "hotel": "LIASSIDI",
+            "destinazione": "SAN MARCO",
+            "importo": ""
+        },
+        {
+            "hotel": "LIASSIDI",
+            "destinazione": "HARRY'S DOLCI",
+            "importo": ""
+        },
+        {
+            "hotel": "LIASSIDI",
+            "destinazione": "GIARDINI",
+            "importo": ""
+        },
+        {
+            "hotel": "LIASSIDI",
+            "destinazione": "BIENNALE",
+            "importo": ""
+        },
+        {
+            "hotel": "LIASSIDI",
+            "destinazione": "GUGGENHEIM",
+            "importo": ""
+        },
+        {
+            "hotel": "LIASSIDI",
+            "destinazione": "ACCADEMIA",
+            "importo": ""
+        },
+        {
+            "hotel": "LIASSIDI",
+            "destinazione": "CIPRIANI",
+            "importo": ""
+        },
+        {
+            "hotel": "LIASSIDI",
+            "destinazione": "DANIELI",
+            "importo": ""
+        },
+        {
+            "hotel": "LIASSIDI",
+            "destinazione": "SAN TOMA'",
+            "importo": ""
+        },
+        {
+            "hotel": "LIASSIDI",
+            "destinazione": "RIALTO",
+            "importo": ""
+        },
+        {
+            "hotel": "LIASSIDI",
+            "destinazione": "GHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "LIASSIDI",
+            "destinazione": "MOLO",
+            "importo": ""
+        },
+        {
+            "hotel": "LIASSIDI",
+            "destinazione": "SAN BASILIO",
+            "importo": ""
+        },
+        {
+            "hotel": "LIASSIDI",
+            "destinazione": "FUSINA",
+            "importo": ""
+        },
+        {
+            "hotel": "LIASSIDI",
+            "destinazione": "SAN GIULIANO",
+            "importo": ""
+        },
+        {
+            "hotel": "LOCANDA LA CORTE",
+            "destinazione": "PIAZZALE ROMA",
+            "importo": ""
+        },
+        {
+            "hotel": "LOCANDA LA CORTE",
+            "destinazione": "FERROVIA",
+            "importo": ""
+        },
+        {
+            "hotel": "LOCANDA LA CORTE",
+            "destinazione": "TRONCHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "LOCANDA LA CORTE",
+            "destinazione": "LIDO SME",
+            "importo": ""
+        },
+        {
+            "hotel": "LOCANDA LA CORTE",
+            "destinazione": "LIDO SAN NICOLO'",
+            "importo": ""
+        },
+        {
+            "hotel": "LOCANDA LA CORTE",
+            "destinazione": "LIDO CASINO'",
+            "importo": ""
+        },
+        {
+            "hotel": "LOCANDA LA CORTE",
+            "destinazione": "EXCELSIOR",
+            "importo": ""
+        },
+        {
+            "hotel": "LOCANDA LA CORTE",
+            "destinazione": "AEROPORTO",
+            "importo": ""
+        },
+        {
+            "hotel": "LOCANDA LA CORTE",
+            "destinazione": "BURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "LOCANDA LA CORTE",
+            "destinazione": "PUNTA SABBIONI",
+            "importo": ""
+        },
+        {
+            "hotel": "LOCANDA LA CORTE",
+            "destinazione": "TORCELLO",
+            "importo": ""
+        },
+        {
+            "hotel": "LOCANDA LA CORTE",
+            "destinazione": "MURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "LOCANDA LA CORTE",
+            "destinazione": "MALAMOCCO",
+            "importo": ""
+        },
+        {
+            "hotel": "LOCANDA LA CORTE",
+            "destinazione": "ALBERONI",
+            "importo": ""
+        },
+        {
+            "hotel": "LOCANDA LA CORTE",
+            "destinazione": "TREPORTI",
+            "importo": ""
+        },
+        {
+            "hotel": "LOCANDA LA CORTE",
+            "destinazione": "SAN PIERO IN VOLTA",
+            "importo": ""
+        },
+        {
+            "hotel": "LOCANDA LA CORTE",
+            "destinazione": "PELLESTRINA CHIOGGIA",
+            "importo": ""
+        },
+        {
+            "hotel": "LOCANDA LA CORTE",
+            "destinazione": "SAN GIORGIO",
+            "importo": ""
+        },
+        {
+            "hotel": "LOCANDA LA CORTE",
+            "destinazione": "SAN MARCO",
+            "importo": ""
+        },
+        {
+            "hotel": "LOCANDA LA CORTE",
+            "destinazione": "HARRY'S DOLCI",
+            "importo": ""
+        },
+        {
+            "hotel": "LOCANDA LA CORTE",
+            "destinazione": "GIARDINI",
+            "importo": ""
+        },
+        {
+            "hotel": "LOCANDA LA CORTE",
+            "destinazione": "BIENNALE",
+            "importo": ""
+        },
+        {
+            "hotel": "LOCANDA LA CORTE",
+            "destinazione": "GUGGENHEIM",
+            "importo": ""
+        },
+        {
+            "hotel": "LOCANDA LA CORTE",
+            "destinazione": "ACCADEMIA",
+            "importo": ""
+        },
+        {
+            "hotel": "LOCANDA LA CORTE",
+            "destinazione": "CIPRIANI",
+            "importo": ""
+        },
+        {
+            "hotel": "LOCANDA LA CORTE",
+            "destinazione": "DANIELI",
+            "importo": ""
+        },
+        {
+            "hotel": "LOCANDA LA CORTE",
+            "destinazione": "SAN TOMA'",
+            "importo": ""
+        },
+        {
+            "hotel": "LOCANDA LA CORTE",
+            "destinazione": "RIALTO",
+            "importo": ""
+        },
+        {
+            "hotel": "LOCANDA LA CORTE",
+            "destinazione": "GHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "LOCANDA LA CORTE",
+            "destinazione": "MOLO",
+            "importo": ""
+        },
+        {
+            "hotel": "LOCANDA LA CORTE",
+            "destinazione": "SAN BASILIO",
+            "importo": ""
+        },
+        {
+            "hotel": "LOCANDA LA CORTE",
+            "destinazione": "FUSINA",
+            "importo": ""
+        },
+        {
+            "hotel": "LOCANDA LA CORTE",
+            "destinazione": "SAN GIULIANO",
+            "importo": ""
+        },
+        {
+            "hotel": "LONDRA",
+            "destinazione": "PIAZZALE ROMA",
+            "importo": ""
+        },
+        {
+            "hotel": "LONDRA",
+            "destinazione": "FERROVIA",
+            "importo": ""
+        },
+        {
+            "hotel": "LONDRA",
+            "destinazione": "TRONCHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "LONDRA",
+            "destinazione": "LIDO SME",
+            "importo": ""
+        },
+        {
+            "hotel": "LONDRA",
+            "destinazione": "LIDO SAN NICOLO'",
+            "importo": ""
+        },
+        {
+            "hotel": "LONDRA",
+            "destinazione": "LIDO CASINO'",
+            "importo": ""
+        },
+        {
+            "hotel": "LONDRA",
+            "destinazione": "EXCELSIOR",
+            "importo": ""
+        },
+        {
+            "hotel": "LONDRA",
+            "destinazione": "AEROPORTO",
+            "importo": ""
+        },
+        {
+            "hotel": "LONDRA",
+            "destinazione": "BURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "LONDRA",
+            "destinazione": "PUNTA SABBIONI",
+            "importo": ""
+        },
+        {
+            "hotel": "LONDRA",
+            "destinazione": "TORCELLO",
+            "importo": ""
+        },
+        {
+            "hotel": "LONDRA",
+            "destinazione": "MURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "LONDRA",
+            "destinazione": "MALAMOCCO",
+            "importo": ""
+        },
+        {
+            "hotel": "LONDRA",
+            "destinazione": "ALBERONI",
+            "importo": ""
+        },
+        {
+            "hotel": "LONDRA",
+            "destinazione": "TREPORTI",
+            "importo": ""
+        },
+        {
+            "hotel": "LONDRA",
+            "destinazione": "SAN PIERO IN VOLTA",
+            "importo": ""
+        },
+        {
+            "hotel": "LONDRA",
+            "destinazione": "PELLESTRINA CHIOGGIA",
+            "importo": ""
+        },
+        {
+            "hotel": "LONDRA",
+            "destinazione": "SAN GIORGIO",
+            "importo": ""
+        },
+        {
+            "hotel": "LONDRA",
+            "destinazione": "SAN MARCO",
+            "importo": ""
+        },
+        {
+            "hotel": "LONDRA",
+            "destinazione": "HARRY'S DOLCI",
+            "importo": ""
+        },
+        {
+            "hotel": "LONDRA",
+            "destinazione": "GIARDINI",
+            "importo": ""
+        },
+        {
+            "hotel": "LONDRA",
+            "destinazione": "BIENNALE",
+            "importo": ""
+        },
+        {
+            "hotel": "LONDRA",
+            "destinazione": "GUGGENHEIM",
+            "importo": ""
+        },
+        {
+            "hotel": "LONDRA",
+            "destinazione": "ACCADEMIA",
+            "importo": ""
+        },
+        {
+            "hotel": "LONDRA",
+            "destinazione": "CIPRIANI",
+            "importo": ""
+        },
+        {
+            "hotel": "LONDRA",
+            "destinazione": "DANIELI",
+            "importo": ""
+        },
+        {
+            "hotel": "LONDRA",
+            "destinazione": "SAN TOMA'",
+            "importo": ""
+        },
+        {
+            "hotel": "LONDRA",
+            "destinazione": "RIALTO",
+            "importo": ""
+        },
+        {
+            "hotel": "LONDRA",
+            "destinazione": "GHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "LONDRA",
+            "destinazione": "MOLO",
+            "importo": ""
+        },
+        {
+            "hotel": "LONDRA",
+            "destinazione": "SAN BASILIO",
+            "importo": ""
+        },
+        {
+            "hotel": "LONDRA",
+            "destinazione": "FUSINA",
+            "importo": ""
+        },
+        {
+            "hotel": "LONDRA",
+            "destinazione": "SAN GIULIANO",
+            "importo": ""
+        },
+        {
+            "hotel": "MONACO",
+            "destinazione": "PIAZZALE ROMA",
+            "importo": ""
+        },
+        {
+            "hotel": "MONACO",
+            "destinazione": "FERROVIA",
+            "importo": ""
+        },
+        {
+            "hotel": "MONACO",
+            "destinazione": "TRONCHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "MONACO",
+            "destinazione": "LIDO SME",
+            "importo": ""
+        },
+        {
+            "hotel": "MONACO",
+            "destinazione": "LIDO SAN NICOLO'",
+            "importo": ""
+        },
+        {
+            "hotel": "MONACO",
+            "destinazione": "LIDO CASINO'",
+            "importo": ""
+        },
+        {
+            "hotel": "MONACO",
+            "destinazione": "EXCELSIOR",
+            "importo": ""
+        },
+        {
+            "hotel": "MONACO",
+            "destinazione": "AEROPORTO",
+            "importo": ""
+        },
+        {
+            "hotel": "MONACO",
+            "destinazione": "BURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "MONACO",
+            "destinazione": "PUNTA SABBIONI",
+            "importo": ""
+        },
+        {
+            "hotel": "MONACO",
+            "destinazione": "TORCELLO",
+            "importo": ""
+        },
+        {
+            "hotel": "MONACO",
+            "destinazione": "MURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "MONACO",
+            "destinazione": "MALAMOCCO",
+            "importo": ""
+        },
+        {
+            "hotel": "MONACO",
+            "destinazione": "ALBERONI",
+            "importo": ""
+        },
+        {
+            "hotel": "MONACO",
+            "destinazione": "TREPORTI",
+            "importo": ""
+        },
+        {
+            "hotel": "MONACO",
+            "destinazione": "SAN PIERO IN VOLTA",
+            "importo": ""
+        },
+        {
+            "hotel": "MONACO",
+            "destinazione": "PELLESTRINA CHIOGGIA",
+            "importo": ""
+        },
+        {
+            "hotel": "MONACO",
+            "destinazione": "SAN GIORGIO",
+            "importo": ""
+        },
+        {
+            "hotel": "MONACO",
+            "destinazione": "SAN MARCO",
+            "importo": ""
+        },
+        {
+            "hotel": "MONACO",
+            "destinazione": "HARRY'S DOLCI",
+            "importo": ""
+        },
+        {
+            "hotel": "MONACO",
+            "destinazione": "GIARDINI",
+            "importo": ""
+        },
+        {
+            "hotel": "MONACO",
+            "destinazione": "BIENNALE",
+            "importo": ""
+        },
+        {
+            "hotel": "MONACO",
+            "destinazione": "GUGGENHEIM",
+            "importo": ""
+        },
+        {
+            "hotel": "MONACO",
+            "destinazione": "ACCADEMIA",
+            "importo": ""
+        },
+        {
+            "hotel": "MONACO",
+            "destinazione": "CIPRIANI",
+            "importo": ""
+        },
+        {
+            "hotel": "MONACO",
+            "destinazione": "DANIELI",
+            "importo": ""
+        },
+        {
+            "hotel": "MONACO",
+            "destinazione": "SAN TOMA'",
+            "importo": ""
+        },
+        {
+            "hotel": "MONACO",
+            "destinazione": "RIALTO",
+            "importo": ""
+        },
+        {
+            "hotel": "MONACO",
+            "destinazione": "GHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "MONACO",
+            "destinazione": "MOLO",
+            "importo": ""
+        },
+        {
+            "hotel": "MONACO",
+            "destinazione": "SAN BASILIO",
+            "importo": ""
+        },
+        {
+            "hotel": "MONACO",
+            "destinazione": "FUSINA",
+            "importo": ""
+        },
+        {
+            "hotel": "MONACO",
+            "destinazione": "SAN GIULIANO",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZETTO MADONNA",
+            "destinazione": "PIAZZALE ROMA",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZETTO MADONNA",
+            "destinazione": "FERROVIA",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZETTO MADONNA",
+            "destinazione": "TRONCHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZETTO MADONNA",
+            "destinazione": "LIDO SME",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZETTO MADONNA",
+            "destinazione": "LIDO SAN NICOLO'",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZETTO MADONNA",
+            "destinazione": "LIDO CASINO'",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZETTO MADONNA",
+            "destinazione": "EXCELSIOR",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZETTO MADONNA",
+            "destinazione": "AEROPORTO",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZETTO MADONNA",
+            "destinazione": "BURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZETTO MADONNA",
+            "destinazione": "PUNTA SABBIONI",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZETTO MADONNA",
+            "destinazione": "TORCELLO",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZETTO MADONNA",
+            "destinazione": "MURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZETTO MADONNA",
+            "destinazione": "MALAMOCCO",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZETTO MADONNA",
+            "destinazione": "ALBERONI",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZETTO MADONNA",
+            "destinazione": "TREPORTI",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZETTO MADONNA",
+            "destinazione": "SAN PIERO IN VOLTA",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZETTO MADONNA",
+            "destinazione": "PELLESTRINA CHIOGGIA",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZETTO MADONNA",
+            "destinazione": "SAN GIORGIO",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZETTO MADONNA",
+            "destinazione": "SAN MARCO",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZETTO MADONNA",
+            "destinazione": "HARRY'S DOLCI",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZETTO MADONNA",
+            "destinazione": "GIARDINI",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZETTO MADONNA",
+            "destinazione": "BIENNALE",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZETTO MADONNA",
+            "destinazione": "GUGGENHEIM",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZETTO MADONNA",
+            "destinazione": "ACCADEMIA",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZETTO MADONNA",
+            "destinazione": "CIPRIANI",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZETTO MADONNA",
+            "destinazione": "DANIELI",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZETTO MADONNA",
+            "destinazione": "SAN TOMA'",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZETTO MADONNA",
+            "destinazione": "RIALTO",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZETTO MADONNA",
+            "destinazione": "GHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZETTO MADONNA",
+            "destinazione": "MOLO",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZETTO MADONNA",
+            "destinazione": "SAN BASILIO",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZETTO MADONNA",
+            "destinazione": "FUSINA",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZETTO MADONNA",
+            "destinazione": "SAN GIULIANO",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO BARBARIGO",
+            "destinazione": "PIAZZALE ROMA",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO BARBARIGO",
+            "destinazione": "FERROVIA",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO BARBARIGO",
+            "destinazione": "TRONCHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO BARBARIGO",
+            "destinazione": "LIDO SME",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO BARBARIGO",
+            "destinazione": "LIDO SAN NICOLO'",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO BARBARIGO",
+            "destinazione": "LIDO CASINO'",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO BARBARIGO",
+            "destinazione": "EXCELSIOR",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO BARBARIGO",
+            "destinazione": "AEROPORTO",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO BARBARIGO",
+            "destinazione": "BURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO BARBARIGO",
+            "destinazione": "PUNTA SABBIONI",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO BARBARIGO",
+            "destinazione": "TORCELLO",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO BARBARIGO",
+            "destinazione": "MURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO BARBARIGO",
+            "destinazione": "MALAMOCCO",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO BARBARIGO",
+            "destinazione": "ALBERONI",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO BARBARIGO",
+            "destinazione": "TREPORTI",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO BARBARIGO",
+            "destinazione": "SAN PIERO IN VOLTA",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO BARBARIGO",
+            "destinazione": "PELLESTRINA CHIOGGIA",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO BARBARIGO",
+            "destinazione": "SAN GIORGIO",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO BARBARIGO",
+            "destinazione": "SAN MARCO",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO BARBARIGO",
+            "destinazione": "HARRY'S DOLCI",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO BARBARIGO",
+            "destinazione": "GIARDINI",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO BARBARIGO",
+            "destinazione": "BIENNALE",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO BARBARIGO",
+            "destinazione": "GUGGENHEIM",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO BARBARIGO",
+            "destinazione": "ACCADEMIA",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO BARBARIGO",
+            "destinazione": "CIPRIANI",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO BARBARIGO",
+            "destinazione": "DANIELI",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO BARBARIGO",
+            "destinazione": "SAN TOMA'",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO BARBARIGO",
+            "destinazione": "RIALTO",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO BARBARIGO",
+            "destinazione": "GHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO BARBARIGO",
+            "destinazione": "MOLO",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO BARBARIGO",
+            "destinazione": "SAN BASILIO",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO BARBARIGO",
+            "destinazione": "FUSINA",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO BARBARIGO",
+            "destinazione": "SAN GIULIANO",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO KELLER",
+            "destinazione": "PIAZZALE ROMA",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO KELLER",
+            "destinazione": "FERROVIA",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO KELLER",
+            "destinazione": "TRONCHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO KELLER",
+            "destinazione": "LIDO SME",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO KELLER",
+            "destinazione": "LIDO SAN NICOLO'",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO KELLER",
+            "destinazione": "LIDO CASINO'",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO KELLER",
+            "destinazione": "EXCELSIOR",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO KELLER",
+            "destinazione": "AEROPORTO",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO KELLER",
+            "destinazione": "BURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO KELLER",
+            "destinazione": "PUNTA SABBIONI",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO KELLER",
+            "destinazione": "TORCELLO",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO KELLER",
+            "destinazione": "MURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO KELLER",
+            "destinazione": "MALAMOCCO",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO KELLER",
+            "destinazione": "ALBERONI",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO KELLER",
+            "destinazione": "TREPORTI",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO KELLER",
+            "destinazione": "SAN PIERO IN VOLTA",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO KELLER",
+            "destinazione": "PELLESTRINA CHIOGGIA",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO KELLER",
+            "destinazione": "SAN GIORGIO",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO KELLER",
+            "destinazione": "SAN MARCO",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO KELLER",
+            "destinazione": "HARRY'S DOLCI",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO KELLER",
+            "destinazione": "GIARDINI",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO KELLER",
+            "destinazione": "BIENNALE",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO KELLER",
+            "destinazione": "GUGGENHEIM",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO KELLER",
+            "destinazione": "ACCADEMIA",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO KELLER",
+            "destinazione": "CIPRIANI",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO KELLER",
+            "destinazione": "DANIELI",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO KELLER",
+            "destinazione": "SAN TOMA'",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO KELLER",
+            "destinazione": "RIALTO",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO KELLER",
+            "destinazione": "GHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO KELLER",
+            "destinazione": "MOLO",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO KELLER",
+            "destinazione": "SAN BASILIO",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO KELLER",
+            "destinazione": "FUSINA",
+            "importo": ""
+        },
+        {
+            "hotel": "PALAZZO KELLER",
+            "destinazione": "SAN GIULIANO",
+            "importo": ""
+        },
+        {
+            "hotel": "PANORAMA",
+            "destinazione": "PIAZZALE ROMA",
+            "importo": ""
+        },
+        {
+            "hotel": "PANORAMA",
+            "destinazione": "FERROVIA",
+            "importo": ""
+        },
+        {
+            "hotel": "PANORAMA",
+            "destinazione": "TRONCHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "PANORAMA",
+            "destinazione": "LIDO SME",
+            "importo": ""
+        },
+        {
+            "hotel": "PANORAMA",
+            "destinazione": "LIDO SAN NICOLO'",
+            "importo": ""
+        },
+        {
+            "hotel": "PANORAMA",
+            "destinazione": "LIDO CASINO'",
+            "importo": ""
+        },
+        {
+            "hotel": "PANORAMA",
+            "destinazione": "EXCELSIOR",
+            "importo": ""
+        },
+        {
+            "hotel": "PANORAMA",
+            "destinazione": "AEROPORTO",
+            "importo": ""
+        },
+        {
+            "hotel": "PANORAMA",
+            "destinazione": "BURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "PANORAMA",
+            "destinazione": "PUNTA SABBIONI",
+            "importo": ""
+        },
+        {
+            "hotel": "PANORAMA",
+            "destinazione": "TORCELLO",
+            "importo": ""
+        },
+        {
+            "hotel": "PANORAMA",
+            "destinazione": "MURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "PANORAMA",
+            "destinazione": "MALAMOCCO",
+            "importo": ""
+        },
+        {
+            "hotel": "PANORAMA",
+            "destinazione": "ALBERONI",
+            "importo": ""
+        },
+        {
+            "hotel": "PANORAMA",
+            "destinazione": "TREPORTI",
+            "importo": ""
+        },
+        {
+            "hotel": "PANORAMA",
+            "destinazione": "SAN PIERO IN VOLTA",
+            "importo": ""
+        },
+        {
+            "hotel": "PANORAMA",
+            "destinazione": "PELLESTRINA CHIOGGIA",
+            "importo": ""
+        },
+        {
+            "hotel": "PANORAMA",
+            "destinazione": "SAN GIORGIO",
+            "importo": ""
+        },
+        {
+            "hotel": "PANORAMA",
+            "destinazione": "SAN MARCO",
+            "importo": ""
+        },
+        {
+            "hotel": "PANORAMA",
+            "destinazione": "HARRY'S DOLCI",
+            "importo": ""
+        },
+        {
+            "hotel": "PANORAMA",
+            "destinazione": "GIARDINI",
+            "importo": ""
+        },
+        {
+            "hotel": "PANORAMA",
+            "destinazione": "BIENNALE",
+            "importo": ""
+        },
+        {
+            "hotel": "PANORAMA",
+            "destinazione": "GUGGENHEIM",
+            "importo": ""
+        },
+        {
+            "hotel": "PANORAMA",
+            "destinazione": "ACCADEMIA",
+            "importo": ""
+        },
+        {
+            "hotel": "PANORAMA",
+            "destinazione": "CIPRIANI",
+            "importo": ""
+        },
+        {
+            "hotel": "PANORAMA",
+            "destinazione": "DANIELI",
+            "importo": ""
+        },
+        {
+            "hotel": "PANORAMA",
+            "destinazione": "SAN TOMA'",
+            "importo": ""
+        },
+        {
+            "hotel": "PANORAMA",
+            "destinazione": "RIALTO",
+            "importo": ""
+        },
+        {
+            "hotel": "PANORAMA",
+            "destinazione": "GHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "PANORAMA",
+            "destinazione": "MOLO",
+            "importo": ""
+        },
+        {
+            "hotel": "PANORAMA",
+            "destinazione": "SAN BASILIO",
+            "importo": ""
+        },
+        {
+            "hotel": "PANORAMA",
+            "destinazione": "FUSINA",
+            "importo": ""
+        },
+        {
+            "hotel": "PANORAMA",
+            "destinazione": "SAN GIULIANO",
+            "importo": ""
+        },
+        {
+            "hotel": "PAUSANIA",
+            "destinazione": "PIAZZALE ROMA",
+            "importo": ""
+        },
+        {
+            "hotel": "PAUSANIA",
+            "destinazione": "FERROVIA",
+            "importo": ""
+        },
+        {
+            "hotel": "PAUSANIA",
+            "destinazione": "TRONCHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "PAUSANIA",
+            "destinazione": "LIDO SME",
+            "importo": ""
+        },
+        {
+            "hotel": "PAUSANIA",
+            "destinazione": "LIDO SAN NICOLO'",
+            "importo": ""
+        },
+        {
+            "hotel": "PAUSANIA",
+            "destinazione": "LIDO CASINO'",
+            "importo": ""
+        },
+        {
+            "hotel": "PAUSANIA",
+            "destinazione": "EXCELSIOR",
+            "importo": ""
+        },
+        {
+            "hotel": "PAUSANIA",
+            "destinazione": "AEROPORTO",
+            "importo": ""
+        },
+        {
+            "hotel": "PAUSANIA",
+            "destinazione": "BURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "PAUSANIA",
+            "destinazione": "PUNTA SABBIONI",
+            "importo": ""
+        },
+        {
+            "hotel": "PAUSANIA",
+            "destinazione": "TORCELLO",
+            "importo": ""
+        },
+        {
+            "hotel": "PAUSANIA",
+            "destinazione": "MURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "PAUSANIA",
+            "destinazione": "MALAMOCCO",
+            "importo": ""
+        },
+        {
+            "hotel": "PAUSANIA",
+            "destinazione": "ALBERONI",
+            "importo": ""
+        },
+        {
+            "hotel": "PAUSANIA",
+            "destinazione": "TREPORTI",
+            "importo": ""
+        },
+        {
+            "hotel": "PAUSANIA",
+            "destinazione": "SAN PIERO IN VOLTA",
+            "importo": ""
+        },
+        {
+            "hotel": "PAUSANIA",
+            "destinazione": "PELLESTRINA CHIOGGIA",
+            "importo": ""
+        },
+        {
+            "hotel": "PAUSANIA",
+            "destinazione": "SAN GIORGIO",
+            "importo": ""
+        },
+        {
+            "hotel": "PAUSANIA",
+            "destinazione": "SAN MARCO",
+            "importo": ""
+        },
+        {
+            "hotel": "PAUSANIA",
+            "destinazione": "HARRY'S DOLCI",
+            "importo": ""
+        },
+        {
+            "hotel": "PAUSANIA",
+            "destinazione": "GIARDINI",
+            "importo": ""
+        },
+        {
+            "hotel": "PAUSANIA",
+            "destinazione": "BIENNALE",
+            "importo": ""
+        },
+        {
+            "hotel": "PAUSANIA",
+            "destinazione": "GUGGENHEIM",
+            "importo": ""
+        },
+        {
+            "hotel": "PAUSANIA",
+            "destinazione": "ACCADEMIA",
+            "importo": ""
+        },
+        {
+            "hotel": "PAUSANIA",
+            "destinazione": "CIPRIANI",
+            "importo": ""
+        },
+        {
+            "hotel": "PAUSANIA",
+            "destinazione": "DANIELI",
+            "importo": ""
+        },
+        {
+            "hotel": "PAUSANIA",
+            "destinazione": "SAN TOMA'",
+            "importo": ""
+        },
+        {
+            "hotel": "PAUSANIA",
+            "destinazione": "RIALTO",
+            "importo": ""
+        },
+        {
+            "hotel": "PAUSANIA",
+            "destinazione": "GHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "PAUSANIA",
+            "destinazione": "MOLO",
+            "importo": ""
+        },
+        {
+            "hotel": "PAUSANIA",
+            "destinazione": "SAN BASILIO",
+            "importo": ""
+        },
+        {
+            "hotel": "PAUSANIA",
+            "destinazione": "FUSINA",
+            "importo": ""
+        },
+        {
+            "hotel": "PAUSANIA",
+            "destinazione": "SAN GIULIANO",
+            "importo": ""
+        },
+        {
+            "hotel": "RIALTO",
+            "destinazione": "PIAZZALE ROMA",
+            "importo": ""
+        },
+        {
+            "hotel": "RIALTO",
+            "destinazione": "FERROVIA",
+            "importo": ""
+        },
+        {
+            "hotel": "RIALTO",
+            "destinazione": "TRONCHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "RIALTO",
+            "destinazione": "LIDO SME",
+            "importo": ""
+        },
+        {
+            "hotel": "RIALTO",
+            "destinazione": "LIDO SAN NICOLO'",
+            "importo": ""
+        },
+        {
+            "hotel": "RIALTO",
+            "destinazione": "LIDO CASINO'",
+            "importo": ""
+        },
+        {
+            "hotel": "RIALTO",
+            "destinazione": "EXCELSIOR",
+            "importo": ""
+        },
+        {
+            "hotel": "RIALTO",
+            "destinazione": "AEROPORTO",
+            "importo": ""
+        },
+        {
+            "hotel": "RIALTO",
+            "destinazione": "BURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "RIALTO",
+            "destinazione": "PUNTA SABBIONI",
+            "importo": ""
+        },
+        {
+            "hotel": "RIALTO",
+            "destinazione": "TORCELLO",
+            "importo": ""
+        },
+        {
+            "hotel": "RIALTO",
+            "destinazione": "MURANO",
+            "importo": ""
+        },
+        {
+            "hotel": "RIALTO",
+            "destinazione": "MALAMOCCO",
+            "importo": ""
+        },
+        {
+            "hotel": "RIALTO",
+            "destinazione": "ALBERONI",
+            "importo": ""
+        },
+        {
+            "hotel": "RIALTO",
+            "destinazione": "TREPORTI",
+            "importo": ""
+        },
+        {
+            "hotel": "RIALTO",
+            "destinazione": "SAN PIERO IN VOLTA",
+            "importo": ""
+        },
+        {
+            "hotel": "RIALTO",
+            "destinazione": "PELLESTRINA CHIOGGIA",
+            "importo": ""
+        },
+        {
+            "hotel": "RIALTO",
+            "destinazione": "SAN GIORGIO",
+            "importo": ""
+        },
+        {
+            "hotel": "RIALTO",
+            "destinazione": "SAN MARCO",
+            "importo": ""
+        },
+        {
+            "hotel": "RIALTO",
+            "destinazione": "HARRY'S DOLCI",
+            "importo": ""
+        },
+        {
+            "hotel": "RIALTO",
+            "destinazione": "GIARDINI",
+            "importo": ""
+        },
+        {
+            "hotel": "RIALTO",
+            "destinazione": "BIENNALE",
+            "importo": ""
+        },
+        {
+            "hotel": "RIALTO",
+            "destinazione": "GUGGENHEIM",
+            "importo": ""
+        },
+        {
+            "hotel": "RIALTO",
+            "destinazione": "ACCADEMIA",
+            "importo": ""
+        },
+        {
+            "hotel": "RIALTO",
+            "destinazione": "CIPRIANI",
+            "importo": ""
+        },
+        {
+            "hotel": "RIALTO",
+            "destinazione": "DANIELI",
+            "importo": ""
+        },
+        {
+            "hotel": "RIALTO",
+            "destinazione": "SAN TOMA'",
+            "importo": ""
+        },
+        {
+            "hotel": "RIALTO",
+            "destinazione": "RIALTO",
+            "importo": ""
+        },
+        {
+            "hotel": "RIALTO",
+            "destinazione": "GHETTO",
+            "importo": ""
+        },
+        {
+            "hotel": "RIALTO",
+            "destinazione": "MOLO",
+            "importo": ""
+        },
+        {
+            "hotel": "RIALTO",
+            "destinazione": "SAN BASILIO",
+            "importo": ""
+        },
+        {
+            "hotel": "RIALTO",
+            "destinazione": "FUSINA",
+            "importo": ""
+        },
+        {
+            "hotel": "RIALTO",
+            "destinazione": "SAN GIULIANO",
+            "importo": ""
+        },
+        {
+            "hotel": "",
+            "destinazione": "",
+            "importo": ""
+        },
+        {
+            "hotel": "SUPPLEMENTO",
+            "destinazione": "IMPORTO",
+            "importo": ""
+        },
+        {
+            "hotel": "PAX EXTRA",
+            "destinazione": "10",
+            "importo": ""
+        },
+        {
+            "hotel": "BAGAGLIO EXTRA",
+            "destinazione": "5",
+            "importo": ""
+        },
+        {
+            "hotel": "NOTTURNO",
+            "destinazione": "10",
+            "importo": ""
+        },
+        {
+            "hotel": "SOSTA",
+            "destinazione": "10",
+            "importo": ""
+        }
+    ],
+    "supplementi": []
+}

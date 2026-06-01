@@ -19,7 +19,7 @@ body {
 -------------------------------------------------- */
 header {
     background: #FFD400;
-    color: #000;
+    color: #7B001C; /* bordeaux */
     text-align: center;
     padding: 18px 0;
     font-size: 1.6rem;
@@ -29,12 +29,25 @@ header {
 }
 
 /* --------------------------------------------------
-   FORM GENERALE
+   AVVISO ROSSO LAMPEGGIANTE
 -------------------------------------------------- */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+#messaggioAvviso {
+    display: none;
+    background-color: #ff0000;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 15px;
+    text-align: center;
+    border: 3px solid #990000;
+    margin-bottom: 20px;
+    animation: lampeggia 1s infinite;
+}
+
+@keyframes lampeggia {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
 }
 
 /* --------------------------------------------------
@@ -53,11 +66,59 @@ h3 {
     margin-bottom: 10px;
 }
 
-.section-divider-special {
+/* --------------------------------------------------
+   BOTTONI ACCORDION
+-------------------------------------------------- */
+.accordion-button {
     width: 100%;
-    height: 4px;
-    background: #FFD400;
-    margin: 25px 0;
+    padding: 14px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 8px;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, opacity 0.1s ease;
+    opacity: 0.95;
+}
+
+.accordion-button:active {
+    transform: scale(0.98);
+    box-shadow: 0 0 4px rgba(0,0,0,0.2);
+    opacity: 1;
+}
+
+/* Colori pastello pieni */
+.btn-argos {
+    background-color: #AEE4FF; /* azzurro pastello */
+    color: #000;
+}
+
+.btn-salute {
+    background-color: #B8F2E6; /* verde acqua */
+    color: #000;
+}
+
+.btn-tariffe {
+    background-color: #FFD8A8; /* arancio tenue */
+    color: #000;
+}
+
+/* --------------------------------------------------
+   SEZIONI ACCORDION
+-------------------------------------------------- */
+.accordion-section {
+    display: none; /* completamente chiuse */
+    margin-bottom: 15px;
+}
+
+/* Contenitore interno bianco con ombra */
+.section-box {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
 }
 
 /* --------------------------------------------------
@@ -70,12 +131,15 @@ select, input[type="date"] {
     border-radius: 8px;
     border: 1px solid #bbb;
     background: #fff;
+    margin-bottom: 10px;
 }
 
 /* --------------------------------------------------
-   BOTTONI
+   BOTTONI AZIONE INTERNI
 -------------------------------------------------- */
-button {
+button#verificaMotoscafo,
+button#verificaServizio,
+button#verificaTariffe {
     width: 100%;
     padding: 14px;
     font-size: 1.2rem;
@@ -86,9 +150,12 @@ button {
     font-weight: bold;
     cursor: pointer;
     transition: 0.2s;
+    margin-top: 5px;
 }
 
-button:active {
+button#verificaMotoscafo:active,
+button#verificaServizio:active,
+button#verificaTariffe:active {
     background: #005FCC;
 }
 
@@ -174,29 +241,7 @@ td {
         font-size: 2rem;
     }
 
-    button {
+    .accordion-button {
         font-size: 1.3rem;
     }
-}
-
-/* --------------------------------------------------
-   AVVISO ROSSO LAMPEGGIANTE
--------------------------------------------------- */
-#messaggioAvviso {
-    display: none;
-    background-color: #ff0000;
-    color: white;
-    font-weight: bold;
-    font-size: 22px;
-    padding: 15px;
-    text-align: center;
-    border: 3px solid #990000;
-    margin-bottom: 20px;
-    animation: lampeggia 1s infinite;
-}
-
-@keyframes lampeggia {
-    0% { opacity: 1; }
-    50% { opacity: 0.3; }
-    100% { opacity: 1; }
 }

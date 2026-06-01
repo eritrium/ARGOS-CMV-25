@@ -69,11 +69,10 @@ document.addEventListener('DOMContentLoaded', function () {
             const turni = await response.json();
 
             // ---------------------------------------------------
-            // SALUTE — ORDINE LIBERO (come nel JSON)
+            // SALUTE
             // ---------------------------------------------------
             if (servizio === "SALUTE") {
 
-                // Filtra SOLO SALUTE e SOLO la data
                 const filtrati = turni.filter(r =>
                     r.data === data &&
                     r.servizio === "SALUTE" &&
@@ -87,7 +86,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     return;
                 }
 
-                // Funzione colori SALUTE
                 function coloreFascia(inizio, fine) {
                     const fascia = `${inizio}-${fine}`;
                     switch (fascia) {
@@ -100,12 +98,9 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
                 }
 
-                // Costruzione tabella NELL’ORDINE DEL JSON
                 let righe = "";
 
                 filtrati.forEach(r => {
-
-                    // Normalizza orari (8 → 08)
                     const inizio = r.inizio.padStart(2, "0");
                     const fine = r.fine.padStart(2, "0");
 
@@ -139,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             // ---------------------------------------------------
-            // APT — LOGICA ORIGINALE (INVARIATA)
+            // APT
             // ---------------------------------------------------
             const finali = turni.filter(r =>
                 r.data === data &&
@@ -255,4 +250,142 @@ document.addEventListener('DOMContentLoaded', function () {
         const options = { day: '2-digit', month: '2-digit', year: 'numeric' };
         return new Date(dateString).toLocaleDateString('it-IT', options);
     }
-});
+
+    // ---------------------------------------------------
+    // ⭐⭐⭐ SEZIONE TARIFFE ⭐⭐⭐
+    // ---------------------------------------------------
+
+    const hotelSelect = document.getElementById("hotelSelect");
+    const btnTariffe = document.getElementById("verificaTariffe");
+    const risultatiTariffe = document.getElementById("risultatiTariffe");
+
+    fetch("tariffe.json")
+        .then(r => r.json())
+        .then(data => {
+
+            btnTariffe.addEventListener("click", () => {
+                const hotel = hotelSelect.value;
+                risultatiTariffe.innerHTML = "";
+
+                if (!hotel) {
+                    risultatiTariffe.innerHTML = "<p style='color:red;'>Seleziona un hotel.</p>";
+                    return;
+                }
+
+                const filtrate = data.tariffe.filter(t => t.hotel === hotel);
+
+                if (filtrate.length === 0) {
+                    risultatiTariffe.innerHTML = "<p style='color:red;'>Nessuna tariffa trovata.</p>";
+                    return;
+                }
+
+                // 🎨 2 colori alternati: azzurro pastello + bianco
+                const colore1 = "#DFF2FF";
+                const colore2 = "#FFFFFF";
+
+                let html = `
+                    <h4>Tariffe per ${hotel}</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Destinazione</th>
+                                <th>Importo (1-4 PAX)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                `;
+
+                filtrate.forEach((t, i) => {
+                    const colore = (i % 2 === 0) ? colore1 : colore2;
+
+                    html += `
+                        <tr style="background:${colore};">
+                            <td>${t.destinazione}</td>
+                            <td>${t.importo && t.importo !== "" ? t.importo : "-"}</td>
+                        </tr>
+                    `;
+                });
+
+                html += `
+                        </tbody>
+                    </table>
+
+                    <br><br>
+                    <h4 style="text-align:center;">SUPPLEMENTI</h4>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Supplemento</th>
+                                <th>Importo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                `;
+
+                // ---------------------------------------------------
+                // SUPPLEMENTI AUTOMATICI (ESCLUDENDO LA RIGA "SUPPLEMENTO - IMPORTO")
+                // ---------------------------------------------------
+                const supplementiAuto = data.tariffe.filter(t =>
+                    (t.hotel.toUpperCase().includes("EXTRA") ||
+                     t.hotel.toUpperCase().includes("NOTTURNO") ||
+                     t.hotel.toUpperCase().includes("SOSTA") ||
+                     t.hotel.toUpperCase().includes("SUPPLEMENTO"))
+                    &&
+                    t.destinazione.toUpperCase() !== "IMPORTO"
+                );
+
+                supplementiAuto.forEach((s, i) => {
+                    const colore = (i % 2 === 0) ? colore1 : colore2;
+
+                    html += `
+                        <tr style="background:${colore};">
+                            <td>${s.hotel}</td>
+                            <td>${s.destinazione || "-"}</td>
+                        </tr>
+                    `;
+                });
+
+                html += `
+                        </tbody>
+                    </table>
+                `;
+
+                risultatiTariffe.innerHTML = html;
+            });
+
+        })
+        .catch(() => {
+            risultatiTariffe.innerHTML = "<p style='color:red;'>Errore nel caricamento delle tariffe.</p>";
+        });
+
+    // ---------------------------------------------------
+    // ACCORDION: UNA SOLA SEZIONE APERTA ALLA VOLTA
+    // ---------------------------------------------------
+    const btnToggleArgos = document.getElementById('toggleArgos');
+    const btnToggleSaluteApt = document.getElementById('toggleSaluteApt');
+    const btnToggleTariffe = document.getElementById('toggleTariffe');
+
+    const sezioneArgos = document.getElementById('sezioneArgos');
+    const sezioneSaluteApt = document.getElementById('sezioneSaluteApt');
+    const sezioneTariffe = document.getElementById('sezioneTariffe');
+
+    const sezioni = [sezioneArgos, sezioneSaluteApt, sezioneTariffe];
+
+    function toggleSezione(sezione) {
+        const èVisibile = sezione.style.display === 'block';
+
+        // chiudo tutte
+        sezioni.forEach(s => s.style.display = 'none');
+
+        // se prima era chiusa, la apro; se era aperta, rimane tutto chiuso
+        if (!èVisibile) {
+            sezione.style.display = 'block';
+        }
+    }
+
+    btnToggleArgos.addEventListener('click', () => toggleSezione(sezioneArgos));
+    btnToggleSaluteApt.addEventListener('click', () => toggleSezione(sezioneSaluteApt));
+    btnToggleTariffe.addEventListener('click', () => toggleSezione(sezioneTariffe));
+
+}); // ← CHIUSURA FINALE CORRETTA
