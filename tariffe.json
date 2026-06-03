@@ -4454,6 +4454,16 @@
             "hotel": "CANAL GRANDE",
             "destinazione": "50",
             "importo": ""
+        },
+        {
+            "hotel": "DEVIAZIONE BREVE",
+            "destinazione": "25",
+            "importo": ""
+        },
+        {
+            "hotel": "DEVIAZIONE LUNGA",
+            "destinazione": "40",
+            "importo": ""
         }
     ],
     "supplementi": []
