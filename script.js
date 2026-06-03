@@ -302,7 +302,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 );
 
                 if (supplementi.length > 0) {
-                    // prima riga: titolo nero, testo bianco
+                    // TITOLO NERO
                     html += `
                         <tr style="background:black; color:white; font-weight:bold;">
                             <td>${supplementi[0].hotel}</td>
@@ -310,7 +310,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         </tr>
                     `;
 
-                    // altre righe: colori alternati
+                    // ALTRE RIGHE
                     for (let i = 1; i < supplementi.length; i++) {
                         const s = supplementi[i];
                         const colore = (i % 2 === 0) ? colore1 : colore2;
