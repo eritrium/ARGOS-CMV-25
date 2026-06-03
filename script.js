@@ -1,29 +1,21 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    // ---------------------------------------------------
-    // AVVISO
-    // ---------------------------------------------------
     function gestisciAvviso() {
         const box = document.getElementById("messaggioAvviso");
         box.style.display = box.textContent.trim() !== "" ? "block" : "none";
     }
     gestisciAvviso();
 
-    // ELEMENTI MOTOSCAFO
     const motoscafoSelect = document.getElementById('motoscafo');
     const dataInput = document.getElementById('dataMotoscafo');
     const btnMotoscafo = document.getElementById('verificaMotoscafo');
     const outputMotoscafo = document.getElementById('outputMotoscafo');
 
-    // ELEMENTI SALUTE/APT
     const servizioSelect = document.getElementById('extraSelect');
     const dataServizio = document.getElementById('dataServizio');
     const btnServizio = document.getElementById('verificaServizio');
     const outputServizio = document.getElementById('outputServizio');
 
-    // ---------------------------------------------------
-    // MOTOSCAFO
-    // ---------------------------------------------------
     btnMotoscafo.addEventListener('click', function () {
 
         const motoscafo = motoscafoSelect.value;
@@ -51,9 +43,6 @@ document.addEventListener('DOMContentLoaded', function () {
             });
     });
 
-    // ---------------------------------------------------
-    // SALUTE + APT
-    // ---------------------------------------------------
     btnServizio.addEventListener('click', async function () {
 
         const servizio = servizioSelect.value;
@@ -68,9 +57,6 @@ document.addEventListener('DOMContentLoaded', function () {
             const response = await fetch('salute_apt.json');
             const turni = await response.json();
 
-            // ---------------------------------------------------
-            // SALUTE
-            // ---------------------------------------------------
             if (servizio === "SALUTE") {
 
                 const filtrati = turni.filter(r =>
@@ -133,9 +119,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 return;
             }
 
-            // ---------------------------------------------------
-            // APT
-            // ---------------------------------------------------
             const finali = turni.filter(r =>
                 r.data === data &&
                 r.num &&
@@ -243,17 +226,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // ---------------------------------------------------
-    // FORMATTARE DATA
-    // ---------------------------------------------------
     function formatDate(dateString) {
         const options = { day: '2-digit', month: '2-digit', year: 'numeric' };
         return new Date(dateString).toLocaleDateString('it-IT', options);
     }
-
-    // ---------------------------------------------------
-    // ⭐⭐⭐ SEZIONE TARIFFE ⭐⭐⭐
-    // ---------------------------------------------------
 
     const hotelSelect = document.getElementById("hotelSelect");
     const btnTariffe = document.getElementById("verificaTariffe");
@@ -272,6 +248,10 @@ document.addEventListener('DOMContentLoaded', function () {
                     return;
                 }
 
+                const hotelList = Array.from(hotelSelect.options)
+                    .map(opt => opt.value)
+                    .filter(v => v !== "");
+
                 const filtrate = data.tariffe.filter(t => t.hotel === hotel);
 
                 if (filtrate.length === 0) {
@@ -279,7 +259,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     return;
                 }
 
-                // 🎨 2 colori alternati: azzurro pastello + bianco
                 const colore1 = "#DFF2FF";
                 const colore2 = "#FFFFFF";
 
@@ -323,19 +302,11 @@ document.addEventListener('DOMContentLoaded', function () {
                         <tbody>
                 `;
 
-                // ---------------------------------------------------
-                // SUPPLEMENTI AUTOMATICI (ESCLUDENDO LA RIGA "SUPPLEMENTO - IMPORTO")
-                // ---------------------------------------------------
-                const supplementiAuto = data.tariffe.filter(t =>
-                    (t.hotel.toUpperCase().includes("EXTRA") ||
-                     t.hotel.toUpperCase().includes("NOTTURNO") ||
-                     t.hotel.toUpperCase().includes("SOSTA") ||
-                     t.hotel.toUpperCase().includes("SUPPLEMENTO"))
-                    &&
-                    t.destinazione.toUpperCase() !== "IMPORTO"
+                const supplementi = data.tariffe.filter(t =>
+                    !hotelList.includes(t.hotel)
                 );
 
-                supplementiAuto.forEach((s, i) => {
+                supplementi.forEach((s, i) => {
                     const colore = (i % 2 === 0) ? colore1 : colore2;
 
                     html += `
@@ -359,9 +330,6 @@ document.addEventListener('DOMContentLoaded', function () {
             risultatiTariffe.innerHTML = "<p style='color:red;'>Errore nel caricamento delle tariffe.</p>";
         });
 
-    // ---------------------------------------------------
-    // ACCORDION: UNA SOLA SEZIONE APERTA ALLA VOLTA
-    // ---------------------------------------------------
     const btnToggleArgos = document.getElementById('toggleArgos');
     const btnToggleSaluteApt = document.getElementById('toggleSaluteApt');
     const btnToggleTariffe = document.getElementById('toggleTariffe');
@@ -375,10 +343,8 @@ document.addEventListener('DOMContentLoaded', function () {
     function toggleSezione(sezione) {
         const èVisibile = sezione.style.display === 'block';
 
-        // chiudo tutte
         sezioni.forEach(s => s.style.display = 'none');
 
-        // se prima era chiusa, la apro; se era aperta, rimane tutto chiuso
         if (!èVisibile) {
             sezione.style.display = 'block';
         }
@@ -388,4 +354,4 @@ document.addEventListener('DOMContentLoaded', function () {
     btnToggleSaluteApt.addEventListener('click', () => toggleSezione(sezioneSaluteApt));
     btnToggleTariffe.addEventListener('click', () => toggleSezione(sezioneTariffe));
 
-}); // ← CHIUSURA FINALE CORRETTA
+});
