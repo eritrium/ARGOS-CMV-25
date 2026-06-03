@@ -293,18 +293,12 @@ document.addEventListener('DOMContentLoaded', function () {
                     <h4 style="text-align:center;">SUPPLEMENTI</h4>
 
                     <table>
-                        <thead>
-                            <tr>
-                                <th>Supplemento</th>
-                                <th>Importo</th>
-                            </tr>
-                        </thead>
                         <tbody>
                 `;
 
                 const supplementi = data.tariffe.filter(t =>
                     !hotelList.includes(t.hotel) &&
-                    (t.hotel.trim() !== "" || t.destinazione.trim() !== "")
+                    !(t.hotel.trim() === "" && t.destinazione.trim() === "")
                 );
 
                 supplementi.forEach((s, i) => {
