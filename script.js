@@ -303,7 +303,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 `;
 
                 const supplementi = data.tariffe.filter(t =>
-                    !hotelList.includes(t.hotel)
+                    !hotelList.includes(t.hotel) &&
+                    (t.hotel.trim() !== "" || t.destinazione.trim() !== "")
                 );
 
                 supplementi.forEach((s, i) => {
@@ -312,7 +313,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     html += `
                         <tr style="background:${colore};">
                             <td>${s.hotel}</td>
-                            <td>${s.destinazione || "-"}</td>
+                            <td>${s.destinazione}</td>
                         </tr>
                     `;
                 });
