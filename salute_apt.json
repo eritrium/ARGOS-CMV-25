@@ -16844,14 +16844,14 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-12",
-        "num": "",
+        "num": "N18",
         "inizio": "18",
         "fine": "24"
     },
     {
         "servizio": "SALUTE",
         "data": "2026-06-12",
-        "num": "",
+        "num": "263",
         "inizio": "18",
         "fine": "20"
     },
@@ -18503,21 +18503,21 @@
     {
         "servizio": "EXTRA APT",
         "data": "2026-06-15",
-        "num": "364",
+        "num": "",
         "inizio": "7",
         "fine": "18"
     },
     {
         "servizio": "EXTRA APT",
         "data": "2026-06-15",
-        "num": "311",
+        "num": "",
         "inizio": "7",
         "fine": "18"
     },
     {
         "servizio": "EXTRA APT",
         "data": "2026-06-15",
-        "num": "238",
+        "num": "",
         "inizio": "7",
         "fine": "18"
     },
@@ -18566,6 +18566,27 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-16",
+        "num": "370",
+        "inizio": "8",
+        "fine": "18"
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-16",
+        "num": "N16",
+        "inizio": "8",
+        "fine": "24"
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-16",
+        "num": "355",
+        "inizio": "8",
+        "fine": "18"
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-16",
         "num": "229",
         "inizio": "8",
         "fine": "18"
@@ -18594,13 +18615,6 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-16",
-        "num": "N16",
-        "inizio": "18",
-        "fine": "24"
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-16",
         "num": "",
         "inizio": "",
         "fine": ""
@@ -18718,18 +18732,11 @@
         "fine": ""
     },
     {
-        "servizio": "SALUTE",
+        "servizio": "APT",
         "data": "2026-06-16",
-        "num": "",
-        "inizio": "",
-        "fine": ""
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-16",
-        "num": "",
-        "inizio": "",
-        "fine": ""
+        "num": "303",
+        "inizio": "7",
+        "fine": "18"
     },
     {
         "servizio": "APT",
@@ -18770,13 +18777,6 @@
         "servizio": "APT",
         "data": "2026-06-16",
         "num": "254",
-        "inizio": "7",
-        "fine": "18"
-    },
-    {
-        "servizio": "APT",
-        "data": "2026-06-16",
-        "num": "",
         "inizio": "7",
         "fine": "18"
     },
@@ -18944,21 +18944,21 @@
     {
         "servizio": "EXTRA APT",
         "data": "2026-06-16",
-        "num": "370",
+        "num": "",
         "inizio": "7",
         "fine": "18"
     },
     {
         "servizio": "EXTRA APT",
         "data": "2026-06-16",
-        "num": "N16",
+        "num": "",
         "inizio": "7",
         "fine": "18"
     },
     {
         "servizio": "EXTRA APT",
         "data": "2026-06-16",
-        "num": "355",
+        "num": "",
         "inizio": "7",
         "fine": "18"
     },
@@ -19014,6 +19014,27 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-17",
+        "num": "351",
+        "inizio": "8",
+        "fine": "18"
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-17",
+        "num": "13",
+        "inizio": "8",
+        "fine": "18"
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-17",
+        "num": "N13",
+        "inizio": "8",
+        "fine": "24"
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-17",
         "num": "121",
         "inizio": "8",
         "fine": "24"
@@ -19042,20 +19063,6 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-17",
-        "num": "13",
-        "inizio": "18",
-        "fine": "20"
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-17",
-        "num": "N13",
-        "inizio": "18",
-        "fine": "24"
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-17",
         "num": "",
         "inizio": "",
         "fine": ""
@@ -19166,11 +19173,11 @@
         "fine": ""
     },
     {
-        "servizio": "SALUTE",
+        "servizio": "APT",
         "data": "2026-06-17",
-        "num": "",
-        "inizio": "",
-        "fine": ""
+        "num": "311",
+        "inizio": "7",
+        "fine": "18"
     },
     {
         "servizio": "APT",
@@ -19204,13 +19211,6 @@
         "servizio": "APT",
         "data": "2026-06-17",
         "num": "307",
-        "inizio": "7",
-        "fine": "18"
-    },
-    {
-        "servizio": "APT",
-        "data": "2026-06-17",
-        "num": "",
         "inizio": "7",
         "fine": "18"
     },
@@ -19385,21 +19385,21 @@
     {
         "servizio": "EXTRA APT",
         "data": "2026-06-17",
-        "num": "351",
+        "num": "",
         "inizio": "7",
         "fine": "18"
     },
     {
         "servizio": "EXTRA APT",
         "data": "2026-06-17",
-        "num": "13",
+        "num": "",
         "inizio": "7",
         "fine": "18"
     },
     {
         "servizio": "EXTRA APT",
         "data": "2026-06-17",
-        "num": "N13",
+        "num": "",
         "inizio": "7",
         "fine": "18"
     },
@@ -19448,6 +19448,27 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-18",
+        "num": "263",
+        "inizio": "8",
+        "fine": "24"
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-18",
+        "num": "159",
+        "inizio": "8",
+        "fine": "20"
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-18",
+        "num": "192",
+        "inizio": "8",
+        "fine": "18"
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-06-18",
         "num": "245",
         "inizio": "8",
         "fine": "18"
@@ -19476,20 +19497,6 @@
     {
         "servizio": "SALUTE",
         "data": "2026-06-18",
-        "num": "263",
-        "inizio": "18",
-        "fine": "24"
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-18",
-        "num": "159",
-        "inizio": "18",
-        "fine": "20"
-    },
-    {
-        "servizio": "SALUTE",
-        "data": "2026-06-18",
         "num": "",
         "inizio": "",
         "fine": ""
@@ -19607,11 +19614,11 @@
         "fine": ""
     },
     {
-        "servizio": "SALUTE",
+        "servizio": "APT",
         "data": "2026-06-18",
-        "num": "",
-        "inizio": "",
-        "fine": ""
+        "num": "N16",
+        "inizio": "7",
+        "fine": "18"
     },
     {
         "servizio": "APT",
@@ -19645,13 +19652,6 @@
         "servizio": "APT",
         "data": "2026-06-18",
         "num": "163",
-        "inizio": "7",
-        "fine": "18"
-    },
-    {
-        "servizio": "APT",
-        "data": "2026-06-18",
-        "num": "",
         "inizio": "7",
         "fine": "18"
     },
@@ -19826,21 +19826,21 @@
     {
         "servizio": "EXTRA APT",
         "data": "2026-06-18",
-        "num": "263",
+        "num": "",
         "inizio": "7",
         "fine": "18"
     },
     {
         "servizio": "EXTRA APT",
         "data": "2026-06-18",
-        "num": "159",
+        "num": "",
         "inizio": "7",
         "fine": "18"
     },
     {
         "servizio": "EXTRA APT",
         "data": "2026-06-18",
-        "num": "192",
+        "num": "",
         "inizio": "7",
         "fine": "18"
     },
