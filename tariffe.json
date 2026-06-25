@@ -717,6 +717,11 @@
         },
         {
             "hotel": "CA' PISANI",
+            "destinazione": "SAN CLEMENTE",
+            "importo": "100"
+        },
+        {
+            "hotel": "CA' PISANI",
             "destinazione": "AEROPORTO",
             "importo": "160"
         },
@@ -1317,8 +1322,8 @@
         },
         {
             "hotel": "CIPRIANI",
-            "destinazione": "CIPRIANI",
-            "importo": ""
+            "destinazione": "RIST. DA IVO",
+            "importo": "90"
         },
         {
             "hotel": "CIPRIANI",
@@ -1531,172 +1536,172 @@
             "importo": ""
         },
         {
-            "hotel": "DONÀ PALACE",
+            "hotel": "DON� PALACE",
             "destinazione": "PIAZZALE ROMA",
             "importo": ""
         },
         {
-            "hotel": "DONÀ PALACE",
+            "hotel": "DON� PALACE",
             "destinazione": "FERROVIA",
             "importo": ""
         },
         {
-            "hotel": "DONÀ PALACE",
+            "hotel": "DON� PALACE",
             "destinazione": "TRONCHETTO",
             "importo": ""
         },
         {
-            "hotel": "DONÀ PALACE",
+            "hotel": "DON� PALACE",
             "destinazione": "LIDO SME",
             "importo": ""
         },
         {
-            "hotel": "DONÀ PALACE",
+            "hotel": "DON� PALACE",
             "destinazione": "LIDO SAN NICOLO'",
             "importo": ""
         },
         {
-            "hotel": "DONÀ PALACE",
+            "hotel": "DON� PALACE",
             "destinazione": "LIDO CASINO'",
             "importo": ""
         },
         {
-            "hotel": "DONÀ PALACE",
+            "hotel": "DON� PALACE",
             "destinazione": "EXCELSIOR",
             "importo": ""
         },
         {
-            "hotel": "DONÀ PALACE",
+            "hotel": "DON� PALACE",
             "destinazione": "AEROPORTO",
             "importo": ""
         },
         {
-            "hotel": "DONÀ PALACE",
+            "hotel": "DON� PALACE",
             "destinazione": "BURANO",
             "importo": ""
         },
         {
-            "hotel": "DONÀ PALACE",
+            "hotel": "DON� PALACE",
             "destinazione": "PUNTA SABBIONI",
             "importo": ""
         },
         {
-            "hotel": "DONÀ PALACE",
+            "hotel": "DON� PALACE",
             "destinazione": "TORCELLO",
             "importo": ""
         },
         {
-            "hotel": "DONÀ PALACE",
+            "hotel": "DON� PALACE",
             "destinazione": "MURANO",
             "importo": ""
         },
         {
-            "hotel": "DONÀ PALACE",
+            "hotel": "DON� PALACE",
             "destinazione": "MALAMOCCO",
             "importo": ""
         },
         {
-            "hotel": "DONÀ PALACE",
+            "hotel": "DON� PALACE",
             "destinazione": "ALBERONI",
             "importo": ""
         },
         {
-            "hotel": "DONÀ PALACE",
+            "hotel": "DON� PALACE",
             "destinazione": "TREPORTI",
             "importo": ""
         },
         {
-            "hotel": "DONÀ PALACE",
+            "hotel": "DON� PALACE",
             "destinazione": "SAN PIERO IN VOLTA",
             "importo": ""
         },
         {
-            "hotel": "DONÀ PALACE",
+            "hotel": "DON� PALACE",
             "destinazione": "PELLESTRINA",
             "importo": ""
         },
         {
-            "hotel": "DONÀ PALACE",
+            "hotel": "DON� PALACE",
             "destinazione": "CHIOGGIA",
             "importo": ""
         },
         {
-            "hotel": "DONÀ PALACE",
+            "hotel": "DON� PALACE",
             "destinazione": "SAN GIORGIO",
             "importo": ""
         },
         {
-            "hotel": "DONÀ PALACE",
+            "hotel": "DON� PALACE",
             "destinazione": "SAN MARCO",
             "importo": ""
         },
         {
-            "hotel": "DONÀ PALACE",
+            "hotel": "DON� PALACE",
             "destinazione": "HARRY'S DOLCI",
             "importo": ""
         },
         {
-            "hotel": "DONÀ PALACE",
+            "hotel": "DON� PALACE",
             "destinazione": "GIARDINI",
             "importo": ""
         },
         {
-            "hotel": "DONÀ PALACE",
+            "hotel": "DON� PALACE",
             "destinazione": "BIENNALE",
             "importo": ""
         },
         {
-            "hotel": "DONÀ PALACE",
+            "hotel": "DON� PALACE",
             "destinazione": "GUGGENHEIM",
             "importo": ""
         },
         {
-            "hotel": "DONÀ PALACE",
+            "hotel": "DON� PALACE",
             "destinazione": "ACCADEMIA",
             "importo": ""
         },
         {
-            "hotel": "DONÀ PALACE",
+            "hotel": "DON� PALACE",
             "destinazione": "CIPRIANI",
             "importo": ""
         },
         {
-            "hotel": "DONÀ PALACE",
+            "hotel": "DON� PALACE",
             "destinazione": "DANIELI",
             "importo": ""
         },
         {
-            "hotel": "DONÀ PALACE",
+            "hotel": "DON� PALACE",
             "destinazione": "SAN TOMA'",
             "importo": ""
         },
         {
-            "hotel": "DONÀ PALACE",
+            "hotel": "DON� PALACE",
             "destinazione": "RIALTO",
             "importo": ""
         },
         {
-            "hotel": "DONÀ PALACE",
+            "hotel": "DON� PALACE",
             "destinazione": "GHETTO",
             "importo": ""
         },
         {
-            "hotel": "DONÀ PALACE",
+            "hotel": "DON� PALACE",
             "destinazione": "MOLO",
             "importo": ""
         },
         {
-            "hotel": "DONÀ PALACE",
+            "hotel": "DON� PALACE",
             "destinazione": "SAN BASILIO",
             "importo": ""
         },
         {
-            "hotel": "DONÀ PALACE",
+            "hotel": "DON� PALACE",
             "destinazione": "FUSINA",
             "importo": ""
         },
         {
-            "hotel": "DONÀ PALACE",
+            "hotel": "DON� PALACE",
             "destinazione": "SAN GIULIANO",
             "importo": ""
         },
@@ -1873,17 +1878,17 @@
         {
             "hotel": "EXCELSIOR",
             "destinazione": "PIAZZALE ROMA",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "EXCELSIOR",
             "destinazione": "FERROVIA",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "EXCELSIOR",
             "destinazione": "TRONCHETTO",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "EXCELSIOR",
@@ -1897,23 +1902,13 @@
         },
         {
             "hotel": "EXCELSIOR",
-            "destinazione": "LIDO CASINO'",
-            "importo": ""
-        },
-        {
-            "hotel": "EXCELSIOR",
-            "destinazione": "EXCELSIOR",
-            "importo": ""
-        },
-        {
-            "hotel": "EXCELSIOR",
             "destinazione": "AEROPORTO",
-            "importo": ""
+            "importo": "170"
         },
         {
             "hotel": "EXCELSIOR",
             "destinazione": "BURANO",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "EXCELSIOR",
@@ -1923,7 +1918,7 @@
         {
             "hotel": "EXCELSIOR",
             "destinazione": "TORCELLO",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "EXCELSIOR",
@@ -1948,7 +1943,7 @@
         {
             "hotel": "EXCELSIOR",
             "destinazione": "SAN PIERO IN VOLTA",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "EXCELSIOR",
@@ -1973,7 +1968,7 @@
         {
             "hotel": "EXCELSIOR",
             "destinazione": "HARRY'S DOLCI",
-            "importo": ""
+            "importo": "85"
         },
         {
             "hotel": "EXCELSIOR",
@@ -1998,7 +1993,7 @@
         {
             "hotel": "EXCELSIOR",
             "destinazione": "CIPRIANI",
-            "importo": ""
+            "importo": "85"
         },
         {
             "hotel": "EXCELSIOR",
@@ -2029,6 +2024,11 @@
             "hotel": "EXCELSIOR",
             "destinazione": "SAN BASILIO",
             "importo": ""
+        },
+        {
+            "hotel": "EXCELSIOR",
+            "destinazione": "CELESTE",
+            "importo": "300"
         },
         {
             "hotel": "EXCELSIOR",
@@ -4421,9 +4421,9 @@
             "importo": ""
         },
         {
-            "hotel": "",
-            "destinazione": "",
-            "importo": ""
+            "hotel": "LOCANDA CIPRIANI",
+            "destinazione": "APT",
+            "importo": "180"
         },
         {
             "hotel": "SUPPLEMENTO",
