@@ -22703,6 +22703,13 @@
     {
         "servizio": "APT",
         "data": "2026-06-25",
+        "num": "121",
+        "inizio": "7",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-06-25",
         "num": "157",
         "inizio": "7",
         "fine": "18"
@@ -22739,13 +22746,6 @@
         "servizio": "APT",
         "data": "2026-06-25",
         "num": "351",
-        "inizio": "7",
-        "fine": "18"
-    },
-    {
-        "servizio": "APT",
-        "data": "2026-06-25",
-        "num": "",
         "inizio": "7",
         "fine": "18"
     },
@@ -23144,6 +23144,13 @@
     {
         "servizio": "APT",
         "data": "2026-06-26",
+        "num": "119",
+        "inizio": "7",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-06-26",
         "num": "25",
         "inizio": "7",
         "fine": "18"
@@ -23173,13 +23180,6 @@
         "servizio": "APT",
         "data": "2026-06-26",
         "num": "263",
-        "inizio": "7",
-        "fine": "18"
-    },
-    {
-        "servizio": "APT",
-        "data": "2026-06-26",
-        "num": "",
         "inizio": "7",
         "fine": "18"
     },
@@ -23585,6 +23585,13 @@
     {
         "servizio": "APT",
         "data": "2026-06-27",
+        "num": "38",
+        "inizio": "7",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-06-27",
         "num": "49",
         "inizio": "7",
         "fine": "18"
@@ -23614,13 +23621,6 @@
         "servizio": "APT",
         "data": "2026-06-27",
         "num": "252",
-        "inizio": "7",
-        "fine": "18"
-    },
-    {
-        "servizio": "APT",
-        "data": "2026-06-27",
-        "num": "",
         "inizio": "7",
         "fine": "18"
     },
@@ -24026,6 +24026,13 @@
     {
         "servizio": "APT",
         "data": "2026-06-28",
+        "num": "123",
+        "inizio": "7",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-06-28",
         "num": "223",
         "inizio": "7",
         "fine": "18"
@@ -24062,13 +24069,6 @@
         "servizio": "APT",
         "data": "2026-06-28",
         "num": "236",
-        "inizio": "7",
-        "fine": "18"
-    },
-    {
-        "servizio": "APT",
-        "data": "2026-06-28",
-        "num": "",
         "inizio": "7",
         "fine": "18"
     },
@@ -24467,6 +24467,13 @@
     {
         "servizio": "APT",
         "data": "2026-06-29",
+        "num": "146",
+        "inizio": "7",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-06-29",
         "num": "307",
         "inizio": "7",
         "fine": "18"
@@ -24496,13 +24503,6 @@
         "servizio": "APT",
         "data": "2026-06-29",
         "num": "311",
-        "inizio": "7",
-        "fine": "18"
-    },
-    {
-        "servizio": "APT",
-        "data": "2026-06-29",
-        "num": "",
         "inizio": "7",
         "fine": "18"
     },
@@ -24908,6 +24908,13 @@
     {
         "servizio": "APT",
         "data": "2026-06-30",
+        "num": "317",
+        "inizio": "7",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-06-30",
         "num": "163",
         "inizio": "7",
         "fine": "18"
@@ -24937,13 +24944,6 @@
         "servizio": "APT",
         "data": "2026-06-30",
         "num": "N16",
-        "inizio": "7",
-        "fine": "18"
-    },
-    {
-        "servizio": "APT",
-        "data": "2026-06-30",
-        "num": "",
         "inizio": "7",
         "fine": "18"
     },
@@ -25349,6 +25349,13 @@
     {
         "servizio": "APT",
         "data": "2026-07-01",
+        "num": "226",
+        "inizio": "7",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-07-01",
         "num": "222",
         "inizio": "7",
         "fine": "18"
@@ -25385,13 +25392,6 @@
         "servizio": "APT",
         "data": "2026-07-01",
         "num": "N13",
-        "inizio": "7",
-        "fine": "18"
-    },
-    {
-        "servizio": "APT",
-        "data": "2026-07-01",
-        "num": "",
         "inizio": "7",
         "fine": "18"
     },
