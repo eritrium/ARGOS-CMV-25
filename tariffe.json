@@ -858,92 +858,92 @@
         {
             "hotel": "CA' SAGREDO",
             "destinazione": "PIAZZALE ROMA",
-            "importo": ""
+            "importo": "70"
         },
         {
             "hotel": "CA' SAGREDO",
             "destinazione": "FERROVIA",
-            "importo": ""
+            "importo": "70"
         },
         {
             "hotel": "CA' SAGREDO",
             "destinazione": "TRONCHETTO",
-            "importo": ""
+            "importo": "80"
         },
         {
             "hotel": "CA' SAGREDO",
             "destinazione": "LIDO SME",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "CA' SAGREDO",
             "destinazione": "LIDO SAN NICOLO'",
-            "importo": ""
+            "importo": "110"
         },
         {
             "hotel": "CA' SAGREDO",
             "destinazione": "LIDO CASINO'",
-            "importo": ""
+            "importo": "110"
         },
         {
             "hotel": "CA' SAGREDO",
             "destinazione": "EXCELSIOR",
-            "importo": ""
+            "importo": "110"
         },
         {
             "hotel": "CA' SAGREDO",
             "destinazione": "AEROPORTO",
-            "importo": ""
+            "importo": "160"
         },
         {
             "hotel": "CA' SAGREDO",
             "destinazione": "BURANO",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "CA' SAGREDO",
             "destinazione": "PUNTA SABBIONI",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "CA' SAGREDO",
             "destinazione": "TORCELLO",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "CA' SAGREDO",
             "destinazione": "MURANO",
-            "importo": ""
+            "importo": "80"
         },
         {
             "hotel": "CA' SAGREDO",
             "destinazione": "MALAMOCCO",
-            "importo": ""
+            "importo": "200"
         },
         {
             "hotel": "CA' SAGREDO",
             "destinazione": "ALBERONI",
-            "importo": ""
+            "importo": "220"
         },
         {
             "hotel": "CA' SAGREDO",
             "destinazione": "TREPORTI",
-            "importo": ""
+            "importo": "220"
         },
         {
             "hotel": "CA' SAGREDO",
             "destinazione": "SAN PIERO IN VOLTA",
-            "importo": ""
+            "importo": "250"
         },
         {
             "hotel": "CA' SAGREDO",
             "destinazione": "PELLESTRINA",
-            "importo": ""
+            "importo": "300"
         },
         {
             "hotel": "CA' SAGREDO",
             "destinazione": "CHIOGGIA",
-            "importo": ""
+            "importo": "500"
         },
         {
             "hotel": "CA' SAGREDO",
@@ -953,7 +953,7 @@
         {
             "hotel": "CA' SAGREDO",
             "destinazione": "SAN MARCO",
-            "importo": ""
+            "importo": "80"
         },
         {
             "hotel": "CA' SAGREDO",
@@ -963,12 +963,12 @@
         {
             "hotel": "CA' SAGREDO",
             "destinazione": "GIARDINI",
-            "importo": ""
+            "importo": "90"
         },
         {
             "hotel": "CA' SAGREDO",
             "destinazione": "BIENNALE",
-            "importo": ""
+            "importo": "90"
         },
         {
             "hotel": "CA' SAGREDO",
@@ -1008,17 +1008,17 @@
         {
             "hotel": "CA' SAGREDO",
             "destinazione": "MOLO",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "CA' SAGREDO",
             "destinazione": "SAN BASILIO",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "CA' SAGREDO",
             "destinazione": "FUSINA",
-            "importo": ""
+            "importo": "200"
         },
         {
             "hotel": "CA' SAGREDO",
@@ -1538,47 +1538,47 @@
         {
             "hotel": "DONÀ PALACE",
             "destinazione": "PIAZZALE ROMA",
-            "importo": ""
+            "importo": "90"
         },
         {
             "hotel": "DONÀ PALACE",
             "destinazione": "FERROVIA",
-            "importo": ""
+            "importo": "90"
         },
         {
             "hotel": "DONÀ PALACE",
             "destinazione": "TRONCHETTO",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "DONÀ PALACE",
             "destinazione": "LIDO SME",
-            "importo": ""
+            "importo": "85"
         },
         {
             "hotel": "DONÀ PALACE",
             "destinazione": "LIDO SAN NICOLO'",
-            "importo": ""
+            "importo": "90"
         },
         {
             "hotel": "DONÀ PALACE",
             "destinazione": "LIDO CASINO'",
-            "importo": ""
+            "importo": "90"
         },
         {
             "hotel": "DONÀ PALACE",
             "destinazione": "EXCELSIOR",
-            "importo": ""
+            "importo": "90"
         },
         {
             "hotel": "DONÀ PALACE",
             "destinazione": "AEROPORTO",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "DONÀ PALACE",
             "destinazione": "BURANO",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "DONÀ PALACE",
@@ -1588,7 +1588,7 @@
         {
             "hotel": "DONÀ PALACE",
             "destinazione": "TORCELLO",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "DONÀ PALACE",
@@ -1598,12 +1598,12 @@
         {
             "hotel": "DONÀ PALACE",
             "destinazione": "MALAMOCCO",
-            "importo": ""
+            "importo": "190"
         },
         {
             "hotel": "DONÀ PALACE",
             "destinazione": "ALBERONI",
-            "importo": ""
+            "importo": "230"
         },
         {
             "hotel": "DONÀ PALACE",
@@ -1613,17 +1613,17 @@
         {
             "hotel": "DONÀ PALACE",
             "destinazione": "SAN PIERO IN VOLTA",
-            "importo": ""
+            "importo": "260"
         },
         {
             "hotel": "DONÀ PALACE",
             "destinazione": "PELLESTRINA",
-            "importo": ""
+            "importo": "350"
         },
         {
             "hotel": "DONÀ PALACE",
             "destinazione": "CHIOGGIA",
-            "importo": ""
+            "importo": "500"
         },
         {
             "hotel": "DONÀ PALACE",
@@ -1643,12 +1643,12 @@
         {
             "hotel": "DONÀ PALACE",
             "destinazione": "GIARDINI",
-            "importo": ""
+            "importo": "80"
         },
         {
             "hotel": "DONÀ PALACE",
             "destinazione": "BIENNALE",
-            "importo": ""
+            "importo": "80"
         },
         {
             "hotel": "DONÀ PALACE",
@@ -1688,17 +1688,17 @@
         {
             "hotel": "DONÀ PALACE",
             "destinazione": "MOLO",
-            "importo": ""
+            "importo": "110"
         },
         {
             "hotel": "DONÀ PALACE",
             "destinazione": "SAN BASILIO",
-            "importo": ""
+            "importo": "110"
         },
         {
             "hotel": "DONÀ PALACE",
             "destinazione": "FUSINA",
-            "importo": ""
+            "importo": "200"
         },
         {
             "hotel": "DONÀ PALACE",
@@ -1923,7 +1923,7 @@
         {
             "hotel": "EXCELSIOR",
             "destinazione": "MURANO",
-            "importo": ""
+            "importo": "90"
         },
         {
             "hotel": "EXCELSIOR",
@@ -1958,12 +1958,12 @@
         {
             "hotel": "EXCELSIOR",
             "destinazione": "SAN GIORGIO",
-            "importo": ""
+            "importo": "75"
         },
         {
             "hotel": "EXCELSIOR",
             "destinazione": "SAN MARCO",
-            "importo": ""
+            "importo": "75"
         },
         {
             "hotel": "EXCELSIOR",
@@ -1972,13 +1972,28 @@
         },
         {
             "hotel": "EXCELSIOR",
+            "destinazione": "GIUDECCA",
+            "importo": "85"
+        },
+        {
+            "hotel": "EXCELSIOR",
+            "destinazione": "HILTON",
+            "importo": "85"
+        },
+        {
+            "hotel": "EXCELSIOR",
+            "destinazione": "ZATTERE",
+            "importo": "85"
+        },
+        {
+            "hotel": "EXCELSIOR",
             "destinazione": "GIARDINI",
-            "importo": ""
+            "importo": "65"
         },
         {
             "hotel": "EXCELSIOR",
             "destinazione": "BIENNALE",
-            "importo": ""
+            "importo": "65"
         },
         {
             "hotel": "EXCELSIOR",
@@ -1989,6 +2004,11 @@
             "hotel": "EXCELSIOR",
             "destinazione": "ACCADEMIA",
             "importo": ""
+        },
+        {
+            "hotel": "EXCELSIOR",
+            "destinazione": "SAN CLEMENTE",
+            "importo": "80"
         },
         {
             "hotel": "EXCELSIOR",
@@ -2018,12 +2038,12 @@
         {
             "hotel": "EXCELSIOR",
             "destinazione": "MOLO",
-            "importo": ""
+            "importo": "110"
         },
         {
             "hotel": "EXCELSIOR",
             "destinazione": "SAN BASILIO",
-            "importo": ""
+            "importo": "110"
         },
         {
             "hotel": "EXCELSIOR",
@@ -2033,7 +2053,7 @@
         {
             "hotel": "EXCELSIOR",
             "destinazione": "FUSINA",
-            "importo": ""
+            "importo": "240"
         },
         {
             "hotel": "EXCELSIOR",
@@ -2043,167 +2063,167 @@
         {
             "hotel": "FIRENZE",
             "destinazione": "PIAZZALE ROMA",
-            "importo": ""
+            "importo": "80"
         },
         {
             "hotel": "FIRENZE",
             "destinazione": "FERROVIA",
-            "importo": ""
+            "importo": "80"
         },
         {
             "hotel": "FIRENZE",
             "destinazione": "TRONCHETTO",
-            "importo": ""
+            "importo": "90"
         },
         {
             "hotel": "FIRENZE",
             "destinazione": "LIDO SME",
-            "importo": ""
+            "importo": "70"
         },
         {
             "hotel": "FIRENZE",
             "destinazione": "LIDO SAN NICOLO'",
-            "importo": ""
+            "importo": "80"
         },
         {
             "hotel": "FIRENZE",
             "destinazione": "LIDO CASINO'",
-            "importo": ""
+            "importo": "80"
         },
         {
             "hotel": "FIRENZE",
             "destinazione": "EXCELSIOR",
-            "importo": ""
+            "importo": "80"
         },
         {
             "hotel": "FIRENZE",
             "destinazione": "AEROPORTO",
-            "importo": ""
+            "importo": "160"
         },
         {
             "hotel": "FIRENZE",
             "destinazione": "BURANO",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "FIRENZE",
             "destinazione": "PUNTA SABBIONI",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "FIRENZE",
             "destinazione": "TORCELLO",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "FIRENZE",
             "destinazione": "MURANO",
-            "importo": ""
+            "importo": "80"
         },
         {
             "hotel": "FIRENZE",
             "destinazione": "MALAMOCCO",
-            "importo": ""
+            "importo": "160"
         },
         {
             "hotel": "FIRENZE",
             "destinazione": "ALBERONI",
-            "importo": ""
+            "importo": "200"
         },
         {
             "hotel": "FIRENZE",
             "destinazione": "TREPORTI",
-            "importo": ""
+            "importo": "200"
         },
         {
             "hotel": "FIRENZE",
             "destinazione": "SAN PIERO IN VOLTA",
-            "importo": ""
+            "importo": "220"
         },
         {
             "hotel": "FIRENZE",
             "destinazione": "PELLESTRINA",
-            "importo": ""
+            "importo": "300"
         },
         {
             "hotel": "FIRENZE",
             "destinazione": "CHIOGGIA",
-            "importo": ""
+            "importo": "500"
         },
         {
             "hotel": "FIRENZE",
             "destinazione": "SAN GIORGIO",
-            "importo": ""
+            "importo": "50"
         },
         {
             "hotel": "FIRENZE",
             "destinazione": "SAN MARCO",
-            "importo": ""
+            "importo": "50"
         },
         {
             "hotel": "FIRENZE",
             "destinazione": "HARRY'S DOLCI",
-            "importo": ""
+            "importo": "70"
         },
         {
             "hotel": "FIRENZE",
             "destinazione": "GIARDINI",
-            "importo": ""
+            "importo": "65"
         },
         {
             "hotel": "FIRENZE",
             "destinazione": "BIENNALE",
-            "importo": ""
+            "importo": "65"
         },
         {
             "hotel": "FIRENZE",
             "destinazione": "GUGGENHEIM",
-            "importo": ""
+            "importo": "50"
         },
         {
             "hotel": "FIRENZE",
             "destinazione": "ACCADEMIA",
-            "importo": ""
+            "importo": "50"
         },
         {
             "hotel": "FIRENZE",
             "destinazione": "CIPRIANI",
-            "importo": ""
+            "importo": "50"
         },
         {
             "hotel": "FIRENZE",
             "destinazione": "DANIELI",
-            "importo": ""
+            "importo": "50"
         },
         {
             "hotel": "FIRENZE",
             "destinazione": "SAN TOMA'",
-            "importo": ""
+            "importo": "60"
         },
         {
             "hotel": "FIRENZE",
             "destinazione": "RIALTO",
-            "importo": ""
+            "importo": "70"
         },
         {
             "hotel": "FIRENZE",
             "destinazione": "GHETTO",
-            "importo": ""
+            "importo": "90"
         },
         {
             "hotel": "FIRENZE",
             "destinazione": "MOLO",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "FIRENZE",
             "destinazione": "SAN BASILIO",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "FIRENZE",
             "destinazione": "FUSINA",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "FIRENZE",
@@ -2553,47 +2573,47 @@
         {
             "hotel": "KETTE",
             "destinazione": "PIAZZALE ROMA",
-            "importo": ""
+            "importo": "85"
         },
         {
             "hotel": "KETTE",
             "destinazione": "FERROVIA",
-            "importo": ""
+            "importo": "85"
         },
         {
             "hotel": "KETTE",
             "destinazione": "TRONCHETTO",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "KETTE",
             "destinazione": "LIDO SME",
-            "importo": ""
+            "importo": "90"
         },
         {
             "hotel": "KETTE",
             "destinazione": "LIDO SAN NICOLO'",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "KETTE",
             "destinazione": "LIDO CASINO'",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "KETTE",
             "destinazione": "EXCELSIOR",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "KETTE",
             "destinazione": "AEROPORTO",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "KETTE",
             "destinazione": "BURANO",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "KETTE",
@@ -2603,22 +2623,22 @@
         {
             "hotel": "KETTE",
             "destinazione": "TORCELLO",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "KETTE",
             "destinazione": "MURANO",
-            "importo": ""
+            "importo": "90"
         },
         {
             "hotel": "KETTE",
             "destinazione": "MALAMOCCO",
-            "importo": ""
+            "importo": "190"
         },
         {
             "hotel": "KETTE",
             "destinazione": "ALBERONI",
-            "importo": ""
+            "importo": "230"
         },
         {
             "hotel": "KETTE",
@@ -2628,17 +2648,17 @@
         {
             "hotel": "KETTE",
             "destinazione": "SAN PIERO IN VOLTA",
-            "importo": ""
+            "importo": "260"
         },
         {
             "hotel": "KETTE",
             "destinazione": "PELLESTRINA",
-            "importo": ""
+            "importo": "350"
         },
         {
             "hotel": "KETTE",
             "destinazione": "CHIOGGIA",
-            "importo": ""
+            "importo": "500"
         },
         {
             "hotel": "KETTE",
@@ -2658,12 +2678,12 @@
         {
             "hotel": "KETTE",
             "destinazione": "GIARDINI",
-            "importo": ""
+            "importo": "85"
         },
         {
             "hotel": "KETTE",
             "destinazione": "BIENNALE",
-            "importo": ""
+            "importo": "85"
         },
         {
             "hotel": "KETTE",
@@ -2703,17 +2723,17 @@
         {
             "hotel": "KETTE",
             "destinazione": "MOLO",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "KETTE",
             "destinazione": "SAN BASILIO",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "KETTE",
             "destinazione": "FUSINA",
-            "importo": ""
+            "importo": "200"
         },
         {
             "hotel": "KETTE",
@@ -3063,167 +3083,167 @@
         {
             "hotel": "LONDRA",
             "destinazione": "PIAZZALE ROMA",
-            "importo": ""
+            "importo": "80"
         },
         {
             "hotel": "LONDRA",
             "destinazione": "FERROVIA",
-            "importo": ""
+            "importo": "80"
         },
         {
             "hotel": "LONDRA",
             "destinazione": "TRONCHETTO",
-            "importo": ""
+            "importo": "90"
         },
         {
             "hotel": "LONDRA",
             "destinazione": "LIDO SME",
-            "importo": ""
+            "importo": "70"
         },
         {
             "hotel": "LONDRA",
             "destinazione": "LIDO SAN NICOLO'",
-            "importo": ""
+            "importo": "80"
         },
         {
             "hotel": "LONDRA",
             "destinazione": "LIDO CASINO'",
-            "importo": ""
+            "importo": "80"
         },
         {
             "hotel": "LONDRA",
             "destinazione": "EXCELSIOR",
-            "importo": ""
+            "importo": "80"
         },
         {
             "hotel": "LONDRA",
             "destinazione": "AEROPORTO",
-            "importo": ""
+            "importo": "160"
         },
         {
             "hotel": "LONDRA",
             "destinazione": "BURANO",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "LONDRA",
             "destinazione": "PUNTA SABBIONI",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "LONDRA",
             "destinazione": "TORCELLO",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "LONDRA",
             "destinazione": "MURANO",
-            "importo": ""
+            "importo": "80"
         },
         {
             "hotel": "LONDRA",
             "destinazione": "MALAMOCCO",
-            "importo": ""
+            "importo": "160"
         },
         {
             "hotel": "LONDRA",
             "destinazione": "ALBERONI",
-            "importo": ""
+            "importo": "200"
         },
         {
             "hotel": "LONDRA",
             "destinazione": "TREPORTI",
-            "importo": ""
+            "importo": "200"
         },
         {
             "hotel": "LONDRA",
             "destinazione": "SAN PIERO IN VOLTA",
-            "importo": ""
+            "importo": "220"
         },
         {
             "hotel": "LONDRA",
             "destinazione": "PELLESTRINA",
-            "importo": ""
+            "importo": "300"
         },
         {
             "hotel": "LONDRA",
             "destinazione": "CHIOGGIA",
-            "importo": ""
+            "importo": "500"
         },
         {
             "hotel": "LONDRA",
             "destinazione": "SAN GIORGIO",
-            "importo": ""
+            "importo": "50"
         },
         {
             "hotel": "LONDRA",
             "destinazione": "SAN MARCO",
-            "importo": ""
+            "importo": "50"
         },
         {
             "hotel": "LONDRA",
             "destinazione": "HARRY'S DOLCI",
-            "importo": ""
+            "importo": "70"
         },
         {
             "hotel": "LONDRA",
             "destinazione": "GIARDINI",
-            "importo": ""
+            "importo": "65"
         },
         {
             "hotel": "LONDRA",
             "destinazione": "BIENNALE",
-            "importo": ""
+            "importo": "65"
         },
         {
             "hotel": "LONDRA",
             "destinazione": "GUGGENHEIM",
-            "importo": ""
+            "importo": "50"
         },
         {
             "hotel": "LONDRA",
             "destinazione": "ACCADEMIA",
-            "importo": ""
+            "importo": "50"
         },
         {
             "hotel": "LONDRA",
             "destinazione": "CIPRIANI",
-            "importo": ""
+            "importo": "50"
         },
         {
             "hotel": "LONDRA",
             "destinazione": "DANIELI",
-            "importo": ""
+            "importo": "50"
         },
         {
             "hotel": "LONDRA",
             "destinazione": "SAN TOMA'",
-            "importo": ""
+            "importo": "60"
         },
         {
             "hotel": "LONDRA",
             "destinazione": "RIALTO",
-            "importo": ""
+            "importo": "70"
         },
         {
             "hotel": "LONDRA",
             "destinazione": "GHETTO",
-            "importo": ""
+            "importo": "90"
         },
         {
             "hotel": "LONDRA",
             "destinazione": "MOLO",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "LONDRA",
             "destinazione": "SAN BASILIO",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "LONDRA",
             "destinazione": "FUSINA",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "LONDRA",
@@ -3403,92 +3423,92 @@
         {
             "hotel": "PALAZZETTO MADONNA",
             "destinazione": "PIAZZALE ROMA",
-            "importo": ""
+            "importo": "70"
         },
         {
             "hotel": "PALAZZETTO MADONNA",
             "destinazione": "FERROVIA",
-            "importo": ""
+            "importo": "70"
         },
         {
             "hotel": "PALAZZETTO MADONNA",
             "destinazione": "TRONCHETTO",
-            "importo": ""
+            "importo": "80"
         },
         {
             "hotel": "PALAZZETTO MADONNA",
             "destinazione": "LIDO SME",
-            "importo": ""
+            "importo": "90"
         },
         {
             "hotel": "PALAZZETTO MADONNA",
             "destinazione": "LIDO SAN NICOLO'",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "PALAZZETTO MADONNA",
             "destinazione": "LIDO CASINO'",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "PALAZZETTO MADONNA",
             "destinazione": "EXCELSIOR",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "PALAZZETTO MADONNA",
             "destinazione": "AEROPORTO",
-            "importo": ""
+            "importo": "160"
         },
         {
             "hotel": "PALAZZETTO MADONNA",
             "destinazione": "BURANO",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "PALAZZETTO MADONNA",
             "destinazione": "PUNTA SABBIONI",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "PALAZZETTO MADONNA",
             "destinazione": "TORCELLO",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "PALAZZETTO MADONNA",
             "destinazione": "MURANO",
-            "importo": ""
+            "importo": "80"
         },
         {
             "hotel": "PALAZZETTO MADONNA",
             "destinazione": "MALAMOCCO",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "PALAZZETTO MADONNA",
             "destinazione": "ALBERONI",
-            "importo": ""
+            "importo": "220"
         },
         {
             "hotel": "PALAZZETTO MADONNA",
             "destinazione": "TREPORTI",
-            "importo": ""
+            "importo": "220"
         },
         {
             "hotel": "PALAZZETTO MADONNA",
             "destinazione": "SAN PIERO IN VOLTA",
-            "importo": ""
+            "importo": "240"
         },
         {
             "hotel": "PALAZZETTO MADONNA",
             "destinazione": "PELLESTRINA",
-            "importo": ""
+            "importo": "300"
         },
         {
             "hotel": "PALAZZETTO MADONNA",
             "destinazione": "CHIOGGIA",
-            "importo": ""
+            "importo": "500"
         },
         {
             "hotel": "PALAZZETTO MADONNA",
@@ -3553,17 +3573,17 @@
         {
             "hotel": "PALAZZETTO MADONNA",
             "destinazione": "MOLO",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "PALAZZETTO MADONNA",
             "destinazione": "SAN BASILIO",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "PALAZZETTO MADONNA",
             "destinazione": "FUSINA",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "PALAZZETTO MADONNA",
@@ -3573,92 +3593,92 @@
         {
             "hotel": "PALAZZO BARBARIGO",
             "destinazione": "PIAZZALE ROMA",
-            "importo": ""
+            "importo": "70"
         },
         {
             "hotel": "PALAZZO BARBARIGO",
             "destinazione": "FERROVIA",
-            "importo": ""
+            "importo": "70"
         },
         {
             "hotel": "PALAZZO BARBARIGO",
             "destinazione": "TRONCHETTO",
-            "importo": ""
+            "importo": "80"
         },
         {
             "hotel": "PALAZZO BARBARIGO",
             "destinazione": "LIDO SME",
-            "importo": ""
+            "importo": "90"
         },
         {
             "hotel": "PALAZZO BARBARIGO",
             "destinazione": "LIDO SAN NICOLO'",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "PALAZZO BARBARIGO",
             "destinazione": "LIDO CASINO'",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "PALAZZO BARBARIGO",
             "destinazione": "EXCELSIOR",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "PALAZZO BARBARIGO",
             "destinazione": "AEROPORTO",
-            "importo": ""
+            "importo": "160"
         },
         {
             "hotel": "PALAZZO BARBARIGO",
             "destinazione": "BURANO",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "PALAZZO BARBARIGO",
             "destinazione": "PUNTA SABBIONI",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "PALAZZO BARBARIGO",
             "destinazione": "TORCELLO",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "PALAZZO BARBARIGO",
             "destinazione": "MURANO",
-            "importo": ""
+            "importo": "80"
         },
         {
             "hotel": "PALAZZO BARBARIGO",
             "destinazione": "MALAMOCCO",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "PALAZZO BARBARIGO",
             "destinazione": "ALBERONI",
-            "importo": ""
+            "importo": "220"
         },
         {
             "hotel": "PALAZZO BARBARIGO",
             "destinazione": "TREPORTI",
-            "importo": ""
+            "importo": "220"
         },
         {
             "hotel": "PALAZZO BARBARIGO",
             "destinazione": "SAN PIERO IN VOLTA",
-            "importo": ""
+            "importo": "240"
         },
         {
             "hotel": "PALAZZO BARBARIGO",
             "destinazione": "PELLESTRINA",
-            "importo": ""
+            "importo": "300"
         },
         {
             "hotel": "PALAZZO BARBARIGO",
             "destinazione": "CHIOGGIA",
-            "importo": ""
+            "importo": "500"
         },
         {
             "hotel": "PALAZZO BARBARIGO",
@@ -3723,17 +3743,17 @@
         {
             "hotel": "PALAZZO BARBARIGO",
             "destinazione": "MOLO",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "PALAZZO BARBARIGO",
             "destinazione": "SAN BASILIO",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "PALAZZO BARBARIGO",
             "destinazione": "FUSINA",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "PALAZZO BARBARIGO",
@@ -3743,92 +3763,92 @@
         {
             "hotel": "PALAZZO KELLER",
             "destinazione": "PIAZZALE ROMA",
-            "importo": ""
+            "importo": "70"
         },
         {
             "hotel": "PALAZZO KELLER",
             "destinazione": "FERROVIA",
-            "importo": ""
+            "importo": "70"
         },
         {
             "hotel": "PALAZZO KELLER",
             "destinazione": "TRONCHETTO",
-            "importo": ""
+            "importo": "80"
         },
         {
             "hotel": "PALAZZO KELLER",
             "destinazione": "LIDO SME",
-            "importo": ""
+            "importo": "90"
         },
         {
             "hotel": "PALAZZO KELLER",
             "destinazione": "LIDO SAN NICOLO'",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "PALAZZO KELLER",
             "destinazione": "LIDO CASINO'",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "PALAZZO KELLER",
             "destinazione": "EXCELSIOR",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "PALAZZO KELLER",
             "destinazione": "AEROPORTO",
-            "importo": ""
+            "importo": "160"
         },
         {
             "hotel": "PALAZZO KELLER",
             "destinazione": "BURANO",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "PALAZZO KELLER",
             "destinazione": "PUNTA SABBIONI",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "PALAZZO KELLER",
             "destinazione": "TORCELLO",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "PALAZZO KELLER",
             "destinazione": "MURANO",
-            "importo": ""
+            "importo": "80"
         },
         {
             "hotel": "PALAZZO KELLER",
             "destinazione": "MALAMOCCO",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "PALAZZO KELLER",
             "destinazione": "ALBERONI",
-            "importo": ""
+            "importo": "220"
         },
         {
             "hotel": "PALAZZO KELLER",
             "destinazione": "TREPORTI",
-            "importo": ""
+            "importo": "220"
         },
         {
             "hotel": "PALAZZO KELLER",
             "destinazione": "SAN PIERO IN VOLTA",
-            "importo": ""
+            "importo": "240"
         },
         {
             "hotel": "PALAZZO KELLER",
             "destinazione": "PELLESTRINA",
-            "importo": ""
+            "importo": "300"
         },
         {
             "hotel": "PALAZZO KELLER",
             "destinazione": "CHIOGGIA",
-            "importo": ""
+            "importo": "500"
         },
         {
             "hotel": "PALAZZO KELLER",
@@ -3893,17 +3913,17 @@
         {
             "hotel": "PALAZZO KELLER",
             "destinazione": "MOLO",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "PALAZZO KELLER",
             "destinazione": "SAN BASILIO",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "PALAZZO KELLER",
             "destinazione": "FUSINA",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "PALAZZO KELLER",
@@ -3913,17 +3933,17 @@
         {
             "hotel": "PANORAMA",
             "destinazione": "PIAZZALE ROMA",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "PANORAMA",
             "destinazione": "FERROVIA",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "PANORAMA",
             "destinazione": "TRONCHETTO",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "PANORAMA",
@@ -3948,12 +3968,12 @@
         {
             "hotel": "PANORAMA",
             "destinazione": "AEROPORTO",
-            "importo": ""
+            "importo": "160"
         },
         {
             "hotel": "PANORAMA",
             "destinazione": "BURANO",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "PANORAMA",
@@ -3963,12 +3983,12 @@
         {
             "hotel": "PANORAMA",
             "destinazione": "TORCELLO",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "PANORAMA",
             "destinazione": "MURANO",
-            "importo": ""
+            "importo": "80"
         },
         {
             "hotel": "PANORAMA",
@@ -3988,27 +4008,27 @@
         {
             "hotel": "PANORAMA",
             "destinazione": "SAN PIERO IN VOLTA",
-            "importo": ""
+            "importo": "220"
         },
         {
             "hotel": "PANORAMA",
             "destinazione": "PELLESTRINA",
-            "importo": ""
+            "importo": "300"
         },
         {
             "hotel": "PANORAMA",
             "destinazione": "CHIOGGIA",
-            "importo": ""
+            "importo": "500"
         },
         {
             "hotel": "PANORAMA",
             "destinazione": "SAN GIORGIO",
-            "importo": ""
+            "importo": "70"
         },
         {
             "hotel": "PANORAMA",
             "destinazione": "SAN MARCO",
-            "importo": ""
+            "importo": "70"
         },
         {
             "hotel": "PANORAMA",
@@ -4053,7 +4073,7 @@
         {
             "hotel": "PANORAMA",
             "destinazione": "RIALTO",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "PANORAMA",
@@ -4063,17 +4083,17 @@
         {
             "hotel": "PANORAMA",
             "destinazione": "MOLO",
-            "importo": ""
+            "importo": "110"
         },
         {
             "hotel": "PANORAMA",
             "destinazione": "SAN BASILIO",
-            "importo": ""
+            "importo": "110"
         },
         {
             "hotel": "PANORAMA",
             "destinazione": "FUSINA",
-            "importo": ""
+            "importo": "240"
         },
         {
             "hotel": "PANORAMA",
@@ -4253,92 +4273,92 @@
         {
             "hotel": "RIALTO",
             "destinazione": "PIAZZALE ROMA",
-            "importo": ""
+            "importo": "70"
         },
         {
             "hotel": "RIALTO",
             "destinazione": "FERROVIA",
-            "importo": ""
+            "importo": "70"
         },
         {
             "hotel": "RIALTO",
             "destinazione": "TRONCHETTO",
-            "importo": ""
+            "importo": "80"
         },
         {
             "hotel": "RIALTO",
             "destinazione": "LIDO SME",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "RIALTO",
             "destinazione": "LIDO SAN NICOLO'",
-            "importo": ""
+            "importo": "110"
         },
         {
             "hotel": "RIALTO",
             "destinazione": "LIDO CASINO'",
-            "importo": ""
+            "importo": "110"
         },
         {
             "hotel": "RIALTO",
             "destinazione": "EXCELSIOR",
-            "importo": ""
+            "importo": "110"
         },
         {
             "hotel": "RIALTO",
             "destinazione": "AEROPORTO",
-            "importo": ""
+            "importo": "160"
         },
         {
             "hotel": "RIALTO",
             "destinazione": "BURANO",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "RIALTO",
             "destinazione": "PUNTA SABBIONI",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "RIALTO",
             "destinazione": "TORCELLO",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "RIALTO",
             "destinazione": "MURANO",
-            "importo": ""
+            "importo": "80"
         },
         {
             "hotel": "RIALTO",
             "destinazione": "MALAMOCCO",
-            "importo": ""
+            "importo": "200"
         },
         {
             "hotel": "RIALTO",
             "destinazione": "ALBERONI",
-            "importo": ""
+            "importo": "220"
         },
         {
             "hotel": "RIALTO",
             "destinazione": "TREPORTI",
-            "importo": ""
+            "importo": "220"
         },
         {
             "hotel": "RIALTO",
             "destinazione": "SAN PIERO IN VOLTA",
-            "importo": ""
+            "importo": "250"
         },
         {
             "hotel": "RIALTO",
             "destinazione": "PELLESTRINA",
-            "importo": ""
+            "importo": "300"
         },
         {
             "hotel": "RIALTO",
             "destinazione": "CHIOGGIA",
-            "importo": ""
+            "importo": "500"
         },
         {
             "hotel": "RIALTO",
@@ -4348,7 +4368,7 @@
         {
             "hotel": "RIALTO",
             "destinazione": "SAN MARCO",
-            "importo": ""
+            "importo": "80"
         },
         {
             "hotel": "RIALTO",
@@ -4358,12 +4378,12 @@
         {
             "hotel": "RIALTO",
             "destinazione": "GIARDINI",
-            "importo": ""
+            "importo": "90"
         },
         {
             "hotel": "RIALTO",
             "destinazione": "BIENNALE",
-            "importo": ""
+            "importo": "90"
         },
         {
             "hotel": "RIALTO",
@@ -4403,17 +4423,17 @@
         {
             "hotel": "RIALTO",
             "destinazione": "MOLO",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "RIALTO",
             "destinazione": "SAN BASILIO",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "RIALTO",
             "destinazione": "FUSINA",
-            "importo": ""
+            "importo": "200"
         },
         {
             "hotel": "RIALTO",
@@ -4423,6 +4443,61 @@
         {
             "hotel": "LOCANDA CIPRIANI",
             "destinazione": "APT",
+            "importo": "240"
+        },
+        {
+            "hotel": "LOCANDA CIPRIANI",
+            "destinazione": "PIAZZALE ROMA",
+            "importo": "180"
+        },
+        {
+            "hotel": "LOCANDA CIPRIANI",
+            "destinazione": "FERROVIA",
+            "importo": "180"
+        },
+        {
+            "hotel": "LOCANDA CIPRIANI",
+            "destinazione": "TRONCHETTO",
+            "importo": "180"
+        },
+        {
+            "hotel": "LOCANDA CIPRIANI",
+            "destinazione": "EXCELSIOR",
+            "importo": "190"
+        },
+        {
+            "hotel": "LOCANDA CIPRIANI",
+            "destinazione": "HILTON",
+            "importo": "190"
+        },
+        {
+            "hotel": "LOCANDA CIPRIANI",
+            "destinazione": "JW MARRIOTT",
+            "importo": "190"
+        },
+        {
+            "hotel": "LOCANDA CIPRIANI",
+            "destinazione": "SAN CLEMENTE",
+            "importo": "190"
+        },
+        {
+            "hotel": "LOCANDA CIPRIANI",
+            "destinazione": "GIUDECCA",
+            "importo": "190"
+        },
+        {
+            "hotel": "LOCANDA CIPRIANI",
+            "destinazione": "MOLO",
+            "importo": "190"
+        },
+        {
+            "hotel": "LOCANDA CIPRIANI",
+            "destinazione": "SAN MARCO",
+            "importo": "180"
+        },
+        {
+            "hotel": "LOCANDA CIPRIANI",
+            "destinazione": "RIALTO",
             "importo": "180"
         },
         {
