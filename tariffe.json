@@ -3,47 +3,47 @@
         {
             "hotel": "ATENEO",
             "destinazione": "PIAZZALE ROMA",
-            "importo": ""
+            "importo": "90"
         },
         {
             "hotel": "ATENEO",
             "destinazione": "FERROVIA",
-            "importo": ""
+            "importo": "90"
         },
         {
             "hotel": "ATENEO",
             "destinazione": "TRONCHETTO",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "ATENEO",
             "destinazione": "LIDO SME",
-            "importo": ""
+            "importo": "90"
         },
         {
             "hotel": "ATENEO",
             "destinazione": "LIDO SAN NICOLO'",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "ATENEO",
             "destinazione": "LIDO CASINO'",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "ATENEO",
             "destinazione": "EXCELSIOR",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "ATENEO",
             "destinazione": "AEROPORTO",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "ATENEO",
             "destinazione": "BURANO",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "ATENEO",
@@ -53,22 +53,22 @@
         {
             "hotel": "ATENEO",
             "destinazione": "TORCELLO",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "ATENEO",
             "destinazione": "MURANO",
-            "importo": ""
+            "importo": "90"
         },
         {
             "hotel": "ATENEO",
             "destinazione": "MALAMOCCO",
-            "importo": ""
+            "importo": "190"
         },
         {
             "hotel": "ATENEO",
             "destinazione": "ALBERONI",
-            "importo": ""
+            "importo": "230"
         },
         {
             "hotel": "ATENEO",
@@ -78,17 +78,17 @@
         {
             "hotel": "ATENEO",
             "destinazione": "SAN PIERO IN VOLTA",
-            "importo": ""
+            "importo": "260"
         },
         {
             "hotel": "ATENEO",
             "destinazione": "PELLESTRINA",
-            "importo": ""
+            "importo": "350"
         },
         {
             "hotel": "ATENEO",
             "destinazione": "CHIOGGIA",
-            "importo": ""
+            "importo": "500"
         },
         {
             "hotel": "ATENEO",
@@ -108,12 +108,12 @@
         {
             "hotel": "ATENEO",
             "destinazione": "GIARDINI",
-            "importo": ""
+            "importo": "85"
         },
         {
             "hotel": "ATENEO",
             "destinazione": "BIENNALE",
-            "importo": ""
+            "importo": "85"
         },
         {
             "hotel": "ATENEO",
@@ -153,17 +153,17 @@
         {
             "hotel": "ATENEO",
             "destinazione": "MOLO",
-            "importo": ""
+            "importo": "120"
         },
         {
             "hotel": "ATENEO",
             "destinazione": "SAN BASILIO",
-            "importo": ""
+            "importo": "120"
         },
         {
             "hotel": "ATENEO",
             "destinazione": "FUSINA",
-            "importo": ""
+            "importo": "200"
         },
         {
             "hotel": "ATENEO",
@@ -513,17 +513,17 @@
         {
             "hotel": "BELVEDERE",
             "destinazione": "PIAZZALE ROMA",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "BELVEDERE",
             "destinazione": "FERROVIA",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "BELVEDERE",
             "destinazione": "TRONCHETTO",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "BELVEDERE",
@@ -548,12 +548,12 @@
         {
             "hotel": "BELVEDERE",
             "destinazione": "AEROPORTO",
-            "importo": ""
+            "importo": "160"
         },
         {
             "hotel": "BELVEDERE",
             "destinazione": "BURANO",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "BELVEDERE",
@@ -563,12 +563,12 @@
         {
             "hotel": "BELVEDERE",
             "destinazione": "TORCELLO",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "BELVEDERE",
             "destinazione": "MURANO",
-            "importo": ""
+            "importo": "80"
         },
         {
             "hotel": "BELVEDERE",
@@ -588,27 +588,27 @@
         {
             "hotel": "BELVEDERE",
             "destinazione": "SAN PIERO IN VOLTA",
-            "importo": ""
+            "importo": "220"
         },
         {
             "hotel": "BELVEDERE",
             "destinazione": "PELLESTRINA",
-            "importo": ""
+            "importo": "300"
         },
         {
             "hotel": "BELVEDERE",
             "destinazione": "CHIOGGIA",
-            "importo": ""
+            "importo": "500"
         },
         {
             "hotel": "BELVEDERE",
             "destinazione": "SAN GIORGIO",
-            "importo": ""
+            "importo": "70"
         },
         {
             "hotel": "BELVEDERE",
             "destinazione": "SAN MARCO",
-            "importo": ""
+            "importo": "70"
         },
         {
             "hotel": "BELVEDERE",
@@ -653,7 +653,7 @@
         {
             "hotel": "BELVEDERE",
             "destinazione": "RIALTO",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "BELVEDERE",
@@ -663,17 +663,17 @@
         {
             "hotel": "BELVEDERE",
             "destinazione": "MOLO",
-            "importo": ""
+            "importo": "110"
         },
         {
             "hotel": "BELVEDERE",
             "destinazione": "SAN BASILIO",
-            "importo": ""
+            "importo": "110"
         },
         {
             "hotel": "BELVEDERE",
             "destinazione": "FUSINA",
-            "importo": ""
+            "importo": "240"
         },
         {
             "hotel": "BELVEDERE",
@@ -1318,6 +1318,11 @@
         {
             "hotel": "CIPRIANI",
             "destinazione": "ACCADEMIA",
+            "importo": "70"
+        },
+        {
+            "hotel": "CIPRIANI",
+            "destinazione": "HILTON",
             "importo": "70"
         },
         {
@@ -2403,17 +2408,17 @@
         {
             "hotel": "HUNGARIA",
             "destinazione": "PIAZZALE ROMA",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "HUNGARIA",
             "destinazione": "FERROVIA",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "HUNGARIA",
             "destinazione": "TRONCHETTO",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "HUNGARIA",
@@ -2438,12 +2443,12 @@
         {
             "hotel": "HUNGARIA",
             "destinazione": "AEROPORTO",
-            "importo": ""
+            "importo": "160"
         },
         {
             "hotel": "HUNGARIA",
             "destinazione": "BURANO",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "HUNGARIA",
@@ -2453,12 +2458,12 @@
         {
             "hotel": "HUNGARIA",
             "destinazione": "TORCELLO",
-            "importo": ""
+            "importo": "180"
         },
         {
             "hotel": "HUNGARIA",
             "destinazione": "MURANO",
-            "importo": ""
+            "importo": "80"
         },
         {
             "hotel": "HUNGARIA",
@@ -2478,27 +2483,27 @@
         {
             "hotel": "HUNGARIA",
             "destinazione": "SAN PIERO IN VOLTA",
-            "importo": ""
+            "importo": "220"
         },
         {
             "hotel": "HUNGARIA",
             "destinazione": "PELLESTRINA",
-            "importo": ""
+            "importo": "300"
         },
         {
             "hotel": "HUNGARIA",
             "destinazione": "CHIOGGIA",
-            "importo": ""
+            "importo": "500"
         },
         {
             "hotel": "HUNGARIA",
             "destinazione": "SAN GIORGIO",
-            "importo": ""
+            "importo": "70"
         },
         {
             "hotel": "HUNGARIA",
             "destinazione": "SAN MARCO",
-            "importo": ""
+            "importo": "70"
         },
         {
             "hotel": "HUNGARIA",
@@ -2543,7 +2548,7 @@
         {
             "hotel": "HUNGARIA",
             "destinazione": "RIALTO",
-            "importo": ""
+            "importo": "100"
         },
         {
             "hotel": "HUNGARIA",
@@ -2553,17 +2558,17 @@
         {
             "hotel": "HUNGARIA",
             "destinazione": "MOLO",
-            "importo": ""
+            "importo": "110"
         },
         {
             "hotel": "HUNGARIA",
             "destinazione": "SAN BASILIO",
-            "importo": ""
+            "importo": "110"
         },
         {
             "hotel": "HUNGARIA",
             "destinazione": "FUSINA",
-            "importo": ""
+            "importo": "240"
         },
         {
             "hotel": "HUNGARIA",
@@ -3419,6 +3424,241 @@
             "hotel": "MONACO",
             "destinazione": "SAN GIULIANO",
             "importo": "180"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "PIAZZALE ROMA",
+            "importo": "80"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "FERROVIA",
+            "importo": "80"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "AEROPORTO",
+            "importo": "170"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "TRONCHETTO",
+            "importo": "100"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "SAN BASILIO",
+            "importo": "100"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "MOLO",
+            "importo": "120"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "MURANO",
+            "importo": "80"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "TORCELLO",
+            "importo": "170"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "BURANO",
+            "importo": "170"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "GHETTO",
+            "importo": "80"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "GUGLIE",
+            "importo": "80"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "F.TE. NOVE",
+            "importo": "80"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "OSPEDALE",
+            "importo": "70"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "ARSENALE",
+            "importo": "100"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "GIARDINI",
+            "importo": "100"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "BIENNALE",
+            "importo": "100"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "TESE",
+            "importo": "100"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "SANT' ELENA",
+            "importo": "100"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "CERTOSA",
+            "importo": "100"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "ISOLA ARMENI",
+            "importo": "100"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "SAN SERVOLO ",
+            "importo": "100"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "SAN MICHELE",
+            "importo": "100"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "LAZZARETTO VECCHIO",
+            "importo": "120"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "SAN CLEMENTE",
+            "importo": "120"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "J.W. MARRIOTT",
+            "importo": "120"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "LIDO SAN NICOLO'",
+            "importo": "120"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "LIDO CASINO'",
+            "importo": "130"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "LIDO SME",
+            "importo": "120"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "EXCELSIOR",
+            "importo": "130"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "ALBERONI",
+            "importo": "250"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "PELLESTRINA",
+            "importo": "280"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "CELESTE",
+            "importo": "300"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "SAN MARCO",
+            "importo": "90"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "SAN GIORGIO",
+            "importo": "90"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "CIPRIANI",
+            "importo": "90"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "LINEA D' OMBRA",
+            "importo": "90"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "GUGGENHEIM",
+            "importo": "90"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "ACCADEMIA",
+            "importo": "90"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "GIUDECCA",
+            "importo": "90"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "LAGUNA PALACE",
+            "importo": "300"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "PUNTA SABBIONI",
+            "importo": "180"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "SAN GIULIANO",
+            "importo": "200"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "CHIOGGIA",
+            "importo": "500"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "FUSINA",
+            "importo": "250"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "VIGNOLE",
+            "importo": "100"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "SANT' ERASMO",
+            "importo": "170"
+        },
+        {
+            "hotel": "ORIENT EXPRESS",
+            "destinazione": "MALAMOCCO",
+            "importo": "170"
         },
         {
             "hotel": "PALAZZETTO MADONNA",
@@ -4441,6 +4681,86 @@
             "importo": ""
         },
         {
+            "hotel": "VIKTORIA PALACE",
+            "destinazione": "RIALTO",
+            "importo": "100"
+        },
+        {
+            "hotel": "VIKTORIA PALACE",
+            "destinazione": "PIAZZALE ROMA",
+            "importo": "100"
+        },
+        {
+            "hotel": "VIKTORIA PALACE",
+            "destinazione": "FERROVIA",
+            "importo": "100"
+        },
+        {
+            "hotel": "VIKTORIA PALACE",
+            "destinazione": "TRONCHETTO",
+            "importo": "100"
+        },
+        {
+            "hotel": "VIKTORIA PALACE",
+            "destinazione": "APT",
+            "importo": "160"
+        },
+        {
+            "hotel": "VIKTORIA PALACE",
+            "destinazione": "SAN MARCO",
+            "importo": "70"
+        },
+        {
+            "hotel": "VIKTORIA PALACE",
+            "destinazione": "SAN GIORGIO",
+            "importo": "70"
+        },
+        {
+            "hotel": "VIKTORIA PALACE",
+            "destinazione": "MURANO",
+            "importo": "80"
+        },
+        {
+            "hotel": "VIKTORIA PALACE",
+            "destinazione": "BURANO",
+            "importo": "180"
+        },
+        {
+            "hotel": "VIKTORIA PALACE",
+            "destinazione": "TORCELLO",
+            "importo": "180"
+        },
+        {
+            "hotel": "VIKTORIA PALACE",
+            "destinazione": "SAN PIERO IN VOLTA",
+            "importo": "220"
+        },
+        {
+            "hotel": "VIKTORIA PALACE",
+            "destinazione": "PELLESTRINA",
+            "importo": "300"
+        },
+        {
+            "hotel": "VIKTORIA PALACE",
+            "destinazione": "CHIOGGIA",
+            "importo": "500"
+        },
+        {
+            "hotel": "VIKTORIA PALACE",
+            "destinazione": "MOLO",
+            "importo": "110"
+        },
+        {
+            "hotel": "VIKTORIA PALACE",
+            "destinazione": "SAN BASILIO",
+            "importo": "110"
+        },
+        {
+            "hotel": "VIKTORIA PALACE",
+            "destinazione": "FUSINA",
+            "importo": "240"
+        },
+        {
             "hotel": "LOCANDA CIPRIANI",
             "destinazione": "APT",
             "importo": "240"
@@ -4522,7 +4842,7 @@
         },
         {
             "hotel": "NOTTURNO (dalle 22 alle 7)",
-            "destinazione": "10",
+            "destinazione": "15",
             "importo": ""
         },
         {
