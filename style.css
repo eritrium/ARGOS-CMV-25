@@ -9,23 +9,24 @@
 }
 
 body {
-    background: #f5f5f5;
+    background: #121212;
     padding: 10px;
-    color: #222;
+    color: #e0e0e0;
 }
 
 /* --------------------------------------------------
    HEADER
 -------------------------------------------------- */
 header {
-    background: #FFD400;
-    color: #7B001C; /* bordeaux */
+    background: #2b2600;
+    color: #ffd700; /* Oro scuro / giallo acceso */
     text-align: center;
     padding: 18px 0;
     font-size: 1.6rem;
     font-weight: bold;
     border-radius: 8px;
     margin-bottom: 20px;
+    border: 1px solid #4d4400;
 }
 
 /* --------------------------------------------------
@@ -33,20 +34,20 @@ header {
 -------------------------------------------------- */
 #messaggioAvviso {
     display: none;
-    background-color: #ff0000;
-    color: white;
+    background-color: #8b0000;
+    color: #ffffff;
     font-weight: bold;
     font-size: 22px;
     padding: 15px;
     text-align: center;
-    border: 3px solid #990000;
+    border: 3px solid #ff4d4d;
     margin-bottom: 20px;
     animation: lampeggia 1s infinite;
 }
 
 @keyframes lampeggia {
     0% { opacity: 1; }
-    50% { opacity: 0.3; }
+    50% { opacity: 0.4; }
     100% { opacity: 1; }
 }
 
@@ -56,13 +57,13 @@ header {
 h3 {
     font-size: 1.3rem;
     margin-bottom: 5px;
-    color: #333;
+    color: #ffffff;
 }
 
 .section-divider {
     width: 100%;
     height: 2px;
-    background: #ccc;
+    background: #333333;
     margin-bottom: 10px;
 }
 
@@ -84,24 +85,27 @@ h3 {
 
 .accordion-button:active {
     transform: scale(0.98);
-    box-shadow: 0 0 4px rgba(0,0,0,0.2);
+    box-shadow: 0 0 4px rgba(0,0,0,0.5);
     opacity: 1;
 }
 
-/* Colori pastello pieni */
+/* Colori scuri per i bottoni dell'accordion */
 .btn-argos {
-    background-color: #AEE4FF; /* azzurro pastello */
-    color: #000;
+    background-color: #1a3a4b; /* Azzurro scuro */
+    color: #aae0ff;
+    border: 1px solid #2d5a73;
 }
 
 .btn-salute {
-    background-color: #B8F2E6; /* verde acqua */
-    color: #000;
+    background-color: #1b3b32; /* Verde scuro */
+    color: #a3ebd9;
+    border: 1px solid #2d5c4f;
 }
 
 .btn-tariffe {
-    background-color: #FFD8A8; /* arancio tenue */
-    color: #000;
+    background-color: #4a341b; /* Arancio scuro */
+    color: #ffd29d;
+    border: 1px solid #6e4e2b;
 }
 
 /* --------------------------------------------------
@@ -112,13 +116,14 @@ h3 {
     margin-bottom: 15px;
 }
 
-/* Contenitore interno bianco con ombra */
+/* Contenitore interno scuro con ombra */
 .section-box {
-    background: #ffffff;
+    background: #1e1e1e;
     padding: 15px;
     border-radius: 10px;
     margin-top: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    border: 1px solid #2a2a2a;
 }
 
 /* --------------------------------------------------
@@ -129,9 +134,16 @@ select, input[type="date"] {
     padding: 14px;
     font-size: 1.1rem;
     border-radius: 8px;
-    border: 1px solid #bbb;
-    background: #fff;
+    border: 1px solid #444;
+    background: #2a2a2a;
+    color: #ffffff;
     margin-bottom: 10px;
+    color-scheme: dark; /* Per rendere scuro anche il calendario nativo */
+}
+
+select option {
+    background-color: #2a2a2a;
+    color: #ffffff;
 }
 
 /* --------------------------------------------------
@@ -145,7 +157,7 @@ button#verificaTariffe {
     font-size: 1.2rem;
     border: none;
     border-radius: 8px;
-    background: #0078FF;
+    background: #0056b3;
     color: white;
     font-weight: bold;
     cursor: pointer;
@@ -156,7 +168,7 @@ button#verificaTariffe {
 button#verificaMotoscafo:active,
 button#verificaServizio:active,
 button#verificaTariffe:active {
-    background: #005FCC;
+    background: #003d80;
 }
 
 /* --------------------------------------------------
@@ -166,17 +178,19 @@ button#verificaTariffe:active {
 #outputServizio {
     margin-top: 10px;
     font-size: 1.1rem;
+    color: #e0e0e0;
 }
 
 /* --------------------------------------------------
    TABELLA RISULTATI
 -------------------------------------------------- */
 .table-wrapper {
-    background: white;
+    background: #1e1e1e;
     padding: 15px;
     border-radius: 10px;
     margin-top: 15px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    border: 1px solid #2a2a2a;
 }
 
 .data-title {
@@ -184,6 +198,7 @@ button#verificaTariffe:active {
     font-size: 1.3rem;
     margin-bottom: 12px;
     font-weight: bold;
+    color: #ffffff;
 }
 
 table {
@@ -192,41 +207,48 @@ table {
 }
 
 th {
-    background: #333;
-    color: white;
+    background: #2d2d2d;
+    color: #ffffff;
     padding: 10px;
     font-size: 1.1rem;
+    border-bottom: 2px solid #444;
 }
 
 td {
     padding: 10px;
     font-size: 1.1rem;
     text-align: center;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #333;
+    color: #e0e0e0;
 }
 
 /* --------------------------------------------------
-   COLORI TURNI
+   COLORI TURNI (Versione Dark)
 -------------------------------------------------- */
 .verde {
-    background: #C6E0B4;
+    background: #1e3a1e;
+    color: #b3e6b3;
 }
 
 .arancio {
-    background: #F4B084;
+    background: #4a2e18;
+    color: #ffc299;
 }
 
 .giallo {
-    background: #FFF3B0;
+    background: #4a4418;
+    color: #ffff99;
 }
 
-/* NUOVI COLORI SALUTE */
+/* COLORI SALUTE (Versione Dark) */
 .blu {
-    background: #A9D0F5;
+    background: #182e4a;
+    color: #99ccff;
 }
 
 .viola {
-    background: #D7BDE2;
+    background: #3b184a;
+    color: #e0b3ff;
 }
 
 /* --------------------------------------------------
