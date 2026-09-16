@@ -19,7 +19,7 @@ body {
 -------------------------------------------------- */
 header {
     background: #2b2600;
-    color: #ffd700; /* Oro scuro / giallo acceso */
+    color: #ffd700;
     text-align: center;
     padding: 18px 0;
     font-size: 1.6rem;
@@ -52,12 +52,12 @@ header {
 }
 
 /* --------------------------------------------------
-   TITOLI SEZIONI
+   TITOLI SEZIONI E TESTI TARIFFE
 -------------------------------------------------- */
-h3 {
+h3, h4 {
     font-size: 1.3rem;
-    margin-bottom: 5px;
-    color: #ffffff;
+    margin-bottom: 10px;
+    color: #ffffff !important;
 }
 
 .section-divider {
@@ -89,21 +89,20 @@ h3 {
     opacity: 1;
 }
 
-/* Colori scuri per i bottoni dell'accordion */
 .btn-argos {
-    background-color: #1a3a4b; /* Azzurro scuro */
+    background-color: #1a3a4b;
     color: #aae0ff;
     border: 1px solid #2d5a73;
 }
 
 .btn-salute {
-    background-color: #1b3b32; /* Verde scuro */
+    background-color: #1b3b32;
     color: #a3ebd9;
     border: 1px solid #2d5c4f;
 }
 
 .btn-tariffe {
-    background-color: #4a341b; /* Arancio scuro */
+    background-color: #4a341b;
     color: #ffd29d;
     border: 1px solid #6e4e2b;
 }
@@ -112,11 +111,10 @@ h3 {
    SEZIONI ACCORDION
 -------------------------------------------------- */
 .accordion-section {
-    display: none; /* completamente chiuse */
+    display: none;
     margin-bottom: 15px;
 }
 
-/* Contenitore interno scuro con ombra */
 .section-box {
     background: #1e1e1e;
     padding: 15px;
@@ -138,7 +136,7 @@ select, input[type="date"] {
     background: #2a2a2a;
     color: #ffffff;
     margin-bottom: 10px;
-    color-scheme: dark; /* Per rendere scuro anche il calendario nativo */
+    color-scheme: dark;
 }
 
 select option {
@@ -172,17 +170,24 @@ button#verificaTariffe:active {
 }
 
 /* --------------------------------------------------
-   OUTPUT TESTUALE
+   OUTPUT TESTUALE E MESSAGGI D'ERRORE
 -------------------------------------------------- */
 #outputMotoscafo,
-#outputServizio {
+#outputServizio,
+#risultatiTariffe {
     margin-top: 10px;
     font-size: 1.1rem;
-    color: #e0e0e0;
+    color: #ffffff;
+}
+
+.msg-errore {
+    color: #ff6b6b !important;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 /* --------------------------------------------------
-   TABELLA RISULTATI
+   TABELLA RISULTATI GENERICA
 -------------------------------------------------- */
 .table-wrapper {
     background: #1e1e1e;
@@ -204,14 +209,15 @@ button#verificaTariffe:active {
 table {
     width: 100%;
     border-collapse: collapse;
+    margin-bottom: 10px;
 }
 
 th {
     background: #2d2d2d;
-    color: #ffffff;
+    color: #ffffff !important;
     padding: 10px;
     font-size: 1.1rem;
-    border-bottom: 2px solid #444;
+    border-bottom: 2px solid #555;
 }
 
 td {
@@ -219,36 +225,56 @@ td {
     font-size: 1.1rem;
     text-align: center;
     border-bottom: 1px solid #333;
-    color: #e0e0e0;
+    color: #ffffff !important;
+}
+
+/* --------------------------------------------------
+   STILI DEDICATI ALLE TARIFFE (DARK MODE)
+-------------------------------------------------- */
+.riga-pari td {
+    background-color: #282828 !important;
+    color: #ffffff !important;
+}
+
+.riga-dispari td {
+    background-color: #1e1e1e !important;
+    color: #ffffff !important;
+}
+
+.riga-supplemento-titolo td {
+    background-color: #000000 !important;
+    color: #ffd700 !important; /* Testo oro in evidenza per i titoli dei supplementi */
+    font-weight: bold;
+    font-size: 1.15rem;
+    border-bottom: 2px solid #ffd700;
 }
 
 /* --------------------------------------------------
    COLORI TURNI (Versione Dark)
 -------------------------------------------------- */
-.verde {
-    background: #1e3a1e;
-    color: #b3e6b3;
+.verde td, td.verde {
+    background: #1e3a1e !important;
+    color: #b3e6b3 !important;
 }
 
-.arancio {
-    background: #4a2e18;
-    color: #ffc299;
+.arancio td, td.arancio {
+    background: #4a2e18 !important;
+    color: #ffc299 !important;
 }
 
-.giallo {
-    background: #4a4418;
-    color: #ffff99;
+.giallo td, td.giallo {
+    background: #4a4418 !important;
+    color: #ffff99 !important;
 }
 
-/* COLORI SALUTE (Versione Dark) */
-.blu {
-    background: #182e4a;
-    color: #99ccff;
+.blu td, td.blu {
+    background: #182e4a !important;
+    color: #99ccff !important;
 }
 
-.viola {
-    background: #3b184a;
-    color: #e0b3ff;
+.viola td, td.viola {
+    background: #3b184a !important;
+    color: #e0b3ff !important;
 }
 
 /* --------------------------------------------------
