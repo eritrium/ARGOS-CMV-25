@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 );
 
                 if (filtrati.length === 0) {
-                    outputServizio.innerHTML = "<p style='color:red;'>Nessun dato SALUTE per questa data.</p>";
+                    outputServizio.innerHTML = "<p style='color:#ff6b6b;'>Nessun dato SALUTE per questa data.</p>";
                     return;
                 }
 
@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function () {
             );
 
             if (finali.length === 0) {
-                outputServizio.innerHTML = "<p style='color:red;'>Nessun dato trovato.</p>";
+                outputServizio.innerHTML = "<p style='color:#ff6b6b;'>Nessun dato trovato.</p>";
                 return;
             }
 
@@ -244,7 +244,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 risultatiTariffe.innerHTML = "";
 
                 if (!hotel) {
-                    risultatiTariffe.innerHTML = "<p style='color:red;'>Seleziona un hotel.</p>";
+                    risultatiTariffe.innerHTML = "<p style='color:#ff6b6b;'>Seleziona un hotel.</p>";
                     return;
                 }
 
@@ -255,15 +255,16 @@ document.addEventListener('DOMContentLoaded', function () {
                 const filtrate = data.tariffe.filter(t => t.hotel === hotel);
 
                 if (filtrate.length === 0) {
-                    risultatiTariffe.innerHTML = "<p style='color:red;'>Nessuna tariffa trovata.</p>";
+                    risultatiTariffe.innerHTML = "<p style='color:#ff6b6b;'>Nessuna tariffa trovata.</p>";
                     return;
                 }
 
-                const colore1 = "#DFF2FF";
-                const colore2 = "#FFFFFF";
+                // COLORI TEMA SCURO PER LE RIGHE ALTERNATE
+                const colore1 = "#282828";
+                const colore2 = "#1e1e1e";
 
                 let html = `
-                    <h4>Tariffe per ${hotel}</h4>
+                    <h4 style="margin-top:15px; margin-bottom:10px; text-align:center;">Tariffe per ${hotel}</h4>
                     <table>
                         <thead>
                             <tr>
@@ -302,15 +303,15 @@ document.addEventListener('DOMContentLoaded', function () {
                 );
 
                 if (supplementi.length > 0) {
-                    // TITOLO NERO
+                    // INTESTAZIONE SCURA IN EVIDENZA
                     html += `
-                        <tr style="background:black; color:white; font-weight:bold;">
+                        <tr style="background:#333333; color:#ffffff; font-weight:bold; border-bottom:2px solid #555;">
                             <td>${supplementi[0].hotel}</td>
                             <td>${supplementi[0].destinazione}</td>
                         </tr>
                     `;
 
-                    // ALTRE RIGHE
+                    // ALTRE RIGHE CON SFONDO SCURO
                     for (let i = 1; i < supplementi.length; i++) {
                         const s = supplementi[i];
                         const colore = (i % 2 === 0) ? colore1 : colore2;
@@ -334,7 +335,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         })
         .catch(() => {
-            risultatiTariffe.innerHTML = "<p style='color:red;'>Errore nel caricamento delle tariffe.</p>";
+            risultatiTariffe.innerHTML = "<p style='color:#ff6b6b;'>Errore nel caricamento delle tariffe.</p>";
         });
 
     const btnToggleArgos = document.getElementById('toggleArgos');
