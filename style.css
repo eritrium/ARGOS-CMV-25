@@ -293,3 +293,33 @@ td {
         font-size: 1.3rem;
     }
 }
+
+/* --------------------------------------------------
+   AVVISO AGGIORNAMENTO E FOOTER
+-------------------------------------------------- */
+#avvisoAggiornamento {
+    display: none;
+    background: #ffd700;
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 14px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    color: #888888;
+    font-size: 0.9rem;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+/* Colonna note (EXCELSIOR, GUARDIA LONDRA, ...) */
+td.nota-cella {
+    font-weight: bold;
+    text-align: left;
+}

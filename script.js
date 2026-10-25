@@ -1,3 +1,7 @@
+// ===== VERSIONE DELLA PAGINA =====
+// Quando aggiorni il sito, cambia questo numero e quello in version.json (devono essere uguali)
+const VERSIONE_PAGINA = "2";
+
 document.addEventListener('DOMContentLoaded', function () {
 
     function gestisciAvviso() {
@@ -26,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        fetch('turni.json')
+        fetch('turni.json', { cache: 'no-store' })
             .then(response => response.json())
             .then(turni => {
                 const turno = turni.find(t => t.motoscafo == motoscafo && t.data == data);
@@ -54,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         try {
-            const response = await fetch('salute_apt.json');
+            const response = await fetch('salute_apt.json', { cache: 'no-store' });
             const turni = await response.json();
 
             if (servizio === "SALUTE") {
@@ -84,6 +88,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
                 }
 
+                const haNote = filtrati.some(r => r.nota && r.nota.trim() !== "");
                 let righe = "";
 
                 filtrati.forEach(r => {
@@ -97,6 +102,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         <tr class="${colore}">
                             <td>${r.num}</td>
                             <td>${fascia}</td>
+                            ${haNote ? `<td class="nota-cella">${esc(r.nota)}</td>` : ""}
                         </tr>
                     `;
                 });
@@ -109,6 +115,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 <tr>
                                     <th>Num</th>
                                     <th>Orario</th>
+                                    ${haNote ? "<th>Note</th>" : ""}
                                 </tr>
                             </thead>
                             <tbody>${righe}</tbody>
@@ -134,70 +141,63 @@ document.addEventListener('DOMContentLoaded', function () {
                 return;
             }
 
+            const haNote = finali.some(r => r.nota && r.nota.trim() !== "");
+
+            function coloreRiga(r) {
+                const ini = r.inizio.padStart(2, "0");
+                const fin = r.fine.padStart(2, "0");
+                let colore = "";
+                if (servizio === "APT") {
+                    if (ini === "07" && fin === "18") colore = "verde";
+                    if (ini === "07" && fin === "24") colore = "arancio";
+                    if (r.servizio === "EXTRA APT") colore = "giallo";
+                    if (/excelsior/i.test(r.nota || "")) colore = "giallo";
+                }
+                return colore;
+            }
+
             let righeTotali = "";
             let i = 0;
 
             while (i < finali.length) {
 
                 const r = finali[i];
-                const orarioInizio = r.inizio;
-                const orarioFine = r.fine;
+                const orarioCompleto = `${r.inizio.padStart(2, "0")} → ${r.fine.padStart(2, "0")}`;
+                const colore = coloreRiga(r);
 
-                const gruppo = r.gruppo && r.gruppo.trim() !== "" ? r.gruppo : "normale";
-                const orarioCompleto = `${orarioInizio} → ${orarioFine}`;
-
-                let colore = "";
-
-                if (servizio === "APT") {
-                    if (orarioInizio === "07" && orarioFine === "18") colore = "verde";
-                    if (orarioInizio === "07" && orarioFine === "24") colore = "arancio";
-                    if (r.servizio === "EXTRA APT") colore = "giallo";
-                    if (gruppo === "exc") colore = "giallo";
-                }
-
+                // raggruppa le barche consecutive con stesso orario e stesso colore
                 let j = i;
                 while (
                     j < finali.length &&
-                    finali[j].inizio === orarioInizio &&
-                    finali[j].fine === orarioFine &&
-                    ((finali[j].gruppo && finali[j].gruppo.trim() !== "") ? finali[j].gruppo : "normale") === gruppo &&
-                    finali[j].servizio === r.servizio
+                    finali[j].inizio === r.inizio &&
+                    finali[j].fine === r.fine &&
+                    finali[j].servizio === r.servizio &&
+                    coloreRiga(finali[j]) === colore
                 ) {
                     j++;
                 }
 
                 const rowspan = j - i;
 
-                const notaExtra =
-                    (gruppo === "extra" &&
-                     orarioInizio === "08" &&
-                     orarioFine === "20")
-                    ? "<div class='nota-extra'>GUARDIA LONDRA</div>"
-                    : "";
-
-                const notaExcelsior =
-                    (gruppo === "exc")
-                    ? "<div class='nota-extra'>EXCELSIOR</div>"
-                    : "";
-
                 for (let k = i; k < j; k++) {
                     const riga = finali[k];
+                    const cellaNota = haNote
+                        ? `<td class="nota-cella">${esc(riga.nota)}</td>`
+                        : "";
 
                     if (k === i) {
                         righeTotali += `
                             <tr class="${colore}">
                                 <td>${riga.num}</td>
-                                <td rowspan="${rowspan}" class="orario-unico">
-                                    ${orarioCompleto}
-                                    ${notaExtra}
-                                    ${notaExcelsior}
-                                </td>
+                                <td rowspan="${rowspan}" class="orario-unico">${orarioCompleto}</td>
+                                ${cellaNota}
                             </tr>
                         `;
                     } else {
                         righeTotali += `
                             <tr class="${colore}">
                                 <td>${riga.num}</td>
+                                ${cellaNota}
                             </tr>
                         `;
                     }
@@ -214,6 +214,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             <tr>
                                 <th>Num</th>
                                 <th>Orario</th>
+                                ${haNote ? "<th>Note</th>" : ""}
                             </tr>
                         </thead>
                         <tbody>${righeTotali}</tbody>
@@ -222,9 +223,14 @@ document.addEventListener('DOMContentLoaded', function () {
             `;
 
         } catch (error) {
-            outputServizio.textContent = "Errore nel caricamento del file salute_apt.json.";
+            outputServizio.textContent = "Errore nel caricamento dei dati.";
         }
     });
+
+    function esc(t) {
+        return String(t == null ? "" : t)
+            .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    }
 
     function formatDate(dateString) {
         const options = { day: '2-digit', month: '2-digit', year: 'numeric' };
@@ -235,7 +241,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const btnTariffe = document.getElementById("verificaTariffe");
     const risultatiTariffe = document.getElementById("risultatiTariffe");
 
-    fetch("tariffe.json")
+    fetch("tariffe.json", { cache: "no-store" })
         .then(r => r.json())
         .then(data => {
 
@@ -361,5 +367,35 @@ document.addEventListener('DOMContentLoaded', function () {
     btnToggleArgos.addEventListener('click', () => toggleSezione(sezioneArgos));
     btnToggleSaluteApt.addEventListener('click', () => toggleSezione(sezioneSaluteApt));
     btnToggleTariffe.addEventListener('click', () => toggleSezione(sezioneTariffe));
+
+
+    // ===== CONTROLLO AGGIORNAMENTI =====
+    const avvisoAggiornamento = document.getElementById('avvisoAggiornamento');
+    const infoAggiornamento = document.getElementById('infoAggiornamento');
+
+    function controllaVersione() {
+        fetch('version.json?t=' + Date.now(), { cache: 'no-store' })
+            .then(r => r.json())
+            .then(v => {
+                if (v.aggiornato && infoAggiornamento) {
+                    infoAggiornamento.textContent = 'Dati aggiornati al ' + v.aggiornato;
+                }
+                if (String(v.versione) !== VERSIONE_PAGINA) {
+                    avvisoAggiornamento.style.display = 'block';
+                }
+            })
+            .catch(() => { /* offline: nessun avviso */ });
+    }
+
+    avvisoAggiornamento.addEventListener('click', () => {
+        const url = new URL(window.location.href);
+        url.searchParams.set('v', Date.now());
+        window.location.href = url.toString();
+    });
+
+    controllaVersione();
+    document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'visible') controllaVersione();
+    });
 
 });
