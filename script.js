@@ -1,6 +1,6 @@
 // ===== VERSIONE DELLA PAGINA =====
 // Quando aggiorni il sito, cambia questo numero e quello in version.json (devono essere uguali)
-const VERSIONE_PAGINA = "2";
+const VERSIONE_PAGINA = "1";
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         <tr class="${colore}">
                             <td>${r.num}</td>
                             <td>${fascia}</td>
-                            ${haNote ? `<td class="nota-cella">${esc(r.nota)}</td>` : ""}
+                            ${haNote ? `<td class="nota-cella">${r.nota ? `<span class="chip-nota">${esc(r.nota)}</span>` : ""}</td>` : ""}
                         </tr>
                     `;
                 });
@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 for (let k = i; k < j; k++) {
                     const riga = finali[k];
                     const cellaNota = haNote
-                        ? `<td class="nota-cella">${esc(riga.nota)}</td>`
+                        ? `<td class="nota-cella">${riga.nota ? `<span class="chip-nota">${esc(riga.nota)}</span>` : ""}</td>`
                         : "";
 
                     if (k === i) {
@@ -232,9 +232,11 @@ document.addEventListener('DOMContentLoaded', function () {
             .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
     }
 
-    function formatDate(dateString) {
-        const options = { day: '2-digit', month: '2-digit', year: 'numeric' };
-        return new Date(dateString).toLocaleDateString('it-IT', options);
+    function formatDate(s) {
+        const [y, m, d] = s.split('-').map(Number);
+        const t = new Date(y, m - 1, d).toLocaleDateString('it-IT',
+            { weekday: 'long', day: '2-digit', month: '2-digit', year: 'numeric' });
+        return t.charAt(0).toUpperCase() + t.slice(1);
     }
 
     const hotelSelect = document.getElementById("hotelSelect");
@@ -337,6 +339,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 `;
 
                 risultatiTariffe.innerHTML = html;
+                risultatiTariffe.scrollIntoView({ behavior: 'smooth', block: 'start' });
             });
 
         })
@@ -356,11 +359,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function toggleSezione(sezione) {
         const èVisibile = sezione.style.display === 'block';
-
-        sezioni.forEach(s => s.style.display = 'none');
-
+        sezioni.forEach(s => {
+            s.style.display = 'none';
+            s.previousElementSibling.classList.remove('aperto');
+        });
         if (!èVisibile) {
             sezione.style.display = 'block';
+            sezione.previousElementSibling.classList.add('aperto');
         }
     }
 
@@ -368,6 +373,69 @@ document.addEventListener('DOMContentLoaded', function () {
     btnToggleSaluteApt.addEventListener('click', () => toggleSezione(sezioneSaluteApt));
     btnToggleTariffe.addEventListener('click', () => toggleSezione(sezioneTariffe));
 
+
+
+    // ===== VISTA DI TUTTI I MOTOSCAFI (ARGOS) =====
+    document.getElementById('verificaTutti').addEventListener('click', async () => {
+        const data = dataInput.value;
+        if (!data) { outputMotoscafo.textContent = 'Per favore seleziona una data.'; return; }
+        try {
+            const turni = await (await fetch('turni.json', { cache: 'no-store' })).json();
+            const del = turni.filter(t => t.data === data);
+            if (!del.length) { outputMotoscafo.textContent = 'Nessun turno trovato.'; return; }
+            const ordine = Array.from(motoscafoSelect.options).map(o => o.value).filter(Boolean);
+            const righe = ordine.map(m => {
+                const t = del.find(x => x.motoscafo === m);
+                return `<tr><td>${m}</td><td>${t && t.turno ? esc(t.turno) : '-'}</td></tr>`;
+            }).join('');
+            outputMotoscafo.innerHTML = `<div class="table-wrapper"><div class="data-title">${formatDate(data)}</div>
+                <table><thead><tr><th>Num</th><th>Turno</th></tr></thead><tbody>${righe}</tbody></table></div>`;
+        } catch (e) {
+            outputMotoscafo.textContent = 'Errore nel caricamento dei dati.';
+        }
+    });
+
+    // ===== RIFINITURE TABELLE: conteggio, legenda, WhatsApp, scorrimento =====
+    const LEGENDA = {
+        SALUTE: [['verde', '08-20'], ['arancio', '08-18'], ['blu', '18-20'], ['viola', '18-24'], ['giallo', '08-24']],
+        APT: [['verde', '07-18'], ['arancio', '07-24'], ['giallo', 'Extra / Excelsior']]
+    };
+
+    function rifinisci(w, servizio) {
+        const righe = Array.from(w.querySelectorAll('tbody tr'));
+        const intest = Array.from(w.querySelectorAll('thead th')).map(t => t.textContent);
+        let ultimo = '';
+        const linee = righe.map(tr => {
+            const c = Array.from(tr.cells).map(x => x.textContent.trim());
+            if (c.length < intest.length) c.splice(1, 0, ultimo); else ultimo = c[1];
+            return c.filter(Boolean).join(' · ');
+        });
+        const testo = w.querySelector('.data-title').textContent + '\n' + linee.join('\n');
+
+        let html = '';
+        if (intest[1] === 'Orario') html += `<div class="conteggio">${righe.length} barche in servizio</div>`;
+        if (LEGENDA[servizio] && intest[1] === 'Orario') {
+            html += '<div class="legenda">' + LEGENDA[servizio]
+                .map(([c, t]) => `<span class="chip ${c}">${t}</span>`).join('') + '</div>';
+        }
+        const info = document.createElement('div');
+        info.innerHTML = html;
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'btn-condividi';
+        btn.textContent = 'Condividi su WhatsApp';
+        btn.addEventListener('click', () =>
+            window.open('https://wa.me/?text=' + encodeURIComponent(testo), '_blank'));
+        w.append(info, btn);
+        w.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    [[outputServizio, () => servizioSelect.value], [outputMotoscafo, () => '']].forEach(([out, serv]) => {
+        new MutationObserver(() => {
+            const w = out.querySelector('.table-wrapper:not([data-ok])');
+            if (w) { w.dataset.ok = '1'; rifinisci(w, serv()); }
+        }).observe(out, { childList: true });
+    });
 
     // ===== CONTROLLO AGGIORNAMENTI =====
     const avvisoAggiornamento = document.getElementById('avvisoAggiornamento');
