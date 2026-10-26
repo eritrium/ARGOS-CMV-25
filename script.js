@@ -1,6 +1,6 @@
 // ===== VERSIONE DELLA PAGINA =====
 // Quando aggiorni il sito, cambia questo numero e quello in version.json (devono essere uguali)
-const VERSIONE_PAGINA = "5";
+const VERSIONE_PAGINA = "6";
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -450,13 +450,20 @@ document.addEventListener('DOMContentLoaded', function () {
                     infoAggiornamento.textContent = 'Dati aggiornati al ' + v.aggiornato;
                 }
                 if (String(v.versione) !== VERSIONE_PAGINA) {
+                    avvisoAggiornamento.textContent = 'Sono disponibili nuovi aggiornamenti. Tocca qui per aggiornare (' + VERSIONE_PAGINA + ' → ' + v.versione + ')';
                     avvisoAggiornamento.style.display = 'block';
                 }
             })
             .catch(() => { /* offline: nessun avviso */ });
     }
 
-    avvisoAggiornamento.addEventListener('click', () => {
+    avvisoAggiornamento.addEventListener('click', async () => {
+        avvisoAggiornamento.textContent = 'Aggiornamento in corso...';
+        try {
+            // forza il telefono a scaricare di nuovo i file, ignorando quelli in memoria
+            await Promise.all(['index.html', 'script.js', 'style.css']
+                .map(f => fetch(f, { cache: 'reload' })));
+        } catch (e) { /* si ricarica comunque */ }
         const url = new URL(window.location.href);
         url.searchParams.set('v', Date.now());
         window.location.href = url.toString();
