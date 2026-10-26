@@ -1,6 +1,6 @@
 // ===== VERSIONE DELLA PAGINA =====
 // Quando aggiorni il sito, cambia questo numero e quello in version.json (devono essere uguali)
-const VERSIONE_PAGINA = "3";
+const VERSIONE_PAGINA = "5";
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -410,7 +410,8 @@ document.addEventListener('DOMContentLoaded', function () {
             if (c.length < intest.length) c.splice(1, 0, ultimo); else ultimo = c[1];
             return c.filter(Boolean).join(' · ');
         });
-        const testo = w.querySelector('.data-title').textContent + '\n' + linee.join('\n');
+        const nome = servizio ? 'TABELLA ' + servizio : 'TURNI ARGOS';
+        const testo = '*' + nome + '*\n' + w.querySelector('.data-title').textContent + '\n' + linee.join('\n');
 
         let html = '';
         if (intest[1] === 'Orario') html += `<div class="conteggio">${righe.length} barche in servizio</div>`;
