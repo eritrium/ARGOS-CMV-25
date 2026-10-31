@@ -1,6 +1,6 @@
 // ===== VERSIONE DELLA PAGINA =====
 // Quando aggiorni il sito, cambia questo numero e quello in version.json (devono essere uguali)
-const VERSIONE_PAGINA = "8";
+const VERSIONE_PAGINA = "11";
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -401,6 +401,64 @@ document.addEventListener('DOMContentLoaded', function () {
         APT: [['verde', '07-18'], ['arancio', '07-24'], ['giallo', 'Extra / Excelsior']]
     };
 
+    // ===== TABELLA COME IMMAGINE =====
+    function disegnaTabella(w, nome, conteggio) {
+        const S = 2, PAD = 20, RH = 54, TOP = 100, BOT = 56, F = 'bold 24px Arial, Helvetica, sans-serif';
+        const M = [];
+        Array.from(w.querySelector('table').rows).forEach((tr, r) => {
+            M[r] = M[r] || [];
+            let c = 0;
+            Array.from(tr.cells).forEach(cell => {
+                while (M[r][c]) c++;
+                const rs = cell.rowSpan || 1;
+                for (let i = 0; i < rs; i++) { M[r + i] = M[r + i] || []; M[r + i][c] = i ? { sotto: true } : { cell, rs }; }
+                c++;
+            });
+        });
+        const nc = Math.max(...M.map(r => r.length));
+        const cv = document.createElement('canvas'), g = cv.getContext('2d');
+        g.font = F;
+        const wc = Array.from({ length: nc }, (_, c) => Math.max(90, ...M.map(r =>
+            r[c] && r[c].cell ? Math.ceil(g.measureText(r[c].cell.textContent.trim()).width) + 44 : 0)));
+        const W = Math.max(420, wc.reduce((a, b) => a + b, 0) + PAD * 2), H = TOP + M.length * RH + BOT;
+        const x0 = (W - wc.reduce((a, b) => a + b, 0)) / 2;
+        cv.width = W * S; cv.height = H * S; g.scale(S, S);
+        g.fillStyle = '#121212'; g.fillRect(0, 0, W, H);
+        g.fillStyle = '#0b2a4a'; g.fillRect(0, 0, W, 88);
+        g.fillStyle = '#ffd700'; g.fillRect(0, 88, W, 6);
+        g.textAlign = 'center'; g.textBaseline = 'middle';
+        g.font = 'bold 30px Arial, Helvetica, sans-serif'; g.fillText(nome, W / 2, 32);
+        g.fillStyle = '#ffffff'; g.font = 'bold 22px Arial, Helvetica, sans-serif';
+        g.fillText(w.querySelector('.data-title').textContent, W / 2, 66);
+        M.forEach((riga, r) => {
+            let x = x0;
+            riga.forEach((e, c) => {
+                if (e && e.cell) {
+                    const cs = getComputedStyle(e.cell), y = TOP + r * RH, h = RH * e.rs;
+                    let bg = cs.backgroundColor;
+                    if (!bg || bg === 'transparent' || /rgba\(0, 0, 0, 0\)/.test(bg)) bg = '#1e1e1e';
+                    g.fillStyle = bg; g.fillRect(x, y, wc[c], h);
+                    g.strokeStyle = '#333'; g.lineWidth = 1; g.strokeRect(x, y, wc[c], h);
+                    g.font = F; g.textAlign = 'center';
+                    const chip = e.cell.querySelector('.chip-nota'), t = e.cell.textContent.trim();
+                    if (chip && t) {
+                        const tw = g.measureText(t).width + 24, cx = x + wc[c] / 2;
+                        g.fillStyle = '#ffd700'; g.fillRect(cx - tw / 2, y + h / 2 - 17, tw, 34);
+                        g.fillStyle = '#000000'; g.fillText(t, cx, y + h / 2 + 1);
+                    } else {
+                        g.fillStyle = cs.color || '#ffffff'; g.fillText(t, x + wc[c] / 2, y + h / 2 + 1);
+                    }
+                }
+                x += wc[c];
+            });
+        });
+        g.fillStyle = '#ffd700'; g.font = 'bold 20px Arial, Helvetica, sans-serif'; g.textAlign = 'center';
+        g.fillText(conteggio || '', W / 2, TOP + M.length * RH + 20);
+        g.fillStyle = '#888888'; g.font = '14px Arial, Helvetica, sans-serif';
+        g.fillText('CONSORZIO MOTOSCAFI', W / 2, H - 14);
+        return cv;
+    }
+
     function rifinisci(w, servizio) {
         const righe = Array.from(w.querySelectorAll('tbody tr'));
         const intest = Array.from(w.querySelectorAll('thead th')).map(t => t.textContent);
@@ -424,9 +482,26 @@ document.addEventListener('DOMContentLoaded', function () {
         const btn = document.createElement('button');
         btn.type = 'button';
         btn.className = 'btn-condividi';
-        btn.textContent = 'Condividi su WhatsApp';
-        btn.addEventListener('click', () =>
-            window.open('https://wa.me/?text=' + encodeURIComponent(testo), '_blank'));
+        btn.textContent = 'Condividi tabella (immagine)';
+        // la tabella viene disegnata come immagine, cosi' com'e' nella pagina
+        let pronto = null;
+        try {
+            const cv = disegnaTabella(w, nome, intest[1] === 'Orario' ? righe.length + ' barche in servizio' : '');
+            pronto = new Promise(res => cv.toBlob(res, 'image/png'));
+        } catch (e) { pronto = null; }
+        btn.addEventListener('click', async () => {
+            const blob = pronto ? await pronto : null;
+            if (!blob) { window.open('https://wa.me/?text=' + encodeURIComponent(testo), '_blank'); return; }
+            const nomeFile = (nome + ' ' + w.querySelector('.data-title').textContent)
+                .toLowerCase().replace(/[^a-z0-9]+/g, '_') + '.png';
+            const file = new File([blob], nomeFile, { type: 'image/png' });
+            if (navigator.canShare && navigator.canShare({ files: [file] })) {
+                try { await navigator.share({ files: [file], title: nome }); } catch (e) { /* annullato */ }
+            } else {
+                const a = document.createElement('a');
+                a.href = URL.createObjectURL(blob); a.download = nomeFile; a.click();
+            }
+        });
         w.append(info, btn);
         w.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
