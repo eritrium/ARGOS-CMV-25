@@ -129,7 +129,7 @@ h3, h4 {
 /* --------------------------------------------------
    SELECT E INPUT
 -------------------------------------------------- */
-select, input[type="date"] {
+select, input[type="date"], input#filtroMotoscafo {
     width: 100%;
     padding: 14px;
     font-size: 1.1rem;
@@ -367,3 +367,22 @@ button#verificaTutti, button#condividiEntrambe, .btn-condividi {
 .chip.blu { background: #182e4a; color: #99ccff; }
 .chip.viola { background: #3b184a; color: #e0b3ff; }
 .chip-nota { background: #ffd700; color: #000; padding: 3px 9px; border-radius: 10px; font-size: 0.85rem; }
+
+/* --------------------------------------------------
+   SELEZIONE RAPIDA (un tocco)
+-------------------------------------------------- */
+#motoscafo { display: none; }
+
+.griglia-num { display: grid; grid-template-columns: repeat(auto-fill, minmax(66px, 1fr)); gap: 8px; margin: 10px 0; }
+.num-btn { padding: 15px 0; font-size: 1.15rem; font-weight: bold; border-radius: 8px; border: 1px solid #2d5a73;
+    background: #1a3a4b; color: #aae0ff; cursor: pointer; }
+.num-btn.attivo, .seg button.attivo, button#verificaTutti.attivo { background: #ffd700; color: #000; border-color: #ffd700; }
+
+.seg { display: flex; gap: 8px; margin: 8px 0; }
+.seg button { flex: 1; padding: 18px 4px; font-size: 1.15rem; font-weight: bold; border-radius: 8px;
+    border: 1px solid #2d5c4f; background: #1b3b32; color: #a3ebd9; cursor: pointer; }
+
+.risultato { text-align: center; background: #1e1e1e; border: 1px solid #2a2a2a; border-radius: 10px; padding: 18px; margin-top: 12px; }
+.risultato .rn { font-size: 1.6rem; font-weight: bold; color: #ffd700; }
+.risultato .rd { margin: 6px 0 10px; color: #cfd8dc; }
+.risultato .rt { font-size: 2rem; font-weight: bold; color: #fff; }

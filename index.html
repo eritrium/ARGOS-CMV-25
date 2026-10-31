@@ -14,7 +14,7 @@
 
 <!-- 🔥 MESSAGGIO DI AVVISO -->
 <div id="messaggioAvviso">
-     -ARGOS FINO AL 16 NOVEMBRE - TABELLE SALUTE/APT FINO AL 14 NOVEMBRE-
+    - dal 6 ottobre ms EXCELSIOR tornano in APT (1mo/2do) -ARGOS FINO AL 16 NOVEMBRE - TABELLE SALUTE/APT FINO AL 14 NOVEMBRE-
 </div>
 
 <header>CONSORZIO MOTOSCAFI</header>
@@ -88,8 +88,10 @@
             <label for="dataMotoscafo">Data:</label>
             <input type="date" id="dataMotoscafo">
 
-            <button id="verificaMotoscafo" type="button">Vedi turno</button>
-            <button id="verificaTutti" type="button">Vedi tutti i motoscafi</button>
+            <button id="verificaTutti" type="button">Tutti i motoscafi</button>
+
+            <input type="text" id="filtroMotoscafo" placeholder="Cerca il numero (es. 15)" autocomplete="off">
+            <div id="grigliaMotoscafi" class="griglia-num"></div>
 
             <div id="outputMotoscafo"></div>
         </div>
@@ -104,16 +106,15 @@
             <h3>TABELLA SALUTE / APT</h3>
             <div class="section-divider"></div>
 
-            <select id="extraSelect">
-                <option value="" disabled selected>selezionare salute/apt</option>
-                <option value="APT">APT</option>
-                <option value="SALUTE">SALUTE</option>
-            </select>
-
             <label for="dataServizio">Data:</label>
             <input type="date" id="dataServizio">
 
-            <button id="verificaServizio" type="button">Vedi tabella</button>
+            <div class="seg" id="segServizio">
+                <button type="button" data-s="APT">APT</button>
+                <button type="button" data-s="SALUTE">SALUTE</button>
+                <button type="button" data-s="BOTH">APT + SALUTE</button>
+            </div>
+
             <button id="condividiEntrambe" type="button">Condividi APT + SALUTE (immagine)</button>
 
             <div id="outputServizio"></div>

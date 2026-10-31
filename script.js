@@ -1,6 +1,6 @@
 // ===== VERSIONE DELLA PAGINA =====
 // Quando aggiorni il sito, cambia questo numero e quello in version.json (devono essere uguali)
-const VERSIONE_PAGINA = "12";
+const VERSIONE_PAGINA = "1";
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -12,40 +12,60 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const motoscafoSelect = document.getElementById('motoscafo');
     const dataInput = document.getElementById('dataMotoscafo');
-    const btnMotoscafo = document.getElementById('verificaMotoscafo');
     const outputMotoscafo = document.getElementById('outputMotoscafo');
 
-    const servizioSelect = document.getElementById('extraSelect');
     const dataServizio = document.getElementById('dataServizio');
-    const btnServizio = document.getElementById('verificaServizio');
     const outputServizio = document.getElementById('outputServizio');
 
-    btnMotoscafo.addEventListener('click', function () {
-
-        const motoscafo = motoscafoSelect.value;
-        const data = dataInput.value;
-
-        if (!motoscafo || !data) {
-            outputMotoscafo.textContent = 'Per favore seleziona un motoscafo e una data.';
-            return;
-        }
-
-        fetch('turni.json', { cache: 'no-store' })
-            .then(response => response.json())
-            .then(turni => {
-                const turno = turni.find(t => t.motoscafo == motoscafo && t.data == data);
-
-                if (turno) {
-                    outputMotoscafo.textContent =
-                        `Motoscafo ${turno.motoscafo}: ${formatDate(turno.data)} - ${turno.turno}`;
-                } else {
-                    outputMotoscafo.textContent = 'Nessun turno trovato.';
-                }
-            })
-            .catch(() => {
-                outputMotoscafo.textContent = 'Errore nel caricamento dei dati.';
-            });
+    // ===== ARGOS: griglia di numeri, un tocco = turno =====
+    const grigliaNum = document.getElementById('grigliaMotoscafi');
+    const filtro = document.getElementById('filtroMotoscafo');
+    const btnTutti = document.getElementById('verificaTutti');
+    let scelta = null;                 // numero del motoscafo oppure 'TUTTI'
+    let tokenArgos = 0;
+    Array.from(motoscafoSelect.options).map(o => o.value).filter(Boolean).forEach(n => {
+        const b = document.createElement('button');
+        b.type = 'button'; b.className = 'num-btn'; b.textContent = n; b.dataset.n = n;
+        b.addEventListener('click', () => { scelta = n; mostraArgos(); });
+        grigliaNum.appendChild(b);
     });
+    filtro.addEventListener('input', () => {
+        const q = filtro.value.trim().toUpperCase();
+        grigliaNum.querySelectorAll('.num-btn').forEach(b => { b.style.display = b.dataset.n.toUpperCase().startsWith(q) ? '' : 'none'; });
+    });
+    btnTutti.addEventListener('click', () => { scelta = 'TUTTI'; mostraArgos(); });
+    dataInput.addEventListener('change', mostraArgos);
+
+    async function mostraArgos() {
+        grigliaNum.querySelectorAll('.num-btn').forEach(b => b.classList.toggle('attivo', b.dataset.n === scelta));
+        btnTutti.classList.toggle('attivo', scelta === 'TUTTI');
+        if (!scelta) return;
+        const data = dataInput.value;
+        if (!data) { outputMotoscafo.textContent = 'Per favore seleziona una data.'; return; }
+        const id = ++tokenArgos;
+        try {
+            const turni = await (await fetch('turni.json', { cache: 'no-store' })).json();
+            if (id !== tokenArgos) return;
+            const del = turni.filter(t => t.data === data);
+            if (scelta === 'TUTTI') {
+                if (!del.length) { outputMotoscafo.textContent = 'Nessun turno trovato.'; return; }
+                const ordine = Array.from(motoscafoSelect.options).map(o => o.value).filter(Boolean);
+                const righe = ordine.map(m => {
+                    const t = del.find(x => x.motoscafo === m);
+                    return `<tr><td>${m}</td><td>${t && t.turno ? esc(t.turno) : '-'}</td></tr>`;
+                }).join('');
+                outputMotoscafo.innerHTML = `<div class="table-wrapper"><div class="data-title">${formatDate(data)}</div>
+                    <table><thead><tr><th>Num</th><th>Turno</th></tr></thead><tbody>${righe}</tbody></table></div>`;
+            } else {
+                const t = del.find(x => x.motoscafo === scelta);
+                outputMotoscafo.innerHTML = `<div class="risultato"><div class="rn">Motoscafo ${esc(scelta)}</div>
+                    <div class="rd">${formatDate(data)}</div><div class="rt">${t && t.turno ? esc(t.turno) : 'Nessun turno trovato'}</div></div>`;
+                outputMotoscafo.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        } catch (e) {
+            outputMotoscafo.textContent = 'Errore nel caricamento dei dati.';
+        }
+    }
 
     async function renderServizio(servizio, data, outputServizio) {
         try {
@@ -99,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
 
                 outputServizio.innerHTML = `
-                    <div class="table-wrapper">
+                    <div class="table-wrapper" data-servizio="${servizio}">
                         <div class="data-title">${formatDate(data)}</div>
                         <table>
                             <thead>
@@ -198,7 +218,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             outputServizio.innerHTML = `
-                <div class="table-wrapper">
+                <div class="table-wrapper" data-servizio="${servizio}">
                     <div class="data-title">${formatDate(data)}</div>
                     <table>
                         <thead>
@@ -218,15 +238,25 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    btnServizio.addEventListener('click', function () {
-        const servizio = servizioSelect.value;
+    // ===== SALUTE / APT: un tocco = tabella =====
+    const segServizio = document.getElementById('segServizio');
+    let servizioCorrente = null, tokenServ = 0;
+    segServizio.querySelectorAll('button').forEach(b =>
+        b.addEventListener('click', () => { servizioCorrente = b.dataset.s; mostraServizi(); }));
+    async function mostraServizi() {
+        segServizio.querySelectorAll('button').forEach(b => b.classList.toggle('attivo', b.dataset.s === servizioCorrente));
+        if (!servizioCorrente) return;
         const data = dataServizio.value;
-        if (!servizio || !data) {
-            outputServizio.textContent = 'Per favore seleziona un servizio e una data.';
-            return;
+        if (!data) { outputServizio.textContent = 'Per favore seleziona una data.'; return; }
+        const id = ++tokenServ;
+        outputServizio.innerHTML = '';
+        for (const s of (servizioCorrente === 'BOTH' ? ['APT', 'SALUTE'] : [servizioCorrente])) {
+            const t = document.createElement('div');
+            outputServizio.appendChild(t);
+            await renderServizio(s, data, t);
+            if (id !== tokenServ) return;
         }
-        renderServizio(servizio, data, outputServizio);
-    });
+    }
 
     function esc(t) {
         return String(t == null ? "" : t)
@@ -376,26 +406,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-    // ===== VISTA DI TUTTI I MOTOSCAFI (ARGOS) =====
-    document.getElementById('verificaTutti').addEventListener('click', async () => {
-        const data = dataInput.value;
-        if (!data) { outputMotoscafo.textContent = 'Per favore seleziona una data.'; return; }
-        try {
-            const turni = await (await fetch('turni.json', { cache: 'no-store' })).json();
-            const del = turni.filter(t => t.data === data);
-            if (!del.length) { outputMotoscafo.textContent = 'Nessun turno trovato.'; return; }
-            const ordine = Array.from(motoscafoSelect.options).map(o => o.value).filter(Boolean);
-            const righe = ordine.map(m => {
-                const t = del.find(x => x.motoscafo === m);
-                return `<tr><td>${m}</td><td>${t && t.turno ? esc(t.turno) : '-'}</td></tr>`;
-            }).join('');
-            outputMotoscafo.innerHTML = `<div class="table-wrapper"><div class="data-title">${formatDate(data)}</div>
-                <table><thead><tr><th>Num</th><th>Turno</th></tr></thead><tbody>${righe}</tbody></table></div>`;
-        } catch (e) {
-            outputMotoscafo.textContent = 'Errore nel caricamento dei dati.';
-        }
-    });
-
     // ===== RIFINITURE TABELLE: conteggio, legenda, WhatsApp, scorrimento =====
     const LEGENDA = {
         SALUTE: [['verde', '08-20'], ['arancio', '08-18'], ['blu', '18-20'], ['viola', '18-24'], ['giallo', '08-24']],
@@ -460,7 +470,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return cv;
     }
 
-    function rifinisci(w, servizio) {
+    function rifinisci(w, servizio, scroll) {
         const righe = Array.from(w.querySelectorAll('tbody tr'));
         const intest = Array.from(w.querySelectorAll('thead th')).map(t => t.textContent);
         let ultimo = '';
@@ -496,14 +506,16 @@ document.addEventListener('DOMContentLoaded', function () {
             condividiBlob(blob, nome + ' ' + w.querySelector('.data-title').textContent, nome);
         });
         w.append(info, btn);
-        w.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (scroll) w.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
-    [[outputServizio, () => servizioSelect.value], [outputMotoscafo, () => '']].forEach(([out, serv]) => {
+    [outputServizio, outputMotoscafo].forEach(out => {
         new MutationObserver(() => {
-            const w = out.querySelector('.table-wrapper:not([data-ok])');
-            if (w) { w.dataset.ok = '1'; rifinisci(w, serv()); }
-        }).observe(out, { childList: true });
+            out.querySelectorAll('.table-wrapper:not([data-ok])').forEach(w => {
+                w.dataset.ok = '1';
+                rifinisci(w, w.dataset.servizio || '', out.querySelector('.table-wrapper') === w);
+            });
+        }).observe(out, { childList: true, subtree: true });
     });
 
     // ===== CONDIVISIONE (menu del telefono, oppure download sul computer) =====
@@ -550,7 +562,10 @@ document.addEventListener('DOMContentLoaded', function () {
             return await new Promise(res => cv.toBlob(res, 'image/png'));
         } catch (e) { return null; } finally { box.remove(); }
     }
-    dataServizio.addEventListener('change', () => { if (dataServizio.value) pronte[dataServizio.value] = preparaEntrambe(dataServizio.value); });
+    dataServizio.addEventListener('change', () => {
+        if (dataServizio.value) pronte[dataServizio.value] = preparaEntrambe(dataServizio.value);
+        mostraServizi();
+    });
     btnEntrambe.addEventListener('click', async () => {
         const data = dataServizio.value;
         if (!data) { outputServizio.textContent = 'Per favore seleziona una data.'; return; }
