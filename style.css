@@ -344,7 +344,7 @@ header::after {
 .table-wrapper tbody td { padding: 13px 10px; }
 .table-wrapper tbody td:first-child { font-weight: bold; font-size: 1.4rem; }
 
-button#verificaTutti, .btn-condividi {
+button#verificaTutti, button#condividiEntrambe, .btn-condividi {
     width: 100%;
     padding: 14px;
     font-size: 1.1rem;
@@ -356,7 +356,7 @@ button#verificaTutti, .btn-condividi {
     cursor: pointer;
     margin-top: 8px;
 }
-.btn-condividi { background: #1b3b32; color: #a3ebd9; border-color: #2d5c4f; }
+.btn-condividi, button#condividiEntrambe { background: #1b3b32; color: #a3ebd9; border-color: #2d5c4f; }
 
 .conteggio { text-align: center; font-weight: bold; margin: 6px 0; color: #ffd700; }
 .legenda { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin: 8px 0; }

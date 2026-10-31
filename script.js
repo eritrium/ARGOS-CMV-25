@@ -1,6 +1,6 @@
 // ===== VERSIONE DELLA PAGINA =====
 // Quando aggiorni il sito, cambia questo numero e quello in version.json (devono essere uguali)
-const VERSIONE_PAGINA = "11";
+const VERSIONE_PAGINA = "1";
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -47,16 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
     });
 
-    btnServizio.addEventListener('click', async function () {
-
-        const servizio = servizioSelect.value;
-        const data = dataServizio.value;
-
-        if (!servizio || !data) {
-            outputServizio.textContent = 'Per favore seleziona un servizio e una data.';
-            return;
-        }
-
+    async function renderServizio(servizio, data, outputServizio) {
         try {
             const response = await fetch('salute_apt.json', { cache: 'no-store' });
             const turni = await response.json();
@@ -225,6 +216,16 @@ document.addEventListener('DOMContentLoaded', function () {
         } catch (error) {
             outputServizio.textContent = "Errore nel caricamento dei dati.";
         }
+    }
+
+    btnServizio.addEventListener('click', function () {
+        const servizio = servizioSelect.value;
+        const data = dataServizio.value;
+        if (!servizio || !data) {
+            outputServizio.textContent = 'Per favore seleziona un servizio e una data.';
+            return;
+        }
+        renderServizio(servizio, data, outputServizio);
     });
 
     function esc(t) {
@@ -402,7 +403,7 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     // ===== TABELLA COME IMMAGINE =====
-    function disegnaTabella(w, nome, conteggio) {
+    function disegnaTabella(w, nome, conteggio, Wmin) {
         const S = 2, PAD = 20, RH = 54, TOP = 100, BOT = 56, F = 'bold 24px Arial, Helvetica, sans-serif';
         const M = [];
         Array.from(w.querySelector('table').rows).forEach((tr, r) => {
@@ -420,7 +421,7 @@ document.addEventListener('DOMContentLoaded', function () {
         g.font = F;
         const wc = Array.from({ length: nc }, (_, c) => Math.max(90, ...M.map(r =>
             r[c] && r[c].cell ? Math.ceil(g.measureText(r[c].cell.textContent.trim()).width) + 44 : 0)));
-        const W = Math.max(420, wc.reduce((a, b) => a + b, 0) + PAD * 2), H = TOP + M.length * RH + BOT;
+        const W = Math.max(Wmin || 420, wc.reduce((a, b) => a + b, 0) + PAD * 2), H = TOP + M.length * RH + BOT;
         const x0 = (W - wc.reduce((a, b) => a + b, 0)) / 2;
         cv.width = W * S; cv.height = H * S; g.scale(S, S);
         g.fillStyle = '#121212'; g.fillRect(0, 0, W, H);
@@ -492,15 +493,7 @@ document.addEventListener('DOMContentLoaded', function () {
         btn.addEventListener('click', async () => {
             const blob = pronto ? await pronto : null;
             if (!blob) { window.open('https://wa.me/?text=' + encodeURIComponent(testo), '_blank'); return; }
-            const nomeFile = (nome + ' ' + w.querySelector('.data-title').textContent)
-                .toLowerCase().replace(/[^a-z0-9]+/g, '_') + '.png';
-            const file = new File([blob], nomeFile, { type: 'image/png' });
-            if (navigator.canShare && navigator.canShare({ files: [file] })) {
-                try { await navigator.share({ files: [file], title: nome }); } catch (e) { /* annullato */ }
-            } else {
-                const a = document.createElement('a');
-                a.href = URL.createObjectURL(blob); a.download = nomeFile; a.click();
-            }
+            condividiBlob(blob, nome + ' ' + w.querySelector('.data-title').textContent, nome);
         });
         w.append(info, btn);
         w.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -511,6 +504,60 @@ document.addEventListener('DOMContentLoaded', function () {
             const w = out.querySelector('.table-wrapper:not([data-ok])');
             if (w) { w.dataset.ok = '1'; rifinisci(w, serv()); }
         }).observe(out, { childList: true });
+    });
+
+    // ===== CONDIVISIONE (menu del telefono, oppure download sul computer) =====
+    async function condividiBlob(blob, nomeFile, titolo) {
+        const nf = nomeFile.toLowerCase().replace(/[^a-z0-9]+/g, '_') + '.png';
+        const file = new File([blob], nf, { type: 'image/png' });
+        if (navigator.canShare && navigator.canShare({ files: [file] })) {
+            try { await navigator.share({ files: [file], title: titolo }); } catch (e) { /* annullato */ }
+        } else {
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob); a.download = nf; a.click();
+        }
+    }
+
+    // ===== UNA SOLA IMMAGINE CON APT + SALUTE =====
+    const btnEntrambe = document.getElementById('condividiEntrambe');
+    const pronte = {};
+    async function preparaEntrambe(data) {
+        const box = document.createElement('div');
+        box.style.cssText = 'position:fixed;left:-10000px;top:0;width:700px';
+        document.body.appendChild(box);
+        try {
+            const wr = [];
+            for (const s of ['APT', 'SALUTE']) {
+                const t = document.createElement('div');
+                box.appendChild(t);
+                await renderServizio(s, data, t);
+                const w = t.querySelector('.table-wrapper');
+                if (w) wr.push([w, s]);
+            }
+            if (!wr.length) return null;
+            const disegna = Wmin => wr.map(([w, s]) =>
+                disegnaTabella(w, 'TABELLA ' + s, w.querySelectorAll('tbody tr').length + ' barche in servizio', Wmin));
+            let canvases = disegna(0);
+            const Wm = Math.max(...canvases.map(c => c.width / 2));
+            canvases = disegna(Wm);                        // stessa larghezza per tutte e due
+            const GAP = 24, W = canvases[0].width, H = canvases.reduce((a, c) => a + c.height, 0) + GAP * (canvases.length - 1);
+            const cv = document.createElement('canvas');
+            cv.width = W; cv.height = H;
+            const g = cv.getContext('2d');
+            g.fillStyle = '#121212'; g.fillRect(0, 0, W, H);
+            let y = 0;
+            canvases.forEach(c => { g.drawImage(c, 0, y); y += c.height + GAP; });
+            return await new Promise(res => cv.toBlob(res, 'image/png'));
+        } catch (e) { return null; } finally { box.remove(); }
+    }
+    dataServizio.addEventListener('change', () => { if (dataServizio.value) pronte[dataServizio.value] = preparaEntrambe(dataServizio.value); });
+    btnEntrambe.addEventListener('click', async () => {
+        const data = dataServizio.value;
+        if (!data) { outputServizio.textContent = 'Per favore seleziona una data.'; return; }
+        if (!pronte[data]) pronte[data] = preparaEntrambe(data);
+        const blob = await pronte[data];
+        if (!blob) { outputServizio.innerHTML = "<p style='color:#ff6b6b;'>Nessun dato per questa data.</p>"; delete pronte[data]; return; }
+        condividiBlob(blob, 'tabelle apt salute ' + formatDate(data), 'Tabelle APT e SALUTE');
     });
 
     // ===== CONTROLLO AGGIORNAMENTI =====
