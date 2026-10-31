@@ -129,7 +129,7 @@ h3, h4 {
 /* --------------------------------------------------
    SELECT E INPUT
 -------------------------------------------------- */
-select, input[type="date"], input#filtroMotoscafo {
+select, input[type="date"], input#filtroMotoscafo, input#filtroHotel {
     width: 100%;
     padding: 14px;
     font-size: 1.1rem;
@@ -386,3 +386,27 @@ button#verificaTutti, button#condividiEntrambe, .btn-condividi {
 .risultato .rn { font-size: 1.6rem; font-weight: bold; color: #ffd700; }
 .risultato .rd { margin: 6px 0 10px; color: #cfd8dc; }
 .risultato .rt { font-size: 2rem; font-weight: bold; color: #fff; }
+
+/* --------------------------------------------------
+   TARIFFE: bottoni hotel
+-------------------------------------------------- */
+#hotelSelect { display: none; }
+.hotel-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin: 10px 0; }
+@media (min-width: 600px) { .hotel-grid { grid-template-columns: repeat(3, 1fr); } }
+.hotel-btn { padding: 15px 6px; font-size: 1rem; font-weight: bold; border-radius: 8px; border: 1px solid #6e4e2b;
+    background: #4a341b; color: #ffd29d; cursor: pointer; }
+.hotel-btn.attivo { background: #ffd700; color: #000; border-color: #ffd700; }
+.suppl { background: #1a1a1a; border: 1px solid #333; border-radius: 10px; padding: 8px; margin-bottom: 12px; text-align: center; }
+.suppl-t { color: #9aa; font-size: .8rem; letter-spacing: 2px; margin-bottom: 4px; }
+.suppl span { display: inline-block; background: #2d2d2d; border: 1px solid #444; border-radius: 12px; padding: 6px 10px; margin: 3px; font-size: .95rem; }
+.suppl b { color: #ffd700; }
+td.imp { font-size: 1.5rem; font-weight: bold; color: #ffd700 !important; }
+tr.senza-prezzo td { opacity: .45; }
+
+/* --------------------------------------------------
+   RICERCA VOCALE
+-------------------------------------------------- */
+.cerca { display: flex; gap: 8px; align-items: flex-start; }
+.cerca input { flex: 1; min-width: 0; }
+.mic { width: 58px; height: 52px; font-size: 1.5rem; border-radius: 8px; border: 1px solid #444; background: #2a2a2a; cursor: pointer; }
+.mic.ascolta { background: #8b0000; border-color: #ff4d4d; animation: lampeggia 1s infinite; }

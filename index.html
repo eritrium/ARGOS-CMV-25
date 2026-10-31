@@ -90,7 +90,7 @@
 
             <button id="verificaTutti" type="button">Tutti i motoscafi</button>
 
-            <input type="text" id="filtroMotoscafo" placeholder="Cerca il numero (es. 15)" autocomplete="off">
+            <div class="cerca"><input type="text" id="filtroMotoscafo" placeholder="Cerca il numero (es. 15)" autocomplete="off"><button type="button" class="mic" data-per="filtroMotoscafo" aria-label="Cerca a voce">🎤</button></div>
             <div id="grigliaMotoscafi" class="griglia-num"></div>
 
             <div id="outputMotoscafo"></div>
@@ -130,7 +130,6 @@
             <h3>TARIFFE</h3>
             <div class="section-divider"></div>
 
-            <label for="hotelSelect">Seleziona hotel:</label>
             <select id="hotelSelect">
                 <option value="" disabled selected>-- Seleziona un hotel --</option>
 
@@ -165,7 +164,8 @@
                 <option value="RIALTO">RIALTO</option>
             </select>
 
-            <button id="verificaTariffe" type="button">Vedi tariffa</button>
+            <div class="cerca"><input type="text" id="filtroHotel" placeholder="Cerca l'hotel (es. gri)" autocomplete="off"><button type="button" class="mic" data-per="filtroHotel" aria-label="Cerca a voce">🎤</button></div>
+            <div id="grigliaHotel" class="hotel-grid"></div>
 
             <div id="risultatiTariffe"></div>
         </div>
