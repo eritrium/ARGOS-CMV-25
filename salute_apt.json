@@ -4168,5 +4168,420 @@
         "num": "217",
         "inizio": "07",
         "fine": "24"
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-11-15",
+        "num": "259",
+        "inizio": "8",
+        "fine": "20"
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-11-15",
+        "num": "40",
+        "inizio": "8",
+        "fine": "20"
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-11-15",
+        "num": "383",
+        "inizio": "8",
+        "fine": "20"
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-11-15",
+        "num": "265",
+        "inizio": "8",
+        "fine": "20"
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-11-15",
+        "num": "146",
+        "inizio": "8",
+        "fine": "20"
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-11-15",
+        "num": "192",
+        "inizio": "8",
+        "fine": "18"
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-11-15",
+        "num": "245",
+        "inizio": "8",
+        "fine": "18"
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-11-15",
+        "num": "119",
+        "inizio": "8",
+        "fine": "18"
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-11-15",
+        "num": "171",
+        "inizio": "8",
+        "fine": "18"
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-11-15",
+        "num": "N18",
+        "inizio": "8",
+        "fine": "24"
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-11-15",
+        "num": "159",
+        "inizio": "8",
+        "fine": "24",
+        "nota": "GUARDIA LONDRA"
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-11-15",
+        "num": "263",
+        "inizio": "8",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-11-15",
+        "num": "N16",
+        "inizio": "07",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-11-15",
+        "num": "355",
+        "inizio": "07",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-11-15",
+        "num": "229",
+        "inizio": "07",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-11-15",
+        "num": "322",
+        "inizio": "07",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-11-15",
+        "num": "317",
+        "inizio": "07",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-11-15",
+        "num": "163",
+        "inizio": "07",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-11-15",
+        "num": "370",
+        "inizio": "07",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-11-15",
+        "num": "217",
+        "inizio": "07",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-11-15",
+        "num": "157",
+        "inizio": "07",
+        "fine": "24"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-11-15",
+        "num": "226",
+        "inizio": "07",
+        "fine": "24"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-11-15",
+        "num": "222",
+        "inizio": "07",
+        "fine": "24"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-11-15",
+        "num": "156",
+        "inizio": "07",
+        "fine": "24"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-11-15",
+        "num": "366",
+        "inizio": "07",
+        "fine": "24"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-11-15",
+        "num": "351",
+        "inizio": "07",
+        "fine": "24"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-11-15",
+        "num": "13",
+        "inizio": "07",
+        "fine": "24"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-11-15",
+        "num": "N13",
+        "inizio": "07",
+        "fine": "24"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-11-15",
+        "num": "121",
+        "inizio": "07",
+        "fine": "24"
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-11-16",
+        "num": "223",
+        "inizio": "8",
+        "fine": "20"
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-11-16",
+        "num": "229",
+        "inizio": "8",
+        "fine": "20"
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-11-16",
+        "num": "364",
+        "inizio": "8",
+        "fine": "20"
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-11-16",
+        "num": "265",
+        "inizio": "8",
+        "fine": "20"
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-11-16",
+        "num": "355",
+        "inizio": "8",
+        "fine": "20"
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-11-16",
+        "num": "142",
+        "inizio": "8",
+        "fine": "20"
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-11-16",
+        "num": "252",
+        "inizio": "8",
+        "fine": "18"
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-11-16",
+        "num": "259",
+        "inizio": "8",
+        "fine": "18"
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-11-16",
+        "num": "44",
+        "inizio": "8",
+        "fine": "18"
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-11-16",
+        "num": "N36",
+        "inizio": "8",
+        "fine": "24"
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-11-16",
+        "num": "49",
+        "inizio": "8",
+        "fine": "18"
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-11-16",
+        "num": "194",
+        "inizio": "8",
+        "fine": "24",
+        "nota": "GUARDIA LONDRA"
+    },
+    {
+        "servizio": "SALUTE",
+        "data": "2026-11-16",
+        "num": "140",
+        "inizio": "8",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-11-16",
+        "num": "157",
+        "inizio": "07",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-11-16",
+        "num": "226",
+        "inizio": "07",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-11-16",
+        "num": "222",
+        "inizio": "07",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-11-16",
+        "num": "156",
+        "inizio": "07",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-11-16",
+        "num": "366",
+        "inizio": "07",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-11-16",
+        "num": "351",
+        "inizio": "07",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-11-16",
+        "num": "13",
+        "inizio": "07",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-11-16",
+        "num": "N13",
+        "inizio": "07",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-11-16",
+        "num": "121",
+        "inizio": "07",
+        "fine": "18"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-11-16",
+        "num": "192",
+        "inizio": "07",
+        "fine": "24"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-11-16",
+        "num": "245",
+        "inizio": "07",
+        "fine": "24"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-11-16",
+        "num": "119",
+        "inizio": "07",
+        "fine": "24"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-11-16",
+        "num": "25",
+        "inizio": "07",
+        "fine": "24"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-11-16",
+        "num": "171",
+        "inizio": "07",
+        "fine": "24"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-11-16",
+        "num": "N18",
+        "inizio": "07",
+        "fine": "24"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-11-16",
+        "num": "159",
+        "inizio": "07",
+        "fine": "24"
+    },
+    {
+        "servizio": "APT",
+        "data": "2026-11-16",
+        "num": "263",
+        "inizio": "07",
+        "fine": "24"
     }
 ]
