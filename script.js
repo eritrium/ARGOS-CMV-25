@@ -1,6 +1,6 @@
 // ===== VERSIONE DELLA PAGINA =====
 // Quando aggiorni il sito, cambia questo numero e quello in version.json (devono essere uguali)
-const VERSIONE_PAGINA = "2";
+const VERSIONE_PAGINA = "1";
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     gestisciAvviso();
 
-    const motoscafoSelect = document.getElementById('motoscafo');
     const dataInput = document.getElementById('dataMotoscafo');
     const outputMotoscafo = document.getElementById('outputMotoscafo');
 
@@ -25,12 +24,17 @@ document.addEventListener('DOMContentLoaded', function () {
     const btnTutti = document.getElementById('verificaTutti');
     let scelta = null;                 // numero del motoscafo oppure 'TUTTI'
     let tokenArgos = 0;
-    Array.from(motoscafoSelect.options).map(o => o.value).filter(Boolean).forEach(n => {
-        const b = document.createElement('button');
-        b.type = 'button'; b.className = 'num-btn'; b.textContent = n; b.dataset.n = n;
-        b.addEventListener('click', () => { scelta = n; mostraArgos(); });
-        grigliaNum.appendChild(b);
-    });
+    let elencoMotoscafi = [];
+    // l'elenco dei motoscafi viene dai turni: compaiono quelli che hanno almeno un turno scritto
+    fetch('turni.json', { cache: 'no-store' }).then(r => r.json()).then(turni => {
+        elencoMotoscafi = Array.from(new Set(turni.filter(t => t.turno && t.turno.trim()).map(t => t.motoscafo)));
+        elencoMotoscafi.forEach(n => {
+            const b = document.createElement('button');
+            b.type = 'button'; b.className = 'num-btn'; b.textContent = n; b.dataset.n = n;
+            b.addEventListener('click', () => { scelta = n; mostraArgos(); });
+            grigliaNum.appendChild(b);
+        });
+    }).catch(() => { grigliaNum.innerHTML = "<p style='color:#ff6b6b;'>Errore nel caricamento dei motoscafi.</p>"; });
     filtro.addEventListener('input', () => {
         const q = norm(filtro.value).replace(/ /g, '');
         grigliaNum.querySelectorAll('.num-btn').forEach(b => { b.style.display = norm(b.dataset.n).startsWith(q) ? '' : 'none'; });
@@ -70,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const del = turni.filter(t => t.data === data);
             if (!del.length) { outputMotoscafo.innerHTML = messaggioVuoto(turni.map(t => t.data), data, 'dei turni'); return; }
             if (scelta === 'TUTTI') {
-                const ordine = Array.from(motoscafoSelect.options).map(o => o.value).filter(Boolean);
+                const ordine = elencoMotoscafi;
                 const righe = ordine.map(m => {
                     const t = del.find(x => x.motoscafo === m);
                     return `<tr><td>${m}</td><td>${t && t.turno ? esc(t.turno) : '-'}</td></tr>`;
@@ -293,14 +297,22 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // ===== TARIFFE: bottoni hotel, un tocco = tariffe =====
-    const hotelSelect = document.getElementById("hotelSelect");     // resta nascosto: e' l'elenco degli hotel
     const grigliaHotel = document.getElementById("grigliaHotel");
     const filtroHotel = document.getElementById("filtroHotel");
     const risultatiTariffe = document.getElementById("risultatiTariffe");
-    const hotelList = Array.from(hotelSelect.options).map(o => o.value).filter(v => v !== "");
-    let datiTariffe = null, hotelScelto = null;
+    let hotelList = [], supplementi = [], datiTariffe = null, hotelScelto = null;
+    // gli hotel e i supplementi si ricavano da tariffe.json: gli hotel sono le righe prima della riga "SUPPLEMENTO"
+    function analizzaTariffe(d) {
+        const righe = d.tariffe, i = righe.findIndex(r => r.hotel.trim().toUpperCase().startsWith('SUPPLEMENT'));
+        hotelList = Array.from(new Set((i < 0 ? righe : righe.slice(0, i)).map(r => r.hotel.trim()).filter(Boolean)));
+        supplementi = i < 0 ? [] : righe.slice(i + 1).filter(r => r.hotel.trim() || r.destinazione.trim());
+    }
+    async function caricaTariffe() {
+        if (!datiTariffe) { datiTariffe = await (await fetch("tariffe.json", { cache: "no-store" })).json(); analizzaTariffe(datiTariffe); }
+        return datiTariffe;
+    }
 
-    hotelList.forEach(h => {
+    caricaTariffe().then(() => hotelList.forEach(h => {
         const b = document.createElement('button');
         b.type = 'button'; b.className = 'hotel-btn'; b.textContent = h; b.dataset.h = h;
         b.addEventListener('click', () => {
@@ -308,7 +320,7 @@ document.addEventListener('DOMContentLoaded', function () {
             mostraTariffe(true);
         });
         grigliaHotel.appendChild(b);
-    });
+    })).catch(() => { grigliaHotel.innerHTML = "<p style='color:#ff6b6b;'>Errore nel caricamento degli hotel.</p>"; });
     filtroHotel.addEventListener('input', () => {
         const q = norm(filtroHotel.value);
         grigliaHotel.querySelectorAll('.hotel-btn').forEach(b => { b.style.display = norm(b.dataset.h).includes(q) ? '' : 'none'; });
@@ -318,17 +330,15 @@ document.addEventListener('DOMContentLoaded', function () {
         grigliaHotel.querySelectorAll('.hotel-btn').forEach(b => b.classList.toggle('attivo', b.dataset.h === hotelScelto));
         if (!hotelScelto) { risultatiTariffe.innerHTML = ''; return; }
         try {
-            if (!datiTariffe) datiTariffe = await (await fetch("tariffe.json", { cache: "no-store" })).json();
+            await caricaTariffe();
         } catch (e) {
             risultatiTariffe.innerHTML = "<p style='color:#ff6b6b;'>Errore nel caricamento delle tariffe.</p>";
             return;
         }
-        const visibili = datiTariffe.tariffe.filter(t => t.hotel === hotelScelto);   // tutto l'elenco, nell'ordine del file
+        const visibili = datiTariffe.tariffe.filter(t => t.hotel.trim() === hotelScelto);   // tutto l'elenco, nell'ordine del file
         if (!visibili.length) { risultatiTariffe.innerHTML = "<p style='color:#ff6b6b;'>Nessuna tariffa trovata.</p>"; return; }
 
-        // supplementi: righe che non appartengono a nessun hotel (la prima e' l'intestazione)
-        const suppl = datiTariffe.tariffe.filter(t => !hotelList.includes(t.hotel) && !(t.hotel.trim() === "" && t.destinazione.trim() === ""))
-            .filter(t => t.hotel.trim().toUpperCase() !== "SUPPLEMENTO");
+        const suppl = supplementi;
 
         let html = `<h4 style="margin:15px 0 8px; text-align:center;">Tariffe per ${esc(hotelScelto)}</h4>`;
         if (suppl.length) {
@@ -519,10 +529,6 @@ document.addEventListener('DOMContentLoaded', function () {
         dataServizio.dispatchEvent(new Event('change'));
     }
     dataGlobale.addEventListener('change', dataCambiata);
-    document.getElementById('btnOggi').addEventListener('click', () => { dataGlobale.value = isoData(new Date()); dataCambiata(); });
-    document.getElementById('btnDomani').addEventListener('click', () => {
-        const d = new Date(); d.setDate(d.getDate() + 1); dataGlobale.value = isoData(d); dataCambiata();
-    });
 
     // ===== TEMA CHIARO, DIMENSIONE DEL TESTO, INSTALLAZIONE =====
     const radice = document.documentElement, btnTema = document.getElementById('btnTema'), btnTesto = document.getElementById('btnTesto');
