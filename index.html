@@ -2,7 +2,13 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#0b2a4a">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Motoscafi">
+    <script>try{var d=document.documentElement;if(localStorage.getItem('tema')==='chiaro')d.classList.add('chiaro');var f=localStorage.getItem('testo');if(f)d.style.fontSize=f+'%';}catch(e){}</script>
     <title>CONSORZIO MOTOSCAFI</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -14,17 +20,25 @@
 
 <!-- 🔥 MESSAGGIO DI AVVISO -->
 <div id="messaggioAvviso">
-    -ARGOS FINO AL 16 NOVEMBRE - TABELLE SALUTE/APT FINO AL 14 NOVEMBRE-
+    - dal 6 ottobre ms EXCELSIOR tornano in APT (1mo/2do) -ARGOS FINO AL 16 NOVEMBRE - TABELLE SALUTE/APT FINO AL 14 NOVEMBRE-
 </div>
 
 <header>CONSORZIO MOTOSCAFI</header>
 
+<div class="barra">
+    <button id="btnInstalla" type="button" hidden>📲 Installa</button>
+    <button id="btnTesto" type="button" title="Ingrandisci il testo">A+</button>
+    <button id="btnTema" type="button">☀️ Chiaro</button>
+</div>
+
+<div class="datebar" id="barraData">
+    <input type="date" id="dataGlobale" aria-label="Data">
+    <button type="button" id="btnOggi">Oggi</button>
+    <button type="button" id="btnDomani">Domani</button>
+</div>
+
 <main>
 
-    <!-- ⭐ BOTTONI PRINCIPALI (ACCORDION) ⭐ -->
-    <button type="button" class="accordion-button btn-argos" id="toggleArgos">
-        ARGOS
-    </button>
 
     <div class="accordion-section" id="sezioneArgos">
         <div class="section-box">
@@ -85,8 +99,7 @@
                 <option value="N36">N36</option>
             </select>
 
-            <label for="dataMotoscafo">Data:</label>
-            <input type="date" id="dataMotoscafo">
+            <input type="date" id="dataMotoscafo" hidden>
 
             <button id="verificaTutti" type="button">Tutti i motoscafi</button>
 
@@ -98,17 +111,14 @@
         </div>
     </div>
 
-    <button type="button" class="accordion-button btn-salute" id="toggleSaluteApt">
-        TABELLA SALUTE / APT
-    </button>
-
     <div class="accordion-section" id="sezioneSaluteApt">
         <div class="section-box">
             <h3>TABELLA SALUTE / APT</h3>
             <div class="section-divider"></div>
 
-            <label for="dataServizio">Data:</label>
-            <input type="date" id="dataServizio">
+            <input type="date" id="dataServizio" hidden>
+
+            <button type="button" class="mic mic-largo" data-per="servizi">🎤 Dì per esempio: «apt domani» o «tutte e due oggi»</button>
 
             <div class="seg" id="segServizio">
                 <button type="button" data-s="APT">APT</button>
@@ -121,10 +131,6 @@
             <div id="outputServizio"></div>
         </div>
     </div>
-
-    <button type="button" class="accordion-button btn-tariffe" id="toggleTariffe">
-        TARIFFE
-    </button>
 
     <div class="accordion-section" id="sezioneTariffe">
         <div class="section-box">
@@ -175,6 +181,13 @@
 </main>
 
 <footer id="infoAggiornamento"></footer>
+<div id="suggerimentoHome" class="hint" hidden style="text-align:center">Per averla sulla Home: tocca Condividi e poi «Aggiungi alla schermata Home».</div>
+
+<nav class="nav" id="nav">
+    <button type="button" class="tab btn-argos" id="toggleArgos">ARGOS</button>
+    <button type="button" class="tab btn-salute" id="toggleSaluteApt">SALUTE / APT</button>
+    <button type="button" class="tab btn-tariffe" id="toggleTariffe">TARIFFE</button>
+</nav>
 
 <script src="script.js"></script>
 

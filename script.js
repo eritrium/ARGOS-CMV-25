@@ -1,6 +1,6 @@
 // ===== VERSIONE DELLA PAGINA =====
 // Quando aggiorni il sito, cambia questo numero e quello in version.json (devono essere uguali)
-const VERSIONE_PAGINA = "4";
+const VERSIONE_PAGINA = "1";
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -38,6 +38,25 @@ document.addEventListener('DOMContentLoaded', function () {
     btnTutti.addEventListener('click', () => { scelta = 'TUTTI'; mostraArgos(); });
     dataInput.addEventListener('change', mostraArgos);
 
+    function messaggioVuoto(date, data, cosa) {
+        const f = s => s.split('-').reverse().join('/');
+        if (!date.length) return `<div class="vuoto">Non ci sono ancora dati ${cosa}.</div>`;
+        const min = date.reduce((a, b) => a < b ? a : b), max = date.reduce((a, b) => a > b ? a : b);
+        return `<div class="vuoto">Per il ${f(data)} i dati ${cosa} non sono ancora caricati.<br>Disponibili dal ${f(min)} al ${f(max)}.</div>`;
+    }
+
+    function prossimiGiorni(turni, mezzo, data) {       // i 6 giorni dopo la data scelta
+        const mio = new Map(turni.filter(x => x.motoscafo === mezzo).map(x => [x.data, x.turno]));
+        const [y, m, d] = data.split('-').map(Number);
+        let righe = '';
+        for (let k = 1; k <= 6; k++) {
+            const dt = new Date(y, m - 1, d + k), iso = isoData(dt);
+            const nome = dt.toLocaleDateString('it-IT', { weekday: 'short', day: '2-digit', month: '2-digit' });
+            righe += `<tr><td>${nome}</td><td>${mio.get(iso) ? esc(mio.get(iso)) : '-'}</td></tr>`;
+        }
+        return `<div class="prossimi"><div class="pt">PROSSIMI GIORNI</div><table><tbody>${righe}</tbody></table></div>`;
+    }
+
     async function mostraArgos() {
         grigliaNum.querySelectorAll('.num-btn').forEach(b => b.classList.toggle('attivo', b.dataset.n === scelta));
         btnTutti.classList.toggle('attivo', scelta === 'TUTTI');
@@ -49,8 +68,8 @@ document.addEventListener('DOMContentLoaded', function () {
             const turni = await (await fetch('turni.json', { cache: 'no-store' })).json();
             if (id !== tokenArgos) return;
             const del = turni.filter(t => t.data === data);
+            if (!del.length) { outputMotoscafo.innerHTML = messaggioVuoto(turni.map(t => t.data), data, 'dei turni'); return; }
             if (scelta === 'TUTTI') {
-                if (!del.length) { outputMotoscafo.textContent = 'Nessun turno trovato.'; return; }
                 const ordine = Array.from(motoscafoSelect.options).map(o => o.value).filter(Boolean);
                 const righe = ordine.map(m => {
                     const t = del.find(x => x.motoscafo === m);
@@ -61,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
             } else {
                 const t = del.find(x => x.motoscafo === scelta);
                 outputMotoscafo.innerHTML = `<div class="risultato"><div class="rn">Motoscafo ${esc(scelta)}</div>
-                    <div class="rd">${formatDate(data)}</div><div class="rt">${t && t.turno ? esc(t.turno) : 'Nessun turno trovato'}</div></div>`;
+                    <div class="rd">${formatDate(data)}</div><div class="rt">${t && t.turno ? esc(t.turno) : 'Nessun turno per questo motoscafo'}</div></div>` + prossimiGiorni(turni, scelta, data);
                 outputMotoscafo.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
         } catch (e) {
@@ -85,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 );
 
                 if (filtrati.length === 0) {
-                    outputServizio.innerHTML = "<p style='color:#ff6b6b;'>Nessun dato SALUTE per questa data.</p>";
+                    outputServizio.innerHTML = messaggioVuoto(turni.filter(r => r.servizio === "SALUTE" && r.num && r.num.trim() !== "").map(r => r.data), data, 'SALUTE');
                     return;
                 }
 
@@ -150,7 +169,7 @@ document.addEventListener('DOMContentLoaded', function () {
             );
 
             if (finali.length === 0) {
-                outputServizio.innerHTML = "<p style='color:#ff6b6b;'>Nessun dato trovato.</p>";
+                outputServizio.innerHTML = messaggioVuoto(turni.filter(r => (r.servizio === "APT" || r.servizio === "EXTRA APT") && r.num && r.num.trim() !== "").map(r => r.data), data, servizio);
                 return;
             }
 
@@ -251,6 +270,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const data = dataServizio.value;
         if (!data) { outputServizio.textContent = 'Per favore seleziona una data.'; return; }
         const id = ++tokenServ;
+        preparaSePossibile(data);
         outputServizio.innerHTML = '';
         for (const s of (servizioCorrente === 'BOTH' ? ['APT', 'SALUTE'] : [servizioCorrente])) {
             const t = document.createElement('div');
@@ -400,17 +420,9 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         if (!scelto) { outputMotoscafo.textContent = 'Non ho capito «' + (alternative[0] || '') + '». Prova a dire per esempio: «tredici domani».'; return; }
         const { d, boat } = scelto;
-        let data = d.data;
-        if (!data && d.md) {                              // giorno e mese: scelgo l'anno in cui esistono i turni
-            const [mese, giorno, anno] = d.md, ay = new Date().getFullYear();
-            let turni = [];
-            try { turni = await (await fetch('turni.json', { cache: 'no-store' })).json(); } catch (e) { /* si usa l'anno in corso */ }
-            const anni = anno ? [anno] : [ay, ay + 1, ay - 1];
-            data = isoData(new Date(anni[0], mese, giorno));
-            for (const y of anni) { const c = isoData(new Date(y, mese, giorno)); if (turni.some(t => t.data === c)) { data = c; break; } }
-        }
-        if (data) dataInput.value = data;
-        else if (!dataInput.value) dataInput.value = isoData(new Date());
+        const data = await risolviData(d, 'turni.json', () => true);
+        if (data) impostaData(data);
+        else if (!dataGlobale.value) impostaData(isoData(new Date()));
         if (boat) {
             filtro.value = boat; filtro.dispatchEvent(new Event('input'));
             if (esistenti.includes(boat)) scelta = boat;
@@ -419,8 +431,38 @@ document.addEventListener('DOMContentLoaded', function () {
         if (scelta) mostraArgos();
         else outputMotoscafo.textContent = 'Data impostata: ' + formatDate(dataInput.value) + '. Ora scegli il motoscafo.';
     }
+    // giorno e mese detti senza anno: scelgo l'anno in cui i dati esistono
+    async function risolviData(d, file, haDati) {
+        if (d.data) return d.data;
+        if (!d.md) return null;
+        const [mese, giorno, anno] = d.md, ay = new Date().getFullYear();
+        let righe = [];
+        try { righe = await (await fetch(file, { cache: 'no-store' })).json(); } catch (e) { /* si usa l'anno in corso */ }
+        const anni = anno ? [anno] : [ay, ay + 1, ay - 1];
+        for (const y of anni) { const c = isoData(new Date(y, mese, giorno)); if (righe.some(r => r.data === c && haDati(r))) return c; }
+        return isoData(new Date(anni[0], mese, giorno));
+    }
+    // "apt domani", "salute 5 novembre", "tutte e due oggi"
+    async function comandoServizi(alternative) {
+        let scelto = null, punti = 0;
+        for (const a of alternative) {
+            const d = parseData(a), t = ' ' + d.resto.replace(/\./g, '') + ' ';
+            const apt = /\b(apt|a ?p ?t|a pi ti)\b/.test(t), salute = /\bsalute\b/.test(t);
+            const tutte = /\b(tutte|tutti|entrambe|entrambi|ambedue|due|insieme)\b/.test(t) || (apt && salute);
+            const servizio = tutte ? 'BOTH' : apt ? 'APT' : salute ? 'SALUTE' : null;
+            const p = (servizio ? 2 : 0) + (d.data || d.md ? 2 : 0);
+            if (p > punti) { punti = p; scelto = { d, servizio }; }
+        }
+        if (!scelto) { outputServizio.textContent = 'Non ho capito «' + (alternative[0] || '') + '». Prova a dire per esempio: «apt domani».'; return; }
+        const data = await risolviData(scelto.d, 'salute_apt.json', r => r.num && r.num.trim() !== '');
+        if (data) impostaData(data);
+        else if (!dataGlobale.value) impostaData(isoData(new Date()));
+        servizioCorrente = scelto.servizio || servizioCorrente || 'BOTH';
+        mostraServizi();
+    }
     const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
     function applicaVoce(per, alternative) {
+        if (per === 'servizi') { comandoServizi(alternative); return; }
         if (per === 'filtroMotoscafo') {
             comandoArgos(alternative);
         } else {
@@ -447,7 +489,7 @@ document.addEventListener('DOMContentLoaded', function () {
             try { r.start(); } catch (e) { btn.classList.remove('ascolta'); }
         });
     });
-    window.__voce = { paroleANumero, candidatoMotoscafo, applicaVoce, parseData, comandoArgos };   // solo per le prove
+    window.__voce = { paroleANumero, candidatoMotoscafo, applicaVoce, parseData, comandoArgos, comandoServizi };   // solo per le prove
 
     const btnToggleArgos = document.getElementById('toggleArgos');
     const btnToggleSaluteApt = document.getElementById('toggleSaluteApt');
@@ -457,25 +499,62 @@ document.addEventListener('DOMContentLoaded', function () {
     const sezioneSaluteApt = document.getElementById('sezioneSaluteApt');
     const sezioneTariffe = document.getElementById('sezioneTariffe');
 
-    const sezioni = [sezioneArgos, sezioneSaluteApt, sezioneTariffe];
-
-    function toggleSezione(sezione) {
-        const èVisibile = sezione.style.display === 'block';
-        sezioni.forEach(s => {
-            s.style.display = 'none';
-            s.previousElementSibling.classList.remove('aperto');
-        });
-        if (!èVisibile) {
-            sezione.style.display = 'block';
-            sezione.previousElementSibling.classList.add('aperto');
-        }
+    const tabs = [[btnToggleArgos, sezioneArgos], [btnToggleSaluteApt, sezioneSaluteApt], [btnToggleTariffe, sezioneTariffe]];
+    const barraData = document.getElementById('barraData');
+    function apri(sezione) {
+        tabs.forEach(([b, s]) => { s.style.display = s === sezione ? 'block' : 'none'; b.classList.toggle('aperto', s === sezione); });
+        barraData.style.display = sezione === sezioneTariffe ? 'none' : '';
+        if (sezione === sezioneSaluteApt) { preparaSePossibile(dataServizio.value); mostraServizi(); }
+        if (sezione === sezioneArgos) mostraArgos();
+        try { window.scrollTo(0, 0); } catch (e) { /* ignorato */ }
     }
+    tabs.forEach(([b, s]) => b.addEventListener('click', () => apri(s)));
 
-    btnToggleArgos.addEventListener('click', () => toggleSezione(sezioneArgos));
-    btnToggleSaluteApt.addEventListener('click', () => toggleSezione(sezioneSaluteApt));
-    btnToggleTariffe.addEventListener('click', () => toggleSezione(sezioneTariffe));
+    // data unica in alto, valida per ARGOS e per SALUTE/APT
+    const dataGlobale = document.getElementById('dataGlobale');
+    function impostaData(iso) { dataGlobale.value = iso; dataInput.value = iso; dataServizio.value = iso; }
+    function dataCambiata() {
+        dataInput.value = dataServizio.value = dataGlobale.value;
+        dataInput.dispatchEvent(new Event('change'));
+        dataServizio.dispatchEvent(new Event('change'));
+    }
+    dataGlobale.addEventListener('change', dataCambiata);
+    document.getElementById('btnOggi').addEventListener('click', () => { dataGlobale.value = isoData(new Date()); dataCambiata(); });
+    document.getElementById('btnDomani').addEventListener('click', () => {
+        const d = new Date(); d.setDate(d.getDate() + 1); dataGlobale.value = isoData(d); dataCambiata();
+    });
 
+    // ===== TEMA CHIARO, DIMENSIONE DEL TESTO, INSTALLAZIONE =====
+    const radice = document.documentElement, btnTema = document.getElementById('btnTema'), btnTesto = document.getElementById('btnTesto');
+    const salva = (k, v) => { try { localStorage.setItem(k, v); } catch (e) { /* ignorato */ } };
+    const dimensione = () => parseInt(radice.style.fontSize) || 100;
+    function aggiornaBarra() {
+        btnTema.textContent = radice.classList.contains('chiaro') ? '🌙 Scuro' : '☀️ Chiaro';
+        btnTesto.textContent = dimensione() >= 135 ? 'A++' : dimensione() >= 118 ? 'A+' : 'A';
+    }
+    btnTema.addEventListener('click', () => {
+        radice.classList.toggle('chiaro'); salva('tema', radice.classList.contains('chiaro') ? 'chiaro' : 'scuro'); aggiornaBarra();
+    });
+    btnTesto.addEventListener('click', () => {
+        const n = dimensione() >= 135 ? 100 : dimensione() >= 118 ? 135 : 118;
+        radice.style.fontSize = n + '%'; salva('testo', n); aggiornaBarra();
+    });
+    aggiornaBarra();
 
+    let promptInstall = null;
+    const btnInstalla = document.getElementById('btnInstalla');
+    window.addEventListener('beforeinstallprompt', e => { e.preventDefault(); promptInstall = e; btnInstalla.hidden = false; });
+    btnInstalla.addEventListener('click', async () => {
+        if (!promptInstall) return;
+        promptInstall.prompt();
+        try { await promptInstall.userChoice; } catch (e) { /* ignorato */ }
+        promptInstall = null; btnInstalla.hidden = true;
+    });
+    window.addEventListener('appinstalled', () => { btnInstalla.hidden = true; });
+    if (/iphone|ipad|ipod/i.test(navigator.userAgent) && !navigator.standalone) document.getElementById('suggerimentoHome').hidden = false;
+    if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => { /* ignorato */ });
+
+    apri(sezioneArgos);
 
     // ===== RIFINITURE TABELLE: conteggio, legenda, WhatsApp, scorrimento =====
     const LEGENDA = {
@@ -633,8 +712,9 @@ document.addEventListener('DOMContentLoaded', function () {
             return await new Promise(res => cv.toBlob(res, 'image/png'));
         } catch (e) { return null; } finally { box.remove(); }
     }
+    function preparaSePossibile(data) { if (data && !pronte[data]) pronte[data] = preparaEntrambe(data); }
     dataServizio.addEventListener('change', () => {
-        if (dataServizio.value) pronte[dataServizio.value] = preparaEntrambe(dataServizio.value);
+        if (sezioneSaluteApt.style.display === 'block') preparaSePossibile(dataServizio.value);
         mostraServizi();
     });
     btnEntrambe.addEventListener('click', async () => {

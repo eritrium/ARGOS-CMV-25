@@ -1,0 +1,15 @@
+{
+    "name": "Consorzio Motoscafi",
+    "short_name": "Motoscafi",
+    "description": "Turni ARGOS, tabelle SALUTE/APT e tariffe",
+    "lang": "it",
+    "start_url": "./",
+    "scope": "./",
+    "display": "standalone",
+    "background_color": "#0b2a4a",
+    "theme_color": "#0b2a4a",
+    "icons": [
+        { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+        { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+    ]
+}
