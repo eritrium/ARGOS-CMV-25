@@ -1,6 +1,6 @@
 // ===== VERSIONE DELLA PAGINA =====
 // Quando aggiorni il sito, cambia questo numero e quello in version.json (devono essere uguali)
-const VERSIONE_PAGINA = "3";
+const VERSIONE_PAGINA = "1";
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -332,37 +332,97 @@ document.addEventListener('DOMContentLoaded', function () {
         dodici: 12, tredici: 13, quattordici: 14, quindici: 15, sedici: 16, diciassette: 17, diciotto: 18, diciannove: 19,
         venti: 20, trenta: 30, quaranta: 40, cinquanta: 50, sessanta: 60, settanta: 70, ottanta: 80, novanta: 90 };
     const TOKEN = Object.keys(UNITA).concat('cento').sort((a, b) => b.length - a.length);
-    function paroleANumero(t) {          // "centocinquantasei" -> 156, "uno cinque sei" -> 156
-        const parole = t.toLowerCase().replace(/[^a-z ]/g, ' ').trim().split(/\s+/).filter(Boolean);
-        if (parole.length > 1 && parole.every(p => UNITA[p] !== undefined && UNITA[p] < 10)) return parole.map(p => UNITA[p]).join('');
-        let s = parole.join('').replace(/(vent|trent|quarant|cinquant|sessant|settant|ottant|novant)(uno|otto)/g, (m, a, b) => a + (a === 'vent' ? 'i' : 'a') + b);
-        let cur = 0, ok = s.length > 0;
-        while (s && ok) {
+    function paroleANumero(t) {          // "centocinquantasei" -> 156, "uno tre" / "unotre" -> 13
+        let s = t.toLowerCase().replace(/[^a-z]/g, ' ').split(/\s+/).filter(p => p && p !== 'e').join('');
+        s = s.replace(/(vent|trent|quarant|cinquant|sessant|settant|ottant|novant)(uno|otto)/g, (m, a, b) => a + (a === 'vent' ? 'i' : 'a') + b);
+        const tok = [];
+        while (s) {
             const k = TOKEN.find(x => s.startsWith(x));
-            if (!k) { ok = false; break; }
-            if (k === 'cento') cur = (cur || 1) * 100; else cur += UNITA[k];
-            s = s.slice(k.length);
+            if (!k) return '';
+            tok.push(k); s = s.slice(k.length);
         }
-        return ok ? String(cur) : '';
+        if (!tok.length) return '';
+        if (tok.length > 1 && tok.every(k => UNITA[k] !== undefined && UNITA[k] < 10)) return tok.map(k => UNITA[k]).join('');
+        let cur = 0;
+        tok.forEach(k => { cur = k === 'cento' ? (cur || 1) * 100 : cur + UNITA[k]; });
+        return String(cur);
     }
-    function candidatoMotoscafo(t) {
-        let u = t.toUpperCase().replace(/\b(ENNE|NOLO|NOLEGGIO)\b/g, 'N').replace(/[^A-Z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
-        const n = u.match(/^N ?(.*)$/);
+    function candidatoMotoscafo(t) {      // '' se non riesce a capire
+        const u = t.toUpperCase().replace(/\b(ENNE|NOLO|NOLEGGIO)\b/g, 'N').replace(/[^A-Z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
+        const n = u.match(/^N(?: |(?=\d))(.*)$/);   // la N deve essere staccata (non 'nove', 'novanta')
         const prefisso = n ? 'N' : '';
-        let resto = n ? n[1] : u;
+        const resto = n ? n[1] : u;
         if (/^[0-9 ]+$/.test(resto) && resto) return prefisso + resto.replace(/ /g, '');
-        const p = paroleANumero(resto.toLowerCase());
-        return p ? prefisso + p : u.replace(/ /g, '');
+        const p = paroleANumero(resto);
+        return p ? prefisso + p : '';
+    }
+
+    // ===== COMANDO VOCALE ARGOS: "tredici domani", "nolo diciotto 5 novembre" =====
+    const MESI = ['gennaio', 'febbraio', 'marzo', 'aprile', 'maggio', 'giugno', 'luglio', 'agosto', 'settembre', 'ottobre', 'novembre', 'dicembre'];
+    const GIORNI = ['domenica', 'lunedi', 'martedi', 'mercoledi', 'giovedi', 'venerdi', 'sabato'];
+    const FILLER = ['turno', 'turni', 'del', 'di', 'il', 'la', 'lo', 'le', 'per', 'taxi', 'motoscafo', 'argos', 'giorno', 'numero', 'vedi', 'mostra', 'dammi',
+        'cerca', 'quando', 'che', 'a', 'in', 'al', 'dal', 'dei', 'della', 'del', 'prossimo', 'oggi', 'domani', 'dopodomani', 'ieri'].concat(GIORNI);
+    const isoData = d => d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+    // -> { data: 'AAAA-MM-GG' | null, md: [mese, giorno, anno|null] | null, resto: 'testo senza la data' }
+    function parseData(testo, oggi) {
+        oggi = oggi || new Date();
+        const base = new Date(oggi.getFullYear(), oggi.getMonth(), oggi.getDate());
+        const piu = n => { const d = new Date(base); d.setDate(d.getDate() + n); return isoData(d); };
+        const t = ' ' + testo.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9\/\-. ]/g, ' ').replace(/\s+/g, ' ').trim() + ' ';
+        for (const [w, n] of [[' dopodomani ', 2], [' domani ', 1], [' oggi ', 0], [' ieri ', -1]])
+            if (t.includes(w)) return { data: piu(n), md: null, resto: t.replace(w, ' ').trim() };
+        let m = t.match(/ (\d{1,2})[\/\-.](\d{1,2})(?:[\/\-.](\d{2,4}))? /);
+        if (m && +m[1] >= 1 && +m[1] <= 31 && +m[2] >= 1 && +m[2] <= 12)
+            return { data: null, md: [+m[2] - 1, +m[1], m[3] ? (+m[3] < 100 ? 2000 + +m[3] : +m[3]) : null], resto: t.replace(m[0], ' ').trim() };
+        const p = t.trim().split(' '), i = p.findIndex(x => MESI.includes(x));
+        if (i > 0) {
+            const tok = p[i - 1];
+            const giorno = /^\d{1,2}$/.test(tok) ? +tok : tok === 'primo' ? 1 : +paroleANumero(tok) || 0;
+            if (giorno >= 1 && giorno <= 31) {
+                const anno = p[i + 1] && /^20\d\d$/.test(p[i + 1]) ? +p[i + 1] : null;
+                const resto = p.filter((_, k) => k !== i - 1 && k !== i && !(anno && k === i + 1)).join(' ');
+                return { data: null, md: [MESI.indexOf(p[i]), giorno, anno], resto };
+            }
+        }
+        const g = p.findIndex(x => GIORNI.includes(x));
+        if (g >= 0) return { data: piu((GIORNI.indexOf(p[g]) - base.getDay() + 7) % 7), md: null, resto: p.filter((_, k) => k !== g).join(' ') };
+        return { data: null, md: null, resto: t.trim() };
+    }
+    async function comandoArgos(alternative) {
+        const esistenti = Array.from(grigliaNum.querySelectorAll('.num-btn')).map(b => b.dataset.n);
+        let scelto = null, punti = 0;
+        for (const a of alternative) {
+            const d = parseData(a);
+            const parole = d.resto.split(' ').filter(x => x && !FILLER.includes(x));
+            const boat = candidatoMotoscafo(parole.join(' '));
+            const p = (esistenti.includes(boat) ? 2 : boat ? 1 : 0) + (d.data || d.md ? 2 : 0);
+            if (p > punti) { punti = p; scelto = { d, boat }; }
+        }
+        if (!scelto) { outputMotoscafo.textContent = 'Non ho capito «' + (alternative[0] || '') + '». Prova a dire per esempio: «tredici domani».'; return; }
+        const { d, boat } = scelto;
+        let data = d.data;
+        if (!data && d.md) {                              // giorno e mese: scelgo l'anno in cui esistono i turni
+            const [mese, giorno, anno] = d.md, ay = new Date().getFullYear();
+            let turni = [];
+            try { turni = await (await fetch('turni.json', { cache: 'no-store' })).json(); } catch (e) { /* si usa l'anno in corso */ }
+            const anni = anno ? [anno] : [ay, ay + 1, ay - 1];
+            data = isoData(new Date(anni[0], mese, giorno));
+            for (const y of anni) { const c = isoData(new Date(y, mese, giorno)); if (turni.some(t => t.data === c)) { data = c; break; } }
+        }
+        if (data) dataInput.value = data;
+        else if (!dataInput.value) dataInput.value = isoData(new Date());
+        if (boat) {
+            filtro.value = boat; filtro.dispatchEvent(new Event('input'));
+            if (esistenti.includes(boat)) scelta = boat;
+            else { outputMotoscafo.textContent = 'Il motoscafo «' + boat + '» non esiste.'; return; }
+        }
+        if (scelta) mostraArgos();
+        else outputMotoscafo.textContent = 'Data impostata: ' + formatDate(dataInput.value) + '. Ora scegli il motoscafo.';
     }
     const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
     function applicaVoce(per, alternative) {
         if (per === 'filtroMotoscafo') {
-            const esistenti = Array.from(grigliaNum.querySelectorAll('.num-btn')).map(b => b.dataset.n);
-            const cand = alternative.map(candidatoMotoscafo);
-            const esatto = cand.find(c => esistenti.includes(c));
-            filtro.value = esatto || cand[0] || '';
-            filtro.dispatchEvent(new Event('input'));
-            if (esatto) grigliaNum.querySelector('.num-btn[data-n="' + esatto + '"]').click();
+            comandoArgos(alternative);
         } else {
             const pulisci = t => norm(t).replace(/^(HOTEL|ALBERGO|PALAZZO DI) /, '');
             let scelto = alternative[0] || '';
@@ -387,7 +447,7 @@ document.addEventListener('DOMContentLoaded', function () {
             try { r.start(); } catch (e) { btn.classList.remove('ascolta'); }
         });
     });
-    window.__voce = { paroleANumero, candidatoMotoscafo, applicaVoce };   // solo per le prove
+    window.__voce = { paroleANumero, candidatoMotoscafo, applicaVoce, parseData, comandoArgos };   // solo per le prove
 
     const btnToggleArgos = document.getElementById('toggleArgos');
     const btnToggleSaluteApt = document.getElementById('toggleSaluteApt');
