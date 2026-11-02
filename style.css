@@ -371,6 +371,7 @@ button#verificaTutti, button#condividiEntrambe, .btn-condividi {
 /* --------------------------------------------------
    SELEZIONE RAPIDA (un tocco)
 -------------------------------------------------- */
+#motoscafo { display: none; }
 
 .griglia-num { display: grid; grid-template-columns: repeat(auto-fill, minmax(66px, 1fr)); gap: 8px; margin: 10px 0; }
 .num-btn { padding: 15px 0; font-size: 1.15rem; font-weight: bold; border-radius: 8px; border: 1px solid #2d5a73;
@@ -389,6 +390,7 @@ button#verificaTutti, button#condividiEntrambe, .btn-condividi {
 /* --------------------------------------------------
    TARIFFE: bottoni hotel
 -------------------------------------------------- */
+#hotelSelect { display: none; }
 .hotel-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin: 10px 0; }
 @media (min-width: 600px) { .hotel-grid { grid-template-columns: repeat(3, 1fr); } }
 .hotel-btn { padding: 15px 6px; font-size: 1rem; font-weight: bold; border-radius: 8px; border: 1px solid #6e4e2b;
@@ -417,8 +419,11 @@ tr.senza-prezzo td { opacity: .45; }
 body { padding-bottom: calc(92px + env(safe-area-inset-bottom)); }
 .barra { display: flex; justify-content: flex-end; gap: 8px; margin: -8px 0 10px; }
 .barra button { padding: 8px 12px; font-size: .9rem; font-weight: bold; border-radius: 8px; border: 1px solid #444; background: #2a2a2a; color: #e0e0e0; cursor: pointer; }
-.datebar { display: flex; gap: 8px; margin-bottom: 12px; }
-.datebar input { flex: 1; min-width: 0; margin-bottom: 0; }
+.datebar { display: flex; flex-direction: column; gap: 6px; margin-bottom: 12px; }
+.datebar label { font-weight: bold; color: #ffd700; font-size: 1.05rem; }
+.datebar input { width: 100%; margin-bottom: 0; }
+.data-estesa { text-align: center; font-weight: bold; font-size: 1.1rem; color: #fff; }
+.data-estesa.vuota { color: #ffb066; font-weight: normal; font-size: .95rem; }
 .nav { position: fixed; left: 0; right: 0; bottom: 0; z-index: 50; display: flex; gap: 6px;
     padding: 8px 8px calc(8px + env(safe-area-inset-bottom)); background: #0b2a4a; border-top: 3px solid #ffd700; }
 .nav .tab { flex: 1; padding: 16px 2px; font-size: 1rem; font-weight: bold; border-radius: 8px; cursor: pointer; }
@@ -459,3 +464,7 @@ body { padding-bottom: calc(92px + env(safe-area-inset-bottom)); }
 .chiaro .num-btn.attivo, .chiaro .hotel-btn.attivo, .chiaro .seg button.attivo, .chiaro button#verificaTutti.attivo { background: #ffd700; color: #000; border-color: #b89800; }
 .chiaro .mic { background: #fff; border-color: #9aa5b1; color: #111; }
 .chiaro .vuoto { background: #fdecea; color: #8a1f17; border-color: #f0b6b0; }
+
+.chiaro .datebar label { color: #8a6d00; }
+.chiaro .data-estesa { color: #111; }
+.chiaro .data-estesa.vuota { color: #b25a00; }

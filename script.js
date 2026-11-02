@@ -1,6 +1,6 @@
 // ===== VERSIONE DELLA PAGINA =====
 // Quando aggiorni il sito, cambia questo numero e quello in version.json (devono essere uguali)
-const VERSIONE_PAGINA = "3";
+const VERSIONE_PAGINA = "2";
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     gestisciAvviso();
 
+    const motoscafoSelect = document.getElementById('motoscafo');
     const dataInput = document.getElementById('dataMotoscafo');
     const outputMotoscafo = document.getElementById('outputMotoscafo');
 
@@ -24,17 +25,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const btnTutti = document.getElementById('verificaTutti');
     let scelta = null;                 // numero del motoscafo oppure 'TUTTI'
     let tokenArgos = 0;
-    let elencoMotoscafi = [];
-    // l'elenco dei motoscafi viene dai turni: compaiono quelli che hanno almeno un turno scritto
-    fetch('turni.json', { cache: 'no-store' }).then(r => r.json()).then(turni => {
-        elencoMotoscafi = Array.from(new Set(turni.filter(t => t.turno && t.turno.trim()).map(t => t.motoscafo)));
-        elencoMotoscafi.forEach(n => {
-            const b = document.createElement('button');
-            b.type = 'button'; b.className = 'num-btn'; b.textContent = n; b.dataset.n = n;
-            b.addEventListener('click', () => { scelta = n; mostraArgos(); });
-            grigliaNum.appendChild(b);
-        });
-    }).catch(() => { grigliaNum.innerHTML = "<p style='color:#ff6b6b;'>Errore nel caricamento dei motoscafi.</p>"; });
+    Array.from(motoscafoSelect.options).map(o => o.value).filter(Boolean).forEach(n => {
+        const b = document.createElement('button');
+        b.type = 'button'; b.className = 'num-btn'; b.textContent = n; b.dataset.n = n;
+        b.addEventListener('click', () => { scelta = n; mostraArgos(); });
+        grigliaNum.appendChild(b);
+    });
     filtro.addEventListener('input', () => {
         const q = norm(filtro.value).replace(/ /g, '');
         grigliaNum.querySelectorAll('.num-btn').forEach(b => { b.style.display = norm(b.dataset.n).startsWith(q) ? '' : 'none'; });
@@ -66,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
         btnTutti.classList.toggle('attivo', scelta === 'TUTTI');
         if (!scelta) return;
         const data = dataInput.value;
-        if (!data) { outputMotoscafo.textContent = 'Per favore seleziona una data.'; return; }
+        if (!data) { outputMotoscafo.textContent = 'Scegli prima la data (in alto).'; return; }
         const id = ++tokenArgos;
         try {
             const turni = await (await fetch('turni.json', { cache: 'no-store' })).json();
@@ -74,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const del = turni.filter(t => t.data === data);
             if (!del.length) { outputMotoscafo.innerHTML = messaggioVuoto(turni.map(t => t.data), data, 'dei turni'); return; }
             if (scelta === 'TUTTI') {
-                const ordine = elencoMotoscafi;
+                const ordine = Array.from(motoscafoSelect.options).map(o => o.value).filter(Boolean);
                 const righe = ordine.map(m => {
                     const t = del.find(x => x.motoscafo === m);
                     return `<tr><td>${m}</td><td>${t && t.turno ? esc(t.turno) : '-'}</td></tr>`;
@@ -272,7 +268,7 @@ document.addEventListener('DOMContentLoaded', function () {
         segServizio.querySelectorAll('button').forEach(b => b.classList.toggle('attivo', b.dataset.s === servizioCorrente));
         if (!servizioCorrente) return;
         const data = dataServizio.value;
-        if (!data) { outputServizio.textContent = 'Per favore seleziona una data.'; return; }
+        if (!data) { outputServizio.textContent = 'Scegli prima la data (in alto).'; return; }
         const id = ++tokenServ;
         preparaSePossibile(data);
         outputServizio.innerHTML = '';
@@ -297,22 +293,14 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // ===== TARIFFE: bottoni hotel, un tocco = tariffe =====
+    const hotelSelect = document.getElementById("hotelSelect");     // resta nascosto: e' l'elenco degli hotel
     const grigliaHotel = document.getElementById("grigliaHotel");
     const filtroHotel = document.getElementById("filtroHotel");
     const risultatiTariffe = document.getElementById("risultatiTariffe");
-    let hotelList = [], supplementi = [], datiTariffe = null, hotelScelto = null;
-    // gli hotel e i supplementi si ricavano da tariffe.json: gli hotel sono le righe prima della riga "SUPPLEMENTO"
-    function analizzaTariffe(d) {
-        const righe = d.tariffe, i = righe.findIndex(r => r.hotel.trim().toUpperCase().startsWith('SUPPLEMENT'));
-        hotelList = Array.from(new Set((i < 0 ? righe : righe.slice(0, i)).map(r => r.hotel.trim()).filter(Boolean)));
-        supplementi = i < 0 ? [] : righe.slice(i + 1).filter(r => r.hotel.trim() || r.destinazione.trim());
-    }
-    async function caricaTariffe() {
-        if (!datiTariffe) { datiTariffe = await (await fetch("tariffe.json", { cache: "no-store" })).json(); analizzaTariffe(datiTariffe); }
-        return datiTariffe;
-    }
+    const hotelList = Array.from(hotelSelect.options).map(o => o.value).filter(v => v !== "");
+    let datiTariffe = null, hotelScelto = null;
 
-    caricaTariffe().then(() => hotelList.forEach(h => {
+    hotelList.forEach(h => {
         const b = document.createElement('button');
         b.type = 'button'; b.className = 'hotel-btn'; b.textContent = h; b.dataset.h = h;
         b.addEventListener('click', () => {
@@ -320,7 +308,7 @@ document.addEventListener('DOMContentLoaded', function () {
             mostraTariffe(true);
         });
         grigliaHotel.appendChild(b);
-    })).catch(() => { grigliaHotel.innerHTML = "<p style='color:#ff6b6b;'>Errore nel caricamento degli hotel.</p>"; });
+    });
     filtroHotel.addEventListener('input', () => {
         const q = norm(filtroHotel.value);
         grigliaHotel.querySelectorAll('.hotel-btn').forEach(b => { b.style.display = norm(b.dataset.h).includes(q) ? '' : 'none'; });
@@ -330,15 +318,17 @@ document.addEventListener('DOMContentLoaded', function () {
         grigliaHotel.querySelectorAll('.hotel-btn').forEach(b => b.classList.toggle('attivo', b.dataset.h === hotelScelto));
         if (!hotelScelto) { risultatiTariffe.innerHTML = ''; return; }
         try {
-            await caricaTariffe();
+            if (!datiTariffe) datiTariffe = await (await fetch("tariffe.json", { cache: "no-store" })).json();
         } catch (e) {
             risultatiTariffe.innerHTML = "<p style='color:#ff6b6b;'>Errore nel caricamento delle tariffe.</p>";
             return;
         }
-        const visibili = datiTariffe.tariffe.filter(t => t.hotel.trim() === hotelScelto);   // tutto l'elenco, nell'ordine del file
+        const visibili = datiTariffe.tariffe.filter(t => t.hotel === hotelScelto);   // tutto l'elenco, nell'ordine del file
         if (!visibili.length) { risultatiTariffe.innerHTML = "<p style='color:#ff6b6b;'>Nessuna tariffa trovata.</p>"; return; }
 
-        const suppl = supplementi;
+        // supplementi: righe che non appartengono a nessun hotel (la prima e' l'intestazione)
+        const suppl = datiTariffe.tariffe.filter(t => !hotelList.includes(t.hotel) && !(t.hotel.trim() === "" && t.destinazione.trim() === ""))
+            .filter(t => t.hotel.trim().toUpperCase() !== "SUPPLEMENTO");
 
         let html = `<h4 style="margin:15px 0 8px; text-align:center;">Tariffe per ${esc(hotelScelto)}</h4>`;
         if (suppl.length) {
@@ -522,8 +512,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // data unica in alto, valida per ARGOS e per SALUTE/APT
     const dataGlobale = document.getElementById('dataGlobale');
-    function impostaData(iso) { dataGlobale.value = iso; dataInput.value = iso; dataServizio.value = iso; }
+    const dataEstesa = document.getElementById('dataEstesa');
+    function aggiornaDataEstesa() {
+        const v = dataGlobale.value;
+        dataEstesa.textContent = v ? formatDate(v) : 'Nessuna data scelta: tocca il campo qui sopra';
+        dataEstesa.classList.toggle('vuota', !v);
+    }
+    function impostaData(iso) { dataGlobale.value = iso; dataInput.value = iso; dataServizio.value = iso; aggiornaDataEstesa(); }
     function dataCambiata() {
+        aggiornaDataEstesa();
         dataInput.value = dataServizio.value = dataGlobale.value;
         dataInput.dispatchEvent(new Event('change'));
         dataServizio.dispatchEvent(new Event('change'));
@@ -725,7 +722,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     btnEntrambe.addEventListener('click', async () => {
         const data = dataServizio.value;
-        if (!data) { outputServizio.textContent = 'Per favore seleziona una data.'; return; }
+        if (!data) { outputServizio.textContent = 'Scegli prima la data (in alto).'; return; }
         if (!pronte[data]) pronte[data] = preparaEntrambe(data);
         const blob = await pronte[data];
         if (!blob) { outputServizio.innerHTML = "<p style='color:#ff6b6b;'>Nessun dato per questa data.</p>"; delete pronte[data]; return; }
