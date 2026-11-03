@@ -2557,7 +2557,8 @@
         "data": "2026-11-06",
         "num": "254",
         "inizio": "07",
-        "fine": "24"
+        "fine": "24",
+        "nota": "CANTIERE"
     },
     {
         "servizio": "APT",
@@ -2698,7 +2699,8 @@
         "data": "2026-11-07",
         "num": "254",
         "inizio": "07",
-        "fine": "18"
+        "fine": "18",
+        "nota": "CANTIERE"
     },
     {
         "servizio": "APT",
