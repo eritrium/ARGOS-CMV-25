@@ -1,6 +1,6 @@
 // ===== VERSIONE DELLA PAGINA =====
 // Quando aggiorni il sito, cambia questo numero e quello in version.json (devono essere uguali)
-const VERSIONE_PAGINA = "3";
+const VERSIONE_PAGINA = "2";
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -503,7 +503,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const barraData = document.getElementById('barraData');
     function apri(sezione) {
         tabs.forEach(([b, s]) => { s.style.display = s === sezione ? 'block' : 'none'; b.classList.toggle('aperto', s === sezione); });
-        barraData.style.display = sezione === sezioneTariffe ? 'none' : '';
+        document.getElementById('datepick').style.display = sezione === sezioneTariffe ? 'none' : '';
         if (sezione === sezioneSaluteApt) { preparaSePossibile(dataServizio.value); mostraServizi(); }
         if (sezione === sezioneArgos) mostraArgos();
         try { window.scrollTo(0, 0); } catch (e) { /* ignorato */ }
@@ -515,7 +515,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const dataEstesa = document.getElementById('dataEstesa');
     function aggiornaDataEstesa() {
         const v = dataGlobale.value;
-        dataEstesa.textContent = v ? formatDate(v) : 'Nessuna data scelta: tocca il campo qui sopra';
+        dataEstesa.textContent = '📅 ' + (v ? formatDate(v) : 'Scegli la data');
         dataEstesa.classList.toggle('vuota', !v);
     }
     function impostaData(iso) { dataGlobale.value = iso; dataInput.value = iso; dataServizio.value = iso; aggiornaDataEstesa(); }
@@ -526,13 +526,14 @@ document.addEventListener('DOMContentLoaded', function () {
         dataServizio.dispatchEvent(new Event('change'));
     }
     dataGlobale.addEventListener('change', dataCambiata);
+    dataGlobale.addEventListener('click', () => { try { if (dataGlobale.showPicker) dataGlobale.showPicker(); } catch (e) { /* ignorato */ } });
 
     // ===== TEMA CHIARO, DIMENSIONE DEL TESTO, INSTALLAZIONE =====
     const radice = document.documentElement, btnTema = document.getElementById('btnTema'), btnTesto = document.getElementById('btnTesto');
     const salva = (k, v) => { try { localStorage.setItem(k, v); } catch (e) { /* ignorato */ } };
     const dimensione = () => parseInt(radice.style.fontSize) || 100;
     function aggiornaBarra() {
-        btnTema.textContent = radice.classList.contains('chiaro') ? '🌙 Scuro' : '☀️ Chiaro';
+        btnTema.textContent = radice.classList.contains('chiaro') ? '🌙' : '☀️';
         btnTesto.textContent = dimensione() >= 135 ? 'A++' : dimensione() >= 118 ? 'A+' : 'A';
     }
     btnTema.addEventListener('click', () => {
@@ -685,6 +686,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // ===== UNA SOLA IMMAGINE CON APT + SALUTE =====
     const btnEntrambe = document.getElementById('condividiEntrambe');
+    // il pulsante per condividere compare solo quando c'e' una tabella da mandare
+    btnEntrambe.style.display = 'none';
+    new MutationObserver(() => { btnEntrambe.style.display = outputServizio.querySelector('.table-wrapper') ? '' : 'none'; })
+        .observe(outputServizio, { childList: true, subtree: true });
     const pronte = {};
     async function preparaEntrambe(data) {
         const box = document.createElement('div');

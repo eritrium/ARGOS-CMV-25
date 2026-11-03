@@ -20,21 +20,19 @@
 
 <!-- 🔥 MESSAGGIO DI AVVISO -->
 <div id="messaggioAvviso">
-    -ARGOS FINO AL 16 NOVEMBRE - TABELLE SALUTE/APT FINO AL 14 NOVEMBRE-
+    - dal 6 ottobre ms EXCELSIOR tornano in APT (1mo/2do) -ARGOS FINO AL 16 NOVEMBRE - TABELLE SALUTE/APT FINO AL 14 NOVEMBRE-
 </div>
 
-<header>CONSORZIO MOTOSCAFI</header>
-
-<div class="barra">
-    <button id="btnInstalla" type="button" hidden>📲 Installa</button>
-    <button id="btnTesto" type="button" title="Ingrandisci il testo">A+</button>
-    <button id="btnTema" type="button">☀️ Chiaro</button>
-</div>
+<header><span class="tit">CONSORZIO MOTOSCAFI</span><small id="infoAggiornamento">VENEZIA</small></header>
 
 <div class="datebar" id="barraData">
-    <label for="dataGlobale">📅 Scegli la data</label>
-    <input type="date" id="dataGlobale" aria-label="Data">
-    <div id="dataEstesa" class="data-estesa vuota">Nessuna data scelta: tocca il campo qui sopra</div>
+    <div class="datepick" id="datepick">
+        <span id="dataEstesa" class="data-estesa vuota">📅 Scegli la data</span>
+        <input type="date" id="dataGlobale" aria-label="Scegli la data">
+    </div>
+    <button id="btnInstalla" type="button" hidden title="Installa l'app">📲</button>
+    <button id="btnTesto" type="button" title="Ingrandisci il testo">A</button>
+    <button id="btnTema" type="button" title="Tema chiaro o scuro">☀️</button>
 </div>
 
 <main>
@@ -42,9 +40,6 @@
 
     <div class="accordion-section" id="sezioneArgos">
         <div class="section-box">
-            <h3>ARGOS</h3>
-            <div class="section-divider"></div>
-
             <select id="motoscafo">
                 <option value="" disabled selected>seleziona n° motoscafo</option>
                 <option value="13">13</option>
@@ -103,7 +98,7 @@
 
             <button id="verificaTutti" type="button">Tutti i motoscafi</button>
 
-            <button type="button" class="mic mic-largo" data-per="filtroMotoscafo">🎤 Dì per esempio: «tredici domani» o «nolo diciotto 5 novembre»</button>
+            <button type="button" class="mic mic-largo" data-per="filtroMotoscafo">🎤 Dì «tredici domani»</button>
 
             <input type="text" id="filtroMotoscafo" placeholder="Cerca il numero (es. 15)" autocomplete="off">
             <div id="grigliaMotoscafi" class="griglia-num"></div>
@@ -114,12 +109,9 @@
 
     <div class="accordion-section" id="sezioneSaluteApt">
         <div class="section-box">
-            <h3>TABELLA SALUTE / APT</h3>
-            <div class="section-divider"></div>
-
             <input type="date" id="dataServizio" hidden>
 
-            <button type="button" class="mic mic-largo" data-per="servizi">🎤 Dì per esempio: «apt domani» o «tutte e due oggi»</button>
+            <button type="button" class="mic mic-largo" data-per="servizi">🎤 Dì «apt domani»</button>
 
             <div class="seg" id="segServizio">
                 <button type="button" data-s="APT">APT</button>
@@ -135,9 +127,6 @@
 
     <div class="accordion-section" id="sezioneTariffe">
         <div class="section-box">
-            <h3>TARIFFE</h3>
-            <div class="section-divider"></div>
-
             <select id="hotelSelect">
                 <option value="" disabled selected>-- Seleziona un hotel --</option>
 
@@ -172,7 +161,7 @@
                 <option value="RIALTO">RIALTO</option>
             </select>
 
-            <button type="button" class="mic mic-largo" data-per="filtroHotel">🎤 Dì il nome dell'hotel, per esempio «Gritti»</button>
+            <button type="button" class="mic mic-largo" data-per="filtroHotel">🎤 Dì «Gritti»</button>
 
             <input type="text" id="filtroHotel" placeholder="Cerca l'hotel (es. gri)" autocomplete="off">
             <div id="grigliaHotel" class="hotel-grid"></div>
@@ -183,7 +172,6 @@
 
 </main>
 
-<footer id="infoAggiornamento"></footer>
 <div id="suggerimentoHome" class="hint" hidden style="text-align:center">Per averla sulla Home: tocca Condividi e poi «Aggiungi alla schermata Home».</div>
 
 <nav class="nav" id="nav">
