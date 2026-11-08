@@ -497,3 +497,14 @@ button#verificaTutti { margin-bottom: 10px; }
 .hdr-btns button { min-width: 40px; height: 34px; padding: 0 8px; font-size: 1rem; font-weight: bold; border-radius: 8px;
     border: 1px solid #2d5a73; background: rgba(255,255,255,.08); color: #ffd700; cursor: pointer; }
 .hdr-btns button[hidden] { display: none; }
+
+/* guida per installare l'app su Safari */
+.guida { position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 100; background: rgba(0, 0, 0, .75);
+    display: flex; align-items: center; justify-content: center; padding: 16px; }
+.guida-box { background: #1e1e1e; color: #e0e0e0; border: 2px solid #ffd700; border-radius: 12px; padding: 18px; max-width: 420px; width: 100%; }
+.guida-box h4 { margin-bottom: 10px; }
+.guida-box ol { margin: 0 0 10px 20px; line-height: 1.5; }
+.guida-box p { margin-bottom: 14px; color: #aab4bb; }
+.guida-box button { width: 100%; padding: 14px; font-size: 1.1rem; font-weight: bold; border: none; border-radius: 8px; background: #ffd700; color: #000; cursor: pointer; }
+.chiaro .guida-box { background: #fff; color: #111; }
+.chiaro .guida-box p { color: #444; }

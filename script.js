@@ -548,14 +548,33 @@ document.addEventListener('DOMContentLoaded', function () {
     let promptInstall = null;
     const btnInstalla = document.getElementById('btnInstalla');
     window.addEventListener('beforeinstallprompt', e => { e.preventDefault(); promptInstall = e; btnInstalla.hidden = false; });
+    const ios = /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    const safariDesktop = !ios && /safari/i.test(navigator.userAgent) && !/chrome|chromium|android|crios|fxios|edg/i.test(navigator.userAgent);
+    const giaInstallata = (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches) || navigator.standalone;
+    // Safari non permette un pulsante "Installa": si mostra una guida con i passaggi
+    function mostraGuida() {
+        const m = document.createElement('div');
+        m.className = 'guida';
+        const primo = ios
+            ? 'Tocca il pulsante <b>Condividi</b> (il quadrato con la freccia verso l\'alto) nella barra di Safari.'
+            : 'Nel menu <b>File</b> di Safari scegli <b>Aggiungi al Dock</b>.';
+        const secondo = ios ? '<li>Scorri e scegli <b>Aggiungi alla schermata Home</b>.</li><li>Tocca <b>Aggiungi</b>.</li>' : '<li>Conferma con <b>Aggiungi</b>.</li>';
+        m.innerHTML = '<div class="guida-box"><h4>Installa l\'app</h4><ol><li>' + primo + '</li>' + secondo + '</ol>' +
+            '<p>Troverai l\'icona <b>Motoscafi</b> insieme alle tue altre app.</p><button type="button">Ho capito</button></div>';
+        m.addEventListener('click', e => { if (e.target === m || e.target.tagName === 'BUTTON') m.remove(); });
+        document.body.appendChild(m);
+    }
+    if ((ios || safariDesktop) && !giaInstallata) btnInstalla.hidden = false;
     btnInstalla.addEventListener('click', async () => {
-        if (!promptInstall) return;
-        promptInstall.prompt();
-        try { await promptInstall.userChoice; } catch (e) { /* ignorato */ }
-        promptInstall = null; btnInstalla.hidden = true;
+        if (promptInstall) {
+            promptInstall.prompt();
+            try { await promptInstall.userChoice; } catch (e) { /* ignorato */ }
+            promptInstall = null; btnInstalla.hidden = true;
+        } else mostraGuida();
     });
     window.addEventListener('appinstalled', () => { btnInstalla.hidden = true; });
-    if (/iphone|ipad|ipod/i.test(navigator.userAgent) && !navigator.standalone) document.getElementById('suggerimentoHome').hidden = false;
+    const suggerimento = document.getElementById('suggerimentoHome');
+    if (suggerimento) suggerimento.hidden = true;     // ora c'e' il pulsante con la guida
     if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => { /* ignorato */ });
 
     apri(sezioneArgos);
