@@ -1595,6 +1595,11 @@
     "turno": "RAMPA 8-18"
   },
   {
+    "motoscafo": "145",
+    "data": "2026-11-17",
+    "turno": "LIDO 8-18"
+  },
+  {
     "motoscafo": "146",
     "data": "2026-11-17",
     "turno": "APT 7/18"
@@ -1845,6 +1850,11 @@
     "turno": "LONDRA 18-24"
   },
   {
+    "motoscafo": "145",
+    "data": "2026-11-18",
+    "turno": "RIPOSO"
+  },
+  {
     "motoscafo": "146",
     "data": "2026-11-18",
     "turno": "TODARO 8-18"
@@ -2095,6 +2105,11 @@
     "turno": "APT 7/24"
   },
   {
+    "motoscafo": "145",
+    "data": "2026-11-19",
+    "turno": "RIPOSO"
+  },
+  {
     "motoscafo": "146",
     "data": "2026-11-19",
     "turno": "RAMPA 8-18"
@@ -2343,6 +2358,11 @@
     "motoscafo": "142",
     "data": "2026-11-20",
     "turno": "APT 7/18"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2026-11-20",
+    "turno": "FS. SCALZI 8-18"
   },
   {
     "motoscafo": "146",
@@ -2595,6 +2615,11 @@
     "turno": "DANIELI 8-18"
   },
   {
+    "motoscafo": "145",
+    "data": "2026-11-21",
+    "turno": "TODARO 8-18"
+  },
+  {
     "motoscafo": "146",
     "data": "2026-11-21",
     "turno": "APT 7/24"
@@ -2845,6 +2870,11 @@
     "turno": "RIO 8-18"
   },
   {
+    "motoscafo": "145",
+    "data": "2026-11-22",
+    "turno": "RAMPA 18-24"
+  },
+  {
     "motoscafo": "146",
     "data": "2026-11-22",
     "turno": "APT 7/18"
@@ -3095,6 +3125,11 @@
     "turno": "LIDO 8-18"
   },
   {
+    "motoscafo": "145",
+    "data": "2026-11-23",
+    "turno": "RIPOSO"
+  },
+  {
     "motoscafo": "146",
     "data": "2026-11-23",
     "turno": "DANIELI 8-18"
@@ -3345,6 +3380,11 @@
     "turno": "APT 7/24"
   },
   {
+    "motoscafo": "145",
+    "data": "2026-11-24",
+    "turno": "RIPOSO"
+  },
+  {
     "motoscafo": "146",
     "data": "2026-11-24",
     "turno": "RIO 8-18"
@@ -3595,6 +3635,11 @@
     "turno": "APT 7/18"
   },
   {
+    "motoscafo": "145",
+    "data": "2026-11-25",
+    "turno": "RAMPA 00-08"
+  },
+  {
     "motoscafo": "146",
     "data": "2026-11-25",
     "turno": "LIDO 8-18"
@@ -3845,6 +3890,11 @@
     "turno": "FS. SCALZI 8-18"
   },
   {
+    "motoscafo": "145",
+    "data": "2026-11-26",
+    "turno": "LONDRA 8-18"
+  },
+  {
     "motoscafo": "146",
     "data": "2026-11-26",
     "turno": "APT 7/24"
@@ -4095,6 +4145,11 @@
     "turno": "TODARO 8-18"
   },
   {
+    "motoscafo": "145",
+    "data": "2026-11-27",
+    "turno": "CERVA 8-18"
+  },
+  {
     "motoscafo": "146",
     "data": "2026-11-27",
     "turno": "APT 7/18"
@@ -4345,6 +4400,11 @@
     "turno": "RAMPA 18-24"
   },
   {
+    "motoscafo": "145",
+    "data": "2026-11-28",
+    "turno": "RIPOSO"
+  },
+  {
     "motoscafo": "146",
     "data": "2026-11-28",
     "turno": "FS. SCALZI 8-18"
@@ -4595,6 +4655,11 @@
     "turno": "APT 7/24"
   },
   {
+    "motoscafo": "145",
+    "data": "2026-11-29",
+    "turno": "RIPOSO"
+  },
+  {
     "motoscafo": "146",
     "data": "2026-11-29",
     "turno": "TODARO 8-18"
@@ -4845,6 +4910,11 @@
     "turno": "APT 7/18"
   },
   {
+    "motoscafo": "145",
+    "data": "2026-11-30",
+    "turno": "FS. SCALZI 8-18"
+  },
+  {
     "motoscafo": "146",
     "data": "2026-11-30",
     "turno": "RAMPA 18-24"
@@ -5093,6 +5163,11 @@
     "motoscafo": "142",
     "data": "2026-12-01",
     "turno": "RAMPA 00-08"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2026-12-01",
+    "turno": "DANIELI 8-18"
   },
   {
     "motoscafo": "146",
@@ -5345,6 +5420,11 @@
     "turno": "LONDRA 8-18"
   },
   {
+    "motoscafo": "145",
+    "data": "2026-12-02",
+    "turno": "OSPEDALE 18-24"
+  },
+  {
     "motoscafo": "146",
     "data": "2026-12-02",
     "turno": "APT 7/18"
@@ -5595,6 +5675,11 @@
     "turno": "CERVA 8-18"
   },
   {
+    "motoscafo": "145",
+    "data": "2026-12-03",
+    "turno": "RIPOSO"
+  },
+  {
     "motoscafo": "146",
     "data": "2026-12-03",
     "turno": "RAMPA 00-08"
@@ -5845,6 +5930,11 @@
     "turno": "APT 7/24"
   },
   {
+    "motoscafo": "145",
+    "data": "2026-12-04",
+    "turno": "RIPOSO"
+  },
+  {
     "motoscafo": "146",
     "data": "2026-12-04",
     "turno": "LONDRA 8-18"
@@ -6095,6 +6185,11 @@
     "turno": "APT 7/18"
   },
   {
+    "motoscafo": "145",
+    "data": "2026-12-05",
+    "turno": "RAMPA 8-18"
+  },
+  {
     "motoscafo": "146",
     "data": "2026-12-05",
     "turno": "CERVA 8-18"
@@ -6345,6 +6440,11 @@
     "turno": "FS. SCALZI 8-18"
   },
   {
+    "motoscafo": "145",
+    "data": "2026-12-06",
+    "turno": "TODARO 8-18"
+  },
+  {
     "motoscafo": "146",
     "data": "2026-12-06",
     "turno": "APT 7/24"
@@ -6595,6 +6695,11 @@
     "turno": "DANIELI 8-18"
   },
   {
+    "motoscafo": "145",
+    "data": "2026-12-07",
+    "turno": "RIO 18-24"
+  },
+  {
     "motoscafo": "146",
     "data": "2026-12-07",
     "turno": "APT 7/18"
@@ -6845,6 +6950,11 @@
     "turno": "OSPEDALE 18-24"
   },
   {
+    "motoscafo": "145",
+    "data": "2026-12-08",
+    "turno": "RIPOSO"
+  },
+  {
     "motoscafo": "146",
     "data": "2026-12-08",
     "turno": "FS. SCALZI 8-18"
@@ -7095,6 +7205,11 @@
     "turno": "APT 7/24"
   },
   {
+    "motoscafo": "145",
+    "data": "2026-12-09",
+    "turno": "RIPOSO"
+  },
+  {
     "motoscafo": "146",
     "data": "2026-12-09",
     "turno": "DANIELI 8-18"
@@ -7343,6 +7458,11 @@
     "motoscafo": "142",
     "data": "2026-12-10",
     "turno": "APT 7/18"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2026-12-10",
+    "turno": "FS. GNTE 8-18"
   },
   {
     "motoscafo": "146",
@@ -7595,6 +7715,11 @@
     "turno": "RAMPA 8-18"
   },
   {
+    "motoscafo": "145",
+    "data": "2026-12-11",
+    "turno": "TRONCHETTO 8-18"
+  },
+  {
     "motoscafo": "146",
     "data": "2026-12-11",
     "turno": "APT 7/24"
@@ -7843,6 +7968,11 @@
     "motoscafo": "142",
     "data": "2026-12-12",
     "turno": "TODARO 8-18"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2026-12-12",
+    "turno": "CARBON 8-18"
   },
   {
     "motoscafo": "146",
@@ -8095,6 +8225,11 @@
     "turno": "RIO 18-24"
   },
   {
+    "motoscafo": "145",
+    "data": "2026-12-13",
+    "turno": "RIPOSO"
+  },
+  {
     "motoscafo": "146",
     "data": "2026-12-13",
     "turno": "RAMPA 8-18"
@@ -8343,6 +8478,11 @@
     "motoscafo": "142",
     "data": "2026-12-14",
     "turno": "APT 7/24"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2026-12-14",
+    "turno": "RIPOSO"
   },
   {
     "motoscafo": "146",
@@ -8593,6 +8733,11 @@
     "motoscafo": "142",
     "data": "2026-12-15",
     "turno": "APT 7/18"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2026-12-15",
+    "turno": "LONDRA 8-18"
   },
   {
     "motoscafo": "146",
@@ -8845,6 +8990,11 @@
     "turno": "FS. GNTE 8-18"
   },
   {
+    "motoscafo": "145",
+    "data": "2026-12-16",
+    "turno": "TODARO 8-18"
+  },
+  {
     "motoscafo": "146",
     "data": "2026-12-16",
     "turno": "APT 7/24"
@@ -9093,6 +9243,11 @@
     "motoscafo": "142",
     "data": "2026-12-17",
     "turno": "TRONCHETTO 8-18"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2026-12-17",
+    "turno": "TODARO 18-24"
   },
   {
     "motoscafo": "146",
@@ -9345,6 +9500,11 @@
     "turno": "CARBON 8-18"
   },
   {
+    "motoscafo": "145",
+    "data": "2026-12-18",
+    "turno": "RIPOSO"
+  },
+  {
     "motoscafo": "146",
     "data": "2026-12-18",
     "turno": "FS. GNTE 8-18"
@@ -9595,6 +9755,11 @@
     "turno": "APT 7/24"
   },
   {
+    "motoscafo": "145",
+    "data": "2026-12-19",
+    "turno": "RIPOSO"
+  },
+  {
     "motoscafo": "146",
     "data": "2026-12-19",
     "turno": "TRONCHETTO 8-18"
@@ -9843,6 +10008,11 @@
     "motoscafo": "142",
     "data": "2026-12-20",
     "turno": "APT 7/18"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2026-12-20",
+    "turno": "DANIELI 00-08"
   },
   {
     "motoscafo": "146",
@@ -10095,6 +10265,11 @@
     "turno": "LONDRA 8-18"
   },
   {
+    "motoscafo": "145",
+    "data": "2026-12-21",
+    "turno": "PIAZZALE 8-18"
+  },
+  {
     "motoscafo": "146",
     "data": "2026-12-21",
     "turno": "APT 7/24"
@@ -10343,6 +10518,11 @@
     "motoscafo": "142",
     "data": "2026-12-22",
     "turno": "TODARO 8-18"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2026-12-22",
+    "turno": "CA' DI DIO 8-18"
   },
   {
     "motoscafo": "146",
@@ -10595,6 +10775,11 @@
     "turno": "TODARO 18-24"
   },
   {
+    "motoscafo": "145",
+    "data": "2026-12-23",
+    "turno": "RIPOSO"
+  },
+  {
     "motoscafo": "146",
     "data": "2026-12-23",
     "turno": "LONDRA 8-18"
@@ -10845,6 +11030,11 @@
     "turno": "APT 7/24"
   },
   {
+    "motoscafo": "145",
+    "data": "2026-12-24",
+    "turno": "RIPOSO"
+  },
+  {
     "motoscafo": "146",
     "data": "2026-12-24",
     "turno": "TODARO 8-18"
@@ -11093,6 +11283,11 @@
     "motoscafo": "142",
     "data": "2026-12-25",
     "turno": "APT 7/18"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2026-12-25",
+    "turno": "TODARO 8-18"
   },
   {
     "motoscafo": "146",
@@ -11345,6 +11540,11 @@
     "turno": "DANIELI 00-08"
   },
   {
+    "motoscafo": "145",
+    "data": "2026-12-26",
+    "turno": "FS. SCALZI 8-18"
+  },
+  {
     "motoscafo": "146",
     "data": "2026-12-26",
     "turno": "APT 7/24"
@@ -11593,6 +11793,11 @@
     "motoscafo": "142",
     "data": "2026-12-27",
     "turno": "PIAZZALE 8-18"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2026-12-27",
+    "turno": "DANIELI 18-24"
   },
   {
     "motoscafo": "146",
@@ -11845,6 +12050,11 @@
     "turno": "CA' DI DIO 8-18"
   },
   {
+    "motoscafo": "145",
+    "data": "2026-12-28",
+    "turno": "RIPOSO"
+  },
+  {
     "motoscafo": "146",
     "data": "2026-12-28",
     "turno": "DANIELI 00-08"
@@ -12095,6 +12305,11 @@
     "turno": "APT 7/24"
   },
   {
+    "motoscafo": "145",
+    "data": "2026-12-29",
+    "turno": "RIPOSO"
+  },
+  {
     "motoscafo": "146",
     "data": "2026-12-29",
     "turno": "PIAZZALE 8-18"
@@ -12343,6 +12558,11 @@
     "motoscafo": "142",
     "data": "2026-12-30",
     "turno": "APT 7/18"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2026-12-30",
+    "turno": "DANIELI 8-18"
   },
   {
     "motoscafo": "146",
@@ -12595,6 +12815,11 @@
     "turno": "TODARO 8-18"
   },
   {
+    "motoscafo": "145",
+    "data": "2026-12-31",
+    "turno": "RIO 8-18"
+  },
+  {
     "motoscafo": "146",
     "data": "2026-12-31",
     "turno": "APT 7/24"
@@ -12843,6 +13068,11 @@
     "motoscafo": "142",
     "data": "2027-01-01",
     "turno": "FS. SCALZI 8-18"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2027-01-01",
+    "turno": "RAMPA 18-24"
   },
   {
     "motoscafo": "146",
@@ -13095,6 +13325,11 @@
     "turno": "DANIELI 18-24"
   },
   {
+    "motoscafo": "145",
+    "data": "2027-01-02",
+    "turno": "RIPOSO"
+  },
+  {
     "motoscafo": "146",
     "data": "2027-01-02",
     "turno": "TODARO 8-18"
@@ -13343,6 +13578,11 @@
     "motoscafo": "142",
     "data": "2027-01-03",
     "turno": "APT 7/24"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2027-01-03",
+    "turno": "RIPOSO"
   },
   {
     "motoscafo": "146",
@@ -13593,6 +13833,11 @@
     "motoscafo": "142",
     "data": "2027-01-04",
     "turno": "APT 7/18"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2027-01-04",
+    "turno": "TODARO 8-18"
   },
   {
     "motoscafo": "146",
@@ -13845,6 +14090,11 @@
     "turno": "DANIELI 8-18"
   },
   {
+    "motoscafo": "145",
+    "data": "2027-01-05",
+    "turno": "RAMPA 8-18"
+  },
+  {
     "motoscafo": "146",
     "data": "2027-01-05",
     "turno": "APT 7/24"
@@ -14093,6 +14343,11 @@
     "motoscafo": "142",
     "data": "2027-01-06",
     "turno": "RIO 8-18"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2027-01-06",
+    "turno": "CARBON 8-18"
   },
   {
     "motoscafo": "146",
@@ -14345,6 +14600,11 @@
     "turno": "RAMPA 18-24"
   },
   {
+    "motoscafo": "145",
+    "data": "2027-01-07",
+    "turno": "RIPOSO"
+  },
+  {
     "motoscafo": "146",
     "data": "2027-01-07",
     "turno": "DANIELI 8-18"
@@ -14595,6 +14855,11 @@
     "turno": "APT 7/24"
   },
   {
+    "motoscafo": "145",
+    "data": "2027-01-08",
+    "turno": "RIPOSO"
+  },
+  {
     "motoscafo": "146",
     "data": "2027-01-08",
     "turno": "RIO 8-18"
@@ -14843,6 +15108,11 @@
     "motoscafo": "142",
     "data": "2027-01-09",
     "turno": "APT 7/18"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2027-01-09",
+    "turno": "DANIELI 8-18"
   },
   {
     "motoscafo": "146",
@@ -15095,6 +15365,11 @@
     "turno": "TODARO 8-18"
   },
   {
+    "motoscafo": "145",
+    "data": "2027-01-10",
+    "turno": "CERVA 8-18"
+  },
+  {
     "motoscafo": "146",
     "data": "2027-01-10",
     "turno": "APT 7/24"
@@ -15343,6 +15618,11 @@
     "motoscafo": "142",
     "data": "2027-01-11",
     "turno": "RAMPA 8-18"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2027-01-11",
+    "turno": "TODARO 18-24"
   },
   {
     "motoscafo": "146",
@@ -15595,6 +15875,11 @@
     "turno": "CARBON 8-18"
   },
   {
+    "motoscafo": "145",
+    "data": "2027-01-12",
+    "turno": "RIPOSO"
+  },
+  {
     "motoscafo": "146",
     "data": "2027-01-12",
     "turno": "TODARO 8-18"
@@ -15845,6 +16130,11 @@
     "turno": "APT 7/24"
   },
   {
+    "motoscafo": "145",
+    "data": "2027-01-13",
+    "turno": "RIPOSO"
+  },
+  {
     "motoscafo": "146",
     "data": "2027-01-13",
     "turno": "RAMPA 8-18"
@@ -16095,6 +16385,11 @@
     "turno": "APT 7/18"
   },
   {
+    "motoscafo": "145",
+    "data": "2027-01-14",
+    "turno": "CERVA 00-08"
+  },
+  {
     "motoscafo": "146",
     "data": "2027-01-14",
     "turno": "CARBON 8-18"
@@ -16343,6 +16638,11 @@
     "motoscafo": "142",
     "data": "2027-01-15",
     "turno": "DANIELI 8-18"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2027-01-15",
+    "turno": "TODARO 8-18"
   },
   {
     "motoscafo": "146",
@@ -16595,6 +16895,11 @@
     "turno": "CERVA 8-18"
   },
   {
+    "motoscafo": "145",
+    "data": "2027-01-16",
+    "turno": "RIO 8-18"
+  },
+  {
     "motoscafo": "146",
     "data": "2027-01-16",
     "turno": "RIPOSO"
@@ -16845,6 +17150,11 @@
     "turno": "TODARO 18-24"
   },
   {
+    "motoscafo": "145",
+    "data": "2027-01-17",
+    "turno": "APT 7/24"
+  },
+  {
     "motoscafo": "146",
     "data": "2027-01-17",
     "turno": "DANIELI 8-18"
@@ -17093,6 +17403,11 @@
     "motoscafo": "142",
     "data": "2027-01-18",
     "turno": "RIPOSO"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2027-01-18",
+    "turno": "APT 7/18"
   },
   {
     "motoscafo": "146",
@@ -17343,6 +17658,11 @@
     "motoscafo": "142",
     "data": "2027-01-19",
     "turno": "RIPOSO"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2027-01-19",
+    "turno": "DANIELI 8-18"
   },
   {
     "motoscafo": "146",
@@ -17595,6 +17915,11 @@
     "turno": "CERVA 00-08"
   },
   {
+    "motoscafo": "145",
+    "data": "2027-01-20",
+    "turno": "FS. SCALZI 8-18"
+  },
+  {
     "motoscafo": "146",
     "data": "2027-01-20",
     "turno": "RIPOSO"
@@ -17843,6 +18168,11 @@
     "motoscafo": "142",
     "data": "2027-01-21",
     "turno": "TODARO 8-18"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2027-01-21",
+    "turno": "CERVA 18-24"
   },
   {
     "motoscafo": "146",
@@ -18093,6 +18423,11 @@
     "motoscafo": "142",
     "data": "2027-01-22",
     "turno": "RIO 8-18"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2027-01-22",
+    "turno": "APT 7/24"
   },
   {
     "motoscafo": "146",
@@ -18345,6 +18680,11 @@
     "turno": "RIPOSO"
   },
   {
+    "motoscafo": "145",
+    "data": "2027-01-23",
+    "turno": "APT 7/18"
+  },
+  {
     "motoscafo": "146",
     "data": "2027-01-23",
     "turno": "TODARO 8-18"
@@ -18595,6 +18935,11 @@
     "turno": "RIPOSO"
   },
   {
+    "motoscafo": "145",
+    "data": "2027-01-24",
+    "turno": "TODARO 8-18"
+  },
+  {
     "motoscafo": "146",
     "data": "2027-01-24",
     "turno": "RIO 8-18"
@@ -18845,6 +19190,11 @@
     "turno": "DANIELI 8-18"
   },
   {
+    "motoscafo": "145",
+    "data": "2027-01-25",
+    "turno": "RAMPA 8-18"
+  },
+  {
     "motoscafo": "146",
     "data": "2027-01-25",
     "turno": "RIPOSO"
@@ -19095,6 +19445,11 @@
     "turno": "FS. SCALZI 8-18"
   },
   {
+    "motoscafo": "145",
+    "data": "2027-01-26",
+    "turno": "FS. SCALZI 18-24"
+  },
+  {
     "motoscafo": "146",
     "data": "2027-01-26",
     "turno": "RIPOSO"
@@ -19343,6 +19698,11 @@
     "motoscafo": "142",
     "data": "2027-01-27",
     "turno": "CERVA 18-24"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2027-01-27",
+    "turno": "APT 7/24"
   },
   {
     "motoscafo": "146",
@@ -19595,6 +19955,11 @@
     "turno": "RIPOSO"
   },
   {
+    "motoscafo": "145",
+    "data": "2027-01-28",
+    "turno": "APT 7/18"
+  },
+  {
     "motoscafo": "146",
     "data": "2027-01-28",
     "turno": "FS. SCALZI 8-18"
@@ -19845,6 +20210,11 @@
     "turno": "RIPOSO"
   },
   {
+    "motoscafo": "145",
+    "data": "2027-01-29",
+    "turno": "LIDO 8-20"
+  },
+  {
     "motoscafo": "146",
     "data": "2027-01-29",
     "turno": "CERVA 18-24"
@@ -20095,6 +20465,11 @@
     "turno": "TODARO 8-18"
   },
   {
+    "motoscafo": "145",
+    "data": "2027-01-30",
+    "turno": "LONDRA 8-18"
+  },
+  {
     "motoscafo": "146",
     "data": "2027-01-30",
     "turno": "RIPOSO"
@@ -20345,6 +20720,11 @@
     "turno": "RAMPA 8-18"
   },
   {
+    "motoscafo": "145",
+    "data": "2027-01-31",
+    "turno": "FS. SCALZI 8-18"
+  },
+  {
     "motoscafo": "146",
     "data": "2027-01-31",
     "turno": "RIPOSO"
@@ -20593,6 +20973,11 @@
     "motoscafo": "142",
     "data": "2027-02-01",
     "turno": "FS. SCALZI 18-24"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2027-02-01",
+    "turno": "APT 7/24"
   },
   {
     "motoscafo": "146",
@@ -20845,6 +21230,11 @@
     "turno": "RIPOSO"
   },
   {
+    "motoscafo": "145",
+    "data": "2027-02-02",
+    "turno": "APT 7/18"
+  },
+  {
     "motoscafo": "146",
     "data": "2027-02-02",
     "turno": "RAMPA 8-18"
@@ -21093,6 +21483,11 @@
     "motoscafo": "142",
     "data": "2027-02-03",
     "turno": "RIPOSO"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2027-02-03",
+    "turno": "TODARO 8-18"
   },
   {
     "motoscafo": "146",
@@ -21345,6 +21740,11 @@
     "turno": "LIDO 8-20"
   },
   {
+    "motoscafo": "145",
+    "data": "2027-02-04",
+    "turno": "FS. GNTE 8-18"
+  },
+  {
     "motoscafo": "146",
     "data": "2027-02-04",
     "turno": "RIPOSO"
@@ -21595,6 +21995,11 @@
     "turno": "LONDRA 8-18"
   },
   {
+    "motoscafo": "145",
+    "data": "2027-02-05",
+    "turno": "DANIELI 18-24"
+  },
+  {
     "motoscafo": "146",
     "data": "2027-02-05",
     "turno": "RIPOSO"
@@ -21843,6 +22248,11 @@
     "motoscafo": "142",
     "data": "2027-02-06",
     "turno": "FS. SCALZI 8-18"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2027-02-06",
+    "turno": "APT 7/24"
   },
   {
     "motoscafo": "146",
@@ -22093,6 +22503,11 @@
     "motoscafo": "142",
     "data": "2027-02-07",
     "turno": "RIPOSO"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2027-02-07",
+    "turno": "APT 7/18"
   },
   {
     "motoscafo": "146",
@@ -22343,6 +22758,11 @@
     "motoscafo": "142",
     "data": "2027-02-08",
     "turno": "RIPOSO"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2027-02-08",
+    "turno": "RAMPA 00-08"
   },
   {
     "motoscafo": "146",
@@ -22593,6 +23013,11 @@
     "motoscafo": "142",
     "data": "2027-02-09",
     "turno": "TODARO 8-18"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2027-02-09",
+    "turno": "DANIELI 8-18"
   },
   {
     "motoscafo": "146",
@@ -22845,6 +23270,11 @@
     "turno": "FS. GNTE 8-18"
   },
   {
+    "motoscafo": "145",
+    "data": "2027-02-10",
+    "turno": "PIAZZALE 8-18"
+  },
+  {
     "motoscafo": "146",
     "data": "2027-02-10",
     "turno": "RIPOSO"
@@ -23093,6 +23523,11 @@
     "motoscafo": "142",
     "data": "2027-02-11",
     "turno": "DANIELI 18-24"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2027-02-11",
+    "turno": "APT 7/24"
   },
   {
     "motoscafo": "146",
@@ -23345,6 +23780,11 @@
     "turno": "RIPOSO"
   },
   {
+    "motoscafo": "145",
+    "data": "2027-02-12",
+    "turno": "APT 7/18"
+  },
+  {
     "motoscafo": "146",
     "data": "2027-02-12",
     "turno": "FS. GNTE 8-18"
@@ -23595,6 +24035,11 @@
     "turno": "RIPOSO"
   },
   {
+    "motoscafo": "145",
+    "data": "2027-02-13",
+    "turno": "TODARO 8-18"
+  },
+  {
     "motoscafo": "146",
     "data": "2027-02-13",
     "turno": "DANIELI 18-24"
@@ -23845,6 +24290,11 @@
     "turno": "RAMPA 00-08"
   },
   {
+    "motoscafo": "145",
+    "data": "2027-02-14",
+    "turno": "TRONCHETTO 8-18"
+  },
+  {
     "motoscafo": "146",
     "data": "2027-02-14",
     "turno": "RIPOSO"
@@ -24095,6 +24545,11 @@
     "turno": "DANIELI 8-18"
   },
   {
+    "motoscafo": "145",
+    "data": "2027-02-15",
+    "turno": "PIAZZALE 18-24"
+  },
+  {
     "motoscafo": "146",
     "data": "2027-02-15",
     "turno": "RIPOSO"
@@ -24343,6 +24798,11 @@
     "motoscafo": "142",
     "data": "2027-02-16",
     "turno": "PIAZZALE 8-18"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2027-02-16",
+    "turno": "APT 7/24"
   },
   {
     "motoscafo": "146",
@@ -24595,6 +25055,11 @@
     "turno": "RIPOSO"
   },
   {
+    "motoscafo": "145",
+    "data": "2027-02-17",
+    "turno": "APT 7/18"
+  },
+  {
     "motoscafo": "146",
     "data": "2027-02-17",
     "turno": "DANIELI 8-18"
@@ -24845,6 +25310,11 @@
     "turno": "RIPOSO"
   },
   {
+    "motoscafo": "145",
+    "data": "2027-02-18",
+    "turno": "LONDRA 8-18"
+  },
+  {
     "motoscafo": "146",
     "data": "2027-02-18",
     "turno": "PIAZZALE 8-18"
@@ -25095,6 +25565,11 @@
     "turno": "TODARO 8-18"
   },
   {
+    "motoscafo": "145",
+    "data": "2027-02-19",
+    "turno": "FS. SCALZI 8-18"
+  },
+  {
     "motoscafo": "146",
     "data": "2027-02-19",
     "turno": "RIPOSO"
@@ -25345,6 +25820,11 @@
     "turno": "TRONCHETTO 8-18"
   },
   {
+    "motoscafo": "145",
+    "data": "2027-02-20",
+    "turno": "TODARO 18-24"
+  },
+  {
     "motoscafo": "146",
     "data": "2027-02-20",
     "turno": "RIPOSO"
@@ -25593,6 +26073,11 @@
     "motoscafo": "142",
     "data": "2027-02-21",
     "turno": "PIAZZALE 18-24"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2027-02-21",
+    "turno": "APT 7/24"
   },
   {
     "motoscafo": "146",
@@ -25845,6 +26330,11 @@
     "turno": "RIPOSO"
   },
   {
+    "motoscafo": "145",
+    "data": "2027-02-22",
+    "turno": "APT 7/18"
+  },
+  {
     "motoscafo": "146",
     "data": "2027-02-22",
     "turno": "TRONCHETTO 8-18"
@@ -26095,6 +26585,11 @@
     "turno": "RIPOSO"
   },
   {
+    "motoscafo": "145",
+    "data": "2027-02-23",
+    "turno": "TODARO 8-18"
+  },
+  {
     "motoscafo": "146",
     "data": "2027-02-23",
     "turno": "PIAZZALE 18-24"
@@ -26345,6 +26840,11 @@
     "turno": "LONDRA 8-18"
   },
   {
+    "motoscafo": "145",
+    "data": "2027-02-24",
+    "turno": "RIO 8-18"
+  },
+  {
     "motoscafo": "146",
     "data": "2027-02-24",
     "turno": "RIPOSO"
@@ -26593,6 +27093,11 @@
     "motoscafo": "142",
     "data": "2027-02-25",
     "turno": "FS. SCALZI 8-18"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2027-02-25",
+    "turno": "MURANO 8-18"
   },
   {
     "motoscafo": "146",
@@ -26843,6 +27348,11 @@
     "motoscafo": "142",
     "data": "2027-02-26",
     "turno": "TODARO 18-24"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2027-02-26",
+    "turno": "APT 7/24"
   },
   {
     "motoscafo": "146",
@@ -27093,6 +27603,11 @@
     "motoscafo": "142",
     "data": "2027-02-27",
     "turno": "RIPOSO"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2027-02-27",
+    "turno": "APT 7/18"
   },
   {
     "motoscafo": "146",
@@ -27343,6 +27858,11 @@
     "motoscafo": "142",
     "data": "2027-02-28",
     "turno": "RIPOSO"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2027-02-28",
+    "turno": "DANIELI 8-18"
   },
   {
     "motoscafo": "146",
@@ -27593,6 +28113,11 @@
     "motoscafo": "142",
     "data": "2027-03-01",
     "turno": "TODARO 8-18"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2027-03-01",
+    "turno": "CERVA 8-18"
   },
   {
     "motoscafo": "146",
@@ -27843,6 +28368,11 @@
     "motoscafo": "142",
     "data": "2027-03-02",
     "turno": "RIO 8-18"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2027-03-02",
+    "turno": "RIO 18-24"
   },
   {
     "motoscafo": "146",
@@ -28093,6 +28623,11 @@
     "motoscafo": "142",
     "data": "2027-03-03",
     "turno": "MURANO 8-18"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2027-03-03",
+    "turno": "APT 7/24"
   },
   {
     "motoscafo": "146",
@@ -28343,6 +28878,11 @@
     "motoscafo": "142",
     "data": "2027-03-04",
     "turno": "RIPOSO"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2027-03-04",
+    "turno": "APT 7/18"
   },
   {
     "motoscafo": "146",
@@ -28593,6 +29133,11 @@
     "motoscafo": "142",
     "data": "2027-03-05",
     "turno": "RIPOSO"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2027-03-05",
+    "turno": "TODARO 00-08"
   },
   {
     "motoscafo": "146",
@@ -28843,6 +29388,11 @@
     "motoscafo": "142",
     "data": "2027-03-06",
     "turno": "DANIELI 8-18"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2027-03-06",
+    "turno": "FS. SCALZI 8-18"
   },
   {
     "motoscafo": "146",
@@ -29093,6 +29643,11 @@
     "motoscafo": "142",
     "data": "2027-03-07",
     "turno": "CERVA 8-18"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2027-03-07",
+    "turno": "CA' DI DIO 8-18"
   },
   {
     "motoscafo": "146",
@@ -29343,6 +29898,11 @@
     "motoscafo": "142",
     "data": "2027-03-08",
     "turno": "RIO 18-24"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2027-03-08",
+    "turno": "APT 7/24"
   },
   {
     "motoscafo": "146",
@@ -29593,6 +30153,11 @@
     "motoscafo": "142",
     "data": "2027-03-09",
     "turno": "RIPOSO"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2027-03-09",
+    "turno": "APT 7/18"
   },
   {
     "motoscafo": "146",
@@ -29843,6 +30408,11 @@
     "motoscafo": "142",
     "data": "2027-03-10",
     "turno": "RIPOSO"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2027-03-10",
+    "turno": "TODARO 8-18"
   },
   {
     "motoscafo": "146",
@@ -30093,6 +30663,11 @@
     "motoscafo": "142",
     "data": "2027-03-11",
     "turno": "TODARO 00-08"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2027-03-11",
+    "turno": "RAMPA 8-18"
   },
   {
     "motoscafo": "146",
@@ -30343,6 +30918,11 @@
     "motoscafo": "142",
     "data": "2027-03-12",
     "turno": "FS. SCALZI 8-18"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2027-03-12",
+    "turno": "LONDRA 18-24"
   },
   {
     "motoscafo": "146",
@@ -30593,6 +31173,11 @@
     "motoscafo": "142",
     "data": "2027-03-13",
     "turno": "CA' DI DIO 8-18"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2027-03-13",
+    "turno": "APT 7/24"
   },
   {
     "motoscafo": "146",
@@ -30845,6 +31430,11 @@
     "turno": "RIPOSO"
   },
   {
+    "motoscafo": "145",
+    "data": "2027-03-14",
+    "turno": "APT 7/18"
+  },
+  {
     "motoscafo": "146",
     "data": "2027-03-14",
     "turno": "FS. SCALZI 8-18"
@@ -31095,6 +31685,11 @@
     "turno": "RIPOSO"
   },
   {
+    "motoscafo": "145",
+    "data": "2027-03-15",
+    "turno": "LONDRA 8-18"
+  },
+  {
     "motoscafo": "146",
     "data": "2027-03-15",
     "turno": "CA' DI DIO 8-18"
@@ -31343,6 +31938,11 @@
     "motoscafo": "142",
     "data": "2027-03-16",
     "turno": "TODARO 8-18"
+  },
+  {
+    "motoscafo": "145",
+    "data": "2027-03-16",
+    "turno": "FS. SCALZI 8-18"
   },
   {
     "motoscafo": "146",
