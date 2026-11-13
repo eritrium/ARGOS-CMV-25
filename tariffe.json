@@ -1358,7 +1358,7 @@
         {
             "hotel": "CIPRIANI",
             "destinazione": "SAN BASILIO",
-            "importo": "90"
+            "importo": "120"
         },
         {
             "hotel": "CIPRIANI",
@@ -3527,7 +3527,7 @@
         },
         {
             "hotel": "ORIENT EXPRESS",
-            "destinazione": "SAN SERVOLO ",
+            "destinazione": "SAN SERVOLO",
             "importo": "100"
         },
         {
@@ -4819,11 +4819,6 @@
             "hotel": "LOCANDA CIPRIANI",
             "destinazione": "RIALTO",
             "importo": "180"
-        },
-        {
-            "hotel": "",
-            "destinazione": "",
-            "importo": ""
         },
         {
             "hotel": "SUPPLEMENTO",
