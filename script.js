@@ -1,6 +1,6 @@
 // ===== VERSIONE DELLA PAGINA =====
 // Quando aggiorni il sito, cambia questo numero e quello in version.json (devono essere uguali)
-const VERSIONE_PAGINA = "17";
+const VERSIONE_PAGINA = "4";
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -788,5 +788,9 @@ document.addEventListener('DOMContentLoaded', function () {
     document.addEventListener('visibilitychange', () => {
         if (document.visibilityState === 'visible') controllaVersione();
     });
+    // controlla anche quando l'app resta aperta: ogni 5 minuti, al ritorno sulla finestra e quando torna la rete
+    window.addEventListener('focus', controllaVersione);
+    window.addEventListener('online', controllaVersione);
+    setInterval(controllaVersione, 5 * 60 * 1000);
 
 });
