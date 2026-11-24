@@ -20,7 +20,7 @@
 
 <!-- 🔥 MESSAGGIO DI AVVISO -->
 <div id="messaggioAvviso">
-    ** TURNI ARGOS FINO AL 17 MARZO 2027-TABELLE SALUTE+APT FINO AL 16 marzo 2027 **
+    ** TURNI ARGOS FINO AL 17 MARZO 2027-TABELLE SALUTE+APT FINO AL 30 NOVEMBRE **
 </div>
 
 <header>
@@ -30,6 +30,13 @@
         <button id="btnTema" type="button" title="Tema chiaro o scuro">☀️</button>
     </div>
     <span class="tit">CONSORZIO MOTOSCAFI</span><small>VENEZIA</small></header>
+
+<!-- MAREA A VENEZIA (dati aperti del Comune, Centro Maree) -->
+<div id="marea" class="marea" hidden>
+    <div class="marea-riga"><span class="marea-tit">🌊 Marea · Punta Salute</span><span id="mareaValore" class="marea-val"></span></div>
+    <div class="marea-sotto"><span id="mareaStato"></span><span id="mareaOra"></span></div>
+    <div class="marea-fonte">Fonte: Comune di Venezia – Centro Maree · dato non validato</div>
+</div>
 
 <div class="datebar" id="barraData">
     <div class="datepick" id="datepick">
@@ -58,7 +65,6 @@
                 <option value="123">123</option>
                 <option value="140">140</option>
                 <option value="142">142</option>
-		<option value="145">145</option>
                 <option value="146">146</option>
                 <option value="156">156</option>
                 <option value="157">157</option>

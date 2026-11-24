@@ -1,6 +1,6 @@
 // ===== VERSIONE DELLA PAGINA =====
 // Quando aggiorni il sito, cambia questo numero e quello in version.json (devono essere uguali)
-const VERSIONE_PAGINA = "19";
+const VERSIONE_PAGINA = "14";
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -788,9 +788,72 @@ document.addEventListener('DOMContentLoaded', function () {
     document.addEventListener('visibilitychange', () => {
         if (document.visibilityState === 'visible') controllaVersione();
     });
-    // controlla anche quando l'app resta aperta: ogni 5 minuti, al ritorno sulla finestra e quando torna la rete
-    window.addEventListener('focus', controllaVersione);
-    window.addEventListener('online', controllaVersione);
-    setInterval(controllaVersione, 5 * 60 * 1000);
+
+    // ===== MAREA A VENEZIA (dati aperti del Comune di Venezia, Centro Maree) =====
+    // Dati grezzi non validati, ogni 5 minuti, in ora solare (UTC+1). Valore in metri sullo zero di Punta Salute.
+    const URL_MAREA = 'https://dati.venezia.it/sites/default/files/dataset/opendata/livello.json';
+    const ID_STAZIONE_MAREA = '1025';          // Punta Salute Canal Grande (valore ufficiale)
+    const boxMarea = document.getElementById('marea');
+    let ultimaMarea = null;
+
+    function livelloMarea(cm) {
+        if (cm >= 140) return ['e', 'Alta marea eccezionale'];
+        if (cm >= 110) return ['a', 'Alta marea'];
+        if (cm >= 80) return ['s', 'Marea sostenuta'];
+        return ['n', 'Marea normale'];
+    }
+
+    function mostraMarea(r) {
+        const v = document.getElementById('mareaValore');
+        const st = document.getElementById('mareaStato');
+        const o = document.getElementById('mareaOra');
+        boxMarea.hidden = false;
+        if (!r) {
+            boxMarea.dataset.liv = 'x';
+            v.textContent = 'non disponibile';
+            st.textContent = '';
+            o.textContent = '';
+            return;
+        }
+        const liv = livelloMarea(r.cm);
+        boxMarea.dataset.liv = liv[0];
+        v.textContent = (r.cm > 0 ? '+' : '') + r.cm + ' cm';
+        st.textContent = liv[1];
+        const vecchio = Date.now() - r.ts > 30 * 60 * 1000;
+        const quando = new Date(r.ts).toLocaleString('it-IT', vecchio
+            ? { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Rome' }
+            : { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Rome' });
+        o.textContent = vecchio ? '⚠ dato vecchio: ' + quando : 'ore ' + quando;
+        o.className = vecchio ? 'vecchio' : '';
+    }
+
+    function leggiMarea(lista) {
+        const elenco = Array.isArray(lista) ? lista : [];
+        const s = elenco.find(x => String(x.ID_stazione) === ID_STAZIONE_MAREA)
+            || elenco.find(x => /Punta Salute Canal Grande/i.test(x.stazione || ''));
+        if (!s) throw new Error('stazione non trovata');
+        const num = parseFloat(String(s.valore).replace(',', '.'));
+        if (isNaN(num) || num <= -99) throw new Error('valore non valido');
+        const cm = Math.round(/cm/i.test(String(s.valore)) ? num : num * 100);
+        const m = /^(\d{4})-(\d{2})-(\d{2})[ T](\d{2}):(\d{2})/.exec(String(s.data));
+        if (!m) throw new Error('data non valida');
+        // la data e' in ora solare (UTC+1) tutto l'anno
+        const ts = Date.UTC(+m[1], +m[2] - 1, +m[3], +m[4] - 1, +m[5]);
+        return { cm: cm, ts: ts };
+    }
+
+    function caricaMarea() {
+        if (!boxMarea) return;
+        fetch(URL_MAREA + '?t=' + Date.now(), { cache: 'no-store' })
+            .then(r => { if (!r.ok) throw new Error('errore ' + r.status); return r.json(); })
+            .then(lista => { ultimaMarea = leggiMarea(lista); mostraMarea(ultimaMarea); })
+            .catch(e => { console.warn('Marea non caricata:', e); mostraMarea(ultimaMarea); });
+    }
+
+    caricaMarea();
+    setInterval(() => { if (document.visibilityState === 'visible') caricaMarea(); }, 5 * 60 * 1000);
+    document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'visible') caricaMarea();
+    });
 
 });

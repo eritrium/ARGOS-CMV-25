@@ -508,3 +508,26 @@ button#verificaTutti { margin-bottom: 10px; }
 .guida-box button { width: 100%; padding: 14px; font-size: 1.1rem; font-weight: bold; border: none; border-radius: 8px; background: #ffd700; color: #000; cursor: pointer; }
 .chiaro .guida-box { background: #fff; color: #111; }
 .chiaro .guida-box p { color: #444; }
+
+/* Marea a Venezia */
+.marea { margin: 0 0 12px; padding: 8px 12px; border-radius: 8px; background: #1e1e1e; border: 1px solid #333; border-left: 6px solid #4fc3f7; }
+.marea[hidden] { display: none; }
+.marea-riga { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.marea-tit { font-weight: bold; font-size: .95rem; }
+.marea-val { font-weight: bold; font-size: 1.6rem; white-space: nowrap; }
+.marea-sotto { display: flex; justify-content: space-between; gap: 8px; font-size: .9rem; color: #cfd8dc; }
+.marea-fonte { font-size: .68rem; color: #8a97a0; margin-top: 2px; }
+.marea[data-liv="s"] { border-left-color: #ffd700; }
+.marea[data-liv="a"] { border-left-color: #ff9800; background: #3a2a10; }
+.marea[data-liv="e"] { border-left-color: #f44336; background: #3a1414; }
+.marea[data-liv="x"] { border-left-color: #666; }
+.marea[data-liv="x"] .marea-val { font-size: 1rem; font-weight: normal; color: #ffb066; }
+.marea-sotto .vecchio { color: #ffb066; font-weight: bold; }
+.chiaro .marea { background: #fff; border-color: #d5dbe1; }
+.chiaro .marea-sotto { color: #333; }
+.chiaro .marea-fonte { color: #5f6b76; }
+.chiaro .marea[data-liv="s"] { border-left-color: #b89800; }
+.chiaro .marea[data-liv="a"] { border-left-color: #e07b00; background: #fff1dc; }
+.chiaro .marea[data-liv="e"] { border-left-color: #d32f2f; background: #ffe0e0; }
+.chiaro .marea[data-liv="x"] .marea-val { color: #b25a00; }
+.chiaro .marea-sotto .vecchio { color: #b25a00; }
