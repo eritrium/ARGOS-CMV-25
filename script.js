@@ -1,6 +1,6 @@
 // ===== VERSIONE DELLA PAGINA =====
 // Quando aggiorni il sito, cambia questo numero e quello in version.json (devono essere uguali)
-const VERSIONE_PAGINA = "15";
+const VERSIONE_PAGINA = "16";
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -811,7 +811,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!r) {
             boxMarea.dataset.liv = 'x';
             v.textContent = 'non disponibile';
-            st.textContent = '';
+            st.textContent = 'Dato del Comune non disponibile al momento';
             o.textContent = '';
             return;
         }
