@@ -1,6 +1,6 @@
 // ===== VERSIONE DELLA PAGINA =====
 // Quando aggiorni il sito, cambia questo numero e quello in version.json (devono essere uguali)
-const VERSIONE_PAGINA = "14";
+const VERSIONE_PAGINA = "15";
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -791,7 +791,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // ===== MAREA A VENEZIA (dati aperti del Comune di Venezia, Centro Maree) =====
     // Dati grezzi non validati, ogni 5 minuti, in ora solare (UTC+1). Valore in metri sullo zero di Punta Salute.
-    const URL_MAREA = 'https://dati.venezia.it/sites/default/files/dataset/opendata/livello.json';
+    const URL_MAREA = 'https://cool-block-marea-venezia12f2.centralinocmv.workers.dev/';
     const ID_STAZIONE_MAREA = '1025';          // Punta Salute Canal Grande (valore ufficiale)
     const boxMarea = document.getElementById('marea');
     let ultimaMarea = null;
