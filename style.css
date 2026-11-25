@@ -531,3 +531,18 @@ button#verificaTutti { margin-bottom: 10px; }
 .chiaro .marea[data-liv="e"] { border-left-color: #d32f2f; background: #ffe0e0; }
 .chiaro .marea[data-liv="x"] .marea-val { color: #b25a00; }
 .chiaro .marea-sotto .vecchio { color: #b25a00; }
+
+/* Numeri utili */
+.numeri { margin: 0 0 12px; }
+.numeri summary { list-style: none; width: 100%; box-sizing: border-box; padding: 14px; font-size: 1.1rem; border: 1px solid #2d5a73;
+    border-radius: 8px; background: #1a3a4b; color: #aae0ff; font-weight: bold; cursor: pointer; text-align: center; }
+.numeri summary::-webkit-details-marker { display: none; }
+.numeri[open] summary { background: #ffd700; color: #000; border-color: #ffd700; }
+.numeri-lista { margin-top: 8px; display: grid; gap: 8px; }
+.numero { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 14px; border-radius: 8px;
+    border: 1px solid #333; background: #1e1e1e; color: #fff; text-decoration: none; font-size: 1.05rem; }
+.numero b { white-space: nowrap; color: #aae0ff; }
+.chiaro .numeri summary { background: #dbeafe; color: #0b3a66; border-color: #93b4d8; }
+.chiaro .numeri[open] summary { background: #ffd700; color: #000; border-color: #b89800; }
+.chiaro .numero { background: #fff; border-color: #d5dbe1; color: #111; }
+.chiaro .numero b { color: #0b3a66; }
