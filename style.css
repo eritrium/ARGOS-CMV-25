@@ -550,3 +550,7 @@ button#verificaTutti { margin-bottom: 10px; }
 .chiaro .numero { background: #fff; border-color: #d5dbe1; color: #111; }
 .chiaro .numero b { color: #fff; background: #2e7d32; }
 .chiaro .numeri-hint { color: #333; }
+
+/* Frase sotto l'orario nella tabella APT */
+.orario-unico { font-size: 1.3rem; font-weight: bold; }
+.orario-frase { display: block; margin-top: 6px; padding: 4px 8px; border-radius: 8px; background: rgba(0,0,0,.45); color: #fff; font-size: .95rem; font-weight: bold; line-height: 1.25; }

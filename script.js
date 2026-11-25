@@ -1,6 +1,6 @@
 // ===== VERSIONE DELLA PAGINA =====
 // Quando aggiorni il sito, cambia questo numero e quello in version.json (devono essere uguali)
-const VERSIONE_PAGINA = "21";
+const VERSIONE_PAGINA = "22";
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -87,6 +87,12 @@ document.addEventListener('DOMContentLoaded', function () {
             outputMotoscafo.textContent = 'Errore nel caricamento dei dati.';
         }
     }
+
+    // Frase da mostrare sotto l'orario di ogni gruppo della tabella APT (vuota = nessuna frase)
+    const FRASI_APT = {
+        '07-18': 'RISPONDE DALLE 7 ALLE 8:30',
+        '07-24': 'RISPONDE DALLE 8:31 ALLE 10:00'
+    };
 
     async function renderServizio(servizio, data, outputServizio) {
         try {
@@ -196,6 +202,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 const r = finali[i];
                 const orarioCompleto = `${r.inizio.padStart(2, "0")} → ${r.fine.padStart(2, "0")}`;
                 const colore = coloreRiga(r);
+                const fraseApt = (servizio === "APT" && (colore === "verde" || colore === "arancio"))
+                    ? (FRASI_APT[`${r.inizio.padStart(2, "0")}-${r.fine.padStart(2, "0")}`] || "") : "";
 
                 // raggruppa le barche consecutive con stesso orario e stesso colore
                 let j = i;
@@ -221,7 +229,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         righeTotali += `
                             <tr class="${colore}">
                                 <td>${riga.num}</td>
-                                <td rowspan="${rowspan}" class="orario-unico">${orarioCompleto}</td>
+                                <td rowspan="${rowspan}" class="orario-unico">${orarioCompleto}${fraseApt ? `<span class="orario-frase">${esc(fraseApt)}</span>` : ""}</td>
                                 ${cellaNota}
                             </tr>
                         `;
@@ -588,6 +596,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // ===== TABELLA COME IMMAGINE =====
     function disegnaTabella(w, nome, conteggio, Wmin) {
         const S = 2, PAD = 20, RH = 54, TOP = 100, BOT = 56, F = 'bold 24px Arial, Helvetica, sans-serif';
+        const FT = 'bold 30px Arial, Helvetica, sans-serif';   // orario del gruppo APT
+        const FP = 'bold 19px Arial, Helvetica, sans-serif';   // frase sotto l'orario
         const M = [];
         Array.from(w.querySelector('table').rows).forEach((tr, r) => {
             M[r] = M[r] || [];
@@ -601,10 +611,33 @@ document.addEventListener('DOMContentLoaded', function () {
         });
         const nc = Math.max(...M.map(r => r.length));
         const cv = document.createElement('canvas'), g = cv.getContext('2d');
+        // una cella puo' avere l'orario e, sotto, una frase (classe orario-frase)
+        const parti = cell => {
+            const f = cell.querySelector('.orario-frase');
+            return f ? [cell.firstChild.textContent.trim(), f.textContent.trim()] : [cell.textContent.trim(), ''];
+        };
+        const fontCella = cell => cell.classList.contains('orario-unico') ? FT : F;
+        const larghezza = cell => {
+            const [t1, t2] = parti(cell);
+            g.font = fontCella(cell); let w = g.measureText(t1).width;
+            if (t2) { g.font = FP; w = Math.max(w, g.measureText(t2).width + 24); }
+            return Math.ceil(w) + 44;
+        };
         g.font = F;
         const wc = Array.from({ length: nc }, (_, c) => Math.max(90, ...M.map(r =>
-            r[c] && r[c].cell ? Math.ceil(g.measureText(r[c].cell.textContent.trim()).width) + 44 : 0)));
-        const W = Math.max(Wmin || 420, wc.reduce((a, b) => a + b, 0) + PAD * 2), H = TOP + M.length * RH + BOT;
+            r[c] && r[c].cell ? larghezza(r[c].cell) : 0)));
+        // altezza delle righe: quelle con la frase sotto l'orario si allargano se serve
+        const RHs = M.map(() => RH);
+        M.forEach((riga, r) => riga.forEach(e => {
+            if (e && e.cell && e.cell.querySelector('.orario-frase')) {
+                const tot = RHs.slice(r, r + e.rs).reduce((a, b) => a + b, 0);
+                if (tot < 94) { const add = (94 - tot) / e.rs; for (let i = 0; i < e.rs; i++) RHs[r + i] += add; }
+            }
+        }));
+        const ry = []; let acc = TOP;
+        RHs.forEach((h, r) => { ry[r] = acc; acc += h; });
+        const TOTH = acc - TOP;
+        const W = Math.max(Wmin || 420, wc.reduce((a, b) => a + b, 0) + PAD * 2), H = TOP + TOTH + BOT;
         const x0 = (W - wc.reduce((a, b) => a + b, 0)) / 2;
         cv.width = W * S; cv.height = H * S; g.scale(S, S);
         g.fillStyle = '#121212'; g.fillRect(0, 0, W, H);
@@ -618,14 +651,24 @@ document.addEventListener('DOMContentLoaded', function () {
             let x = x0;
             riga.forEach((e, c) => {
                 if (e && e.cell) {
-                    const cs = getComputedStyle(e.cell), y = TOP + r * RH, h = RH * e.rs;
+                    const cs = getComputedStyle(e.cell), y = ry[r], h = RHs.slice(r, r + e.rs).reduce((a, b) => a + b, 0);
                     let bg = cs.backgroundColor;
                     if (!bg || bg === 'transparent' || /rgba\(0, 0, 0, 0\)/.test(bg)) bg = '#1e1e1e';
                     g.fillStyle = bg; g.fillRect(x, y, wc[c], h);
                     g.strokeStyle = '#333'; g.lineWidth = 1; g.strokeRect(x, y, wc[c], h);
-                    g.font = F; g.textAlign = 'center';
-                    const chip = e.cell.querySelector('.chip-nota'), t = e.cell.textContent.trim();
-                    if (chip && t) {
+                    g.font = fontCella(e.cell); g.textAlign = 'center';
+                    const chip = e.cell.querySelector('.chip-nota'), [t, frase] = parti(e.cell);
+                    if (frase) {
+                        const cx = x + wc[c] / 2, cy = y + h / 2;
+                        g.fillStyle = cs.color || '#ffffff';
+                        g.fillText(t, cx, cy - 19);
+                        g.font = FP;
+                        const pw = g.measureText(frase).width + 24;
+                        g.fillStyle = 'rgba(0,0,0,0.5)';
+                        if (g.roundRect) { g.beginPath(); g.roundRect(cx - pw / 2, cy + 4, pw, 30, 8); g.fill(); }
+                        else g.fillRect(cx - pw / 2, cy + 4, pw, 30);
+                        g.fillStyle = '#ffffff'; g.fillText(frase, cx, cy + 19);
+                    } else if (chip && t) {
                         const tw = g.measureText(t).width + 24, cx = x + wc[c] / 2;
                         g.fillStyle = '#ffd700'; g.fillRect(cx - tw / 2, y + h / 2 - 17, tw, 34);
                         g.fillStyle = '#000000'; g.fillText(t, cx, y + h / 2 + 1);
@@ -637,7 +680,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
         g.fillStyle = '#ffd700'; g.font = 'bold 20px Arial, Helvetica, sans-serif'; g.textAlign = 'center';
-        g.fillText(conteggio || '', W / 2, TOP + M.length * RH + 20);
+        g.fillText(conteggio || '', W / 2, TOP + TOTH + 20);
         g.fillStyle = '#888888'; g.font = '14px Arial, Helvetica, sans-serif';
         g.fillText('CONSORZIO MOTOSCAFI', W / 2, H - 14);
         return cv;
@@ -648,7 +691,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const intest = Array.from(w.querySelectorAll('thead th')).map(t => t.textContent);
         let ultimo = '';
         const linee = righe.map(tr => {
-            const c = Array.from(tr.cells).map(x => x.textContent.trim());
+            const c = Array.from(tr.cells).map(x => (x.querySelector('.orario-frase') ? x.firstChild.textContent : x.textContent).trim());
             if (c.length < intest.length) c.splice(1, 0, ultimo); else ultimo = c[1];
             return c.filter(Boolean).join(' · ');
         });
