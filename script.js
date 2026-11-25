@@ -1,6 +1,6 @@
 // ===== VERSIONE DELLA PAGINA =====
 // Quando aggiorni il sito, cambia questo numero e quello in version.json (devono essere uguali)
-const VERSIONE_PAGINA = "18";
+const VERSIONE_PAGINA = "19";
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -791,10 +791,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // ===== MAREA A VENEZIA (dati aperti del Comune di Venezia, Centro Maree) =====
     // Dati grezzi non validati, ogni 5 minuti, in ora solare (UTC+1). Valore in metri sullo zero di Punta Salute.
+    // L'ultima misurazione ricevuta viene salvata sul telefono: se il Comune non risponde si continua a mostrare quella.
     const URL_MAREA = 'https://cool-block-marea-venezia12f2.centralinocmv.workers.dev/';
-    const ID_STAZIONE_MAREA = '1025';          // Punta Salute Canal Grande (valore ufficiale)
+    const ID_STAZIONE_MAREA = '1025';              // Punta Salute Canal Grande (valore ufficiale)
+    const MAREA_VECCHIA = 30 * 60 * 1000;          // oltre 30 minuti: avviso "ultimo dato"
+    const MAREA_TROPPO_VECCHIA = 3 * 60 * 60 * 1000; // oltre 3 ore: non si mostra piu' come livello attuale
     const boxMarea = document.getElementById('marea');
     let ultimaMarea = null;
+    try {
+        const s = JSON.parse(localStorage.getItem('ultimaMarea') || 'null');
+        if (s && isFinite(s.cm) && isFinite(s.ts)) ultimaMarea = { cm: s.cm, ts: s.ts };
+    } catch (e) { /* ignorato */ }
+
+    function salvaMarea(r) {
+        try { localStorage.setItem('ultimaMarea', JSON.stringify(r)); } catch (e) { /* ignorato */ }
+    }
 
     function livelloMarea(cm) {
         if (cm >= 140) return ['e', 'Alta marea eccezionale'];
@@ -808,6 +819,8 @@ document.addEventListener('DOMContentLoaded', function () {
         const st = document.getElementById('mareaStato');
         const o = document.getElementById('mareaOra');
         boxMarea.hidden = false;
+        boxMarea.style.opacity = '';
+        o.className = '';
         if (!r) {
             boxMarea.dataset.liv = 'x';
             v.textContent = 'non disponibile';
@@ -815,17 +828,31 @@ document.addEventListener('DOMContentLoaded', function () {
             o.textContent = '';
             return;
         }
+        const segno = r.cm > 0 ? '+' : '';
+        const eta = Date.now() - r.ts;
+        const dataOra = new Date(r.ts).toLocaleString('it-IT',
+            { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Rome' });
+        if (eta > MAREA_TROPPO_VECCHIA) {
+            boxMarea.dataset.liv = 'x';
+            v.textContent = 'non disponibile';
+            st.textContent = 'Ultimo dato: ' + segno + r.cm + ' cm (' + dataOra + ')';
+            o.textContent = '⚠ dato del Comune non aggiornato';
+            o.className = 'vecchio';
+            return;
+        }
         const liv = livelloMarea(r.cm);
         boxMarea.dataset.liv = liv[0];
-        v.textContent = (r.cm > 0 ? '+' : '') + r.cm + ' cm';
+        v.textContent = segno + r.cm + ' cm';
         st.textContent = liv[1];
-        const vecchio = Date.now() - r.ts > 30 * 60 * 1000;
-        const quando = new Date(r.ts).toLocaleString('it-IT', vecchio
-            ? { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Rome' }
-            : { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Rome' });
-        const min = Math.max(0, Math.floor((Date.now() - r.ts) / 60000));
-        o.textContent = vecchio ? '⚠ dato vecchio: ' + quando : 'ore ' + quando + (min >= 1 ? ' · ' + min + ' min fa' : '');
-        o.className = vecchio ? 'vecchio' : '';
+        if (eta > MAREA_VECCHIA) {
+            boxMarea.style.opacity = '0.75';
+            o.textContent = '⚠ ultimo dato: ' + dataOra;
+            o.className = 'vecchio';
+        } else {
+            const ora = new Date(r.ts).toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Rome' });
+            const min = Math.max(0, Math.floor(eta / 60000));
+            o.textContent = 'ore ' + ora + (min >= 1 ? ' · ' + min + ' min fa' : '');
+        }
     }
 
     function leggiMarea(lista) {
@@ -847,13 +874,19 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!boxMarea) return;
         fetch(URL_MAREA + '?t=' + Date.now(), { cache: 'no-store' })
             .then(r => { if (!r.ok) throw new Error('errore ' + r.status); return r.json(); })
-            .then(lista => { ultimaMarea = leggiMarea(lista); mostraMarea(ultimaMarea); })
+            .then(lista => {
+                const nuova = leggiMarea(lista);
+                // non sostituire una misura piu' recente con una piu' vecchia
+                if (!ultimaMarea || nuova.ts >= ultimaMarea.ts) { ultimaMarea = nuova; salvaMarea(nuova); }
+                mostraMarea(ultimaMarea);
+            })
             .catch(e => { console.warn('Marea non caricata:', e); mostraMarea(ultimaMarea); });
     }
 
+    if (boxMarea && ultimaMarea) mostraMarea(ultimaMarea);   // subito l'ultimo valore salvato, poi si aggiorna
     caricaMarea();
     setInterval(() => { if (document.visibilityState === 'visible') caricaMarea(); }, 5 * 60 * 1000);
-    setInterval(() => { if (ultimaMarea) mostraMarea(ultimaMarea); }, 60 * 1000);   // aggiorna i "minuti fa"
+    setInterval(() => { if (boxMarea && ultimaMarea) mostraMarea(ultimaMarea); }, 60 * 1000);   // aggiorna i "minuti fa"
     document.addEventListener('visibilitychange', () => {
         if (document.visibilityState === 'visible') caricaMarea();
     });
