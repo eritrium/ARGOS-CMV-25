@@ -541,8 +541,12 @@ button#verificaTutti { margin-bottom: 10px; }
 .numeri-lista { margin-top: 8px; display: grid; gap: 8px; }
 .numero { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 14px; border-radius: 8px;
     border: 1px solid #333; background: #1e1e1e; color: #fff; text-decoration: none; font-size: 1.05rem; }
-.numero b { white-space: nowrap; color: #aae0ff; }
+.numero b { white-space: nowrap; color: #fff; background: #2e7d32; padding: 8px 14px; border-radius: 20px; font-size: 1rem; }
+.numero b::before { content: "📞 "; }
+.numero:active { opacity: .7; }
+.numeri-hint { font-size: .85rem; color: #cfd8dc; text-align: center; }
 .chiaro .numeri summary { background: #dbeafe; color: #0b3a66; border-color: #93b4d8; }
 .chiaro .numeri[open] summary { background: #ffd700; color: #000; border-color: #b89800; }
 .chiaro .numero { background: #fff; border-color: #d5dbe1; color: #111; }
-.chiaro .numero b { color: #0b3a66; }
+.chiaro .numero b { color: #fff; background: #2e7d32; }
+.chiaro .numeri-hint { color: #333; }
