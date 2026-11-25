@@ -1,6 +1,6 @@
 // ===== VERSIONE DELLA PAGINA =====
 // Quando aggiorni il sito, cambia questo numero e quello in version.json (devono essere uguali)
-const VERSIONE_PAGINA = "16";
+const VERSIONE_PAGINA = "18";
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -823,7 +823,8 @@ document.addEventListener('DOMContentLoaded', function () {
         const quando = new Date(r.ts).toLocaleString('it-IT', vecchio
             ? { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Rome' }
             : { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Rome' });
-        o.textContent = vecchio ? '⚠ dato vecchio: ' + quando : 'ore ' + quando;
+        const min = Math.max(0, Math.floor((Date.now() - r.ts) / 60000));
+        o.textContent = vecchio ? '⚠ dato vecchio: ' + quando : 'ore ' + quando + (min >= 1 ? ' · ' + min + ' min fa' : '');
         o.className = vecchio ? 'vecchio' : '';
     }
 
@@ -852,6 +853,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     caricaMarea();
     setInterval(() => { if (document.visibilityState === 'visible') caricaMarea(); }, 5 * 60 * 1000);
+    setInterval(() => { if (ultimaMarea) mostraMarea(ultimaMarea); }, 60 * 1000);   // aggiorna i "minuti fa"
     document.addEventListener('visibilitychange', () => {
         if (document.visibilityState === 'visible') caricaMarea();
     });
