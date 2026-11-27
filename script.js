@@ -1,6 +1,6 @@
 // ===== VERSIONE DELLA PAGINA =====
 // Quando aggiorni il sito, cambia questo numero e quello in version.json (devono essere uguali)
-const VERSIONE_PAGINA = "22";
+const VERSIONE_PAGINA = "23";
 
 document.addEventListener('DOMContentLoaded', function () {
 
